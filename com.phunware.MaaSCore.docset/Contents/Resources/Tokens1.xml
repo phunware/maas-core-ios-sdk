@@ -12,13 +12,16 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCore/setAccessKey:signatureKey:encryptionKey:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/MaaSCore/setApplicationID:accessKey:signatureKey:encryptionKey:</TokenIdentifier>
 			<Abstract type="html">Initializes MaaSCore and all associated MaaS modules. This method should be called inside application:didFinishLaunchingWithOptions: before you do anything else.</Abstract>
 			<DeclaredIn>MaaSCore.h</DeclaredIn>			
 			
-			<Declaration>+ (void)setAccessKey:(NSString *)accessKey signatureKey:(NSString *)signatureKey encryptionKey:(NSString *)encryptionKey</Declaration>
+			<Declaration>+ (void)setApplicationID:(NSString *)applicationID accessKey:(NSString *)accessKey signatureKey:(NSString *)signatureKey encryptionKey:(NSString *)encryptionKey</Declaration>
 			<Parameters>
 				<Parameter>
+					<Name>applicationID</Name>
+					<Abstract type="html">You can find your application ID in MaaS Portal.</Abstract>
+				</Parameter><Parameter>
 					<Name>accessKey</Name>
 					<Abstract type="html">A unique key that identifies the client making the request. You can find your access key in MaaS Portal.</Abstract>
 				</Parameter><Parameter>
@@ -30,7 +33,7 @@
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setAccessKey:signatureKey:encryptionKey:</Anchor>
+			<Anchor>//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:</Anchor>
 		</Token>
 		
 		<Token>
@@ -53,14 +56,14 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCore/accessKey</TokenIdentifier>
-			<Abstract type="html">Returns the MaaS access key.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/clm/MaaSCore/applicationID</TokenIdentifier>
+			<Abstract type="html">Returns the MaaS application ID.</Abstract>
 			<DeclaredIn>MaaSCore.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)accessKey</Declaration>
+			<Declaration>+ (NSString *)applicationID</Declaration>
 			
 			
-			<Anchor>//api/name/accessKey</Anchor>
+			<Anchor>//api/name/applicationID</Anchor>
 		</Token>
 		
 		<Token>
