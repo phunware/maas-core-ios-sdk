@@ -29,13 +29,22 @@ MobileCoreServices.framework
 QuartzCore.framework
 CoreTelephony.framework
 Security.framework
+AdSupport.framework
 ````
+
+**NOTE**: If you are supporting < iOS 6.0 you will need to weak-link *AdSupport.framework*.
+
 
 The following frameworks are optional:
 ````
 CoreLocation.framework
 ````
-NOTE: CoreLocation is used for comprehensive analytics. Apple mandates that your app have a good reason for enabling location services. Apple will deny your app if location is not a core feature for your app.
+**NOTE**: CoreLocation is used for comprehensive analytics. Apple mandates that your app have a good reason for enabling location services. Apple will deny your app if location is not a core feature for your app.
+
+After specifying the frameworks you will need to add a linker flag to your build target. 1. Navigate to your build target.
+2. Navigate to the Build Settings tab.
+3. Find the Linking Section -> Other Linker Flags
+4. Add "-ObjC" to Other Linker Flags
 
 You can now proceed with installation of additional MaaS modules.
 
