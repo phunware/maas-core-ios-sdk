@@ -1,5 +1,8 @@
 #MaaSCore Changelog
 
+##1.2.1 (Tuesday, November 12th, 2013)
+ * Fixed potential threading issue with accessing standard date formatter
+
 ##1.2.0 (Friday, October 18th, 2013)
  * Added support for location based services
  * Added check for AdSupport.framework
