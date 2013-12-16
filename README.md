@@ -15,6 +15,12 @@ Requirements
 
 
 
+Documentation
+------------
+MaaSCore documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
+
+
+
 Installation
 ------------
 
@@ -50,13 +56,6 @@ To do this:
 4. Add "-ObjC" to Other Linker Flags
 
 You can now proceed with installation of additional MaaS modules.
-
-
-
-Documentation
-------------
-
-MaaSCore documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
 
 
 
