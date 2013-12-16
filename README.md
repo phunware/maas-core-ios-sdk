@@ -17,6 +17,7 @@ Requirements
 
 Documentation
 ------------
+
 MaaSCore documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
 
 
