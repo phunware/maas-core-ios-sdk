@@ -3,7 +3,7 @@ MaaS Core SDK for iOS
 
 Version 1.2.1
 
-This is the iOS SDK for the MaaSCore module. Visit http://maas.phunware.com/ for more details and to sign up.
+This is Phunware's iOS SDK for the MaaSCore module. Visit http://maas.phunware.com/ for more details and to sign up.
 
 
 
