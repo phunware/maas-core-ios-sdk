@@ -1,4 +1,4 @@
-MaaSCore iOS SDK
+Phunware MaaS Core SDK for iOS
 ================
 
 Version 1.2.1
