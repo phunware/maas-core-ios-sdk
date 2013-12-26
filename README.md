@@ -73,7 +73,7 @@ Inside your application delegate, you will need to initialize MaaS Core in the a
 ````objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	// These values can be found for your application in the MaaS Portal (http://maas.phunware.com/clients)
+	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients)
     [MaaSCore setApplicationID:@"APPLICATION_ID"
     			   setAccessKey:@"ACCESS_KEY"
                   signatureKey:@"SIGNATURE_KEY"
