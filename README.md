@@ -3,7 +3,7 @@ MaaS Core SDK for iOS
 
 Version 1.2.1
 
-This is Phunware's iOS SDK for the MaaSCore module. Visit http://maas.phunware.com/ for more details and to sign up.
+This is Phunware's iOS SDK for the MaaS Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 
 
 
@@ -18,14 +18,14 @@ Requirements
 Documentation
 ------------
 
-MaaSCore documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
+MaaS Core documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
 
 
 
 Installation
 ------------
 
-MaaSCore is a required dependency for all MaaS modules.
+MaaS Core is a required dependency for all MaaS modules.
 
 It's recommended that you add MaaSCore.framework to the 'Vendor/Phunware' directory. Then add the MaaSCore.framework to your Xcode project.
 
@@ -68,7 +68,7 @@ At the top of your application delegate implementation (.m) file, add the follow
 #import <MaaSCore/MaaSCore.h>
 ````
 
-Inside your application delegate, you will need to initialize MaaSCore in the application:didFinishLaunchingWithOptions: method:
+Inside your application delegate, you will need to initialize MaaS Core in the application:didFinishLaunchingWithOptions: method:
 
 ````objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -79,7 +79,7 @@ Inside your application delegate, you will need to initialize MaaSCore in the ap
                   signatureKey:@"SIGNATURE_KEY"
                  encryptionKey:@"ENCRYPT_KEY"]; // Currently unused. You can place any NSString value here
                   
-    // OPTIONAL: If you want to enable logging in MaaSCore, call the following:
+    // OPTIONAL: If you want to enable logging in MaaS Core, call the following:
     [MaaSCore setLoggingLevel:MaaSLogLevel_Debug forService:[MaaSCore serviceName]];
     ...
 }
@@ -89,7 +89,7 @@ Inside your application delegate, you will need to initialize MaaSCore in the ap
 
 Attribution
 -----------
-MaaSCore uses the following third-party components. All components are prefixed so you won't have to worry about namespace collisions.
+MaaS Core uses the following third-party components. All components are prefixed so you won't have to worry about namespace collisions.
 
 <table>
   <tr>
