@@ -1,6 +1,9 @@
 #MaaSCore Changelog
 
-##1.2.2 (Tuesday, November 12th, 2013)
+##1.2.4 (Tuesday, January 27th, 2014)
+ * Improved locatio based services integration
+
+##1.2.2 (Tuesday, January 7th, 2014)
  * Fixed issue where the session timestamp was being improperly recorded
 
 ##1.2.1 (Tuesday, November 12th, 2013)
