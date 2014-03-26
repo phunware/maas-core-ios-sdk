@@ -1,7 +1,7 @@
 MaaS Core SDK for iOS
 ================
 
-Version 1.2.4
+Version 1.2.6
 
 This is Phunware's iOS SDK for the MaaS Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 

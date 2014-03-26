@@ -1,7 +1,10 @@
 #MaaSCore Changelog
 
+##1.2.6 (Wednesday, March 26th, 2014)
+ * Adding arm64 support
+
 ##1.2.4 (Tuesday, January 27th, 2014)
- * Improved locatio based services integration
+ * Improved location based services integration
 
 ##1.2.2 (Tuesday, January 7th, 2014)
  * Fixed issue where the session timestamp was being improperly recorded
