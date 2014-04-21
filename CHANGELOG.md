@@ -1,5 +1,8 @@
 #MaaSCore Changelog
 
+##1.2.7 (Monday, April 21st, 2014)
+ * Removed dependency on AdSupport.framework
+
 ##1.2.6 (Wednesday, March 26th, 2014)
  * Adding arm64 support
 

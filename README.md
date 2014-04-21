@@ -1,7 +1,7 @@
 MaaS Core SDK for iOS
 ================
 
-Version 1.2.6
+Version 1.2.7
 
 This is Phunware's iOS SDK for the MaaS Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -36,11 +36,7 @@ MobileCoreServices.framework
 QuartzCore.framework
 CoreTelephony.framework
 Security.framework
-AdSupport.framework
 ````
-
-**NOTE**: If you are supporting < iOS 6.0, you will need to weak-link *AdSupport.framework*.
-
 
 The following frameworks are optional:
 ````
