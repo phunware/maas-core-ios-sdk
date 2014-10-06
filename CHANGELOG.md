@@ -1,5 +1,9 @@
 #MaaSCore Changelog
 
+##1.3.0 (Monday, October 6th, 2014)
+ * Added support for API encryption
+ * Bug fixes and optimizations
+
 ##1.2.7 (Monday, April 21st, 2014)
  * Removed dependency on AdSupport.framework
 
