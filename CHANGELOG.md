@@ -1,5 +1,8 @@
 #MaaSCore Changelog
 
+##1.3.1 (Monday, October 17th, 2014)
+ * Fixed issue with encryption not working for PWAlerts SDK
+
 ##1.3.0 (Monday, October 6th, 2014)
  * Added support for API encryption
  * Bug fixes and optimizations
