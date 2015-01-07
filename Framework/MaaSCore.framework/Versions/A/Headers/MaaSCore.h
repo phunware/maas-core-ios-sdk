@@ -73,8 +73,10 @@ typedef NS_ENUM(NSInteger, MaaSLogLevel)
 
 /**
  Disables MaaSCore location services. Location services are used for comprehensive analytics. If you include `CoreLocation.framework` in your project, MaaSCore will automatically request access to the user's current location.
+ 
+ @deprecated This attribute is now deprecated as MaaSCore will now only request location information if location has been enabled at the application level.
  */
-+ (void)disableLocationServices;
++ (void)disableLocationServices __attribute__((deprecated));;
 
 /**
  Returns the MaaS Application ID.

@@ -1,5 +1,11 @@
 #MaaSCore Changelog
 
+##1.3.2 (Wednesday, January 7th, 2015)
+ * Fixed a bug where fetching the users location
+ * Fixing issue where internal location fetch callback wasn't being trigger when location services were enabled. Currently the only applications which would be affected are those using the `PWAlerts` SDK *AND* have location services enabled.
+ * MaaSCore no longer requests permission for location services and will now only fetch the device location if it's readily available.
+ * Deprecating `disableLocationServices` method since it's no longer relevant.
+
 ##1.3.1 (Monday, October 17th, 2014)
  * Fixed issue with encryption not working for PWAlerts SDK
 

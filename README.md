@@ -1,7 +1,7 @@
 MaaS Core SDK for iOS
 ================
 
-Version 1.3.1
+Version 1.3.2
 
 This is Phunware's iOS SDK for the MaaS Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -45,6 +45,12 @@ CoreLocation.framework
 **NOTE**: CoreLocation is used for comprehensive analytics. Apple mandates that your app have a good reason for enabling location services. Apple will deny your app if location is not a core feature for your app.
 
 After specifying the frameworks, you will need to add a linker flag to your build target. 
+
+Alternatively you can install MaaSCore using CocoaPods:
+````
+// Add this to your Podfile
+pod PWCore
+````
 
 To do this:
 1. Navigate to your build target.
