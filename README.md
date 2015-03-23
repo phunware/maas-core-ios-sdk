@@ -26,7 +26,7 @@ Installation
 
 MaaS Core is a required dependency for all MaaS modules.
 
-It's recommended that you add MaaSCore.framework to the 'Vendor/Phunware' directory. Then add the MaaSCore.framework to your Xcode project.
+It's recommended that you add MaaSCore.framework to the 'Vendor/Phunware' directory, then add it to your Xcode project.
 
 The following frameworks are required:
 ````
@@ -45,19 +45,19 @@ CoreLocation.framework
 
 After specifying the frameworks, you will need to add a linker flag to your build target. 
 
-Alternatively you can install MaaSCore using CocoaPods:
+Alternatively, you can install MaaSCore using CocoaPods:
 ````
-// Add this to your Podfile
+// Add this to your Podfile:
 pod PWCore
 ````
 
 To do this:
 1. Navigate to your build target.
 2. Navigate to the Build Settings tab.
-3. Find the Linking Section -> Other Linker Flags
-4. Add "-ObjC" to Other Linker Flags
+3. Find the Linking Section -> Other Linker Flags.
+4. Add "-ObjC" to Other Linker Flags.
 
-You can now proceed with installation of additional MaaS modules.
+You can now install additional MaaS modules.
 
 
 
@@ -74,11 +74,11 @@ Inside your application delegate, you will need to initialize MaaS Core in the a
 ````objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients)
+	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
     [MaaSCore setApplicationID:@"APPLICATION_ID"
     			   setAccessKey:@"ACCESS_KEY"
                   signatureKey:@"SIGNATURE_KEY"
-                 encryptionKey:@"ENCRYPT_KEY"]; // Currently unused. You can place any NSString value here
+                 encryptionKey:@"ENCRYPT_KEY"]; // Currently unused. You can place any NSString value here.
                   
     // OPTIONAL: If you want to enable logging in MaaS Core, call the following:
     [MaaSCore setLoggingLevel:MaaSLogLevel_Debug forService:[MaaSCore serviceName]];
