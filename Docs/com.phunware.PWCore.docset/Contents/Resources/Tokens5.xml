@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWTMMemoryCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWTMMemoryCache</TokenIdentifier>
+			<Abstract type="html">PWTMMemoryCache is a fast, thread safe key/value store similar to NSCache. On iOS it will clear itself
+automatically to reduce memory usage when the app receives a memory warning or goes into the background.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setQueue:</TokenIdentifier>
+			<Abstract type="html">A concurrent queue on which all work is done. It is exposed here so that it can be set to target some
+other queue, such as a global concurrent queue with a priority other than the default.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) dispatch_queue_t queue</Declaration>
+			
+			
+			<Anchor>//api/name/queue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/queue</TokenIdentifier>
+			<Abstract type="html">A concurrent queue on which all work is done. It is exposed here so that it can be set to target some
+other queue, such as a global concurrent queue with a priority other than the default.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) dispatch_queue_t queue</Declaration>
+			
+			
+			<Anchor>//api/name/queue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/queue</TokenIdentifier>
+			<Abstract type="html">A concurrent queue on which all work is done. It is exposed here so that it can be set to target some
+other queue, such as a global concurrent queue with a priority other than the default.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) dispatch_queue_t queue</Declaration>
+			
+			
+			<Anchor>//api/name/queue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setTotalCost:</TokenIdentifier>
+			<Abstract type="html">The total accumulated cost.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSUInteger totalCost</Declaration>
+			
+			
+			<Anchor>//api/name/totalCost</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/totalCost</TokenIdentifier>
+			<Abstract type="html">The total accumulated cost.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSUInteger totalCost</Declaration>
+			
+			
+			<Anchor>//api/name/totalCost</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/totalCost</TokenIdentifier>
+			<Abstract type="html">The total accumulated cost.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSUInteger totalCost</Declaration>
+			
+			
+			<Anchor>//api/name/totalCost</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setCostLimit:</TokenIdentifier>
+			<Abstract type="html">The maximum cost allowed to accumulate before objects begin to be removed with trimToCostByDate:.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) NSUInteger costLimit</Declaration>
+			
+			
+			<Anchor>//api/name/costLimit</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/costLimit</TokenIdentifier>
+			<Abstract type="html">The maximum cost allowed to accumulate before objects begin to be removed with trimToCostByDate:.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) NSUInteger costLimit</Declaration>
+			
+			
+			<Anchor>//api/name/costLimit</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/costLimit</TokenIdentifier>
+			<Abstract type="html">The maximum cost allowed to accumulate before objects begin to be removed with trimToCostByDate:.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) NSUInteger costLimit</Declaration>
+			
+			
+			<Anchor>//api/name/costLimit</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setAgeLimit:</TokenIdentifier>
+			<Abstract type="html">The maximum number of seconds an object is allowed to exist in the cache. Setting this to a value
+greater than 0.0 will start a recurring GCD timer with the same period that calls trimToDate:.
+Setting it back to 0.0 will stop the timer. Defaults to 0.0.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) NSTimeInterval ageLimit</Declaration>
+			
+			
+			<Anchor>//api/name/ageLimit</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/ageLimit</TokenIdentifier>
+			<Abstract type="html">The maximum number of seconds an object is allowed to exist in the cache. Setting this to a value
+greater than 0.0 will start a recurring GCD timer with the same period that calls trimToDate:.
+Setting it back to 0.0 will stop the timer. Defaults to 0.0.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) NSTimeInterval ageLimit</Declaration>
+			
+			
+			<Anchor>//api/name/ageLimit</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/ageLimit</TokenIdentifier>
+			<Abstract type="html">The maximum number of seconds an object is allowed to exist in the cache. Setting this to a value
+greater than 0.0 will start a recurring GCD timer with the same period that calls trimToDate:.
+Setting it back to 0.0 will stop the timer. Defaults to 0.0.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) NSTimeInterval ageLimit</Declaration>
+			
+			
+			<Anchor>//api/name/ageLimit</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setRemoveAllObjectsOnMemoryWarning:</TokenIdentifier>
+			<Abstract type="html">When YES on iOS the cache will remove all objects when the app receives a memory warning.
+Defaults to YES.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL removeAllObjectsOnMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllObjectsOnMemoryWarning</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/removeAllObjectsOnMemoryWarning</TokenIdentifier>
+			<Abstract type="html">When YES on iOS the cache will remove all objects when the app receives a memory warning.
+Defaults to YES.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL removeAllObjectsOnMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllObjectsOnMemoryWarning</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/removeAllObjectsOnMemoryWarning</TokenIdentifier>
+			<Abstract type="html">When YES on iOS the cache will remove all objects when the app receives a memory warning.
+Defaults to YES.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL removeAllObjectsOnMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllObjectsOnMemoryWarning</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setRemoveAllObjectsOnEnteringBackground:</TokenIdentifier>
+			<Abstract type="html">When YES on iOS the cache will remove all objects when the app enters the background.
+Defaults to YES.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL removeAllObjectsOnEnteringBackground</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllObjectsOnEnteringBackground</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/removeAllObjectsOnEnteringBackground</TokenIdentifier>
+			<Abstract type="html">When YES on iOS the cache will remove all objects when the app enters the background.
+Defaults to YES.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL removeAllObjectsOnEnteringBackground</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllObjectsOnEnteringBackground</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/removeAllObjectsOnEnteringBackground</TokenIdentifier>
+			<Abstract type="html">When YES on iOS the cache will remove all objects when the app enters the background.
+Defaults to YES.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (assign) BOOL removeAllObjectsOnEnteringBackground</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllObjectsOnEnteringBackground</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setWillAddObjectBlock:</TokenIdentifier>
+			<Abstract type="html">A block to be executed just before an object is added to the cache. This block will be excuted within
+a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock willAddObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/willAddObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/willAddObjectBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just before an object is added to the cache. This block will be excuted within
+a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock willAddObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/willAddObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/willAddObjectBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just before an object is added to the cache. This block will be excuted within
+a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock willAddObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/willAddObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setWillRemoveObjectBlock:</TokenIdentifier>
+			<Abstract type="html">A block to be executed just before an object is removed from the cache. This block will be excuted
+within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock willRemoveObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/willRemoveObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/willRemoveObjectBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just before an object is removed from the cache. This block will be excuted
+within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock willRemoveObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/willRemoveObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/willRemoveObjectBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just before an object is removed from the cache. This block will be excuted
+within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock willRemoveObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/willRemoveObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setWillRemoveAllObjectsBlock:</TokenIdentifier>
+			<Abstract type="html">A block to be executed just before all objects are removed from the cache as a result of removeAllObjects:.
+This block will be excuted within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock willRemoveAllObjectsBlock</Declaration>
+			
+			
+			<Anchor>//api/name/willRemoveAllObjectsBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/willRemoveAllObjectsBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just before all objects are removed from the cache as a result of removeAllObjects:.
+This block will be excuted within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock willRemoveAllObjectsBlock</Declaration>
+			
+			
+			<Anchor>//api/name/willRemoveAllObjectsBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/willRemoveAllObjectsBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just before all objects are removed from the cache as a result of removeAllObjects:.
+This block will be excuted within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock willRemoveAllObjectsBlock</Declaration>
+			
+			
+			<Anchor>//api/name/willRemoveAllObjectsBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setDidAddObjectBlock:</TokenIdentifier>
+			<Abstract type="html">A block to be executed just after an object is added to the cache. This block will be excuted within
+a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock didAddObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didAddObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/didAddObjectBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just after an object is added to the cache. This block will be excuted within
+a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock didAddObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didAddObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/didAddObjectBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just after an object is added to the cache. This block will be excuted within
+a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock didAddObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didAddObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setDidRemoveObjectBlock:</TokenIdentifier>
+			<Abstract type="html">A block to be executed just after an object is removed from the cache. This block will be excuted
+within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock didRemoveObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didRemoveObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/didRemoveObjectBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just after an object is removed from the cache. This block will be excuted
+within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock didRemoveObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didRemoveObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/didRemoveObjectBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just after an object is removed from the cache. This block will be excuted
+within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheObjectBlock didRemoveObjectBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didRemoveObjectBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setDidRemoveAllObjectsBlock:</TokenIdentifier>
+			<Abstract type="html">A block to be executed just after all objects are removed from the cache as a result of removeAllObjects:.
+This block will be excuted within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock didRemoveAllObjectsBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didRemoveAllObjectsBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/didRemoveAllObjectsBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just after all objects are removed from the cache as a result of removeAllObjects:.
+This block will be excuted within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock didRemoveAllObjectsBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didRemoveAllObjectsBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/didRemoveAllObjectsBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed just after all objects are removed from the cache as a result of removeAllObjects:.
+This block will be excuted within a barrier, i.e. all reads and writes are suspended for the duration of the block.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock didRemoveAllObjectsBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didRemoveAllObjectsBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setDidReceiveMemoryWarningBlock:</TokenIdentifier>
+			<Abstract type="html">A block to be executed upon receiving a memory warning (iOS only) potentially in parallel with other blocks on the queue.
+This block will be executed regardless of the value of removeAllObjectsOnMemoryWarning. Defaults to nil.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock didReceiveMemoryWarningBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarningBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/didReceiveMemoryWarningBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed upon receiving a memory warning (iOS only) potentially in parallel with other blocks on the queue.
+This block will be executed regardless of the value of removeAllObjectsOnMemoryWarning. Defaults to nil.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock didReceiveMemoryWarningBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarningBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/didReceiveMemoryWarningBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed upon receiving a memory warning (iOS only) potentially in parallel with other blocks on the queue.
+This block will be executed regardless of the value of removeAllObjectsOnMemoryWarning. Defaults to nil.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock didReceiveMemoryWarningBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarningBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setDidEnterBackgroundBlock:</TokenIdentifier>
+			<Abstract type="html">A block to be executed when the app enters the background (iOS only) potentially in parallel with other blocks on the queue.
+This block will be executed regardless of the value of removeAllObjectsOnEnteringBackground. Defaults to nil.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock didEnterBackgroundBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didEnterBackgroundBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/didEnterBackgroundBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed when the app enters the background (iOS only) potentially in parallel with other blocks on the queue.
+This block will be executed regardless of the value of removeAllObjectsOnEnteringBackground. Defaults to nil.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock didEnterBackgroundBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didEnterBackgroundBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWTMMemoryCache/didEnterBackgroundBlock</TokenIdentifier>
+			<Abstract type="html">A block to be executed when the app enters the background (iOS only) potentially in parallel with other blocks on the queue.
+This block will be executed regardless of the value of removeAllObjectsOnEnteringBackground. Defaults to nil.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>@property (copy) PWTMMemoryCacheBlock didEnterBackgroundBlock</Declaration>
+			
+			
+			<Anchor>//api/name/didEnterBackgroundBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWTMMemoryCache/sharedCache</TokenIdentifier>
+			<Abstract type="html">A shared cache.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)sharedCache</Declaration>
+			
+			<ReturnValue><Abstract type="html">The shared singleton cache instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedCache</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/objectForKey:block:</TokenIdentifier>
+			<Abstract type="html">Retrieves the object for the specified key. This method returns immediately and executes the passed
+block after the object is available, potentially in parallel with other blocks on the queue.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)objectForKey:(NSString *)key block:(PWTMMemoryCacheObjectBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key associated with the requested object.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to be executed concurrently when the object is available.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectForKey:block:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setObject:forKey:block:</TokenIdentifier>
+			<Abstract type="html">Stores an object in the cache for the specified key. This method returns immediately and executes the
+passed block after the object has been stored, potentially in parallel with other blocks on the queue.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)setObject:(id)object forKey:(NSString *)key block:(PWTMMemoryCacheObjectBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">An object to store in the cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A key to associate with the object. This string will be copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to be executed concurrently after the object has been stored, or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObject:forKey:block:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setObject:forKey:withCost:block:</TokenIdentifier>
+			<Abstract type="html">Stores an object in the cache for the specified key and the specified cost. If the cost causes the total
+to go over the costLimit the cache is trimmed (oldest objects first). This method returns immediately
+and executes the passed block after the object has been stored, potentially in parallel with other blocks
+on the queue.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)setObject:(id)object forKey:(NSString *)key withCost:(NSUInteger)cost block:(PWTMMemoryCacheObjectBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">An object to store in the cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A key to associate with the object. This string will be copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>cost</Name>
+					<Abstract type="html">An amount to add to the totalCost.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to be executed concurrently after the object has been stored, or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObject:forKey:withCost:block:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/removeObjectForKey:block:</TokenIdentifier>
+			<Abstract type="html">Removes the object for the specified key. This method returns immediately and executes the passed
+block after the object has been removed, potentially in parallel with other blocks on the queue.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)removeObjectForKey:(NSString *)key block:(PWTMMemoryCacheObjectBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key associated with the object to be removed.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to be executed concurrently after the object has been removed, or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeObjectForKey:block:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/trimToDate:block:</TokenIdentifier>
+			<Abstract type="html">Removes all objects from the cache that have not been used since the specified date.
+This method returns immediately and executes the passed block after the cache has been trimmed,
+potentially in parallel with other blocks on the queue.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)trimToDate:(NSDate *)date block:(PWTMMemoryCacheBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">Objects that haven&apos;t been accessed since this date are removed from the cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to be executed concurrently after the cache has been trimmed, or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trimToDate:block:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/trimToCost:block:</TokenIdentifier>
+			<Abstract type="html">Removes objects from the cache, costliest objects first, until the totalCost is below the specified
+value. This method returns immediately and executes the passed block after the cache has been trimmed,
+potentially in parallel with other blocks on the queue.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)trimToCost:(NSUInteger)cost block:(PWTMMemoryCacheBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cost</Name>
+					<Abstract type="html">The total accumulation allowed to remain after the cache has been trimmed.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to be executed concurrently after the cache has been trimmed, or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trimToCost:block:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/trimToCostByDate:block:</TokenIdentifier>
+			<Abstract type="html">Removes objects from the cache, ordered by date (least recently used first), until the totalCost is below
+the specified value. This method returns immediately and executes the passed block after the cache has been
+trimmed, potentially in parallel with other blocks on the queue.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)trimToCostByDate:(NSUInteger)cost block:(PWTMMemoryCacheBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cost</Name>
+					<Abstract type="html">The total accumulation allowed to remain after the cache has been trimmed.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to be executed concurrently after the cache has been trimmed, or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trimToCostByDate:block:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/removeAllObjects:</TokenIdentifier>
+			<Abstract type="html">Removes all objects from the cache. This method returns immediately and executes the passed block after
+the cache has been cleared, potentially in parallel with other blocks on the queue.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllObjects:(PWTMMemoryCacheBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to be executed concurrently after the cache has been cleared, or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeAllObjects:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/enumerateObjectsWithBlock:completionBlock:</TokenIdentifier>
+			<Abstract type="html">Loops through all objects in the cache within a memory barrier (reads and writes are suspended during the enumeration).
+This method returns immediately.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)enumerateObjectsWithBlock:(PWTMMemoryCacheObjectBlock)block completionBlock:(PWTMMemoryCacheBlock)completionBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to be executed for every object in the cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionBlock</Name>
+					<Abstract type="html">An optional block to be executed concurrently when the enumeration is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateObjectsWithBlock:completionBlock:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/objectForKey:</TokenIdentifier>
+			<Abstract type="html">Retrieves the object for the specified key. This method blocks the calling thread until the
+object is available.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/objectForKey:block:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)objectForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key associated with the object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The object for the specified key.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectForKey:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setObject:forKey:</TokenIdentifier>
+			<Abstract type="html">Stores an object in the cache for the specified key. This method blocks the calling thread until the object
+has been set.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setObject:forKey:block:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setObject:(id)object forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">An object to store in the cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A key to associate with the object. This string will be copied.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObject:forKey:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/setObject:forKey:withCost:</TokenIdentifier>
+			<Abstract type="html">Stores an object in the cache for the specified key and the specified cost. If the cost causes the total
+to go over the costLimit the cache is trimmed (oldest objects first). This method blocks the calling thread
+until the object has been stored.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)setObject:(id)object forKey:(NSString *)key withCost:(NSUInteger)cost</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">An object to store in the cache.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A key to associate with the object. This string will be copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>cost</Name>
+					<Abstract type="html">An amount to add to the totalCost.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObject:forKey:withCost:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/removeObjectForKey:</TokenIdentifier>
+			<Abstract type="html">Removes the object for the specified key. This method blocks the calling thread until the object
+has been removed.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)removeObjectForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key associated with the object to be removed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeObjectForKey:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/trimToDate:</TokenIdentifier>
+			<Abstract type="html">Removes all objects from the cache that have not been used since the specified date.
+This method blocks the calling thread until the cache has been trimmed.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)trimToDate:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">Objects that haven&apos;t been accessed since this date are removed from the cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trimToDate:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/trimToCost:</TokenIdentifier>
+			<Abstract type="html">Removes objects from the cache, costliest objects first, until the totalCost is below the specified
+value. This method blocks the calling thread until the cache has been trimmed.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)trimToCost:(NSUInteger)cost</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cost</Name>
+					<Abstract type="html">The total accumulation allowed to remain after the cache has been trimmed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trimToCost:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/trimToCostByDate:</TokenIdentifier>
+			<Abstract type="html">Removes objects from the cache, ordered by date (least recently used first), until the totalCost is below
+the specified value. This method blocks the calling thread until the cache has been trimmed.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)trimToCostByDate:(NSUInteger)cost</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cost</Name>
+					<Abstract type="html">The total accumulation allowed to remain after the cache has been trimmed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trimToCostByDate:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/removeAllObjects</TokenIdentifier>
+			<Abstract type="html">Removes all objects from the cache. This method blocks the calling thread until the cache has been cleared.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllObjects</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllObjects</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWTMMemoryCache/enumerateObjectsWithBlock:</TokenIdentifier>
+			<Abstract type="html">Loops through all objects in the cache within a memory barrier (reads and writes are suspended during the enumeration).
+This method blocks the calling thread until all objects have been enumerated.</Abstract>
+			<DeclaredIn>PWTMMemoryCache.h</DeclaredIn>
+			
+			<Declaration>- (void)enumerateObjectsWithBlock:(PWTMMemoryCacheObjectBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to be executed for every object in the cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateObjectsWithBlock:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

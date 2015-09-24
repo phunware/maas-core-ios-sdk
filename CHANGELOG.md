@@ -1,5 +1,12 @@
 #MaaSCore Changelog
 
+##2.0.0 (Friday, September 25th, 2015)
+* Renamed SDK to `PWCore`. Old `MaaSCore` interfaces are preserved but deprecated.
+* Enabled the ability to dynamically re-register with `PWCore` instead of having to restart the application.
+* Fixed potential crash issue with the standard analytics payload.
+* Updated standard analytics payload to include additional information.
+* Updated internal networking interfaces, optimizing for performance and battery life.
+
 ##1.3.2 (Wednesday, January 7th, 2015)
  * Fixed a bug where fetching the users location
  * Fixing issue where internal location fetch callback wasn't being trigger when location services were enabled. Currently the only applications which would be affected are those using the `PWAlerts` SDK *AND* have location services enabled.

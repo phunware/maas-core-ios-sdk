@@ -1,7 +1,7 @@
 MaaS Core SDK for iOS
 ================
 
-Version 1.3.2
+Version 2.0.0
 
 This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -9,7 +9,7 @@ This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ 
 Requirements
 ------------
 
-- iOS 6.0 or greater
+- iOS 7.0 or greater
 - Xcode 6 or greater
 
 
@@ -26,7 +26,7 @@ Installation
 
 MaaS Core is a required dependency for all MaaS modules.
 
-It's recommended that you add MaaSCore.framework to the 'Vendor/Phunware' directory, then add it to your Xcode project.
+It's recommended that you add PWCore.framework to the 'Vendor/Phunware' directory, then add it to your Xcode project.
 
 The following frameworks are required:
 ````
@@ -40,12 +40,13 @@ Security.framework
 The following frameworks are optional:
 ````
 CoreLocation.framework
+UIKit.framework
 ````
 **NOTE**: CoreLocation is used for comprehensive analytics. Apple mandates that your app have a good reason for enabling location services. Apple will deny your app if location is not a core feature for your app.
 
 After specifying the frameworks, you will need to add a linker flag to your build target. 
 
-Alternatively, you can install MaaSCore using CocoaPods:
+Alternatively, you can install PWCore using CocoaPods:
 ````
 // Add this to your Podfile:
 pod PWCore
@@ -66,7 +67,7 @@ Application Setup
 At the top of your application delegate implementation (.m) file, add the following:
 
 ````objective-c
-#import <MaaSCore/MaaSCore.h>
+#import <PWCore/PWCore.h>
 ````
 
 Inside your application delegate, you will need to initialize MaaS Core in the application:didFinishLaunchingWithOptions: method:
@@ -75,13 +76,10 @@ Inside your application delegate, you will need to initialize MaaS Core in the a
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
-    [MaaSCore setApplicationID:@"APPLICATION_ID"
+    [PWCore setApplicationID:@"APPLICATION_ID"
     			   setAccessKey:@"ACCESS_KEY"
                   signatureKey:@"SIGNATURE_KEY"
                  encryptionKey:@"ENCRYPT_KEY"]; // Currently unused. You can place any NSString value here.
-                  
-    // OPTIONAL: If you want to enable logging in MaaS Core, call the following:
-    [MaaSCore setLoggingLevel:MaaSLogLevel_Debug forService:[MaaSCore serviceName]];
     ...
 }
 ````

@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>MaaSCore Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 840)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">MaaSCore </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">PWCore </a></h1>
 				<a id="developerHome" href="../index.html">Phunware, Inc.</a>
 			</div>
 			
@@ -42,15 +41,15 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/accessKey">&nbsp;&nbsp;&nbsp;&nbsp;+ accessKey</option>
+	<option value="//api/name/applicationID">&nbsp;&nbsp;&nbsp;&nbsp;+ applicationID</option>
 	
-	<option value="//api/name/deviceID">&nbsp;&nbsp;&nbsp;&nbsp;+ deviceID</option>
+	<option value="//api/name/deviceID__deprecated">&nbsp;&nbsp;&nbsp;&nbsp;+ deviceID__deprecated</option>
+	
+	<option value="//api/name/encryptionEnabled">&nbsp;&nbsp;&nbsp;&nbsp;+ encryptionEnabled</option>
 	
 	<option value="//api/name/serviceName">&nbsp;&nbsp;&nbsp;&nbsp;+ serviceName</option>
 	
-	<option value="//api/name/setAccessKey:signatureKey:encryptionKey:">&nbsp;&nbsp;&nbsp;&nbsp;+ setAccessKey:signatureKey:encryptionKey:</option>
-	
-	<option value="//api/name/setLoggingLevel:forService:">&nbsp;&nbsp;&nbsp;&nbsp;+ setLoggingLevel:forService:</option>
+	<option value="//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:">&nbsp;&nbsp;&nbsp;&nbsp;+ setApplicationID:accessKey:signatureKey:encryptionKey:</option>
 	
 	
 	
@@ -84,15 +83,15 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/accessKey">accessKey</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applicationID">applicationID</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceID">deviceID</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceID__deprecated">deviceID__deprecated</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/encryptionEnabled">encryptionEnabled</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serviceName">serviceName</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAccessKey:signatureKey:encryptionKey:">setAccessKey:signatureKey:encryptionKey:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLoggingLevel:forService:">setLoggingLevel:forService:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:">setApplicationID:accessKey:signatureKey:encryptionKey:</a></span></li>
 	
 </ul></li>
 
@@ -127,8 +126,8 @@
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -151,8 +150,7 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setAccessKey:signatureKey:encryptionKey:">+&nbsp;setAccessKey:signatureKey:encryptionKey:</a></code>
-		<span class="tooltip"><p>Initializes MaaSCore and all associated MaaS modules. This method should be called inside <code>application:didFinishLaunchingWithOptions:</code> before you do anything else.</p></span>
+		<code><a href="#//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:">+&nbsp;setApplicationID:accessKey:signatureKey:encryptionKey:</a></code>
 	</span>
 	
 	
@@ -166,29 +164,25 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setLoggingLevel:forService:">+&nbsp;setLoggingLevel:forService:</a></code>
-		<span class="tooltip"><p>Set the console logging level for the specified MaaS module. By default the logging level for all modules is <code>MaaSLogLevel_None</code>.</p></span>
+		<code><a href="#//api/name/applicationID">+&nbsp;applicationID</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/accessKey">+&nbsp;accessKey</a></code>
-		<span class="tooltip"><p>Returns the MaaS access key.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/deviceID">+&nbsp;deviceID</a></code>
-		<span class="tooltip"><p>Returns the device ID.</p></span>
+		<code><a href="#//api/name/deviceID__deprecated">+&nbsp;deviceID__deprecated</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/serviceName">+&nbsp;serviceName</a></code>
-		<span class="tooltip"><p>Returns &lsquo;MaaSCore&rsquo;.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/encryptionEnabled">+&nbsp;encryptionEnabled</a></code>
 	</span>
 	
 	
@@ -208,18 +202,18 @@
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/accessKey" title="accessKey"></a>
-	<h3 class="subsubtitle method-title">accessKey</h3>
+	<a name="//api/name/applicationID" title="applicationID"></a>
+	<h3 class="subsubtitle method-title">applicationID</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the MaaS access key.</p>
+		<p>Returns the MaaS Application ID.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (NSString *)accessKey</code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSString *)applicationID</code></div>
 
     
 	
@@ -244,18 +238,54 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/deviceID" title="deviceID"></a>
-	<h3 class="subsubtitle method-title">deviceID</h3>
+	<a name="//api/name/deviceID__deprecated" title="deviceID__deprecated"></a>
+	<h3 class="subsubtitle method-title">deviceID__deprecated</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the device ID.</p>
+		<p>Returns the Device ID.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (NSString *)deviceID</code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSString *)deviceID__deprecated</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MaaSCore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/encryptionEnabled" title="encryptionEnabled"></a>
+	<h3 class="subsubtitle method-title">encryptionEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns if API encription enabled</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)encryptionEnabled</code></div>
 
     
 	
@@ -316,8 +346,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/setAccessKey:signatureKey:encryptionKey:" title="setAccessKey:signatureKey:encryptionKey:"></a>
-	<h3 class="subsubtitle method-title">setAccessKey:signatureKey:encryptionKey:</h3>
+	<a name="//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:" title="setApplicationID:accessKey:signatureKey:encryptionKey:"></a>
+	<h3 class="subsubtitle method-title">setApplicationID:accessKey:signatureKey:encryptionKey:</h3>
 	
 	
 	
@@ -327,7 +357,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (void)setAccessKey:(NSString *)<em>accessKey</em> signatureKey:(NSString *)<em>signatureKey</em> encryptionKey:(NSString *)<em>encryptionKey</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)setApplicationID:(NSString *)<em>applicationID</em> accessKey:(NSString *)<em>accessKey</em> signatureKey:(NSString *)<em>signatureKey</em> encryptionKey:(NSString *)<em>encryptionKey</em></code></div>
 
     
 	
@@ -335,69 +365,23 @@
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
+			<dt><em>applicationID</em></dt>
+			<dd><p>You can find your Application ID in the MaaS portal.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
 			<dt><em>accessKey</em></dt>
-			<dd><p>A unique key that identifies the client making the request. You can find your access key in MaaS Portal.</p></dd>
+			<dd><p>A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>signatureKey</em></dt>
-			<dd><p>A unique key that is used to sign requests. The signature is used to both check request authorization, as well as data integrity. You can find your signature key in MaaS Portal.</p></dd>
+			<dd><p>A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>encryptionKey</em></dt>
-			<dd><p>The key used to encrypt and decrypt data that is exchanged between the client and the server. You can find your encryption key in MaaS Portal.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCore.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/setLoggingLevel:forService:" title="setLoggingLevel:forService:"></a>
-	<h3 class="subsubtitle method-title">setLoggingLevel:forService:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Set the console logging level for the specified MaaS module. By default the logging level for all modules is <code>MaaSLogLevel_None</code>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>+ (void)setLoggingLevel:(MaaSLogLevel)<em>loggingLevel</em> forService:(NSString *)<em>serviceName</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>loggingLevel</em></dt>
-			<dd><p>The logging level desired.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>serviceName</em></dt>
-			<dd><p>The service name. Every MaaS module has a static <a href="#//api/name/serviceName"><code>serviceName</code></a> method.</p></dd>
+			<dd><p>The key used to encrypt and decrypt data that is exchanged between the client and the server. You can find your Encryption Key in the MaaS portal.</p></dd>
 		</dl>
 		
 	</div>
@@ -427,6 +411,8 @@
 					
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -437,9 +423,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Phunware, Inc.. All rights reserved. (Last updated: 2013-05-30)</span><br />
+						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-09-24)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>

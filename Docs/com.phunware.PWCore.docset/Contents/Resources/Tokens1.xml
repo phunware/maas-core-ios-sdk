@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MaaSCore.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MaaSCore</TokenIdentifier>
+			<Abstract type="html">MaaSCore implements core functionality used in all MaaS modules. All MaaS modules have a MaaSCore dependency.</Abstract>
+			<DeclaredIn>MaaSCore.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MaaSCore/setApplicationID:accessKey:signatureKey:encryptionKey:</TokenIdentifier>
+			<Abstract type="html">Initializes MaaSCore and all associated MaaS modules. This method should be called inside application:didFinishLaunchingWithOptions: before you do anything else.</Abstract>
+			<DeclaredIn>MaaSCore.h</DeclaredIn>
+			
+			<Declaration>+ (void)setApplicationID:(NSString *)applicationID accessKey:(NSString *)accessKey signatureKey:(NSString *)signatureKey encryptionKey:(NSString *)encryptionKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>applicationID</Name>
+					<Abstract type="html">You can find your Application ID in the MaaS portal.</Abstract>
+				</Parameter><Parameter>
+					<Name>accessKey</Name>
+					<Abstract type="html">A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.</Abstract>
+				</Parameter><Parameter>
+					<Name>signatureKey</Name>
+					<Abstract type="html">A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.</Abstract>
+				</Parameter><Parameter>
+					<Name>encryptionKey</Name>
+					<Abstract type="html">The key used to encrypt and decrypt data that is exchanged between the client and the server. You can find your Encryption Key in the MaaS portal.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MaaSCore/applicationID</TokenIdentifier>
+			<Abstract type="html">Returns the MaaS Application ID.</Abstract>
+			<DeclaredIn>MaaSCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)applicationID</Declaration>
+			
+			
+			<Anchor>//api/name/applicationID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MaaSCore/deviceID__deprecated</TokenIdentifier>
+			<Abstract type="html">Returns the Device ID.</Abstract>
+			<DeclaredIn>MaaSCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)deviceID__deprecated</Declaration>
+			
+			
+			<Anchor>//api/name/deviceID__deprecated</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MaaSCore/serviceName</TokenIdentifier>
+			<Abstract type="html">Returns &apos;MaaSCore&apos;.</Abstract>
+			<DeclaredIn>MaaSCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)serviceName</Declaration>
+			
+			
+			<Anchor>//api/name/serviceName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MaaSCore/encryptionEnabled</TokenIdentifier>
+			<Abstract type="html">Returns if API encription enabled</Abstract>
+			<DeclaredIn>MaaSCore.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)encryptionEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/encryptionEnabled</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
