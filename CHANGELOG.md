@@ -1,4 +1,8 @@
-#MaaSCore Changelog
+#PWCore Changelog
+
+##3.0.0 (Monday, July 25th, 2016)
+* Add current location of end user in anlytics request payload.
+* Bug fixes for make app crashes sometimes
 
 ##2.0.0 (Friday, September 25th, 2015)
 * Renamed SDK to `PWCore`. Old `MaaSCore` interfaces are preserved but deprecated.
