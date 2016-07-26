@@ -1,7 +1,7 @@
-MaaS Core SDK for iOS
+PWCore SDK for iOS
 ================
 
-Version 2.0.0
+Version 3.0.0
 
 This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -17,18 +17,19 @@ Requirements
 Documentation
 ------------
 
-MaaS Core documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
+PWCore documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
 
 
 
 Installation
 ------------
 
-MaaS Core is a required dependency for all MaaS modules.
+PWCore is a required dependency for all MaaS modules.
 
 It's recommended that you add PWCore.framework to the 'Vendor/Phunware' directory, then add it to your Xcode project.
 
 The following frameworks are required:
+
 ````
 SystemConfiguration.framework
 MobileCoreServices.framework
@@ -38,6 +39,7 @@ Security.framework
 ````
 
 The following frameworks are optional:
+
 ````
 CoreLocation.framework
 UIKit.framework
@@ -47,6 +49,7 @@ UIKit.framework
 After specifying the frameworks, you will need to add a linker flag to your build target. 
 
 Alternatively, you can install PWCore using CocoaPods:
+
 ````
 // Add this to your Podfile:
 pod PWCore
