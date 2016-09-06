@@ -1,6 +1,6 @@
 #PWCore Changelog
 
-##3.0.1 (Monday, July 25th, 2016)
+##3.0.1 (Tuesday, Sep 6th, 2016)
 * Updated analytics payloads.
 
 ##3.0.0 (Monday, July 25th, 2016)
