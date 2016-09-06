@@ -8,7 +8,7 @@
 #ifndef PWCore_PWCoreVersion_h
 #define PWCore_PWCoreVersion_h
 
-#define     PWCore_Version  @"3.0.0"
+#define     PWCore_Version  @"3.0.1"
 
 #endif
 
