@@ -1,5 +1,8 @@
 #PWCore Changelog
 
+##3.0.2 (Tuesday, Oct 18th, 2016)
+* Internal SDK Enhancements.
+
 ##3.0.1 (Tuesday, Sep 6th, 2016)
 * Updated analytics payloads.
 

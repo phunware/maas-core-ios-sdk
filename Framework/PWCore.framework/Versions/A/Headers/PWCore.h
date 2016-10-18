@@ -1,7 +1,7 @@
 //
 //  PWCore.h
 //  PWCore
-//  v3.0.0
+//  v3.0.2
 //
 //  Copyright (c) 2015 Phunware. All rights reserved.
 //
