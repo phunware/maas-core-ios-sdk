@@ -15,12 +15,12 @@
 						<NodeRef refid="2"/>
 						<NodeRef refid="3"/>
 						<NodeRef refid="4"/>
-						<NodeRef refid="5"/>
 						
 					</Subnodes>
 				</Node>
 				
 				
+                
                 
                 
 			</Subnodes>
@@ -56,6 +56,72 @@
             
         </Node>
 		<Node id="2" type="file" documentType="reference">
+            <Name>PWAPIManager</Name>
+            <Path>Classes/PWAPIManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWAPIManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWAPIManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWAPIManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWAPIManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>PWBundleManager</Name>
+            <Path>Classes/PWBundleManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWBundleManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWBundleManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWBundleManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWBundleManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
             <Name>PWCore</Name>
             <Path>Classes/PWCore.html</Path>
             
@@ -82,125 +148,9 @@
             </Subnodes>
             
         </Node>
-		<Node id="3" type="file" documentType="reference">
-            <Name>PWTMCache</Name>
-            <Path>Classes/PWTMCache.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/PWTMCache.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/PWTMCache.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/PWTMCache.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/PWTMCache.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/PWTMCache.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="4" type="file" documentType="reference">
-            <Name>PWTMDiskCache</Name>
-            <Path>Classes/PWTMDiskCache.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/PWTMDiskCache.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/PWTMDiskCache.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/PWTMDiskCache.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/PWTMDiskCache.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/PWTMDiskCache.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="5" type="file" documentType="reference">
-            <Name>PWTMMemoryCache</Name>
-            <Path>Classes/PWTMMemoryCache.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/PWTMMemoryCache.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/PWTMMemoryCache.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/PWTMMemoryCache.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/PWTMMemoryCache.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/PWTMMemoryCache.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
 		
 		
+        
         
         
 	</Library>

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWTMCache.html">
+	<File path="Classes/PWBundleManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWTMCache</TokenIdentifier>
-			<Abstract type="html">PWTMCache is a thread safe key/value store designed for persisting temporary objects that are expensive to
-reproduce, such as downloaded data or the results of slow processing. It is comprised of two self-similar
-stores, one in memory (PWTMMemoryCache and one on disk (PWTMDiskCache.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWBundleManager</TokenIdentifier>
+			<Abstract type="html">A generic class for download/decrypt/unzip a bundle for specific URL.</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="3"/>
@@ -15,420 +13,78 @@ stores, one in memory (PWTMMemoryCache and one on disk (PWTMDiskCache.</Abstract
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/setName:</TokenIdentifier>
-			<Abstract type="html">The name of this cache, used to create the diskCache and also appearing in stack traces.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWBundleManager/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Shared PWBundleManager.</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *name</Declaration>
+			<Declaration>+ (PWBundleManager *)sharedInstance</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/sharedInstance</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/name</TokenIdentifier>
-			<Abstract type="html">The name of this cache, used to create the diskCache and also appearing in stack traces.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/removeBundleForURL:</TokenIdentifier>
+			<Abstract type="html">Remove the bundle for a specific url.</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMCache/name</TokenIdentifier>
-			<Abstract type="html">The name of this cache, used to create the diskCache and also appearing in stack traces.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/setQueue:</TokenIdentifier>
-			<Abstract type="html">A concurrent queue on which blocks passed to the asynchronous access methods are run.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) dispatch_queue_t queue</Declaration>
-			
-			
-			<Anchor>//api/name/queue</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/queue</TokenIdentifier>
-			<Abstract type="html">A concurrent queue on which blocks passed to the asynchronous access methods are run.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) dispatch_queue_t queue</Declaration>
-			
-			
-			<Anchor>//api/name/queue</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMCache/queue</TokenIdentifier>
-			<Abstract type="html">A concurrent queue on which blocks passed to the asynchronous access methods are run.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) dispatch_queue_t queue</Declaration>
-			
-			
-			<Anchor>//api/name/queue</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/setDiskByteCount:</TokenIdentifier>
-			<Abstract type="html">Synchronously retrieves the total byte count of the diskCache on the shared disk queue.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSUInteger diskByteCount</Declaration>
-			
-			
-			<Anchor>//api/name/diskByteCount</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/diskByteCount</TokenIdentifier>
-			<Abstract type="html">Synchronously retrieves the total byte count of the diskCache on the shared disk queue.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSUInteger diskByteCount</Declaration>
-			
-			
-			<Anchor>//api/name/diskByteCount</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMCache/diskByteCount</TokenIdentifier>
-			<Abstract type="html">Synchronously retrieves the total byte count of the diskCache on the shared disk queue.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSUInteger diskByteCount</Declaration>
-			
-			
-			<Anchor>//api/name/diskByteCount</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/setDiskCache:</TokenIdentifier>
-			<Abstract type="html">The underlying disk cache, see PWTMDiskCache for additional configuration and trimming options.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) PWTMDiskCache *diskCache</Declaration>
-			
-			
-			<Anchor>//api/name/diskCache</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/diskCache</TokenIdentifier>
-			<Abstract type="html">The underlying disk cache, see PWTMDiskCache for additional configuration and trimming options.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) PWTMDiskCache *diskCache</Declaration>
-			
-			
-			<Anchor>//api/name/diskCache</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMCache/diskCache</TokenIdentifier>
-			<Abstract type="html">The underlying disk cache, see PWTMDiskCache for additional configuration and trimming options.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) PWTMDiskCache *diskCache</Declaration>
-			
-			
-			<Anchor>//api/name/diskCache</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/setMemoryCache:</TokenIdentifier>
-			<Abstract type="html">The underlying memory cache, see PWTMMemoryCache for additional configuration and trimming options.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) PWTMMemoryCache *memoryCache</Declaration>
-			
-			
-			<Anchor>//api/name/memoryCache</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/memoryCache</TokenIdentifier>
-			<Abstract type="html">The underlying memory cache, see PWTMMemoryCache for additional configuration and trimming options.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) PWTMMemoryCache *memoryCache</Declaration>
-			
-			
-			<Anchor>//api/name/memoryCache</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMCache/memoryCache</TokenIdentifier>
-			<Abstract type="html">The underlying memory cache, see PWTMMemoryCache for additional configuration and trimming options.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) PWTMMemoryCache *memoryCache</Declaration>
-			
-			
-			<Anchor>//api/name/memoryCache</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWTMCache/sharedCache</TokenIdentifier>
-			<Abstract type="html">A shared cache.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)sharedCache</Declaration>
-			
-			<ReturnValue><Abstract type="html">The shared singleton cache instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/sharedCache</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/initWithName:</TokenIdentifier>
-			<Abstract type="html">The designated initializer. Multiple instances with the same name are allowed and can safely access
-the same data on disk thanks to the magic of seriality. Also used to create the diskCache.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instp/PWTMCache/name</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (instancetype)initWithName:(NSString *)name</Declaration>
+			<Declaration>- (void)removeBundleForURL:(NSURL *)url</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>name</Name>
-					<Abstract type="html">The name of the cache.</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">The specific url for which you want to remove.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A new cache with the specified name.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithName:</Anchor>
+			
+			<Anchor>//api/name/removeBundleForURL:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/objectForKey:block:</TokenIdentifier>
-			<Abstract type="html">Retrieves the object for the specified key. This method returns immediately and executes the passed
-block after the object is available, potentially in parallel with other blocks on the queue.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:completion:</TokenIdentifier>
+			<Abstract type="html">Fetch an unencrypted bundle from the url, unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Declaration>- (void)objectForKey:(NSString *)key block:(PWTMCacheObjectBlock)block</Declaration>
+			<Declaration>- (void)fetchBundleWithURL:(NSURL *)url completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))completion</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key associated with the requested object.</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">The url that the manager should load.</Abstract>
 				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed concurrently when the object is available.</Abstract>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the unzipped bundle directory or error.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/objectForKey:block:</Anchor>
+			<Anchor>//api/name/fetchBundleWithURL:completion:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/setObject:forKey:block:</TokenIdentifier>
-			<Abstract type="html">Stores an object in the cache for the specified key. This method returns immediately and executes the
-passed block after the object has been stored, potentially in parallel with other blocks on the queue.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:decryptionKey:completion:</TokenIdentifier>
+			<Abstract type="html">Fetch an encrypted bundle from the url, decprypt then unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Declaration>- (void)setObject:(id&lt;NSCoding&gt;)object forKey:(NSString *)key block:(PWTMCacheObjectBlock)block</Declaration>
+			<Declaration>- (void)fetchBundleWithURL:(NSURL *)url decryptionKey:(NSString *)decryptionKey completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))completion</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">An object to store in the cache.</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">The url that the manager should load.</Abstract>
 				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A key to associate with the object. This string will be copied.</Abstract>
+					<Name>decryptionKey</Name>
+					<Abstract type="html">The key used to deprypt the bundle.</Abstract>
 				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed concurrently after the object has been stored, or nil.</Abstract>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the unzipped bundle directory or error.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setObject:forKey:block:</Anchor>
+			<Anchor>//api/name/fetchBundleWithURL:decryptionKey:completion:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/removeObjectForKey:block:</TokenIdentifier>
-			<Abstract type="html">Removes the object for the specified key. This method returns immediately and executes the passed
-block after the object has been removed, potentially in parallel with other blocks on the queue.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>- (void)removeObjectForKey:(NSString *)key block:(PWTMCacheObjectBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key associated with the object to be removed.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed concurrently after the object has been removed, or nil.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeObjectForKey:block:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/trimToDate:block:</TokenIdentifier>
-			<Abstract type="html">Removes all objects from the cache that have not been used since the specified date. This method returns immediately and
-executes the passed block after the cache has been trimmed, potentially in parallel with other blocks on the queue.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>- (void)trimToDate:(NSDate *)date block:(PWTMCacheBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>date</Name>
-					<Abstract type="html">Objects that haven&apos;t been accessed since this date are removed from the cache.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed concurrently after the cache has been trimmed, or nil.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/trimToDate:block:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/removeAllObjects:</TokenIdentifier>
-			<Abstract type="html">Removes all objects from the cache.This method returns immediately and executes the passed block after the
-cache has been cleared, potentially in parallel with other blocks on the queue.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>- (void)removeAllObjects:(PWTMCacheBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed concurrently after the cache has been cleared, or nil.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeAllObjects:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/objectForKey:</TokenIdentifier>
-			<Abstract type="html">Retrieves the object for the specified key. This method blocks the calling thread until the object is available.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/objectForKey:block:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (id)objectForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key associated with the object.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The object for the specified key.</Abstract></ReturnValue>
-			<Anchor>//api/name/objectForKey:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/setObject:forKey:</TokenIdentifier>
-			<Abstract type="html">Stores an object in the cache for the specified key. This method blocks the calling thread until the object has been set.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/setObject:forKey:block:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (void)setObject:(id&lt;NSCoding&gt;)object forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">An object to store in the cache.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A key to associate with the object. This string will be copied.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setObject:forKey:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/removeObjectForKey:</TokenIdentifier>
-			<Abstract type="html">Removes the object for the specified key. This method blocks the calling thread until the object
-has been removed.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>- (void)removeObjectForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key associated with the object to be removed.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeObjectForKey:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/trimToDate:</TokenIdentifier>
-			<Abstract type="html">Removes all objects from the cache that have not been used since the specified date.
-This method blocks the calling thread until the cache has been trimmed.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>- (void)trimToDate:(NSDate *)date</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>date</Name>
-					<Abstract type="html">Objects that haven&apos;t been accessed since this date are removed from the cache.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/trimToDate:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMCache/removeAllObjects</TokenIdentifier>
-			<Abstract type="html">Removes all objects from the cache. This method blocks the calling thread until the cache has been cleared.</Abstract>
-			<DeclaredIn>PWTMCache.h</DeclaredIn>
-			
-			<Declaration>- (void)removeAllObjects</Declaration>
-			
-			
-			<Anchor>//api/name/removeAllObjects</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
+        
         
 	</File>
 </Tokens>

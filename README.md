@@ -1,7 +1,7 @@
 PWCore SDK for iOS
 ================
 
-Version 3.0.2
+Version 3.0.3
 
 This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -129,6 +129,14 @@ MaaS Core uses the following third-party components. All components are prefixed
      Fast parallel object cache for iOS and OS X.
     </td>
     <td style="text-align:center;""><a href="https://github.com/tumblr/TMCache/blob/master/LICENSE.txt">Apache 2.0</a>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/ZipArchive/ZipArchive">SSZipArchive</a></td>
+    <td>
+     Zipping and unzipping files for iOS and OS X.
+    </td>
+    <td style="text-align:center;""><a href="https://github.com/ZipArchive/ZipArchive/blob/master/LICENSE.txt">MIT</a>
     </td>
   </tr>
 </table>
