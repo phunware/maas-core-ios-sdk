@@ -1,6 +1,6 @@
 #PWCore Changelog
 
-##3.0.3 (Tuesday, Jan 27th, 2017)
+##3.0.3 (Friday, Jan 27th, 2017)
 * Add PWAPIManager.h and PWBundleManager.h
 * PWAPIManager.h - Providing convenient methods make it easier to make MaaS API calls.
 * PWBundleManager.h - It's using for handling bundle downloading, supports decryption, unzip, manifest validation and Etag check, etc.
