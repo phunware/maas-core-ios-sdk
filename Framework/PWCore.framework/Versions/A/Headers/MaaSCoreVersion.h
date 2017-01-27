@@ -8,6 +8,6 @@
 #ifndef MaaSCore_MaaSCoreVersion_h
 #define MaaSCore_MaaSCoreVersion_h
 
-#define MaaSCore_VERSION  @"3.0.0"
+#define MaaSCore_VERSION  @"3.0.3"
 
 #endif

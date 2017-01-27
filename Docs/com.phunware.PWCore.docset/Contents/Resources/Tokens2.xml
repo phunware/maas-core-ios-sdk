@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWCore.html">
+	<File path="Classes/PWAPIManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWCore</TokenIdentifier>
-			<Abstract type="html">PWCore implements core functionality used in all MaaS modules. All MaaS modules have a MaaSCore dependency.</Abstract>
-			<DeclaredIn>PWCore.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWAPIManager</TokenIdentifier>
+			<Abstract type="html">A generic class for making HTTP/HTTPS calls, and the authentication header will be automatically added.</Abstract>
+			<DeclaredIn>PWAPIManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="2"/>
@@ -13,79 +13,113 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWCore/setApplicationID:accessKey:signatureKey:encryptionKey:</TokenIdentifier>
-			<Abstract type="html">Initializes PWCore and all associated MaaS modules. This method should be called inside application:didFinishLaunchingWithOptions: before you do anything else.</Abstract>
-			<DeclaredIn>PWCore.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWAPIManager/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Shared PWAPIManager</Abstract>
+			<DeclaredIn>PWAPIManager.h</DeclaredIn>
 			
-			<Declaration>+ (void)setApplicationID:(NSString *)applicationID accessKey:(NSString *)accessKey signatureKey:(NSString *)signatureKey encryptionKey:(NSString *)encryptionKey</Declaration>
+			<Declaration>+ (PWAPIManager *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWAPIManager/get:withParameters:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Send a GET request for specific endpoint and parameters.</Abstract>
+			<DeclaredIn>PWAPIManager.h</DeclaredIn>
+			
+			<Declaration>- (void)get:(NSString *)endpoint withParameters:(NSDictionary *)parameters withCompletion:(void ( ^ ) ( id response , NSError *error ))completion</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>applicationID</Name>
-					<Abstract type="html">You can find your Application ID in the MaaS portal.</Abstract>
+					<Name>endpoint</Name>
+					<Abstract type="html">The endpoint for the request.</Abstract>
 				</Parameter><Parameter>
-					<Name>accessKey</Name>
-					<Abstract type="html">A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.</Abstract>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters for the request.</Abstract>
 				</Parameter><Parameter>
-					<Name>signatureKey</Name>
-					<Abstract type="html">A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.</Abstract>
-				</Parameter><Parameter>
-					<Name>encryptionKey</Name>
-					<Abstract type="html">The key used to encrypt and decrypt data that is exchanged between the client and the server. You can find your Encryption Key in the MaaS portal.</Abstract>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the HTTP response or error.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:</Anchor>
+			<Anchor>//api/name/get:withParameters:withCompletion:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWCore/applicationID</TokenIdentifier>
-			<Abstract type="html">Returns the MaaS Application ID.</Abstract>
-			<DeclaredIn>PWCore.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWAPIManager/getCached:withParameters:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Send a GET request for specific endpoint and parameters, and the response may be fetched from the cache.</Abstract>
+			<DeclaredIn>PWAPIManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSString *)applicationID</Declaration>
+			<Declaration>- (void)getCached:(NSString *)endpoint withParameters:(NSDictionary *)parameters withCompletion:(void ( ^ ) ( id response , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>endpoint</Name>
+					<Abstract type="html">The endpoint for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the HTTP response or error.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/applicationID</Anchor>
+			<Anchor>//api/name/getCached:withParameters:withCompletion:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWCore/deviceID</TokenIdentifier>
-			<Abstract type="html">Returns the Device ID.</Abstract>
-			<DeclaredIn>PWCore.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWAPIManager/post:withParameters:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Send a POST request for specific endpoint and parameters.</Abstract>
+			<DeclaredIn>PWAPIManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSString *)deviceID</Declaration>
+			<Declaration>- (void)post:(NSString *)endpoint withParameters:(NSDictionary *)parameters withCompletion:(void ( ^ ) ( id response , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>endpoint</Name>
+					<Abstract type="html">The endpoint for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the HTTP response or error.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/deviceID</Anchor>
+			<Anchor>//api/name/post:withParameters:withCompletion:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWCore/serviceName</TokenIdentifier>
-			<Abstract type="html">Returns &apos;MaaSCore&apos;.</Abstract>
-			<DeclaredIn>PWCore.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWAPIManager/request:withHTTPMethod:withParameters:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Send a request for specific endpoint, parameters and HTTP method.</Abstract>
+			<DeclaredIn>PWAPIManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSString *)serviceName</Declaration>
+			<Declaration>- (void)request:(NSString *)endpoint withHTTPMethod:(NSString *)httpMethod withParameters:(NSDictionary *)parameters withCompletion:(void ( ^ ) ( id response , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>endpoint</Name>
+					<Abstract type="html">The endpoint for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>httpMethod</Name>
+					<Abstract type="html">The http request for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the HTTP response or error.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/serviceName</Anchor>
+			<Anchor>//api/name/request:withHTTPMethod:withParameters:withCompletion:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWCore/encryptionEnabled</TokenIdentifier>
-			<Abstract type="html">Returns if API encription enabled</Abstract>
-			<DeclaredIn>PWCore.h</DeclaredIn>
-			
-			<Declaration>+ (BOOL)encryptionEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/encryptionEnabled</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
+        
         
 	</File>
 </Tokens>

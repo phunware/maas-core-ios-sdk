@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWTMDiskCache.html">
+	<File path="Classes/PWCore.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWTMDiskCache</TokenIdentifier>
-			<Abstract type="html">PWTMDiskCache is a thread safe key/value store backed by the file system. It accepts any object conforming
-to the NSCoding protocol, which includes the basic Foundation data types and collection classes and also
-many UIKit classes, notably UIImage. All work is performed on a serial queue shared by all instances in
-the app, and archiving is handled by NSKeyedArchiver. This is a particular advantage for UIImage because
-it skips UIImagePNGRepresentation() and retains information like scale and orientation.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCore</TokenIdentifier>
+			<Abstract type="html">PWCore implements core functionality used in all MaaS modules. All MaaS modules have a PWCore dependency.</Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
             
 			
 			<NodeRef refid="4"/>
@@ -17,832 +13,80 @@ it skips UIImagePNGRepresentation() and retains information like scale and orien
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setName:</TokenIdentifier>
-			<Abstract type="html">The name of this cache, used to create a directory under Library/Caches and also appearing in stack traces.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/name</TokenIdentifier>
-			<Abstract type="html">The name of this cache, used to create a directory under Library/Caches and also appearing in stack traces.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/name</TokenIdentifier>
-			<Abstract type="html">The name of this cache, used to create a directory under Library/Caches and also appearing in stack traces.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setCacheURL:</TokenIdentifier>
-			<Abstract type="html">The URL of the directory used by this cache, usually Library/Caches/com.tumblr.PWTMDiskCache.(name``</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSURL *cacheURL</Declaration>
-			
-			
-			<Anchor>//api/name/cacheURL</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/cacheURL</TokenIdentifier>
-			<Abstract type="html">The URL of the directory used by this cache, usually Library/Caches/com.tumblr.PWTMDiskCache.(name``</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSURL *cacheURL</Declaration>
-			
-			
-			<Anchor>//api/name/cacheURL</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/cacheURL</TokenIdentifier>
-			<Abstract type="html">The URL of the directory used by this cache, usually Library/Caches/com.tumblr.PWTMDiskCache.(name``</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSURL *cacheURL</Declaration>
-			
-			
-			<Anchor>//api/name/cacheURL</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setByteCount:</TokenIdentifier>
-			<Abstract type="html">The total number of bytes used on disk, as reported by NSURLTotalFileAllocatedSizeKey.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSUInteger byteCount</Declaration>
-			
-			
-			<Anchor>//api/name/byteCount</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/byteCount</TokenIdentifier>
-			<Abstract type="html">The total number of bytes used on disk, as reported by NSURLTotalFileAllocatedSizeKey.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSUInteger byteCount</Declaration>
-			
-			
-			<Anchor>//api/name/byteCount</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/byteCount</TokenIdentifier>
-			<Abstract type="html">The total number of bytes used on disk, as reported by NSURLTotalFileAllocatedSizeKey.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSUInteger byteCount</Declaration>
-			
-			
-			<Anchor>//api/name/byteCount</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setByteLimit:</TokenIdentifier>
-			<Abstract type="html">The maximum number of bytes allowed on disk. This value is checked every time an object is set, if the written
-size exceeds the limit a trim call is queued. Defaults to 0.0, meaning no practical limit.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (assign) NSUInteger byteLimit</Declaration>
-			
-			
-			<Anchor>//api/name/byteLimit</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/byteLimit</TokenIdentifier>
-			<Abstract type="html">The maximum number of bytes allowed on disk. This value is checked every time an object is set, if the written
-size exceeds the limit a trim call is queued. Defaults to 0.0, meaning no practical limit.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (assign) NSUInteger byteLimit</Declaration>
-			
-			
-			<Anchor>//api/name/byteLimit</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/byteLimit</TokenIdentifier>
-			<Abstract type="html">The maximum number of bytes allowed on disk. This value is checked every time an object is set, if the written
-size exceeds the limit a trim call is queued. Defaults to 0.0, meaning no practical limit.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (assign) NSUInteger byteLimit</Declaration>
-			
-			
-			<Anchor>//api/name/byteLimit</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setAgeLimit:</TokenIdentifier>
-			<Abstract type="html">The maximum number of seconds an object is allowed to exist in the cache. Setting this to a value
-greater than 0.0 will start a recurring GCD timer with the same period that calls trimToDate:.
-Setting it back to 0.0 will stop the timer. Defaults to 0.0, meaning no limit.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (assign) NSTimeInterval ageLimit</Declaration>
-			
-			
-			<Anchor>//api/name/ageLimit</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/ageLimit</TokenIdentifier>
-			<Abstract type="html">The maximum number of seconds an object is allowed to exist in the cache. Setting this to a value
-greater than 0.0 will start a recurring GCD timer with the same period that calls trimToDate:.
-Setting it back to 0.0 will stop the timer. Defaults to 0.0, meaning no limit.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (assign) NSTimeInterval ageLimit</Declaration>
-			
-			
-			<Anchor>//api/name/ageLimit</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/ageLimit</TokenIdentifier>
-			<Abstract type="html">The maximum number of seconds an object is allowed to exist in the cache. Setting this to a value
-greater than 0.0 will start a recurring GCD timer with the same period that calls trimToDate:.
-Setting it back to 0.0 will stop the timer. Defaults to 0.0, meaning no limit.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (assign) NSTimeInterval ageLimit</Declaration>
-			
-			
-			<Anchor>//api/name/ageLimit</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setWillAddObjectBlock:</TokenIdentifier>
-			<Abstract type="html">A block to be executed just before an object is added to the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock willAddObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/willAddObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/willAddObjectBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just before an object is added to the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock willAddObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/willAddObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/willAddObjectBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just before an object is added to the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock willAddObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/willAddObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setWillRemoveObjectBlock:</TokenIdentifier>
-			<Abstract type="html">A block to be executed just before an object is removed from the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock willRemoveObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/willRemoveObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/willRemoveObjectBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just before an object is removed from the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock willRemoveObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/willRemoveObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/willRemoveObjectBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just before an object is removed from the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock willRemoveObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/willRemoveObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setWillRemoveAllObjectsBlock:</TokenIdentifier>
-			<Abstract type="html">A block to be executed just before all objects are removed from the cache as a result of removeAllObjects:.
-The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheBlock willRemoveAllObjectsBlock</Declaration>
-			
-			
-			<Anchor>//api/name/willRemoveAllObjectsBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/willRemoveAllObjectsBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just before all objects are removed from the cache as a result of removeAllObjects:.
-The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheBlock willRemoveAllObjectsBlock</Declaration>
-			
-			
-			<Anchor>//api/name/willRemoveAllObjectsBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/willRemoveAllObjectsBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just before all objects are removed from the cache as a result of removeAllObjects:.
-The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheBlock willRemoveAllObjectsBlock</Declaration>
-			
-			
-			<Anchor>//api/name/willRemoveAllObjectsBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setDidAddObjectBlock:</TokenIdentifier>
-			<Abstract type="html">A block to be executed just after an object is added to the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock didAddObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/didAddObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/didAddObjectBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just after an object is added to the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock didAddObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/didAddObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/didAddObjectBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just after an object is added to the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock didAddObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/didAddObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setDidRemoveObjectBlock:</TokenIdentifier>
-			<Abstract type="html">A block to be executed just after an object is removed from the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock didRemoveObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/didRemoveObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/didRemoveObjectBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just after an object is removed from the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock didRemoveObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/didRemoveObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/didRemoveObjectBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just after an object is removed from the cache. The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheObjectBlock didRemoveObjectBlock</Declaration>
-			
-			
-			<Anchor>//api/name/didRemoveObjectBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setDidRemoveAllObjectsBlock:</TokenIdentifier>
-			<Abstract type="html">A block to be executed just after all objects are removed from the cache as a result of removeAllObjects:.
-The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheBlock didRemoveAllObjectsBlock</Declaration>
-			
-			
-			<Anchor>//api/name/didRemoveAllObjectsBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/didRemoveAllObjectsBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just after all objects are removed from the cache as a result of removeAllObjects:.
-The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheBlock didRemoveAllObjectsBlock</Declaration>
-			
-			
-			<Anchor>//api/name/didRemoveAllObjectsBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/didRemoveAllObjectsBlock</TokenIdentifier>
-			<Abstract type="html">A block to be executed just after all objects are removed from the cache as a result of removeAllObjects:.
-The queue waits during execution.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>@property (copy) PWTMDiskCacheBlock didRemoveAllObjectsBlock</Declaration>
-			
-			
-			<Anchor>//api/name/didRemoveAllObjectsBlock</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWTMDiskCache/sharedCache</TokenIdentifier>
-			<Abstract type="html">A shared cache.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)sharedCache</Declaration>
-			
-			<ReturnValue><Abstract type="html">The shared singleton cache instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/sharedCache</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWTMDiskCache/sharedQueue</TokenIdentifier>
-			<Abstract type="html">A shared serial queue, used by all instances of this class. Use dispatchsettarget_queue to integrate
-this queue with an exisiting serial I/O queue.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>+ (dispatch_queue_t)sharedQueue</Declaration>
-			
-			<ReturnValue><Abstract type="html">The shared singleton queue instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/sharedQueue</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/initWithName:</TokenIdentifier>
-			<Abstract type="html">The designated initializer. Multiple instances with the same name are allowed and can safely access
-the same data on disk thanks to the magic of seriality.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instp/PWTMDiskCache/name</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (instancetype)initWithName:(NSString *)name</Declaration>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/setApplicationID:accessKey:signatureKey:encryptionKey:</TokenIdentifier>
+			<Abstract type="html">Initializes PWCore and all associated MaaS modules. This method should be called inside application:didFinishLaunchingWithOptions: before you do anything else.</Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (void)setApplicationID:(NSString *)applicationID accessKey:(NSString *)accessKey signatureKey:(NSString *)signatureKey encryptionKey:(NSString *)encryptionKey</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>name</Name>
-					<Abstract type="html">The name of the cache.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new cache with the specified name.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithName:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/objectForKey:block:</TokenIdentifier>
-			<Abstract type="html">Retrieves the object for the specified key. This method returns immediately and executes the passed
-block as soon as the object is available on the serial sharedQueue.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)objectForKey:(NSString *)key block:(PWTMDiskCacheObjectBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key associated with the requested object.</Abstract>
+					<Name>applicationID</Name>
+					<Abstract type="html">You can find your Application ID in the MaaS portal.</Abstract>
 				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed serially when the object is available.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/objectForKey:block:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/fileURLForKey:block:</TokenIdentifier>
-			<Abstract type="html">Retrieves the fileURL for the specified key without actually reading the data from disk. This method
-returns immediately and executes the passed block as soon as the object is available on the serial
-sharedQueue.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)fileURLForKey:(NSString *)key block:(PWTMDiskCacheObjectBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key associated with the requested object.</Abstract>
+					<Name>accessKey</Name>
+					<Abstract type="html">A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.</Abstract>
 				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed serially when the file URL is available.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/fileURLForKey:block:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setObject:forKey:block:</TokenIdentifier>
-			<Abstract type="html">Stores an object in the cache for the specified key. This method returns immediately and executes the
-passed block as soon as the object has been stored.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)setObject:(id&lt;NSCoding&gt;)object forKey:(NSString *)key block:(PWTMDiskCacheObjectBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">An object to store in the cache.</Abstract>
+					<Name>signatureKey</Name>
+					<Abstract type="html">A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.</Abstract>
 				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A key to associate with the object. This string will be copied.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed serially after the object has been stored, or nil.</Abstract>
+					<Name>encryptionKey</Name>
+					<Abstract type="html">The key used to encrypt and decrypt data that is exchanged between the client and the server. You can find your Encryption Key in the MaaS portal.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setObject:forKey:block:</Anchor>
+			<Anchor>//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/removeObjectForKey:block:</TokenIdentifier>
-			<Abstract type="html">Removes the object for the specified key. This method returns immediately and executes the passed block
-as soon as the object has been removed.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/applicationID</TokenIdentifier>
+			<Abstract type="html">Returns the MaaS Application ID.</Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
 			
-			<Declaration>- (void)removeObjectForKey:(NSString *)key block:(PWTMDiskCacheObjectBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key associated with the object to be removed.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed serially after the object has been removed, or nil.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>+ (NSString *)applicationID</Declaration>
 			
-			<Anchor>//api/name/removeObjectForKey:block:</Anchor>
+			
+			<Anchor>//api/name/applicationID</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/trimToDate:block:</TokenIdentifier>
-			<Abstract type="html">Removes all objects from the cache that have not been used since the specified date.
-This method returns immediately and executes the passed block as soon as the cache has been trimmed.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/deviceID</TokenIdentifier>
+			<Abstract type="html">Returns the Device ID.</Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
 			
-			<Declaration>- (void)trimToDate:(NSDate *)date block:(PWTMDiskCacheBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>date</Name>
-					<Abstract type="html">Objects that haven&apos;t been accessed since this date are removed from the cache.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed serially after the cache has been trimmed, or nil.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>+ (NSString *)deviceID</Declaration>
 			
-			<Anchor>//api/name/trimToDate:block:</Anchor>
+			
+			<Anchor>//api/name/deviceID</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/trimToSize:block:</TokenIdentifier>
-			<Abstract type="html">Removes objects from the cache, largest first, until the cache is equal to or smaller than the specified byteCount.
-This method returns immediately and executes the passed block as soon as the cache has been trimmed.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/serviceName</TokenIdentifier>
+			<Abstract type="html">Returns &apos;MaaSCore&apos;.</Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
 			
-			<Declaration>- (void)trimToSize:(NSUInteger)byteCount block:(PWTMDiskCacheBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>byteCount</Name>
-					<Abstract type="html">The cache will be trimmed equal to or smaller than this size.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed serially after the cache has been trimmed, or nil.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>+ (NSString *)serviceName</Declaration>
 			
-			<Anchor>//api/name/trimToSize:block:</Anchor>
+			
+			<Anchor>//api/name/serviceName</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/trimToSizeByDate:block:</TokenIdentifier>
-			<Abstract type="html">Removes objects from the cache, ordered by date (least recently used first), until the cache is equal to or smaller
-than the specified byteCount. This method returns immediately and executes the passed block as soon as the cache has
-been trimmed.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/encryptionEnabled</TokenIdentifier>
+			<Abstract type="html">Returns if API encription enabled</Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
 			
-			<Declaration>- (void)trimToSizeByDate:(NSUInteger)byteCount block:(PWTMDiskCacheBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>byteCount</Name>
-					<Abstract type="html">The cache will be trimmed equal to or smaller than this size.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed serially after the cache has been trimmed, or nil.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>+ (BOOL)encryptionEnabled</Declaration>
 			
-			<Anchor>//api/name/trimToSizeByDate:block:</Anchor>
+			
+			<Anchor>//api/name/encryptionEnabled</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/removeAllObjects:</TokenIdentifier>
-			<Abstract type="html">Removes all objects from the cache. This method returns immediately and executes the passed block as soon as the
-cache has been cleared.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)removeAllObjects:(PWTMDiskCacheBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed serially after the cache has been cleared, or nil.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeAllObjects:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/enumerateObjectsWithBlock:completionBlock:</TokenIdentifier>
-			<Abstract type="html">Loops through all objects in the cache (reads and writes are suspended during the enumeration). Data is not actually
-read from disk, the object parameter of the block will be nil but the fileURL will be available.
-This method returns immediately.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)enumerateObjectsWithBlock:(PWTMDiskCacheObjectBlock)block completionBlock:(PWTMDiskCacheBlock)completionBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed for every object in the cache.</Abstract>
-				</Parameter><Parameter>
-					<Name>completionBlock</Name>
-					<Abstract type="html">An optional block to be executed after the enumeration is complete.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/enumerateObjectsWithBlock:completionBlock:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/objectForKey:</TokenIdentifier>
-			<Abstract type="html">Retrieves the object for the specified key. This method blocks the calling thread until the
-object is available.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/objectForKey:block:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (id&lt;NSCoding&gt;)objectForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key associated with the object.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The object for the specified key.</Abstract></ReturnValue>
-			<Anchor>//api/name/objectForKey:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/fileURLForKey:</TokenIdentifier>
-			<Abstract type="html">Retrieves the file URL for the specified key. This method blocks the calling thread until the
-url is available. Do not use this URL anywhere but on the sharedQueue. This method probably
-shouldn&apos;t even exist, just use the asynchronous one.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/fileURLForKey:block:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (NSURL *)fileURLForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key associated with the object.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The file URL for the specified key.</Abstract></ReturnValue>
-			<Anchor>//api/name/fileURLForKey:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setObject:forKey:</TokenIdentifier>
-			<Abstract type="html">Stores an object in the cache for the specified key. This method blocks the calling thread until
-the object has been stored.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/setObject:forKey:block:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (void)setObject:(id&lt;NSCoding&gt;)object forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">An object to store in the cache.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A key to associate with the object. This string will be copied.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setObject:forKey:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/removeObjectForKey:</TokenIdentifier>
-			<Abstract type="html">Removes the object for the specified key. This method blocks the calling thread until the object
-has been removed.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)removeObjectForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key associated with the object to be removed.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeObjectForKey:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/trimToDate:</TokenIdentifier>
-			<Abstract type="html">Removes all objects from the cache that have not been used since the specified date.
-This method blocks the calling thread until the cache has been trimmed.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)trimToDate:(NSDate *)date</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>date</Name>
-					<Abstract type="html">Objects that haven&apos;t been accessed since this date are removed from the cache.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/trimToDate:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/trimToSize:</TokenIdentifier>
-			<Abstract type="html">Removes objects from the cache, largest first, until the cache is equal to or smaller than the
-specified byteCount. This method blocks the calling thread until the cache has been trimmed.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)trimToSize:(NSUInteger)byteCount</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>byteCount</Name>
-					<Abstract type="html">The cache will be trimmed equal to or smaller than this size.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/trimToSize:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/trimToSizeByDate:</TokenIdentifier>
-			<Abstract type="html">Removes objects from the cache, ordered by date (least recently used first), until the cache is equal to or
-smaller than the specified byteCount. This method blocks the calling thread until the cache has been trimmed.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)trimToSizeByDate:(NSUInteger)byteCount</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>byteCount</Name>
-					<Abstract type="html">The cache will be trimmed equal to or smaller than this size.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/trimToSizeByDate:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/removeAllObjects</TokenIdentifier>
-			<Abstract type="html">Removes all objects from the cache. This method blocks the calling thread until the cache has been cleared.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)removeAllObjects</Declaration>
-			
-			
-			<Anchor>//api/name/removeAllObjects</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWTMDiskCache/enumerateObjectsWithBlock:</TokenIdentifier>
-			<Abstract type="html">Loops through all objects in the cache (reads and writes are suspended during the enumeration). Data is not actually
-read from disk, the object parameter of the block will be nil but the fileURL will be available.
-This method blocks the calling thread until all objects have been enumerated.</Abstract>
-			<DeclaredIn>PWTMDiskCache.h</DeclaredIn>
-			
-			<Declaration>- (void)enumerateObjectsWithBlock:(PWTMDiskCacheObjectBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block to be executed for every object in the cache.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/enumerateObjectsWithBlock:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
+        
         
 	</File>
 </Tokens>

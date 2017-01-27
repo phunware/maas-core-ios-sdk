@@ -1,7 +1,7 @@
 //
 //  PWCore.h
 //  PWCore
-//  v3.0.2
+//  v3.0.3
 //
 //  Copyright (c) 2015 Phunware. All rights reserved.
 //
@@ -10,6 +10,8 @@
 #import <PWCore/PWCoreVersion.h>
 #import <PWCore/MaaSCore.h>
 #import <PWCore/MaaSCoreVersion.h>
+#import <PWCore/PWBundleManager.h>
+#import <PWCore/PWAPIManager.h>
 
 /**
  `PWCore` implements core functionality used in all MaaS modules. All MaaS modules have a `PWCore` dependency.
