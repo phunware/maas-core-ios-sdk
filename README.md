@@ -9,8 +9,8 @@ This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ 
 Requirements
 ------------
 
-- iOS 7.0 or greater
-- Xcode 6 or greater
+- iOS 8.0 or greater
+- Xcode 7 or greater
 
 
 
