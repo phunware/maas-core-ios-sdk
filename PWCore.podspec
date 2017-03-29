@@ -14,8 +14,6 @@ Pod::Spec.new do |s|
   s.ios.dependency 'SSZipArchive'
   
   s.ios.vendored_frameworks = 'Framework/PWCore.framework'
-  
-  s.xcconfig      = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PWCore/**"'}
   s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony'
   s.requires_arc = true
 end
