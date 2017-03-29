@@ -2,6 +2,7 @@
 
 ##3.0.4 (Tuesday, March 28th, 2017)
 * Bug fix: the cached bundle will be used when network is unavailable.
+* Support bitcode
 
 ##3.0.3 (Friday, Jan 27th, 2017)
 * Add PWAPIManager.h and PWBundleManager.h
