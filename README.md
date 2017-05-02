@@ -1,7 +1,7 @@
 PWCore SDK for iOS
 ================
 
-Version 3.0.3
+Version 3.0.4
 
 This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -9,8 +9,8 @@ This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ 
 Requirements
 ------------
 
-- iOS 7.0 or greater
-- Xcode 6 or greater
+- iOS 8.0 or greater
+- Xcode 7 or greater
 
 
 
@@ -140,3 +140,7 @@ MaaS Core uses the following third-party components. All components are prefixed
     </td>
   </tr>
 </table>
+
+Privacy
+-----------
+You understand and consent to Phunware’s Privacy Policy located at www.phunware.com/privacy. If your use of Phunware’s software requires a Privacy Policy of your own, you also agree to include the terms of Phunware’s Privacy Policy in your Privacy Policy to your end users.
