@@ -74,7 +74,7 @@ Inside your application delegate, you will need to initialize MaaS Core in the a
 	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
     [PWCore setApplicationID:@"APPLICATION_ID"
     		    setAccessKey:@"ACCESS_KEY"
-                signatureKey:@"SIGNATURE_KEY"]; // Currently unused. You can place any NSString value here.
+                signatureKey:@"SIGNATURE_KEY"]; 
     ...
 }
 ````
