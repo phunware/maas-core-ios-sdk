@@ -1,4 +1,9 @@
 #PWCore Changelog
+##3.1.0 (Tuesday, March 28th, 2017)
+* PWCore now includes CME and Analytics components without the need for seperate PWCME and PWAnalytics SDK's
+ - **NOTE**: This version of PWCore cannot work with PWCME and PWAnalytics. Instead import `#import <PWCore/PWCore.h>`.
+ 
+* Added AFNetworking and TMCache as external dependencies.
 
 ##3.0.4 (Tuesday, March 28th, 2017)
 * Bug fix: the cached bundle will be used when network is unavailable.

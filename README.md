@@ -1,25 +1,19 @@
 PWCore SDK for iOS
 ================
 
-Version 3.0.4
+Version 3.1.0
 
 This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ for more details and to sign up.
-
 
 Requirements
 ------------
 
-- iOS 8.0 or greater
-- Xcode 7 or greater
-
-
+- iOS 9.0 or greater
+- Xcode 8 or greater
 
 Documentation
 ------------
-
 PWCore documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
-
-
 
 Installation
 ------------
@@ -64,7 +58,6 @@ To do this:
 You can now install additional MaaS modules.
 
 
-
 Application Setup
 -----------------
 At the top of your application delegate implementation (.m) file, add the following:
@@ -80,18 +73,15 @@ Inside your application delegate, you will need to initialize MaaS Core in the a
 {
 	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
     [PWCore setApplicationID:@"APPLICATION_ID"
-    			   setAccessKey:@"ACCESS_KEY"
-                  signatureKey:@"SIGNATURE_KEY"
-                 encryptionKey:@"ENCRYPT_KEY"]; // Currently unused. You can place any NSString value here.
+    		    setAccessKey:@"ACCESS_KEY"
+                signatureKey:@"SIGNATURE_KEY"]; 
     ...
 }
 ````
 
-
-
 Attribution
 -----------
-MaaS Core uses the following third-party components. All components are prefixed so you won't have to worry about namespace collisions.
+PWCore uses the following third-party components. All components are prefixed so you won't have to worry about namespace collisions.
 
 <table>
   <tr>
@@ -105,22 +95,6 @@ MaaS Core uses the following third-party components. All components are prefixed
      A delightful iOS and OS X networking framework.
     </td>
     <td style="text-align:center;""><a href="https://github.com/AFNetworking/AFNetworking/blob/master/LICENSE">MIT</a>
-    </td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/rnapier/RNCryptor">RNCryptor</a></td>
-    <td>
-     CCCryptor (AES encryption) wrappers for iOS and Mac.
-    </td>
-    <td style="text-align:center;""><a href="https://github.com/rnapier/RNCryptor/blob/master/README.md">MIT</a>
-    </td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/nicklockwood/NSOperationStack">NSOperationStack</a></td>
-    <td>
-     A LIFO (Last-In, First-Out) queuing extension for NSOperationQueue.
-    </td>
-    <td style="text-align:center;""><a href="https://github.com/nicklockwood/NSOperationStack/blob/master/LICENCE.md">MIT</a>
     </td>
   </tr>
   <tr>
