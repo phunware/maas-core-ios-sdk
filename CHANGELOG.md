@@ -1,5 +1,5 @@
 #PWCore Changelog
-##3.1.0 (Tuesday, March 28th, 2017)
+##3.1.0 (Friday, Jun 30th, 2017)
 * PWCore now includes CME and Analytics components without the need for seperate PWCME and PWAnalytics SDK's
  - **NOTE**: This version of PWCore cannot work with PWCME and PWAnalytics. Instead import `#import <PWCore/PWCore.h>`.
  
