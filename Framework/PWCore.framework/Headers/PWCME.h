@@ -119,6 +119,8 @@ extern NSInteger const PWCMSUnused;
  Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.
  @param containerID The ID of the container to get the content for.
  @param depth The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use `kPWCMEDepthFullHierarchy`. Be careful when using this value for large structures.
+ @param limit The number of contents to be fetched.
+ @param offset The offset from where the contents need be fetched.
  @param success A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` succeeds. This block has no return value and takes three arguments: the content received from the server, a `PWPagination` object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.
  @param failure A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
  @discussion It's important to note that this method only returns the specified pagination parameters for the root level array object. Nested arrays default to a pagination of 10 and a limit of 0.
@@ -240,10 +242,14 @@ extern NSInteger const PWCMSUnused;
 + (void)clearCache;
 
 
-///-----------------------
-/// @name Deprepcated
-///-----------------------
-
+/**
+ Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.
+ @param containerID The ID of the container to get the content for.
+ @param depth The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use `kPWCMEDepthFullHierarchy`. Be careful when using this value for large structures.
+ @param success A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` succeeds. This block has no return value and takes three arguments: the content received from the server, a `PWPagination` object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.
+ @param failure A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
+ @discussion It's important to note that this method only returns the specified pagination parameters for the root level array object. Nested arrays default to a pagination of 10 and a limit of 0.
+ */
 + (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth success:(void(^)(NSDictionary *contents))success failure:(void (^)(NSError *error))failure __attribute__((deprecated));
 
 @end

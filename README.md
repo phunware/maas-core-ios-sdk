@@ -1,7 +1,7 @@
 PWCore SDK for iOS
 ================
 
-Version 3.1.0
+Version 3.1.1
 
 This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -40,7 +40,7 @@ UIKit.framework
 ````
 **NOTE**: CoreLocation is used for comprehensive analytics. Apple mandates that your app have a good reason for enabling location services. Apple will deny your app if location is not a core feature for your app.
 
-After specifying the frameworks, you will need to add a linker flag to your build target. 
+After specifying the frameworks, you will need to add a linker flag to your build target.
 
 Alternatively, you can install PWCore using CocoaPods:
 
@@ -74,7 +74,7 @@ Inside your application delegate, you will need to initialize MaaS Core in the a
 	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
     [PWCore setApplicationID:@"APPLICATION_ID"
     		    setAccessKey:@"ACCESS_KEY"
-                signatureKey:@"SIGNATURE_KEY"]; 
+                signatureKey:@"SIGNATURE_KEY"];
     ...
 }
 ````

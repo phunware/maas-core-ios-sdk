@@ -1,8 +1,12 @@
 #PWCore Changelog
+##3.1.1 (Friday, August 4th, 2017)
+* Changed build process to reduce the final size of integrated framework.
+* Changed info.plist to allow iPhoneOS archiving with bitcode.
+
 ##3.1.0 (Friday, Jun 30th, 2017)
 * PWCore now includes CME and Analytics components without the need for seperate PWCME and PWAnalytics SDK's
  - **NOTE**: This version of PWCore cannot work with PWCME and PWAnalytics. Instead import `#import <PWCore/PWCore.h>`.
- 
+
 * Added AFNetworking and TMCache as external dependencies.
 
 ##3.0.4 (Tuesday, March 28th, 2017)
