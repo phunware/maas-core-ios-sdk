@@ -1,4 +1,9 @@
 #PWCore Changelog
+##3.1.2 (Monday, September 25th, 2017)
+* Changed location permissions to requestAlwaysAuthorization
+* Fixed analytics call made on wrong thread
+* Added PWLogger
+
 ##3.1.1 (Friday, August 4th, 2017)
 * Changed build process to reduce the final size of integrated framework.
 * Changed info.plist to allow iPhoneOS archiving with bitcode.
