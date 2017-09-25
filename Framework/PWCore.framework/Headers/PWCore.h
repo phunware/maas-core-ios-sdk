@@ -1,7 +1,6 @@
 //
 //  PWCore.h
 //  PWCore
-//  v3.1.0
 //
 //  Copyright (c) 2015 Phunware. All rights reserved.
 //
@@ -10,10 +9,14 @@
 
 #import <PWCore/PWAnalytics.h>
 #import <PWCore/PWCME.h>
+#import <PWCore/PWLogger.h>
+#import <PWCore/PWConsoleLogger.h>
+#import <PWCore/PWFileLogger.h>
+#import <PWCore/PWLoggableObject.h>
 #import <PWCore/PWBundleManager.h>
 #import <PWCore/PWAPIManager.h>
 
-static NSString * const PWCoreVersion = @"3.1.1";
+static NSString * const PWCoreVersion = @"3.1.2";
 
 /**
  `PWCore` implements core functionality used in all MaaS modules. All MaaS modules have a `PWCore` dependency.

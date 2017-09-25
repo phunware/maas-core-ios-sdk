@@ -125,13 +125,5 @@
 + (void)endTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary *__nullable)parameters eventNamespace:(NSString *__nullable)eventNamespace;
 
 
-///--------------------
-/// @name Other Methods
-///--------------------
-
-/**
- Returns 'MaaSAnalytics'.
- */
-+ (NSString *__nonnull)serviceName;
 
 @end
