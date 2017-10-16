@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PWContainer Class Reference</title>
+	<title>PWLogger Protocol Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -43,8 +43,6 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
-	<option value="overview">Overview</option>
-	
 
 	
 	
@@ -56,15 +54,11 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/containerID">containerID</option>
+		<option value="//api/name/asyncLogging">asyncLogging</option>
 		
-		<option value="//api/name/creationDate">creationDate</option>
+		<option value="//api/name/baseLevel">baseLevel</option>
 		
-		<option value="//api/name/lastUpdated">lastUpdated</option>
-		
-		<option value="//api/name/name">name</option>
-		
-		<option value="//api/name/tags">tags</option>
+		<option value="//api/name/serviceName">serviceName</option>
 		
 	</optgroup>
 	
@@ -72,7 +66,9 @@
 	
 	<optgroup label="Class Methods">
 		
-		<option value="//api/name/unpack:">+ unpack:</option>
+		<option value="//api/name/loggerWithServiceName:">+ loggerWithServiceName:</option>
+		
+		<option value="//api/name/new">+ new</option>
 		
 	</optgroup>
 	
@@ -80,7 +76,9 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/dictionary">- dictionary</option>
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/logMessage:">- logMessage:</option>
 		
 	</optgroup>
 	
@@ -97,32 +95,21 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">PWContainer Class Reference</h1>
+					<h1 class="title">PWLogger Protocol Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<th>Inherits from</th>
+	<th>Conforms to</th>
 	<td>NSObject</td>
 </tr><tr>
-	<th>Conforms to</th>
-	<td>NSCoding<br />NSCopying</td>
-</tr><tr>
 	<th>Declared in</th>
-	<td>PWContainer.h</td>
+	<td>PWLogger.h</td>
 </tr>
 						</tbody></table></div>
 					
 
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Containers hold a single structure. All values in a <code>PWContainer</code> object are immutable on the client. You can modify <code>PWContainer</code> values in the MaaS portal. <code>PWContainer</code> conforms to the <code>NSCoding</code> and <code>NSCopying</code> protocol.</p>
-					</div>
-					
-					
 
 					
 					
@@ -131,226 +118,13 @@
 						
 
 						
-						<h2 class="task-title">Other Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/containerID" title="containerID"></a>
-	<h3 class="method-title"><code><a href="#//api/name/containerID">&nbsp;&nbsp;containerID</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>An <code>NSString</code> that is used to identify the Container ID.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *containerID</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWContainer.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/name" title="name"></a>
-	<h3 class="method-title"><code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>A <code>NSString</code> that is used to identify the container name.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *name</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWContainer.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/tags" title="tags"></a>
-	<h3 class="method-title"><code><a href="#//api/name/tags">&nbsp;&nbsp;tags</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>A array of tags associated with the container. A tag is an <code>NSString</code> object.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *tags</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWContainer.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/creationDate" title="creationDate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/creationDate">&nbsp;&nbsp;creationDate</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The creation date of the container.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDate *creationDate</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWContainer.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/lastUpdated" title="lastUpdated"></a>
-	<h3 class="method-title"><code><a href="#//api/name/lastUpdated">&nbsp;&nbsp;lastUpdated</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The date of the last update for the container.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDate *lastUpdated</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWContainer.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
 						
 
-						<a title="Convenience" name="task_Convenience"></a>
-						<h2 class="task-title">Convenience</h2>
-
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/unpack:" title="unpack:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/unpack:">+&nbsp;unpack:</a></code>
-</h3>
+	<a name="//api/name/serviceName" title="serviceName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serviceName">&nbsp;&nbsp;serviceName</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -359,12 +133,232 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Convenience method to instantiate a <code>PWContainer</code> object from a properly formatted <code>NSDictionary</code> object.</p>
+				<p>The name of the service that corresponds to the logger.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (instancetype)unpack:(NSDictionary *)<em>dictionary</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *serviceName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Each logger will only log messages tagged with the same service name as teh logger.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/baseLevel" title="baseLevel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/baseLevel">&nbsp;&nbsp;baseLevel</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The base level of the logger.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) PWLogLevel baseLevel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This property can be set to filter out log messages depending on their type. See the &lsquo;PWLogLevel&rsquo; enum for more details.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/asyncLogging" title="asyncLogging"></a>
+	<h3 class="method-title"><code><a href="#//api/name/asyncLogging">&nbsp;&nbsp;asyncLogging</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates if the logger needs to execute in the background</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL asyncLogging</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the property is true, the <a href="#//api/name/logMessage:">logMessage:</a> method will be executed using an asynchronous dispatch queue</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>initializer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/new" title="new"></a>
+	<h3 class="method-title"><code><a href="#//api/name/new">+&nbsp;new</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>initializer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)new</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loggerWithServiceName:" title="loggerWithServiceName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loggerWithServiceName:">+&nbsp;loggerWithServiceName:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Convenience constructor to create logger</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)loggerWithServiceName:(NSString *)<em>serviceName</em></code></div>
 
 		    
 			
@@ -373,8 +367,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>dictionary</code></th>
-						<td><p>The <a href="#//api/name/dictionary">dictionary</a> from which to instantiate the <code>PWContainer</code> object.</p></td>
+						<th scope="row" class="argument-name"><code>serviceName</code></th>
+						<td><p>The service name that corresponds to the logger.</p></td>
 					</tr>
 				
 				</table>
@@ -394,16 +388,16 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWContainer.h</code></p>
+				<p><code class="declared-in-ref">PWLogger.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/dictionary" title="dictionary"></a>
-	<h3 class="method-title"><code><a href="#//api/name/dictionary">&ndash;&nbsp;dictionary</a></code>
-</h3>
+	<a name="//api/name/logMessage:" title="logMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logMessage:">&ndash;&nbsp;logMessage:</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -412,20 +406,37 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Returns an <code>NSDictionary</code> representation of the current container.</p>
+				<p>Logs a message using the logger.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (NSDictionary *)dictionary</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)logMessage:(PWLogMessage *)<em>logMessage</em></code></div>
 
 		    
 			
-
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>logMessage</code></th>
+						<td><p>The logmessage to be logged.</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
 
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Log messages whose type is lower than the logger base level will cause this method to be called</p>
+			</div>
 			
 
 			
@@ -435,7 +446,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWContainer.h</code></p>
+				<p><code class="declared-in-ref">PWLogger.h</code></p>
 			</div>
 			
 			
