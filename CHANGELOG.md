@@ -1,4 +1,7 @@
 #PWCore Changelog
+##3.1.3 (Thursday, October 19th, 2017)
+* Fix thread deadlocking issue
+
 ##3.1.2 (Monday, September 25th, 2017)
 * Changed location permissions to requestAlwaysAuthorization
 * Fixed analytics call made on wrong thread
