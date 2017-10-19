@@ -56,7 +56,14 @@ typedef NS_ENUM(NSUInteger, PWLogLevel) {
  */
 @property (nonatomic, readonly) BOOL asyncLogging;
 
+/**
+ * initializer
+ */
 - (instancetype)init NS_UNAVAILABLE;
+
+/**
+ * initializer
+ */
 + (instancetype)new NS_UNAVAILABLE;
 
 /**
@@ -68,6 +75,7 @@ typedef NS_ENUM(NSUInteger, PWLogLevel) {
 /**
  * Logs a message using the logger.
  * @discussion  Log messages whose type is lower than the logger base level will cause this method to be called
+ * @param logMessage The logmessage to be logged.
  */
 - (void)logMessage:(PWLogMessage *)logMessage;
 
@@ -141,7 +149,7 @@ typedef NS_ENUM(NSUInteger, PWLogLevel) {
 
 /**
  * Displays MFMailComposeViewController to email logs.
- * @params serviceName The service to send the logs for.
+ * @param serviceName The service to send the logs for.
  */
 + (void)emailLogsForService:(NSString *)serviceName;
 
