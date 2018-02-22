@@ -1,4 +1,8 @@
 # PWCore Changelog
+## 3.3.1 (Thursday, Feb 22nd, 2017)
+#### Bug fixes / performance enhancements
+* Fixed issue with initial network requests using JWT
+
 ## 3.3.0 (Thursday, Feb 22nd, 2017)
 #### Features
 * Mapping API calls now use JWT
