@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWPagination.html">
+	<File path="Classes/PWLogger.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWPagination</TokenIdentifier>
-			<Abstract type="html">PWPagination objects encapsulate all pagination details associated with fetching an array of content objects.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWLogger</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
             
 			
 			<NodeRef refid="5"/>
@@ -13,199 +13,194 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setFromResultIndex:</TokenIdentifier>
-			<Abstract type="html">The starting index for the returned results.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLogger/consoleLoggingEnabled:forService:</TokenIdentifier>
+			<Abstract type="html">Enables or disables console logging for the service.</Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger fromResultIndex</Declaration>
-			
-			
-			<Anchor>//api/name/fromResultIndex</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/fromResultIndex</TokenIdentifier>
-			<Abstract type="html">The starting index for the returned results.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger fromResultIndex</Declaration>
-			
-			
-			<Anchor>//api/name/fromResultIndex</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/fromResultIndex</TokenIdentifier>
-			<Abstract type="html">The starting index for the returned results.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger fromResultIndex</Declaration>
-			
-			
-			<Anchor>//api/name/fromResultIndex</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setToResultIndex:</TokenIdentifier>
-			<Abstract type="html">The ending index for the returned results.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger toResultIndex</Declaration>
-			
-			
-			<Anchor>//api/name/toResultIndex</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/toResultIndex</TokenIdentifier>
-			<Abstract type="html">The ending index for the returned results.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger toResultIndex</Declaration>
-			
-			
-			<Anchor>//api/name/toResultIndex</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/toResultIndex</TokenIdentifier>
-			<Abstract type="html">The ending index for the returned results.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger toResultIndex</Declaration>
-			
-			
-			<Anchor>//api/name/toResultIndex</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setTotalResults:</TokenIdentifier>
-			<Abstract type="html">The total number of available results.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger totalResults</Declaration>
-			
-			
-			<Anchor>//api/name/totalResults</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/totalResults</TokenIdentifier>
-			<Abstract type="html">The total number of available results.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger totalResults</Declaration>
-			
-			
-			<Anchor>//api/name/totalResults</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/totalResults</TokenIdentifier>
-			<Abstract type="html">The total number of available results.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger totalResults</Declaration>
-			
-			
-			<Anchor>//api/name/totalResults</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setCurrentPage:</TokenIdentifier>
-			<Abstract type="html">The current results page.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
-			
-			
-			<Anchor>//api/name/currentPage</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/currentPage</TokenIdentifier>
-			<Abstract type="html">The current results page.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
-			
-			
-			<Anchor>//api/name/currentPage</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/currentPage</TokenIdentifier>
-			<Abstract type="html">The current results page.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
-			
-			
-			<Anchor>//api/name/currentPage</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setNumberOfPages:</TokenIdentifier>
-			<Abstract type="html">The total number of results pages available.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfPages</Declaration>
-			
-			
-			<Anchor>//api/name/numberOfPages</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/numberOfPages</TokenIdentifier>
-			<Abstract type="html">The total number of results pages available.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfPages</Declaration>
-			
-			
-			<Anchor>//api/name/numberOfPages</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/numberOfPages</TokenIdentifier>
-			<Abstract type="html">The total number of results pages available.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfPages</Declaration>
-			
-			
-			<Anchor>//api/name/numberOfPages</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWPagination/unpack:</TokenIdentifier>
-			<Abstract type="html">Convenience method to instantiate a PWPagination object from a properly formatted NSDictionary object.</Abstract>
-			<DeclaredIn>PWPagination.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)unpack:(NSDictionary *)dictionary</Declaration>
+			<Declaration>+ (void)consoleLoggingEnabled:(BOOL)enabled forService:(NSString *)serviceName</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>dictionary</Name>
-					<Abstract type="html">The dictionary from which to instantiate the PWPagination object.</Abstract>
+					<Name>enabled</Name>
+					<Abstract type="html">Enable or disable to the console logger.</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceName</Name>
+					<Abstract type="html">Service to log</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/unpack:</Anchor>
+			<Anchor>//api/name/consoleLoggingEnabled:forService:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLogger/fileLoggingEnabled:forService:</TokenIdentifier>
+			<Abstract type="html">Enables or disables file logging for the service.</Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
+			
+			<Declaration>+ (void)fileLoggingEnabled:(BOOL)enabled forService:(NSString *)serviceName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">Enable or disable to the file logger.</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceName</Name>
+					<Abstract type="html">Service to log</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fileLoggingEnabled:forService:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLogger/logForService:message:type:file:function:line:dictionary:</TokenIdentifier>
+			<Abstract type="html">Logs a message using all the loggers added to the logging module.</Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
+			
+			<Declaration>+ (void)logForService:(NSString *)serviceName message:(NSString *)message type:(PWLogType)type file:(const char *)file function:(const char *)function line:(NSUInteger)line dictionary:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceName</Name>
+					<Abstract type="html">The service name that corresponds to the message. Only loggers with the same service name will receive the message.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The main message content of the log message.</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">The type of the message. Only loggers with a base level equal or below the message type will proceed log the message. See the &apos;PWLogType&apos; and &apos;PWLogLevel&apos; enums.</Abstract>
+				</Parameter><Parameter>
+					<Name>file</Name>
+					<Abstract type="html">The file where the message was logged.</Abstract>
+				</Parameter><Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function from where the message was logged.</Abstract>
+				</Parameter><Parameter>
+					<Name>line</Name>
+					<Abstract type="html">The line number inside the file where the message was logged.</Abstract>
+				</Parameter><Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">A dictionary of values to store in the log.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logForService:message:type:file:function:line:dictionary:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLogger/addLogger:</TokenIdentifier>
+			<Abstract type="html">Adds a logger to the logging module.</Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
+			
+			<Declaration>+ (void)addLogger:(id&lt;PWLogger&gt;)logger</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>logger</Name>
+					<Abstract type="html">The logger to add. It must implement the PWLogger.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addLogger:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLogger/removeLogger:</TokenIdentifier>
+			<Abstract type="html">Removes a logger from the logging module</Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
+			
+			<Declaration>+ (void)removeLogger:(id&lt;PWLogger&gt;)logger</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>logger</Name>
+					<Abstract type="html">The logger to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeLogger:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLogger/setLoggersLogLevel:</TokenIdentifier>
+			<Abstract type="html">Sets all the loggers log level.</Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
+			
+			<Declaration>+ (void)setLoggersLogLevel:(PWLogLevel)logLevel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>logLevel</Name>
+					<Abstract type="html">The log level to log.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLoggersLogLevel:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLogger/setLoggersLogLevel:forService:</TokenIdentifier>
+			<Abstract type="html">Sets all the loggers log level for a service.</Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
+			
+			<Declaration>+ (void)setLoggersLogLevel:(PWLogLevel)logLevel forService:(NSString *)serviceName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>logLevel</Name>
+					<Abstract type="html">The log level to log.</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceName</Name>
+					<Abstract type="html">The service to set the log level on.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLoggersLogLevel:forService:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLogger/setLogInternalError:</TokenIdentifier>
+			<Abstract type="html">Enables or disables logging internal errors.</Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
+			
+			<Declaration>+ (void)setLogInternalError:(BOOL)logInternalErrors</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>logInternalErrors</Name>
+					<Abstract type="html">A BOOL value that indicates whether internal errors should be logged.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLogInternalError:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLogger/emailLogs</TokenIdentifier>
+			<Abstract type="html">Displays MFMailComposeViewController to email logs.</Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
+			
+			<Declaration>+ (void)emailLogs</Declaration>
+			
+			
+			<Anchor>//api/name/emailLogs</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLogger/emailLogsForService:</TokenIdentifier>
+			<Abstract type="html">Displays MFMailComposeViewController to email logs.</Abstract>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
+			
+			<Declaration>+ (void)emailLogsForService:(NSString *)serviceName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceName</Name>
+					<Abstract type="html">The service to send the logs for.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/emailLogsForService:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

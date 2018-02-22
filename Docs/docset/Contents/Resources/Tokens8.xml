@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWStructure.html">
+	<File path="Classes/PWSchemaField.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWStructure</TokenIdentifier>
-			<Abstract type="html">PWStructure items are used to build the structure and hierarchy of the data. Each structure item that is defined as an object can also optionally be assigned a schema that defines what content can be saved to those structure items. All values in a PWStructure object are immutable on the client. You can modify PWStructure values in the MaaS portal. PWStructure conforms to the NSCoding and NSCopying protocol.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWSchemaField</TokenIdentifier>
+			<Abstract type="html">PWSchemaField objects define the fields that are specified for a PWSchema object. A PWSchemaField object has a few base parameters and can be extended to support additional key:value pairs. Additional key:value pairs are available in the customKeys property. You can modify PWSchemaField values in the MaaS portal. PWSchemaField conforms to the NSCoding and NSCopying protocol.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>
@@ -13,225 +13,9 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setStructureID:</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Structure ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger structureID</Declaration>
-			
-			
-			<Anchor>//api/name/structureID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/structureID</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Structure ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger structureID</Declaration>
-			
-			
-			<Anchor>//api/name/structureID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/structureID</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Structure ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger structureID</Declaration>
-			
-			
-			<Anchor>//api/name/structureID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setParentID:</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger parentID</Declaration>
-			
-			
-			<Anchor>//api/name/parentID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/parentID</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger parentID</Declaration>
-			
-			
-			<Anchor>//api/name/parentID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/parentID</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger parentID</Declaration>
-			
-			
-			<Anchor>//api/name/parentID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setContainerID:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Container ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *containerID</Declaration>
-			
-			
-			<Anchor>//api/name/containerID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/containerID</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Container ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *containerID</Declaration>
-			
-			
-			<Anchor>//api/name/containerID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/containerID</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Container ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *containerID</Declaration>
-			
-			
-			<Anchor>//api/name/containerID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setSchemaID:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
-			
-			
-			<Anchor>//api/name/schemaID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/schemaID</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
-			
-			
-			<Anchor>//api/name/schemaID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/schemaID</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
-			
-			
-			<Anchor>//api/name/schemaID</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setName:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/name</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/name</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setType:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure type.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/type</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure type.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/type</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure type.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setField:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure field.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setField:</TokenIdentifier>
+			<Abstract type="html">A string describing the field key.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
 			
@@ -241,9 +25,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/field</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure field.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/field</TokenIdentifier>
+			<Abstract type="html">A string describing the field key.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
 			
@@ -253,9 +37,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/field</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure field.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/field</TokenIdentifier>
+			<Abstract type="html">A string describing the field key.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
 			
@@ -265,303 +49,195 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setStructureDescription:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setLabel:</TokenIdentifier>
+			<Abstract type="html">A string describing the field label.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *structureDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
 			
 			
-			<Anchor>//api/name/structureDescription</Anchor>
+			<Anchor>//api/name/label</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/structureDescription</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/label</TokenIdentifier>
+			<Abstract type="html">A string describing the field label.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *structureDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
 			
 			
-			<Anchor>//api/name/structureDescription</Anchor>
+			<Anchor>//api/name/label</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/structureDescription</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/label</TokenIdentifier>
+			<Abstract type="html">A string describing the field label.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *structureDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
 			
 			
-			<Anchor>//api/name/structureDescription</Anchor>
+			<Anchor>//api/name/label</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setSortOrder:</TokenIdentifier>
-			<Abstract type="html">An unsigned integer that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setType:</TokenIdentifier>
+			<Abstract type="html">A string describing the field type.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger sortOrder</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
 			
 			
-			<Anchor>//api/name/sortOrder</Anchor>
+			<Anchor>//api/name/type</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/sortOrder</TokenIdentifier>
-			<Abstract type="html">An unsigned integer that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/type</TokenIdentifier>
+			<Abstract type="html">A string describing the field type.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger sortOrder</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
 			
 			
-			<Anchor>//api/name/sortOrder</Anchor>
+			<Anchor>//api/name/type</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/sortOrder</TokenIdentifier>
-			<Abstract type="html">An unsigned integer that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/type</TokenIdentifier>
+			<Abstract type="html">A string describing the field type.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger sortOrder</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
 			
 			
-			<Anchor>//api/name/sortOrder</Anchor>
+			<Anchor>//api/name/type</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setIsActive:</TokenIdentifier>
-			<Abstract type="html">An boolean that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setRequired:</TokenIdentifier>
+			<Abstract type="html">A boolean value which indicates whether or note this field is required.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL isActive</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
 			
 			
-			<Anchor>//api/name/isActive</Anchor>
+			<Anchor>//api/name/required</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/isActive</TokenIdentifier>
-			<Abstract type="html">An boolean that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/required</TokenIdentifier>
+			<Abstract type="html">A boolean value which indicates whether or note this field is required.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL isActive</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
 			
 			
-			<Anchor>//api/name/isActive</Anchor>
+			<Anchor>//api/name/required</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/isActive</TokenIdentifier>
-			<Abstract type="html">An boolean that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/required</TokenIdentifier>
+			<Abstract type="html">A boolean value which indicates whether or note this field is required.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL isActive</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
 			
 			
-			<Anchor>//api/name/isActive</Anchor>
+			<Anchor>//api/name/required</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setCreationDate:</TokenIdentifier>
-			<Abstract type="html">The creation date of the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setFieldDescription:</TokenIdentifier>
+			<Abstract type="html">A string describing the field.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
 			
 			
-			<Anchor>//api/name/creationDate</Anchor>
+			<Anchor>//api/name/fieldDescription</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/creationDate</TokenIdentifier>
-			<Abstract type="html">The creation date of the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/fieldDescription</TokenIdentifier>
+			<Abstract type="html">A string describing the field.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
 			
 			
-			<Anchor>//api/name/creationDate</Anchor>
+			<Anchor>//api/name/fieldDescription</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/creationDate</TokenIdentifier>
-			<Abstract type="html">The creation date of the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/fieldDescription</TokenIdentifier>
+			<Abstract type="html">A string describing the field.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
 			
 			
-			<Anchor>//api/name/creationDate</Anchor>
+			<Anchor>//api/name/fieldDescription</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setLastUpdated:</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setCustomKeys:</TokenIdentifier>
+			<Abstract type="html">Additional keys are based on the type and can be modified in the MaaS portal.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
 			
 			
-			<Anchor>//api/name/lastUpdated</Anchor>
+			<Anchor>//api/name/customKeys</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/lastUpdated</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/customKeys</TokenIdentifier>
+			<Abstract type="html">Additional keys are based on the type and can be modified in the MaaS portal.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
 			
 			
-			<Anchor>//api/name/lastUpdated</Anchor>
+			<Anchor>//api/name/customKeys</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/lastUpdated</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/customKeys</TokenIdentifier>
+			<Abstract type="html">Additional keys are based on the type and can be modified in the MaaS portal.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
 			
 			
-			<Anchor>//api/name/lastUpdated</Anchor>
+			<Anchor>//api/name/customKeys</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setSchema:</TokenIdentifier>
-			<Abstract type="html">The PWSchema object associated with the current structure, if one exists.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) PWSchema *schema</Declaration>
-			
-			
-			<Anchor>//api/name/schema</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/schema</TokenIdentifier>
-			<Abstract type="html">The PWSchema object associated with the current structure, if one exists.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) PWSchema *schema</Declaration>
-			
-			
-			<Anchor>//api/name/schema</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/schema</TokenIdentifier>
-			<Abstract type="html">The PWSchema object associated with the current structure, if one exists.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) PWSchema *schema</Declaration>
-			
-			
-			<Anchor>//api/name/schema</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setContent:</TokenIdentifier>
-			<Abstract type="html">The content, where the structure is based on the associated PWSchema.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *content</Declaration>
-			
-			
-			<Anchor>//api/name/content</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/content</TokenIdentifier>
-			<Abstract type="html">The content, where the structure is based on the associated PWSchema.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *content</Declaration>
-			
-			
-			<Anchor>//api/name/content</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/content</TokenIdentifier>
-			<Abstract type="html">The content, where the structure is based on the associated PWSchema.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *content</Declaration>
-			
-			
-			<Anchor>//api/name/content</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setChildren:</TokenIdentifier>
-			<Abstract type="html">Depending on the API method, the child PWStructure items may be return as well.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
-			
-			
-			<Anchor>//api/name/children</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/children</TokenIdentifier>
-			<Abstract type="html">Depending on the API method, the child PWStructure items may be return as well.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
-			
-			
-			<Anchor>//api/name/children</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/children</TokenIdentifier>
-			<Abstract type="html">Depending on the API method, the child PWStructure items may be return as well.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
-			
-			
-			<Anchor>//api/name/children</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWStructure/unpack:</TokenIdentifier>
-			<Abstract type="html">Convenience method to instantiate a PWStructure object from a properly formatted NSDictionary object.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWSchemaField/unpack:</TokenIdentifier>
+			<Abstract type="html">Convenience method to instantiate a PWSchemaField object from a properly formatted NSDictionary object.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
 			<Declaration>+ (instancetype)unpack:(NSDictionary *)dictionary</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>dictionary</Name>
-					<Abstract type="html">The dictionary from which to instantiate the PWStructure object.</Abstract>
+					<Abstract type="html">The dictionary from which to instantiate the PWSchemaField object.</Abstract>
 				</Parameter>
 			</Parameters>
 			
@@ -570,9 +246,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/dictionary</TokenIdentifier>
-			<Abstract type="html">Returns an NSDictionary representation of the current structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/dictionary</TokenIdentifier>
+			<Abstract type="html">Returns an NSDictionary representation of the current container.</Abstract>
+			<DeclaredIn>PWSchemaField.h</DeclaredIn>
 			
 			<Declaration>- (NSDictionary *)dictionary</Declaration>
 			
