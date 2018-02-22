@@ -284,18 +284,6 @@
             <NodeRef refid="1"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/serviceName</TokenIdentifier>
-			<Abstract type="html">Returns &apos;MaaSAnalytics&apos;.</Abstract>
-			<DeclaredIn>PWAnalytics.h</DeclaredIn>
-			
-			<Declaration>+ (NSString *__nonnull)serviceName</Declaration>
-			
-			
-			<Anchor>//api/name/serviceName</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
         
         
 	</File>

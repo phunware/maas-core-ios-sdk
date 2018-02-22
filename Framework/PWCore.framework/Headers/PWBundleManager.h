@@ -58,4 +58,11 @@
  */
 - (void)fetchBundleWithURL:(NSURL *)url retryInterval:(NSInteger)retryInterval maxRetry:(NSInteger)maxRetry decryptionKey:(NSString *)decryptionKey completion:(void(^)(NSString *bundleDirectory, BOOL bundleChanged, NSError *error))completion;
 
+/**
+ Fetch building bundle for the specified building identifier, decprypt then unpack it, and save the necessary JSON files
+ @param buildingId The building identifier.
+ @param isDraft Tell it's a draft or live bundle.
+ @param completion A block that returns the unzipped bundle directory or error.
+ */
+- (void)fetchBuildingBundleById:(NSInteger)buildingId draft:(BOOL)isDraft completion:(void(^)(NSString *bundleDirectory, BOOL bundleChanged, NSError *error))completion;
 @end

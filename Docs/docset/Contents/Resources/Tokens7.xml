@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWSchemaField.html">
+	<File path="Classes/PWSchema.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWSchemaField</TokenIdentifier>
-			<Abstract type="html">PWSchemaField objects define the fields that are specified for a PWSchema object. A PWSchemaField object has a few base parameters and can be extended to support additional key:value pairs. Additional key:value pairs are available in the customKeys property. You can modify PWSchemaField values in the MaaS portal. PWSchemaField conforms to the NSCoding and NSCopying protocol.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWSchema</TokenIdentifier>
+			<Abstract type="html">PWSchema objects are applied to PWStructure items and define what fields of data a particular PWStructure item can contain. You can modify PWSchema values in the MaaS portal. PWSchema conforms to the NSCoding and NSCopying protocol.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
             
 			
 			<NodeRef refid="7"/>
@@ -13,231 +13,267 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setField:</TokenIdentifier>
-			<Abstract type="html">A string describing the field key.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setSchemaID:</TokenIdentifier>
+			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
 			
 			
-			<Anchor>//api/name/field</Anchor>
+			<Anchor>//api/name/schemaID</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/field</TokenIdentifier>
-			<Abstract type="html">A string describing the field key.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/schemaID</TokenIdentifier>
+			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
 			
 			
-			<Anchor>//api/name/field</Anchor>
+			<Anchor>//api/name/schemaID</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/field</TokenIdentifier>
-			<Abstract type="html">A string describing the field key.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/schemaID</TokenIdentifier>
+			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
 			
 			
-			<Anchor>//api/name/field</Anchor>
+			<Anchor>//api/name/schemaID</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setLabel:</TokenIdentifier>
-			<Abstract type="html">A string describing the field label.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setName:</TokenIdentifier>
+			<Abstract type="html">A string that is used to identify the schema name.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/label</Anchor>
+			<Anchor>//api/name/name</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/label</TokenIdentifier>
-			<Abstract type="html">A string describing the field label.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/name</TokenIdentifier>
+			<Abstract type="html">A string that is used to identify the schema name.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/label</Anchor>
+			<Anchor>//api/name/name</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/label</TokenIdentifier>
-			<Abstract type="html">A string describing the field label.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/name</TokenIdentifier>
+			<Abstract type="html">A string that is used to identify the schema name.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/label</Anchor>
+			<Anchor>//api/name/name</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setType:</TokenIdentifier>
-			<Abstract type="html">A string describing the field type.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setFields:</TokenIdentifier>
+			<Abstract type="html">An array of PWSchemaField objects associated with the schema.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *fields</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/fields</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/type</TokenIdentifier>
-			<Abstract type="html">A string describing the field type.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/fields</TokenIdentifier>
+			<Abstract type="html">An array of PWSchemaField objects associated with the schema.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *fields</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/fields</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/type</TokenIdentifier>
-			<Abstract type="html">A string describing the field type.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/fields</TokenIdentifier>
+			<Abstract type="html">An array of PWSchemaField objects associated with the schema.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *fields</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/fields</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setRequired:</TokenIdentifier>
-			<Abstract type="html">A boolean value which indicates whether or note this field is required.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setAttributes:</TokenIdentifier>
+			<Abstract type="html">A array of attributes associated with the schema. Attribute objects are of NSDictionary type: @{@&quot;key&quot; : @&quot;value&quot;}.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *attributes</Declaration>
 			
 			
-			<Anchor>//api/name/required</Anchor>
+			<Anchor>//api/name/attributes</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/required</TokenIdentifier>
-			<Abstract type="html">A boolean value which indicates whether or note this field is required.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/attributes</TokenIdentifier>
+			<Abstract type="html">A array of attributes associated with the schema. Attribute objects are of NSDictionary type: @{@&quot;key&quot; : @&quot;value&quot;}.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *attributes</Declaration>
 			
 			
-			<Anchor>//api/name/required</Anchor>
+			<Anchor>//api/name/attributes</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/required</TokenIdentifier>
-			<Abstract type="html">A boolean value which indicates whether or note this field is required.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/attributes</TokenIdentifier>
+			<Abstract type="html">A array of attributes associated with the schema. Attribute objects are of NSDictionary type: @{@&quot;key&quot; : @&quot;value&quot;}.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *attributes</Declaration>
 			
 			
-			<Anchor>//api/name/required</Anchor>
+			<Anchor>//api/name/attributes</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setFieldDescription:</TokenIdentifier>
-			<Abstract type="html">A string describing the field.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setTags:</TokenIdentifier>
+			<Abstract type="html">A array of tags associated with the schema. A tag is an NSString object.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
 			
 			
-			<Anchor>//api/name/fieldDescription</Anchor>
+			<Anchor>//api/name/tags</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/fieldDescription</TokenIdentifier>
-			<Abstract type="html">A string describing the field.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/tags</TokenIdentifier>
+			<Abstract type="html">A array of tags associated with the schema. A tag is an NSString object.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
 			
 			
-			<Anchor>//api/name/fieldDescription</Anchor>
+			<Anchor>//api/name/tags</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/fieldDescription</TokenIdentifier>
-			<Abstract type="html">A string describing the field.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/tags</TokenIdentifier>
+			<Abstract type="html">A array of tags associated with the schema. A tag is an NSString object.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
 			
 			
-			<Anchor>//api/name/fieldDescription</Anchor>
+			<Anchor>//api/name/tags</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setCustomKeys:</TokenIdentifier>
-			<Abstract type="html">Additional keys are based on the type and can be modified in the MaaS portal.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setCreationDate:</TokenIdentifier>
+			<Abstract type="html">The creation date of the schema.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
 			
 			
-			<Anchor>//api/name/customKeys</Anchor>
+			<Anchor>//api/name/creationDate</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/customKeys</TokenIdentifier>
-			<Abstract type="html">Additional keys are based on the type and can be modified in the MaaS portal.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/creationDate</TokenIdentifier>
+			<Abstract type="html">The creation date of the schema.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
 			
 			
-			<Anchor>//api/name/customKeys</Anchor>
+			<Anchor>//api/name/creationDate</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/customKeys</TokenIdentifier>
-			<Abstract type="html">Additional keys are based on the type and can be modified in the MaaS portal.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/creationDate</TokenIdentifier>
+			<Abstract type="html">The creation date of the schema.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
 			
 			
-			<Anchor>//api/name/customKeys</Anchor>
+			<Anchor>//api/name/creationDate</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWSchemaField/unpack:</TokenIdentifier>
-			<Abstract type="html">Convenience method to instantiate a PWSchemaField object from a properly formatted NSDictionary object.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setLastUpdated:</TokenIdentifier>
+			<Abstract type="html">The date of the last update for the schema.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdated</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/lastUpdated</TokenIdentifier>
+			<Abstract type="html">The date of the last update for the schema.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdated</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/lastUpdated</TokenIdentifier>
+			<Abstract type="html">The date of the last update for the schema.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdated</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWSchema/unpack:</TokenIdentifier>
+			<Abstract type="html">Convenience method to instantiate a PWSchema object from a properly formatted NSDictionary object.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
 			<Declaration>+ (instancetype)unpack:(NSDictionary *)dictionary</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>dictionary</Name>
-					<Abstract type="html">The dictionary from which to instantiate the PWSchemaField object.</Abstract>
+					<Abstract type="html">The dictionary from which to instantiate the PWSchema object.</Abstract>
 				</Parameter>
 			</Parameters>
 			
@@ -246,9 +282,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/dictionary</TokenIdentifier>
-			<Abstract type="html">Returns an NSDictionary representation of the current container.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/dictionary</TokenIdentifier>
+			<Abstract type="html">Returns an NSDictionary representation of the current structure.</Abstract>
+			<DeclaredIn>PWSchema.h</DeclaredIn>
 			
 			<Declaration>- (NSDictionary *)dictionary</Declaration>
 			

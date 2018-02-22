@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWSchema.html">
+	<File path="Classes/PWPagination.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWSchema</TokenIdentifier>
-			<Abstract type="html">PWSchema objects are applied to PWStructure items and define what fields of data a particular PWStructure item can contain. You can modify PWSchema values in the MaaS portal. PWSchema conforms to the NSCoding and NSCopying protocol.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWPagination</TokenIdentifier>
+			<Abstract type="html">PWPagination objects encapsulate all pagination details associated with fetching an array of content objects.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
             
 			
 			<NodeRef refid="6"/>
@@ -13,283 +13,199 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setSchemaID:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setFromResultIndex:</TokenIdentifier>
+			<Abstract type="html">The starting index for the returned results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger fromResultIndex</Declaration>
 			
 			
-			<Anchor>//api/name/schemaID</Anchor>
+			<Anchor>//api/name/fromResultIndex</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/schemaID</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/fromResultIndex</TokenIdentifier>
+			<Abstract type="html">The starting index for the returned results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger fromResultIndex</Declaration>
 			
 			
-			<Anchor>//api/name/schemaID</Anchor>
+			<Anchor>//api/name/fromResultIndex</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/schemaID</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/fromResultIndex</TokenIdentifier>
+			<Abstract type="html">The starting index for the returned results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger fromResultIndex</Declaration>
 			
 			
-			<Anchor>//api/name/schemaID</Anchor>
+			<Anchor>//api/name/fromResultIndex</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setName:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the schema name.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setToResultIndex:</TokenIdentifier>
+			<Abstract type="html">The ending index for the returned results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger toResultIndex</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/toResultIndex</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/name</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the schema name.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/toResultIndex</TokenIdentifier>
+			<Abstract type="html">The ending index for the returned results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger toResultIndex</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/toResultIndex</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/name</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the schema name.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/toResultIndex</TokenIdentifier>
+			<Abstract type="html">The ending index for the returned results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger toResultIndex</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/toResultIndex</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setFields:</TokenIdentifier>
-			<Abstract type="html">An array of PWSchemaField objects associated with the schema.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setTotalResults:</TokenIdentifier>
+			<Abstract type="html">The total number of available results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *fields</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger totalResults</Declaration>
 			
 			
-			<Anchor>//api/name/fields</Anchor>
+			<Anchor>//api/name/totalResults</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/fields</TokenIdentifier>
-			<Abstract type="html">An array of PWSchemaField objects associated with the schema.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/totalResults</TokenIdentifier>
+			<Abstract type="html">The total number of available results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *fields</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger totalResults</Declaration>
 			
 			
-			<Anchor>//api/name/fields</Anchor>
+			<Anchor>//api/name/totalResults</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/fields</TokenIdentifier>
-			<Abstract type="html">An array of PWSchemaField objects associated with the schema.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/totalResults</TokenIdentifier>
+			<Abstract type="html">The total number of available results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *fields</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger totalResults</Declaration>
 			
 			
-			<Anchor>//api/name/fields</Anchor>
+			<Anchor>//api/name/totalResults</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setAttributes:</TokenIdentifier>
-			<Abstract type="html">A array of attributes associated with the schema. Attribute objects are of NSDictionary type: @{@&quot;key&quot; : @&quot;value&quot;}.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setCurrentPage:</TokenIdentifier>
+			<Abstract type="html">The current results page.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *attributes</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
 			
 			
-			<Anchor>//api/name/attributes</Anchor>
+			<Anchor>//api/name/currentPage</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/attributes</TokenIdentifier>
-			<Abstract type="html">A array of attributes associated with the schema. Attribute objects are of NSDictionary type: @{@&quot;key&quot; : @&quot;value&quot;}.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/currentPage</TokenIdentifier>
+			<Abstract type="html">The current results page.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *attributes</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
 			
 			
-			<Anchor>//api/name/attributes</Anchor>
+			<Anchor>//api/name/currentPage</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/attributes</TokenIdentifier>
-			<Abstract type="html">A array of attributes associated with the schema. Attribute objects are of NSDictionary type: @{@&quot;key&quot; : @&quot;value&quot;}.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/currentPage</TokenIdentifier>
+			<Abstract type="html">The current results page.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *attributes</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
 			
 			
-			<Anchor>//api/name/attributes</Anchor>
+			<Anchor>//api/name/currentPage</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setTags:</TokenIdentifier>
-			<Abstract type="html">A array of tags associated with the schema. A tag is an NSString object.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setNumberOfPages:</TokenIdentifier>
+			<Abstract type="html">The total number of results pages available.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfPages</Declaration>
 			
 			
-			<Anchor>//api/name/tags</Anchor>
+			<Anchor>//api/name/numberOfPages</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/tags</TokenIdentifier>
-			<Abstract type="html">A array of tags associated with the schema. A tag is an NSString object.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/numberOfPages</TokenIdentifier>
+			<Abstract type="html">The total number of results pages available.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfPages</Declaration>
 			
 			
-			<Anchor>//api/name/tags</Anchor>
+			<Anchor>//api/name/numberOfPages</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/tags</TokenIdentifier>
-			<Abstract type="html">A array of tags associated with the schema. A tag is an NSString object.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/numberOfPages</TokenIdentifier>
+			<Abstract type="html">The total number of results pages available.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfPages</Declaration>
 			
 			
-			<Anchor>//api/name/tags</Anchor>
+			<Anchor>//api/name/numberOfPages</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setCreationDate:</TokenIdentifier>
-			<Abstract type="html">The creation date of the schema.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
-			
-			
-			<Anchor>//api/name/creationDate</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/creationDate</TokenIdentifier>
-			<Abstract type="html">The creation date of the schema.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
-			
-			
-			<Anchor>//api/name/creationDate</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/creationDate</TokenIdentifier>
-			<Abstract type="html">The creation date of the schema.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
-			
-			
-			<Anchor>//api/name/creationDate</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/setLastUpdated:</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the schema.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
-			
-			
-			<Anchor>//api/name/lastUpdated</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/lastUpdated</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the schema.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
-			
-			
-			<Anchor>//api/name/lastUpdated</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchema/lastUpdated</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the schema.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
-			
-			
-			<Anchor>//api/name/lastUpdated</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWSchema/unpack:</TokenIdentifier>
-			<Abstract type="html">Convenience method to instantiate a PWSchema object from a properly formatted NSDictionary object.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWPagination/unpack:</TokenIdentifier>
+			<Abstract type="html">Convenience method to instantiate a PWPagination object from a properly formatted NSDictionary object.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
 			
 			<Declaration>+ (instancetype)unpack:(NSDictionary *)dictionary</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>dictionary</Name>
-					<Abstract type="html">The dictionary from which to instantiate the PWSchema object.</Abstract>
+					<Abstract type="html">The dictionary from which to instantiate the PWPagination object.</Abstract>
 				</Parameter>
 			</Parameters>
 			
 			<Anchor>//api/name/unpack:</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchema/dictionary</TokenIdentifier>
-			<Abstract type="html">Returns an NSDictionary representation of the current structure.</Abstract>
-			<DeclaredIn>PWSchema.h</DeclaredIn>
-			
-			<Declaration>- (NSDictionary *)dictionary</Declaration>
-			
-			
-			<Anchor>//api/name/dictionary</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
