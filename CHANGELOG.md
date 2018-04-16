@@ -1,9 +1,17 @@
 # PWCore Changelog
-## 3.3.1 (Thursday, Feb 22nd, 2017)
+## 3.4.0 (Monday, Apr 16th, 2018)
+#### Features
+* Added userInfo object to completion block of fetchBundleWithURL: and fetchBuildingBundleById: to provide additional information when using cached bundle
+
+#### Bug fixes / performance enhancements
+* Moved location analytic payload to device level
+* Fixed issue where log level not honored when set before creation of PWLogger
+
+## 3.3.1 (Thursday, Feb 22nd, 2018)
 #### Bug fixes / performance enhancements
 * Fixed issue with initial network requests using JWT
 
-## 3.3.0 (Thursday, Feb 22nd, 2017)
+## 3.3.0 (Thursday, Feb 22nd, 2018)
 #### Features
 * Mapping API calls now use JWT
 
