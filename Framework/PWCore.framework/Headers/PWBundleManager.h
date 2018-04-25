@@ -28,6 +28,11 @@ extern NSString * const PWBundleChangedKey;
 @interface PWBundleManager : NSObject
 
 /**
+ The timeout for network request to get the bundle before falling back to the cached version. This is only used if a cached bundle exists, for non-cached bundles the default of 60 seconds is used. If this is not set at all, the default of 10 seconds is used.
+ */
+@property (nonatomic) NSTimeInterval cacheFallbackTimeoutOverride;
+
+/**
  Shared `PWBundleManager`.
  */
 + (PWBundleManager *)sharedInstance;

@@ -1,4 +1,11 @@
 # PWCore Changelog
+## 3.4.1 (Wednesday, Apr 25th, 2018)
+#### Features
+* Added configurable bundle cache timeout
+
+#### Bug fixes / performance enhancements
+* Fixed crash on bundle network request failure
+
 ## 3.4.0 (Monday, Apr 16th, 2018)
 #### Features
 * Added userInfo object to completion block of fetchBundleWithURL: and fetchBuildingBundleById: to provide additional information when using cached bundle
