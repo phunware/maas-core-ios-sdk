@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWStructure.html">
+	<File path="Classes/PWLogMessage.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWStructure</TokenIdentifier>
-			<Abstract type="html">PWStructure items are used to build the structure and hierarchy of the data. Each structure item that is defined as an object can also optionally be assigned a schema that defines what content can be saved to those structure items. All values in a PWStructure object are immutable on the client. You can modify PWStructure values in the MaaS portal. PWStructure conforms to the NSCoding and NSCopying protocol.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWLogMessage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
             
 			
 			<NodeRef refid="9"/>
@@ -13,571 +13,337 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setStructureID:</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Structure ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/setMessage:</TokenIdentifier>
+			<Abstract type="html">The main message of the message object.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger structureID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *message</Declaration>
 			
 			
-			<Anchor>//api/name/structureID</Anchor>
+			<Anchor>//api/name/message</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/structureID</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Structure ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/message</TokenIdentifier>
+			<Abstract type="html">The main message of the message object.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger structureID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *message</Declaration>
 			
 			
-			<Anchor>//api/name/structureID</Anchor>
+			<Anchor>//api/name/message</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/structureID</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Structure ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLogMessage/message</TokenIdentifier>
+			<Abstract type="html">The main message of the message object.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger structureID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *message</Declaration>
 			
 			
-			<Anchor>//api/name/structureID</Anchor>
+			<Anchor>//api/name/message</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setParentID:</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/setDetails:</TokenIdentifier>
+			<Abstract type="html">A dictionary with the log message details.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger parentID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *details</Declaration>
 			
 			
-			<Anchor>//api/name/parentID</Anchor>
+			<Anchor>//api/name/details</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/parentID</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/details</TokenIdentifier>
+			<Abstract type="html">A dictionary with the log message details.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger parentID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *details</Declaration>
 			
 			
-			<Anchor>//api/name/parentID</Anchor>
+			<Anchor>//api/name/details</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/parentID</TokenIdentifier>
-			<Abstract type="html">An integer that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLogMessage/details</TokenIdentifier>
+			<Abstract type="html">A dictionary with the log message details.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger parentID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *details</Declaration>
 			
 			
-			<Anchor>//api/name/parentID</Anchor>
+			<Anchor>//api/name/details</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setContainerID:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Container ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/setServiceName:</TokenIdentifier>
+			<Abstract type="html">The name of the service that corresponds to the message.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *containerID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *serviceName</Declaration>
 			
 			
-			<Anchor>//api/name/containerID</Anchor>
+			<Anchor>//api/name/serviceName</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/containerID</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Container ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/serviceName</TokenIdentifier>
+			<Abstract type="html">The name of the service that corresponds to the message.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *containerID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *serviceName</Declaration>
 			
 			
-			<Anchor>//api/name/containerID</Anchor>
+			<Anchor>//api/name/serviceName</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/containerID</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Container ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLogMessage/serviceName</TokenIdentifier>
+			<Abstract type="html">The name of the service that corresponds to the message.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *containerID</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *serviceName</Declaration>
 			
 			
-			<Anchor>//api/name/containerID</Anchor>
+			<Anchor>//api/name/serviceName</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setSchemaID:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/setLogType:</TokenIdentifier>
+			<Abstract type="html">The type of log message. Whether the message will actually be logged depends on the type of the message and the level of the logger. Refer to the &apos;PWLogLevel&apos; enum for details.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
+			<Declaration>@property (nonatomic, readonly) PWLogType logType</Declaration>
 			
 			
-			<Anchor>//api/name/schemaID</Anchor>
+			<Anchor>//api/name/logType</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/schemaID</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/logType</TokenIdentifier>
+			<Abstract type="html">The type of log message. Whether the message will actually be logged depends on the type of the message and the level of the logger. Refer to the &apos;PWLogLevel&apos; enum for details.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
+			<Declaration>@property (nonatomic, readonly) PWLogType logType</Declaration>
 			
 			
-			<Anchor>//api/name/schemaID</Anchor>
+			<Anchor>//api/name/logType</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/schemaID</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the Schema ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLogMessage/logType</TokenIdentifier>
+			<Abstract type="html">The type of log message. Whether the message will actually be logged depends on the type of the message and the level of the logger. Refer to the &apos;PWLogLevel&apos; enum for details.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
+			<Declaration>@property (nonatomic, readonly) PWLogType logType</Declaration>
 			
 			
-			<Anchor>//api/name/schemaID</Anchor>
+			<Anchor>//api/name/logType</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setName:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/setFile:</TokenIdentifier>
+			<Abstract type="html">The file where the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *file</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/file</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/name</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/file</TokenIdentifier>
+			<Abstract type="html">The file where the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *file</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/file</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/name</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLogMessage/file</TokenIdentifier>
+			<Abstract type="html">The file where the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *file</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/file</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setType:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure type.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/setFunction:</TokenIdentifier>
+			<Abstract type="html">The function where the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *function</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/function</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/type</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure type.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/function</TokenIdentifier>
+			<Abstract type="html">The function where the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *function</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/function</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/type</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure type.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLogMessage/function</TokenIdentifier>
+			<Abstract type="html">The function where the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *function</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/function</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setField:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure field.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/setLine:</TokenIdentifier>
+			<Abstract type="html">The line number inside the file where the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger line</Declaration>
 			
 			
-			<Anchor>//api/name/field</Anchor>
+			<Anchor>//api/name/line</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/field</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure field.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/line</TokenIdentifier>
+			<Abstract type="html">The line number inside the file where the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger line</Declaration>
 			
 			
-			<Anchor>//api/name/field</Anchor>
+			<Anchor>//api/name/line</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/field</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure field.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLogMessage/line</TokenIdentifier>
+			<Abstract type="html">The line number inside the file where the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger line</Declaration>
 			
 			
-			<Anchor>//api/name/field</Anchor>
+			<Anchor>//api/name/line</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setStructureDescription:</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">The date the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *structureDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *timestamp</Declaration>
 			
 			
-			<Anchor>//api/name/structureDescription</Anchor>
+			<Anchor>//api/name/timestamp</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/structureDescription</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/timestamp</TokenIdentifier>
+			<Abstract type="html">The date the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *structureDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *timestamp</Declaration>
 			
 			
-			<Anchor>//api/name/structureDescription</Anchor>
+			<Anchor>//api/name/timestamp</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/structureDescription</TokenIdentifier>
-			<Abstract type="html">A string that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLogMessage/timestamp</TokenIdentifier>
+			<Abstract type="html">The date the message was logged.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *structureDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *timestamp</Declaration>
 			
 			
-			<Anchor>//api/name/structureDescription</Anchor>
+			<Anchor>//api/name/timestamp</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setSortOrder:</TokenIdentifier>
-			<Abstract type="html">An unsigned integer that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger sortOrder</Declaration>
-			
-			
-			<Anchor>//api/name/sortOrder</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/sortOrder</TokenIdentifier>
-			<Abstract type="html">An unsigned integer that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger sortOrder</Declaration>
-			
-			
-			<Anchor>//api/name/sortOrder</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/sortOrder</TokenIdentifier>
-			<Abstract type="html">An unsigned integer that is used to identify the structure name.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSUInteger sortOrder</Declaration>
-			
-			
-			<Anchor>//api/name/sortOrder</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setIsActive:</TokenIdentifier>
-			<Abstract type="html">An boolean that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isActive</Declaration>
-			
-			
-			<Anchor>//api/name/isActive</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/isActive</TokenIdentifier>
-			<Abstract type="html">An boolean that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isActive</Declaration>
-			
-			
-			<Anchor>//api/name/isActive</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/isActive</TokenIdentifier>
-			<Abstract type="html">An boolean that is used to identify the Parent ID.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isActive</Declaration>
-			
-			
-			<Anchor>//api/name/isActive</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setCreationDate:</TokenIdentifier>
-			<Abstract type="html">The creation date of the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
-			
-			
-			<Anchor>//api/name/creationDate</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/creationDate</TokenIdentifier>
-			<Abstract type="html">The creation date of the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
-			
-			
-			<Anchor>//api/name/creationDate</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/creationDate</TokenIdentifier>
-			<Abstract type="html">The creation date of the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
-			
-			
-			<Anchor>//api/name/creationDate</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setLastUpdated:</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
-			
-			
-			<Anchor>//api/name/lastUpdated</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/lastUpdated</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
-			
-			
-			<Anchor>//api/name/lastUpdated</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/lastUpdated</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
-			
-			
-			<Anchor>//api/name/lastUpdated</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setSchema:</TokenIdentifier>
-			<Abstract type="html">The PWSchema object associated with the current structure, if one exists.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) PWSchema *schema</Declaration>
-			
-			
-			<Anchor>//api/name/schema</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/schema</TokenIdentifier>
-			<Abstract type="html">The PWSchema object associated with the current structure, if one exists.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) PWSchema *schema</Declaration>
-			
-			
-			<Anchor>//api/name/schema</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/schema</TokenIdentifier>
-			<Abstract type="html">The PWSchema object associated with the current structure, if one exists.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) PWSchema *schema</Declaration>
-			
-			
-			<Anchor>//api/name/schema</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setContent:</TokenIdentifier>
-			<Abstract type="html">The content, where the structure is based on the associated PWSchema.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *content</Declaration>
-			
-			
-			<Anchor>//api/name/content</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/content</TokenIdentifier>
-			<Abstract type="html">The content, where the structure is based on the associated PWSchema.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *content</Declaration>
-			
-			
-			<Anchor>//api/name/content</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/content</TokenIdentifier>
-			<Abstract type="html">The content, where the structure is based on the associated PWSchema.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *content</Declaration>
-			
-			
-			<Anchor>//api/name/content</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/setChildren:</TokenIdentifier>
-			<Abstract type="html">Depending on the API method, the child PWStructure items may be return as well.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
-			
-			
-			<Anchor>//api/name/children</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/children</TokenIdentifier>
-			<Abstract type="html">Depending on the API method, the child PWStructure items may be return as well.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
-			
-			
-			<Anchor>//api/name/children</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWStructure/children</TokenIdentifier>
-			<Abstract type="html">Depending on the API method, the child PWStructure items may be return as well.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
-			
-			
-			<Anchor>//api/name/children</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWStructure/unpack:</TokenIdentifier>
-			<Abstract type="html">Convenience method to instantiate a PWStructure object from a properly formatted NSDictionary object.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)unpack:(NSDictionary *)dictionary</Declaration>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/initWithMessage:details:serviceName:type:file:function:line:</TokenIdentifier>
+			<Abstract type="html">Initializes a log message object.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithMessage:(NSString *)message details:(NSDictionary *)details serviceName:(NSString *)serviceName type:(PWLogType)type file:(NSString *)file function:(NSString *)function line:(NSUInteger)line</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>dictionary</Name>
-					<Abstract type="html">The dictionary from which to instantiate the PWStructure object.</Abstract>
+					<Name>message</Name>
+					<Abstract type="html">The main message of the log messge object</Abstract>
+				</Parameter><Parameter>
+					<Name>details</Name>
+					<Abstract type="html">The log message details</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceName</Name>
+					<Abstract type="html">The name of the service that corresponds to the message.</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">The type of log message.</Abstract>
+				</Parameter><Parameter>
+					<Name>file</Name>
+					<Abstract type="html">The file where the message was logged.</Abstract>
+				</Parameter><Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function where the message was logged.</Abstract>
+				</Parameter><Parameter>
+					<Name>line</Name>
+					<Abstract type="html">The line number inside the file where the message was logged.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/unpack:</Anchor>
+			<ReturnValue><Abstract type="html">An instance of a log message object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMessage:details:serviceName:type:file:function:line:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWStructure/dictionary</TokenIdentifier>
-			<Abstract type="html">Returns an NSDictionary representation of the current structure.</Abstract>
-			<DeclaredIn>PWStructure.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLogMessage/jsonRepresentation</TokenIdentifier>
+			<Abstract type="html">The JSON representation of the log message.</Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
 			
-			<Declaration>- (NSDictionary *)dictionary</Declaration>
+			<Declaration>- (NSString *)jsonRepresentation</Declaration>
 			
-			
-			<Anchor>//api/name/dictionary</Anchor>
+			<ReturnValue><Abstract type="html">A string containing the JSON representation of the log message.</Abstract></ReturnValue>
+			<Anchor>//api/name/jsonRepresentation</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

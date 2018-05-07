@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWSchemaField.html">
+	<File path="Classes/PWFileLogger.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWSchemaField</TokenIdentifier>
-			<Abstract type="html">PWSchemaField objects define the fields that are specified for a PWSchema object. A PWSchemaField object has a few base parameters and can be extended to support additional key:value pairs. Additional key:value pairs are available in the customKeys property. You can modify PWSchemaField values in the MaaS portal. PWSchemaField conforms to the NSCoding and NSCopying protocol.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWFileLogger</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>
@@ -13,247 +13,183 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setField:</TokenIdentifier>
-			<Abstract type="html">A string describing the field key.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFileLogger/setServiceName:</TokenIdentifier>
+			<Abstract type="html">The name of the service that corresponds to the logger.</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *serviceName</Declaration>
 			
 			
-			<Anchor>//api/name/field</Anchor>
+			<Anchor>//api/name/serviceName</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/field</TokenIdentifier>
-			<Abstract type="html">A string describing the field key.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFileLogger/serviceName</TokenIdentifier>
+			<Abstract type="html">The name of the service that corresponds to the logger.</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *serviceName</Declaration>
 			
 			
-			<Anchor>//api/name/field</Anchor>
+			<Anchor>//api/name/serviceName</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/field</TokenIdentifier>
-			<Abstract type="html">A string describing the field key.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWFileLogger/serviceName</TokenIdentifier>
+			<Abstract type="html">The name of the service that corresponds to the logger.</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *serviceName</Declaration>
 			
 			
-			<Anchor>//api/name/field</Anchor>
+			<Anchor>//api/name/serviceName</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setLabel:</TokenIdentifier>
-			<Abstract type="html">A string describing the field label.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFileLogger/setBaseLevel:</TokenIdentifier>
+			<Abstract type="html">The base level of the logger.</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
+			<Declaration>@property (nonatomic) PWLogLevel baseLevel</Declaration>
 			
 			
-			<Anchor>//api/name/label</Anchor>
+			<Anchor>//api/name/baseLevel</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/label</TokenIdentifier>
-			<Abstract type="html">A string describing the field label.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFileLogger/baseLevel</TokenIdentifier>
+			<Abstract type="html">The base level of the logger.</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
+			<Declaration>@property (nonatomic) PWLogLevel baseLevel</Declaration>
 			
 			
-			<Anchor>//api/name/label</Anchor>
+			<Anchor>//api/name/baseLevel</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/label</TokenIdentifier>
-			<Abstract type="html">A string describing the field label.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWFileLogger/baseLevel</TokenIdentifier>
+			<Abstract type="html">The base level of the logger.</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
+			<Declaration>@property (nonatomic) PWLogLevel baseLevel</Declaration>
 			
 			
-			<Anchor>//api/name/label</Anchor>
+			<Anchor>//api/name/baseLevel</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setType:</TokenIdentifier>
-			<Abstract type="html">A string describing the field type.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFileLogger/setAsyncLogging:</TokenIdentifier>
+			<Abstract type="html">Indicates if the logger needs to execute in the background</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL asyncLogging</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/asyncLogging</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/type</TokenIdentifier>
-			<Abstract type="html">A string describing the field type.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFileLogger/asyncLogging</TokenIdentifier>
+			<Abstract type="html">Indicates if the logger needs to execute in the background</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL asyncLogging</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/asyncLogging</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/type</TokenIdentifier>
-			<Abstract type="html">A string describing the field type.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWFileLogger/asyncLogging</TokenIdentifier>
+			<Abstract type="html">Indicates if the logger needs to execute in the background</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL asyncLogging</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/asyncLogging</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setRequired:</TokenIdentifier>
-			<Abstract type="html">A boolean value which indicates whether or note this field is required.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWFileLogger/loggerWithServiceName:</TokenIdentifier>
+			<Abstract type="html">Convenience constructor to create logger</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
-			
-			
-			<Anchor>//api/name/required</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/required</TokenIdentifier>
-			<Abstract type="html">A boolean value which indicates whether or note this field is required.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
-			
-			
-			<Anchor>//api/name/required</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/required</TokenIdentifier>
-			<Abstract type="html">A boolean value which indicates whether or note this field is required.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
-			
-			
-			<Anchor>//api/name/required</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setFieldDescription:</TokenIdentifier>
-			<Abstract type="html">A string describing the field.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
-			
-			
-			<Anchor>//api/name/fieldDescription</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/fieldDescription</TokenIdentifier>
-			<Abstract type="html">A string describing the field.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
-			
-			
-			<Anchor>//api/name/fieldDescription</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/fieldDescription</TokenIdentifier>
-			<Abstract type="html">A string describing the field.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
-			
-			
-			<Anchor>//api/name/fieldDescription</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/setCustomKeys:</TokenIdentifier>
-			<Abstract type="html">Additional keys are based on the type and can be modified in the MaaS portal.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
-			
-			
-			<Anchor>//api/name/customKeys</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/customKeys</TokenIdentifier>
-			<Abstract type="html">Additional keys are based on the type and can be modified in the MaaS portal.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
-			
-			
-			<Anchor>//api/name/customKeys</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWSchemaField/customKeys</TokenIdentifier>
-			<Abstract type="html">Additional keys are based on the type and can be modified in the MaaS portal.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
-			
-			
-			<Anchor>//api/name/customKeys</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWSchemaField/unpack:</TokenIdentifier>
-			<Abstract type="html">Convenience method to instantiate a PWSchemaField object from a properly formatted NSDictionary object.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)unpack:(NSDictionary *)dictionary</Declaration>
+			<Declaration>+ (instancetype)loggerWithServiceName:(NSString *)serviceName</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>dictionary</Name>
-					<Abstract type="html">The dictionary from which to instantiate the PWSchemaField object.</Abstract>
+					<Name>serviceName</Name>
+					<Abstract type="html">The service name that corresponds to the logger.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/unpack:</Anchor>
+			<Anchor>//api/name/loggerWithServiceName:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWSchemaField/dictionary</TokenIdentifier>
-			<Abstract type="html">Returns an NSDictionary representation of the current container.</Abstract>
-			<DeclaredIn>PWSchemaField.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFileLogger/logMessage:</TokenIdentifier>
+			<Abstract type="html">Logs a message using the logger.</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
 			
-			<Declaration>- (NSDictionary *)dictionary</Declaration>
+			<Declaration>- (void)logMessage:(PWLogMessage *)logMessage</Declaration>
 			
 			
-			<Anchor>//api/name/dictionary</Anchor>
+			<Anchor>//api/name/logMessage:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFileLogger/logsDirectory</TokenIdentifier>
+			<Abstract type="html">The directory where the logs files are stored.</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)logsDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string containing the directory where the logs files are stored.</Abstract></ReturnValue>
+			<Anchor>//api/name/logsDirectory</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWFileLogger/loggedServices</TokenIdentifier>
+			<Abstract type="html">Provides an array of service names that have logged to a file.</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray&lt;NSString*&gt; *)loggedServices</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of strings containing the service names logged.</Abstract></ReturnValue>
+			<Anchor>//api/name/loggedServices</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWFileLogger/mergeLogFilesIntoSingleFileForService:error:</TokenIdentifier>
+			<Abstract type="html">Merges all of the log files into a single file.</Abstract>
+			<DeclaredIn>PWFileLogger.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)mergeLogFilesIntoSingleFileForService:(NSString *)serviceName error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceName</Name>
+					<Abstract type="html">The service name that corresponds to the log files.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">On input, a pointer to an error object. If an error occurs, this pointer is set to an actual error object containing the error information. You may specify nil for this parameter if you do not want the error information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string containing the path to the merged log file.</Abstract></ReturnValue>
+			<Anchor>//api/name/mergeLogFilesIntoSingleFileForService:error:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

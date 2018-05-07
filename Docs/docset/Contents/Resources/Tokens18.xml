@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PWLogType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PWLogType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWLogMessage.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWLogTypeError</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PWLogTypeError</Declaration>
+            
+            <DeclaredIn>PWLogMessage.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWLogTypeWarning</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PWLogTypeWarning</Declaration>
+            
+            <DeclaredIn>PWLogMessage.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWLogTypeInfo</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PWLogTypeInfo</Declaration>
+            
+            <DeclaredIn>PWLogMessage.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWLogTypeDebug</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PWLogTypeDebug</Declaration>
+            
+            <DeclaredIn>PWLogMessage.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

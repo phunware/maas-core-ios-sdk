@@ -1,4 +1,14 @@
 # PWCore Migration Guide
+## Upgrade from 3.4.x to 3.5.x
+
+#### General
+
+This release removes location permission prompting from the SDK to align with best practices. App developers will now be required to do this manually.
+
+#### Upgrade Steps
+
+1. If your app requires location permissions, please follow [Apple's Best Practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services) for requesting location permissions.
+
 ## Upgrade from 3.3.x to 3.4.x
 
 #### General

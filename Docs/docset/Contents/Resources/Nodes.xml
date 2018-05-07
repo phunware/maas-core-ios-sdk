@@ -20,6 +20,11 @@
 						<NodeRef refid="7"/>
 						<NodeRef refid="8"/>
 						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
 						
 					</Subnodes>
 				</Node>
@@ -30,7 +35,8 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="10"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
 						
 					</Subnodes>
 				</Node>
@@ -40,11 +46,21 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="11"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
 						
 					</Subnodes>
 				</Node>
 				
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="19"/>
+                        
+                    </Subnodes>
+                </Node>
                 
 			</Subnodes>
         </Node>
@@ -52,6 +68,39 @@
 	<Library>
 		
 		<Node id="1" type="file" documentType="reference">
+            <Name>PWAPIManager</Name>
+            <Path>Classes/PWAPIManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWAPIManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWAPIManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWAPIManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWAPIManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
             <Name>PWAnalytics</Name>
             <Path>Classes/PWAnalytics.html</Path>
             
@@ -78,7 +127,46 @@
             </Subnodes>
             
         </Node>
-		<Node id="2" type="file" documentType="reference">
+		<Node id="3" type="file" documentType="reference">
+            <Name>PWBundleManager</Name>
+            <Path>Classes/PWBundleManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWBundleManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWBundleManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWBundleManager.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWBundleManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWBundleManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
             <Name>PWCME</Name>
             <Path>Classes/PWCME.html</Path>
             
@@ -105,7 +193,46 @@
             </Subnodes>
             
         </Node>
-		<Node id="3" type="file" documentType="reference">
+		<Node id="5" type="file" documentType="reference">
+            <Name>PWConsoleLogger</Name>
+            <Path>Classes/PWConsoleLogger.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWConsoleLogger.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWConsoleLogger.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWConsoleLogger.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWConsoleLogger.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWConsoleLogger.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
             <Name>PWContainer</Name>
             <Path>Classes/PWContainer.html</Path>
             
@@ -144,7 +271,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="4" type="file" documentType="reference">
+		<Node id="7" type="file" documentType="reference">
             <Name>PWCore</Name>
             <Path>Classes/PWCore.html</Path>
             
@@ -171,7 +298,79 @@
             </Subnodes>
             
         </Node>
-		<Node id="5" type="file" documentType="reference">
+		<Node id="8" type="file" documentType="reference">
+            <Name>PWFileLogger</Name>
+            <Path>Classes/PWFileLogger.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWFileLogger.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWFileLogger.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWFileLogger.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWFileLogger.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWFileLogger.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>PWLogMessage</Name>
+            <Path>Classes/PWLogMessage.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWLogMessage.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWLogMessage.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWLogMessage.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWLogMessage.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
             <Name>PWLogger</Name>
             <Path>Classes/PWLogger.html</Path>
             
@@ -198,7 +397,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="6" type="file" documentType="reference">
+		<Node id="11" type="file" documentType="reference">
             <Name>PWPagination</Name>
             <Path>Classes/PWPagination.html</Path>
             
@@ -231,7 +430,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="7" type="file" documentType="reference">
+		<Node id="12" type="file" documentType="reference">
             <Name>PWSchema</Name>
             <Path>Classes/PWSchema.html</Path>
             
@@ -270,7 +469,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="8" type="file" documentType="reference">
+		<Node id="13" type="file" documentType="reference">
             <Name>PWSchemaField</Name>
             <Path>Classes/PWSchemaField.html</Path>
             
@@ -309,7 +508,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="9" type="file" documentType="reference">
+		<Node id="14" type="file" documentType="reference">
             <Name>PWStructure</Name>
             <Path>Classes/PWStructure.html</Path>
             
@@ -350,7 +549,34 @@
         </Node>
 		
 		
-        <Node id="10" type="file" documentType="reference">
+        <Node id="15" type="file" documentType="reference">
+            <Name>PWLoggableObject</Name>
+            <Path>Protocols/PWLoggableObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/PWLoggableObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/PWLoggableObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/PWLoggableObject.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
             <Name>PWLogger</Name>
             <Path>Protocols/PWLogger.html</Path>
             
@@ -390,12 +616,22 @@
             
         </Node>
 		
-        <Node id="11" type="file" documentType="reference">
+        <Node id="17" type="file" documentType="reference">
             <Name>PWLogLevel</Name>
             <Path>Constants/PWLogLevel.html</Path>
             
         </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>PWLogType</Name>
+            <Path>Constants/PWLogType.html</Path>
+            
+        </Node>
 		
+        <Node id="19" type="file" documentType="reference">
+            <Name>PWBundleFetchCompletion</Name>
+            <Path>Blocks/PWBundleFetchCompletion.html</Path>
+            
+        </Node>
         
 	</Library>
 </DocSetNodes>

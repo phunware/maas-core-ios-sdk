@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PWLoggableObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PWLoggableObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWLoggableObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLoggableObject/packForLogging</TokenIdentifier>
+			<Abstract type="html">  Returns a representation of the object using Foundation objects, as well as some few other supported types:</Abstract>
+			<DeclaredIn>PWLoggableObject.h</DeclaredIn>
+			
+			<Declaration>- (id)packForLogging</Declaration>
+			
+			
+			<Anchor>//api/name/packForLogging</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,4 +1,11 @@
 # PWCore Changelog
+## 3.5.0 (Monday, May 7th, 2018)
+#### Features
+* Remove location permission prompting
+
+#### Bug fixes / performance enhancements
+* Fix for SESSION analytics
+
 ## 3.4.1 (Wednesday, Apr 25th, 2018)
 #### Features
 * Added configurable bundle cache timeout

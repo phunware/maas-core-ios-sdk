@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWContainer.html">
+	<File path="Classes/PWBundleManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWContainer</TokenIdentifier>
-			<Abstract type="html">Containers hold a single structure. All values in a PWContainer object are immutable on the client. You can modify PWContainer values in the MaaS portal. PWContainer conforms to the NSCoding and NSCopying protocol.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWBundleManager</TokenIdentifier>
+			<Abstract type="html">A generic class for download/decrypt/unzip a bundle for specific URL.</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="3"/>
@@ -13,211 +13,309 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/setContainerID:</TokenIdentifier>
-			<Abstract type="html">An NSString that is used to identify the Container ID.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/setCacheFallbackTimeoutOverride:</TokenIdentifier>
+			<Abstract type="html">The timeout for network request to get the bundle before falling back to the cached version. This is only used if a cached bundle exists, for non-cached bundles the default of 60 seconds is used. If this is not set at all, the default of 10 seconds is used.</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *containerID</Declaration>
+			<Declaration>@property (nonatomic) NSTimeInterval cacheFallbackTimeoutOverride</Declaration>
 			
 			
-			<Anchor>//api/name/containerID</Anchor>
+			<Anchor>//api/name/cacheFallbackTimeoutOverride</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/containerID</TokenIdentifier>
-			<Abstract type="html">An NSString that is used to identify the Container ID.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/cacheFallbackTimeoutOverride</TokenIdentifier>
+			<Abstract type="html">The timeout for network request to get the bundle before falling back to the cached version. This is only used if a cached bundle exists, for non-cached bundles the default of 60 seconds is used. If this is not set at all, the default of 10 seconds is used.</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *containerID</Declaration>
+			<Declaration>@property (nonatomic) NSTimeInterval cacheFallbackTimeoutOverride</Declaration>
 			
 			
-			<Anchor>//api/name/containerID</Anchor>
+			<Anchor>//api/name/cacheFallbackTimeoutOverride</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWContainer/containerID</TokenIdentifier>
-			<Abstract type="html">An NSString that is used to identify the Container ID.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWBundleManager/cacheFallbackTimeoutOverride</TokenIdentifier>
+			<Abstract type="html">The timeout for network request to get the bundle before falling back to the cached version. This is only used if a cached bundle exists, for non-cached bundles the default of 60 seconds is used. If this is not set at all, the default of 10 seconds is used.</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *containerID</Declaration>
+			<Declaration>@property (nonatomic) NSTimeInterval cacheFallbackTimeoutOverride</Declaration>
 			
 			
-			<Anchor>//api/name/containerID</Anchor>
+			<Anchor>//api/name/cacheFallbackTimeoutOverride</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/setName:</TokenIdentifier>
-			<Abstract type="html">A NSString that is used to identify the container name.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWBundleManager/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Shared PWBundleManager.</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>+ (PWBundleManager *)sharedInstance</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/sharedInstance</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/name</TokenIdentifier>
-			<Abstract type="html">A NSString that is used to identify the container name.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/removeBundleForURL:</TokenIdentifier>
+			<Abstract type="html">Remove the bundle for a specific url.</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWContainer/name</TokenIdentifier>
-			<Abstract type="html">A NSString that is used to identify the container name.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/setTags:</TokenIdentifier>
-			<Abstract type="html">A array of tags associated with the container. A tag is an NSString object.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
-			
-			
-			<Anchor>//api/name/tags</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/tags</TokenIdentifier>
-			<Abstract type="html">A array of tags associated with the container. A tag is an NSString object.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
-			
-			
-			<Anchor>//api/name/tags</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWContainer/tags</TokenIdentifier>
-			<Abstract type="html">A array of tags associated with the container. A tag is an NSString object.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
-			
-			
-			<Anchor>//api/name/tags</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/setCreationDate:</TokenIdentifier>
-			<Abstract type="html">The creation date of the container.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
-			
-			
-			<Anchor>//api/name/creationDate</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/creationDate</TokenIdentifier>
-			<Abstract type="html">The creation date of the container.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
-			
-			
-			<Anchor>//api/name/creationDate</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWContainer/creationDate</TokenIdentifier>
-			<Abstract type="html">The creation date of the container.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
-			
-			
-			<Anchor>//api/name/creationDate</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/setLastUpdated:</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the container.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
-			
-			
-			<Anchor>//api/name/lastUpdated</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/lastUpdated</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the container.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
-			
-			
-			<Anchor>//api/name/lastUpdated</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWContainer/lastUpdated</TokenIdentifier>
-			<Abstract type="html">The date of the last update for the container.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *lastUpdated</Declaration>
-			
-			
-			<Anchor>//api/name/lastUpdated</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWContainer/unpack:</TokenIdentifier>
-			<Abstract type="html">Convenience method to instantiate a PWContainer object from a properly formatted NSDictionary object.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)unpack:(NSDictionary *)dictionary</Declaration>
+			<Declaration>- (void)removeBundleForURL:(NSURL *)url</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>dictionary</Name>
-					<Abstract type="html">The dictionary from which to instantiate the PWContainer object.</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">The specific url for which you want to remove.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/unpack:</Anchor>
+			<Anchor>//api/name/removeBundleForURL:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWContainer/dictionary</TokenIdentifier>
-			<Abstract type="html">Returns an NSDictionary representation of the current container.</Abstract>
-			<DeclaredIn>PWContainer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Fetch an unencrypted bundle from the url, unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Declaration>- (NSDictionary *)dictionary</Declaration>
+			<Declaration>- (void)fetchBundleWithURL:(NSURL *)url withCompletion:(PWBundleFetchCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The url that the manager should load.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
 			
+			<Anchor>//api/name/fetchBundleWithURL:withCompletion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:decryptionKey:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Fetch an encrypted bundle from the url, decprypt then unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
 			
-			<Anchor>//api/name/dictionary</Anchor>
+			<Declaration>- (void)fetchBundleWithURL:(NSURL *)url decryptionKey:(NSString *)decryptionKey withCompletion:(PWBundleFetchCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The url that the manager should load.</Abstract>
+				</Parameter><Parameter>
+					<Name>decryptionKey</Name>
+					<Abstract type="html">The key used to deprypt the bundle.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns information about the bundle fetch and the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBundleWithURL:decryptionKey:withCompletion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:retryInterval:maxRetry:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Fetch an unencrypted bundle from the url, unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchBundleWithURL:(NSURL *)url retryInterval:(NSInteger)retryInterval maxRetry:(NSInteger)maxRetry withCompletion:(PWBundleFetchCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The url that the manager should load.</Abstract>
+				</Parameter><Parameter>
+					<Name>retryInterval</Name>
+					<Abstract type="html">The interval to attempt retry.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxRetry</Name>
+					<Abstract type="html">The maximum no of times to retry.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns information about the bundle fetch and the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBundleWithURL:retryInterval:maxRetry:withCompletion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Fetch an encrypted bundle from the url, decprypt then unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchBundleWithURL:(NSURL *)url retryInterval:(NSInteger)retryInterval maxRetry:(NSInteger)maxRetry decryptionKey:(NSString *)decryptionKey withCompletion:(PWBundleFetchCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The url that the manager should load.</Abstract>
+				</Parameter><Parameter>
+					<Name>retryInterval</Name>
+					<Abstract type="html">The interval to attempt retry.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxRetry</Name>
+					<Abstract type="html">The maximum no of times to retry.</Abstract>
+				</Parameter><Parameter>
+					<Name>decryptionKey</Name>
+					<Abstract type="html">The key used to deprypt the bundle.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns information about the bundle fetch and the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:withCompletion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBuildingBundleById:draft:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Fetch building bundle for the specified building identifier, decprypt then unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchBuildingBundleById:(NSInteger)buildingId draft:(BOOL)isDraft withCompletion:(PWBundleFetchCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buildingId</Name>
+					<Abstract type="html">The building identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>isDraft</Name>
+					<Abstract type="html">Tell it&apos;s a draft or live bundle.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns information about the bundle fetch and the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBuildingBundleById:draft:withCompletion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:completion:</TokenIdentifier>
+			<Abstract type="html">Fetch an unencrypted bundle from the url, unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchBundleWithURL:(NSURL *)url completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The url that the manager should load.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBundleWithURL:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:decryptionKey:completion:</TokenIdentifier>
+			<Abstract type="html">Fetch an encrypted bundle from the url, decprypt then unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchBundleWithURL:(NSURL *)url decryptionKey:(NSString *)decryptionKey completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The url that the manager should load.</Abstract>
+				</Parameter><Parameter>
+					<Name>decryptionKey</Name>
+					<Abstract type="html">The key used to deprypt the bundle.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBundleWithURL:decryptionKey:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:retryInterval:maxRetry:completion:</TokenIdentifier>
+			<Abstract type="html">Fetch an unencrypted bundle from the url, unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchBundleWithURL:(NSURL *)url retryInterval:(NSInteger)retryInterval maxRetry:(NSInteger)maxRetry completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The url that the manager should load.</Abstract>
+				</Parameter><Parameter>
+					<Name>retryInterval</Name>
+					<Abstract type="html">The interval to attempt retry.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxRetry</Name>
+					<Abstract type="html">The maximum no of times to retry.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBundleWithURL:retryInterval:maxRetry:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:completion:</TokenIdentifier>
+			<Abstract type="html">Fetch an encrypted bundle from the url, decprypt then unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchBundleWithURL:(NSURL *)url retryInterval:(NSInteger)retryInterval maxRetry:(NSInteger)maxRetry decryptionKey:(NSString *)decryptionKey completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The url that the manager should load.</Abstract>
+				</Parameter><Parameter>
+					<Name>retryInterval</Name>
+					<Abstract type="html">The interval to attempt retry.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxRetry</Name>
+					<Abstract type="html">The maximum no of times to retry.</Abstract>
+				</Parameter><Parameter>
+					<Name>decryptionKey</Name>
+					<Abstract type="html">The key used to deprypt the bundle.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBuildingBundleById:draft:completion:</TokenIdentifier>
+			<Abstract type="html">Fetch building bundle for the specified building identifier, decprypt then unpack it, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchBuildingBundleById:(NSInteger)buildingId draft:(BOOL)isDraft completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buildingId</Name>
+					<Abstract type="html">The building identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>isDraft</Name>
+					<Abstract type="html">Tell it&apos;s a draft or live bundle.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBuildingBundleById:draft:completion:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
