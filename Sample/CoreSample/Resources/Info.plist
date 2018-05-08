@@ -2,12 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Preferred for analytics purposes.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Preferred for analytics purposes.</string>
 	<key>appId</key>
-	<string>576</string>
+	<string>&lt;Maas app id&gt;</string>
 	<key>accessKey</key>
-	<string>520bbf7c9997cdde2f1c70b5669af4f3406e4f4d</string>
+	<string>&lt;Maas access key&gt;</string>
 	<key>signatureKey</key>
-	<string>e5e28b9e3874f2f2e4f0e615eec75579c1b91ce9</string>
+	<string>&lt;Maas signature key&gt;</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
