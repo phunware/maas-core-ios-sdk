@@ -79,6 +79,11 @@ Inside your application delegate, you will need to initialize MaaS Core in the a
 }
 ````
 
+Location Permissions
+--------------------
+
+Location authorization of "When In Use" or "Always" is encouraged when starting PWCore for analytics purposes. Please follow [Apple's Best Practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services) for requesting location permissions.
+
 Attribution
 -----------
 PWCore uses the following third-party components. All components are prefixed so you won't have to worry about namespace collisions.

@@ -9,6 +9,7 @@
 import UIKit
 import PWCore
 import MessageUI
+import CoreLocation
 
 class InfoViewController: UITableViewController {
         
@@ -18,8 +19,11 @@ class InfoViewController: UITableViewController {
     @IBOutlet weak var bundleIdLabel: UILabel!
     @IBOutlet weak var deviceIdLabel: UILabel!
     
+    let clLocationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        clLocationManager.requestAlwaysAuthorization()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,7 +32,7 @@ class InfoViewController: UITableViewController {
     }
     
     func configureView() {
-        sdkVersionLabel.text = PWCore_Version
+        sdkVersionLabel.text = PWCoreVersion
         applicationIdLabel.text = PWCore.applicationID()
         
         if let infoDictionary = Bundle.main.infoDictionary, let shortVersionString = infoDictionary["CFBundleShortVersionString"], let versionString = infoDictionary["CFBundleVersion"] {
