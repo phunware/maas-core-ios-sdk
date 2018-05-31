@@ -46,7 +46,7 @@ extern NSInteger const PWCMSUnused;
 ///-----------------------
 
 /**
- Returns a list of the available containers.
+ Returns a list of the available `PWSchema` objects.
  @param limit Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.
  @param offset Specifies the number of results to offset. This is useful for pagination. Default value is 0.
  @param success A block object to be executed when `getSchemasWithLimit:limit:offset:success:failure:` succeeds. This block has no return value and takes one argument: the schemas received from the server (an `NSArray` object that contains `PWSchema` objects).
@@ -103,7 +103,7 @@ extern NSInteger const PWCMSUnused;
  @param success A block object to be executed when `getContentForContainerID:success:failure:` succeeds. This block has no return value and takes one argument: The content received from the server. The structure of the response data for this method relies completely on the structure of the structures and schemas.
  @param failure A block object to be executed when `getContentForContainerID:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
  */
-+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID parentID:(NSString *)parentID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSDictionary *contents))success failure:(void (^)(NSError *error))failure;
++ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID parentID:(NSString *)parentID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(id content))success failure:(void (^)(NSError *error))failure;
 
 /**
  Gets the content for the specified Content ID and Container ID. The structure of the response data for this method relies completely on the structures and schemas.
@@ -113,7 +113,7 @@ extern NSInteger const PWCMSUnused;
  @param success A block object to be executed when `getContentForContentID:containerID:success:failure:` succeeds. This block has no return value and takes one argument: the content received from the server. The structure of the response data for this method relies completely on the structure of the structures and schemas.
  @param failure A block object to be executed when `getContentForContentID:containerID:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
  */
-+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID success:(void(^)(NSDictionary *content))success failure:(void (^)(NSError *error))failure;
++ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID success:(void(^)(id content))success failure:(void (^)(NSError *error))failure;
 
 /**
  Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.
@@ -125,7 +125,7 @@ extern NSInteger const PWCMSUnused;
  @param failure A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
  @discussion It's important to note that this method only returns the specified pagination parameters for the root level array object. Nested arrays default to a pagination of 10 and a limit of 0.
  */
-+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
++ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(id contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
 
 /**
  Gets all content for a specific Container ID and Structure ID. The structure of the content data for this method relies completely on the structure and schemas.
@@ -136,7 +136,7 @@ extern NSInteger const PWCMSUnused;
  @param success A block object to be executed when `getContentsForContainerID:structureID:limit:offset:success:failure:` succeeds. This block has no return value and takes three arguments: the content received from the server, a `PWPagination` object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.
  @param failure A block object to be executed when `getContentsForContainerID:structureID:limit:offset:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
  */
-+ (void)getContentsForContainerID:(NSString *)containerID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
++ (void)getContentsForContainerID:(NSString *)containerID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(id contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
 
 /**
  Gets all content for a specific Container ID, Parent ID, and Structure ID. The structure of the content data for this method relies completely on the structure and schemas.
@@ -148,7 +148,7 @@ extern NSInteger const PWCMSUnused;
  @param success A block object to be executed when `getContentsForContainerID:structureID:limit:offset:success:failure:` succeeds. This block has no return value and takes three arguments: the content received from the server, a `PWPagination` object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.
  @param failure A block object to be executed when `getContentsForContainerID:structureID:limit:offset:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
  */
-+ (void)getContentsForContainerID:(NSString *)containerID parentID:(NSString *)parentID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
++ (void)getContentsForContainerID:(NSString *)containerID parentID:(NSString *)parentID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(id contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
 
 /**
  This method is used to save new content. If no parent content exists, you should use `addContent:structureID:success:failure:`.
@@ -203,15 +203,6 @@ extern NSInteger const PWCMSUnused;
  */
 + (void)deleteContentForContentID:(NSString *)contentID traverse:(BOOL)traverse success:(void (^)(void))success failure:(void (^)(NSError *error))failure;
 
-/**
- This method is used to delete all child elements within an array structure item.
- @param contentID The specified Content ID.
- @param success A block object to be executed when `deleteContentChildrenForContentID:success:failure:` succeeds. This block has no return value and takes no arguments.
- @param failure A block object to be executed when `deleteContentChildrenForContentID:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
- */
-+ (void)deleteContentChildrenForContentID:(NSString *)contentID success:(void (^)(void))success failure:(void (^)(NSError *error))failure __deprecated;
-
-
 ///-----------------------
 /// @name Cache Control
 ///-----------------------
@@ -240,16 +231,5 @@ extern NSInteger const PWCMSUnused;
  Removes all CME data from the cache. This method blocks the calling thread until the cache has been cleared.
  */
 + (void)clearCache;
-
-
-/**
- Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.
- @param containerID The ID of the container to get the content for.
- @param depth The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use `kPWCMEDepthFullHierarchy`. Be careful when using this value for large structures.
- @param success A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` succeeds. This block has no return value and takes three arguments: the content received from the server, a `PWPagination` object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.
- @param failure A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
- @discussion It's important to note that this method only returns the specified pagination parameters for the root level array object. Nested arrays default to a pagination of 10 and a limit of 0.
- */
-+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth success:(void(^)(NSDictionary *contents))success failure:(void (^)(NSError *error))failure __attribute__((deprecated));
 
 @end

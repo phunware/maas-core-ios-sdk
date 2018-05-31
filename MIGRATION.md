@@ -1,4 +1,53 @@
 # PWCore Migration Guide
+## Upgrade from 3.5.x to 3.6.x
+
+#### General
+
+This release changed completion block object types for CME to support all content.
+
+#### Upgrade Steps
+
+1. Open the `Podfile` from your project and change PWCore to include `pod 'PWCore', '3.6.x'`, then run `pod update` in the Terminal to update the framework. This is only necessary if using PWCore by itself. Otherwise the correct version will be installed with PWLocation/PWMapKit or PWEngagement if using it bundled.
+
+2. Replace occurrences of the following deprecated methods with their counter parts:
+
+`+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID parentID:(NSString *)parentID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSDictionary *contents))success failure:(void (^)(NSError *error))failure;`
+with
+`+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID parentID:(NSString *)parentID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(id content))success failure:(void (^)(NSError *error))failure`
+
+`+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID success:(void(^)(NSDictionary *content))success failure:(void (^)(NSError *error))failure`
+with
+`+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID success:(void(^)(id content))success failure:(void (^)(NSError *error))failure`
+
+`+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure`
+with
+`+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(id contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure`
+
+`+ (void)getContentsForContainerID:(NSString *)containerID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure`
+with
+`+ (void)getContentsForContainerID:(NSString *)containerID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(id contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure`
+
+`+ (void)getContentsForContainerID:(NSString *)containerID parentID:(NSString *)parentID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure`
+with
+`+ (void)getContentsForContainerID:(NSString *)containerID parentID:(NSString *)parentID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(id contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure`
+
+`+ (void)deleteContentChildrenForContentID:(NSString *)contentID success:(void (^)(void))success failure:(void (^)(NSError *error))failure __deprecated`
+with
+`+ (void)deleteContentForContentID:(NSString *)contentID traverse:(BOOL)traverse success:(void (^)(void))success failure:(void (^)(NSError *error))failure`
+
+`+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth success:(void(^)(NSDictionary *contents))success failure:(void (^)(NSError *error))failure __attribute__((deprecated))`
+with
+`+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(id contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure`
+
+#### Change Detail
+
+###### PWCME
+
+*REMOVED*
+
+* `+ (void)deleteContentChildrenForContentID:(NSString *)contentID success:(void (^)(void))success failure:(void (^)(NSError *error))failure __deprecated`
+* `+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth success:(void(^)(NSDictionary *contents))success failure:(void (^)(NSError *error))failure __attribute__((deprecated))`
+
 ## Upgrade from 3.4.x to 3.5.x
 
 #### General

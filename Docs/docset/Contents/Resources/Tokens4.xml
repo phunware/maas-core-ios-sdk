@@ -57,7 +57,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getSchemasWithLimit:offset:success:failure:</TokenIdentifier>
-			<Abstract type="html">Returns a list of the available containers.</Abstract>
+			<Abstract type="html">Returns a list of the available PWSchema objects.</Abstract>
 			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getSchemasWithLimit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSArray *schemas , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
@@ -170,7 +170,7 @@
 			<Abstract type="html">Gets the content based on the structure hierarchy and schemas. The structure of the response data for this method relies completely on the structure of the structures and schemas. Content will be retrieved starting from the root level.</Abstract>
 			<DeclaredIn>PWCME.h</DeclaredIn>
 			
-			<Declaration>+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID parentID:(NSString *)parentID limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSDictionary *contents ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Declaration>+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID parentID:(NSString *)parentID limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( id content ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>contentID</Name>
@@ -208,7 +208,7 @@
 			<Abstract type="html">Gets the content for the specified Content ID and Container ID. The structure of the response data for this method relies completely on the structures and schemas.</Abstract>
 			<DeclaredIn>PWCME.h</DeclaredIn>
 			
-			<Declaration>+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID success:(void ( ^ ) ( NSDictionary *content ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Declaration>+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID success:(void ( ^ ) ( id content ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>contentID</Name>
@@ -237,7 +237,7 @@
 			<Abstract type="html">Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.</Abstract>
 			<DeclaredIn>PWCME.h</DeclaredIn>
 			
-			<Declaration>+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Declaration>+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( id contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>containerID</Name>
@@ -269,7 +269,7 @@
 			<Abstract type="html">Gets all content for a specific Container ID and Structure ID. The structure of the content data for this method relies completely on the structure and schemas.</Abstract>
 			<DeclaredIn>PWCME.h</DeclaredIn>
 			
-			<Declaration>+ (void)getContentsForContainerID:(NSString *)containerID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Declaration>+ (void)getContentsForContainerID:(NSString *)containerID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( id contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>containerID</Name>
@@ -301,7 +301,7 @@
 			<Abstract type="html">Gets all content for a specific Container ID, Parent ID, and Structure ID. The structure of the content data for this method relies completely on the structure and schemas.</Abstract>
 			<DeclaredIn>PWCME.h</DeclaredIn>
 			
-			<Declaration>+ (void)getContentsForContainerID:(NSString *)containerID parentID:(NSString *)parentID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Declaration>+ (void)getContentsForContainerID:(NSString *)containerID parentID:(NSString *)parentID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( id contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>containerID</Name>
@@ -486,29 +486,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWCME/deleteContentChildrenForContentID:success:failure:</TokenIdentifier>
-			<Abstract type="html">This method is used to delete all child elements within an array structure item.</Abstract>
-			<DeclaredIn>PWCME.h</DeclaredIn>
-			
-			<Declaration>+ (void)deleteContentChildrenForContentID:(NSString *)contentID success:(void ( ^ ) ( void ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>contentID</Name>
-					<Abstract type="html">The specified Content ID.</Abstract>
-				</Parameter><Parameter>
-					<Name>success</Name>
-					<Abstract type="html">A block object to be executed when deleteContentChildrenForContentID:success:failure: succeeds. This block has no return value and takes no arguments.</Abstract>
-				</Parameter><Parameter>
-					<Name>failure</Name>
-					<Abstract type="html">A block object to be executed when deleteContentChildrenForContentID:success:failure: fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/deleteContentChildrenForContentID:success:failure:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWCME/setCacheTTL:</TokenIdentifier>
 			<Abstract type="html">Set the TTL in seconds for caching CME content.</Abstract>
 			<DeclaredIn>PWCME.h</DeclaredIn>
@@ -563,32 +540,6 @@
 			
 			
 			<Anchor>//api/name/clearCache</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getAllContentsForContainerID:depth:success:failure:</TokenIdentifier>
-			<Abstract type="html">Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.</Abstract>
-			<DeclaredIn>PWCME.h</DeclaredIn>
-			
-			<Declaration>+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth success:(void ( ^ ) ( NSDictionary *contents ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>containerID</Name>
-					<Abstract type="html">The ID of the container to get the content for.</Abstract>
-				</Parameter><Parameter>
-					<Name>depth</Name>
-					<Abstract type="html">The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use kPWCMEDepthFullHierarchy. Be careful when using this value for large structures.</Abstract>
-				</Parameter><Parameter>
-					<Name>success</Name>
-					<Abstract type="html">A block object to be executed when getAllContentsForContainerID:limit:offset:success:failure: succeeds. This block has no return value and takes three arguments: the content received from the server, a PWPagination object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.</Abstract>
-				</Parameter><Parameter>
-					<Name>failure</Name>
-					<Abstract type="html">A block object to be executed when getAllContentsForContainerID:limit:offset:success:failure: fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/getAllContentsForContainerID:depth:success:failure:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

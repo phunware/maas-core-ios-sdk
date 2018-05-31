@@ -66,15 +66,11 @@
 		
 		<option value="//api/name/clearCache">+ clearCache</option>
 		
-		<option value="//api/name/deleteContentChildrenForContentID:success:failure:">+ deleteContentChildrenForContentID:success:failure:</option>
-		
 		<option value="//api/name/deleteContentForContentID:traverse:success:failure:">+ deleteContentForContentID:traverse:success:failure:</option>
 		
 		<option value="//api/name/getAllContainersWithSuccess:failure:">+ getAllContainersWithSuccess:failure:</option>
 		
 		<option value="//api/name/getAllContentsForContainerID:depth:limit:offset:success:failure:">+ getAllContentsForContainerID:depth:limit:offset:success:failure:</option>
-		
-		<option value="//api/name/getAllContentsForContainerID:depth:success:failure:">+ getAllContentsForContainerID:depth:success:failure:</option>
 		
 		<option value="//api/name/getContainerWithContainerID:success:failure:">+ getContainerWithContainerID:success:failure:</option>
 		
@@ -294,7 +290,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Returns a list of the available containers.</p>
+				<p>Returns a list of the available <a href="../Classes/PWSchema.html"><code>PWSchema</code></a> objects.</p>
 			</div>
 			
 		    
@@ -597,7 +593,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)getContentForContentID:(NSString *)<em>contentID</em> containerID:(NSString *)<em>containerID</em> structureID:(NSInteger)<em>structureID</em> parentID:(NSString *)<em>parentID</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSDictionary *contents ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)getContentForContentID:(NSString *)<em>contentID</em> containerID:(NSString *)<em>containerID</em> structureID:(NSInteger)<em>structureID</em> parentID:(NSString *)<em>parentID</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( id content ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
 
 		    
 			
@@ -685,7 +681,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)getContentForContentID:(NSString *)<em>contentID</em> containerID:(NSString *)<em>containerID</em> structureID:(NSInteger)<em>structureID</em> success:(void ( ^ ) ( NSDictionary *content ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)getContentForContentID:(NSString *)<em>contentID</em> containerID:(NSString *)<em>containerID</em> structureID:(NSInteger)<em>structureID</em> success:(void ( ^ ) ( id content ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
 
 		    
 			
@@ -758,7 +754,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)getAllContentsForContainerID:(NSString *)<em>containerID</em> depth:(NSInteger)<em>depth</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)getAllContentsForContainerID:(NSString *)<em>containerID</em> depth:(NSInteger)<em>depth</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( id contents , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
 
 		    
 			
@@ -841,7 +837,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)getContentsForContainerID:(NSString *)<em>containerID</em> structureID:(NSInteger)<em>structureID</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)getContentsForContainerID:(NSString *)<em>containerID</em> structureID:(NSInteger)<em>structureID</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( id contents , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
 
 		    
 			
@@ -919,7 +915,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)getContentsForContainerID:(NSString *)<em>containerID</em> parentID:(NSString *)<em>parentID</em> structureID:(NSInteger)<em>structureID</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)getContentsForContainerID:(NSString *)<em>containerID</em> parentID:(NSString *)<em>parentID</em> structureID:(NSInteger)<em>structureID</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( id contents , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
 
 		    
 			
@@ -1365,69 +1361,6 @@
 			
 		</div>
 	</div>
-</div><div class="section-method">
-	<a name="//api/name/deleteContentChildrenForContentID:success:failure:" title="deleteContentChildrenForContentID:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/deleteContentChildrenForContentID:success:failure:">+&nbsp;deleteContentChildrenForContentID:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>This method is used to delete all child elements within an array structure item.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (void)deleteContentChildrenForContentID:(NSString *)<em>contentID</em> success:(void ( ^ ) ( void ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>contentID</code></th>
-						<td><p>The specified Content ID.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>A block object to be executed when <code>deleteContentChildrenForContentID:success:failure:</code> succeeds. This block has no return value and takes no arguments.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>A block object to be executed when <code>deleteContentChildrenForContentID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWCME.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
 </div>
 						</div>
 						
@@ -1634,79 +1567,6 @@
 			
 		</div>
 	</div>
-</div><div class="section-method">
-	<a name="//api/name/getAllContentsForContainerID:depth:success:failure:" title="getAllContentsForContainerID:depth:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getAllContentsForContainerID:depth:success:failure:">+&nbsp;getAllContentsForContainerID:depth:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (void)getAllContentsForContainerID:(NSString *)<em>containerID</em> depth:(NSInteger)<em>depth</em> success:(void ( ^ ) ( NSDictionary *contents ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>containerID</code></th>
-						<td><p>The ID of the container to get the content for.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>depth</code></th>
-						<td><p>The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use <code>kPWCMEDepthFullHierarchy</code>. Be careful when using this value for large structures.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>A block object to be executed when <code>getAllContentsForContainerID:limit:offset:success:failure:</code> succeeds. This block has no return value and takes three arguments: the content received from the server, a <a href="../Classes/PWPagination.html"><code>PWPagination</code></a> object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>A block object to be executed when <code>getAllContentsForContainerID:limit:offset:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>It&rsquo;s important to note that this method only returns the specified pagination parameters for the root level array object. Nested arrays default to a pagination of 10 and a limit of 0.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWCME.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
 </div>
 						</div>
 						
@@ -1722,7 +1582,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Phunware, Inc. All rights reserved. Updated: 2018-05-07</p>
+						<p class="copyright">Copyright &copy; 2018 Phunware, Inc. All rights reserved. Updated: 2018-05-31</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
