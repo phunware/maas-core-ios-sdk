@@ -2,7 +2,7 @@
 ## 3.6.0 (Monday, May 31st, 2018)
 #### Bug fixes / performance enhancements
 * Fixes made to CME content completion block types
-* Fix for missing session id during SDK registration
+* Fix for missing session ID during SDK registration
 
 ## 3.5.0 (Monday, May 7th, 2018)
 #### Features
