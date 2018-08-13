@@ -1,14 +1,14 @@
 PWCore SDK for iOS
 ================
 
-Version 3.6.0
+Version 3.7.0
 
 This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 
 Requirements
 ------------
 
-- iOS 9.0 or greater
+- iOS 10.0 or greater
 - Xcode 8 or greater
 
 Documentation

@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/PWCore</TokenIdentifier>
-			<Abstract type="html">PWCore implements core functionality used in all MaaS modules. All MaaS modules have a PWCore dependency.</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>PWCore.h</DeclaredIn>
             
 			
@@ -146,6 +146,162 @@
 			</Parameters>
 			
 			<Anchor>//api/name/getVersionForModule:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/sessionID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *__nonnull)sessionID</Declaration>
+			
+			
+			<Anchor>//api/name/sessionID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/getEnvironment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (PWEnvironment)getEnvironment</Declaration>
+			
+			
+			<Anchor>//api/name/getEnvironment</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/setEnvironment:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (void)setEnvironment:(PWEnvironment)environment</Declaration>
+			
+			
+			<Anchor>//api/name/setEnvironment:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/accessKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *__nullable)accessKey</Declaration>
+			
+			
+			<Anchor>//api/name/accessKey</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/server</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *_Nullable)server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/authorizationHeaderWithRequestBody:httpMethod:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *__nonnull)authorizationHeaderWithRequestBody:(NSData *__nonnull)requestBody httpMethod:(NSString *__nonnull)httpMethod</Declaration>
+			
+			
+			<Anchor>//api/name/authorizationHeaderWithRequestBody:httpMethod:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/buildRequestWithRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSMutableURLRequest *__nonnull)buildRequestWithRequest:(NSMutableURLRequest *__nonnull)request</Declaration>
+			
+			
+			<Anchor>//api/name/buildRequestWithRequest:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/standardAnalyticsPayload</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSMutableDictionary *__nonnull)standardAnalyticsPayload</Declaration>
+			
+			
+			<Anchor>//api/name/standardAnalyticsPayload</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/sendInternalAnalyticsPayload:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendInternalAnalyticsPayload:(NSDictionary *__nonnull)payload completion:(void ( ^ __nullable ) ( NSError *__nullable error ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/sendInternalAnalyticsPayload:completion:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/sendExtraAnalyticsPayload:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendExtraAnalyticsPayload:(NSDictionary *__nonnull)payload completion:(void ( ^ __nullable ) ( NSError *__nullable error ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/sendExtraAnalyticsPayload:completion:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/registerPhunwareModule:version:withCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (void)registerPhunwareModule:(NSString *__nonnull)moduleName version:(NSString *__nonnull)version withCompletion:(void ( ^ __nullable ) ( NSError *__nullable error ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/registerPhunwareModule:version:withCompletion:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/encryptData:withKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSData *_Nullable)encryptData:(NSData *__nonnull)data withKey:(NSString *__nonnull)key</Declaration>
+			
+			
+			<Anchor>//api/name/encryptData:withKey:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/decryptData:withKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (NSData *_Nullable)decryptData:(NSData *__nonnull)data withKey:(NSString *__nonnull)key</Declaration>
+			
+			
+			<Anchor>//api/name/decryptData:withKey:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		

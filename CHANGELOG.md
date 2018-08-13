@@ -1,8 +1,13 @@
 # PWCore Changelog
+## 3.7.0 (Monday, August 13th, 2018)
+#### Bug fixes / performance enhancements
+* iOS deployment target increased from 9.0 to 10.0
+* Removed old module registration code and move new registration to after new session generation
+
 ## 3.6.0 (Monday, May 31st, 2018)
 #### Bug fixes / performance enhancements
 * Fixes made to CME content completion block types
-* Fix for missing session ID during SDK registration
+* Fix for missing session id during SDK registration
 
 ## 3.5.0 (Monday, May 7th, 2018)
 #### Features

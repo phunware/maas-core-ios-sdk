@@ -18,12 +18,19 @@
 #import <PWCore/PWAPIRequestOperation.h>
 #import <PWCore/PWAPIOperation.h>
 #import <PWCore/PWCoreDevice.h>
+#import <PWCore/PWFeatureFlagger.h>
 
-static NSString * const PWCoreVersion = @"3.6.0";
+static NSString * const PWCoreVersion = @"3.7.0";
 
 /**
  `PWCore` implements core functionality used in all MaaS modules. All MaaS modules have a `PWCore` dependency.
  */
+
+typedef NS_ENUM(NSInteger, PWEnvironment) {
+    PWEnvironmentProd,
+    PWEnvironmentStage,
+    PWEnvironmentDev
+};
 
 @interface PWCore : NSObject
 
@@ -88,5 +95,42 @@ static NSString * const PWCoreVersion = @"3.6.0";
  @param moduleName The name of the dependent module to be registered.
  */
 + (NSString *)getVersionForModule:(NSString *)moduleName;
+
+#pragma mark - Internal Use Only
+
++ (NSString *__nonnull)sessionID;
+
+#pragma mark Environment
+
++ (PWEnvironment)getEnvironment;
+
++ (void)setEnvironment:(PWEnvironment)environment;
+
++ (NSString *__nullable)accessKey;
+
++ (NSString *_Nullable)server;
+
++ (NSString *__nonnull)authorizationHeaderWithRequestBody:(NSData *__nonnull)requestBody httpMethod:(NSString *__nonnull)httpMethod;
+
++ (NSMutableURLRequest *__nonnull)buildRequestWithRequest:(NSMutableURLRequest *__nonnull)request;
+
++ (NSMutableDictionary *__nonnull)standardAnalyticsPayload;
+
+#pragma mark Analytics
+
++ (void)sendInternalAnalyticsPayload:(NSDictionary *__nonnull)payload completion:(void (^__nullable)(NSError *__nullable error))completion;
+
+// Send analytics with Extra payload
++ (void)sendExtraAnalyticsPayload:(NSDictionary *__nonnull)payload completion:(void (^__nullable)(NSError *__nullable error))completion;
+
+#pragma mark Modules
+
++ (void)registerPhunwareModule:(NSString *__nonnull)moduleName version:(NSString *__nonnull)version withCompletion:(void (^__nullable)(NSError *__nullable error))completion;
+
+#pragma mark Encryption
+
++ (NSData *_Nullable)encryptData:(NSData *__nonnull)data withKey:(NSString *__nonnull)key;
+
++ (NSData *_Nullable)decryptData:(NSData *__nonnull)data withKey:(NSString *__nonnull)key;
 
 @end

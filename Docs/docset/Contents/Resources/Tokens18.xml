@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/PWLogType.html">
+	<File path="Constants/PWLogLevel.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/PWLogType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/PWLogLevel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWLogMessage.h</DeclaredIn>
+			<DeclaredIn>PWLogger.h</DeclaredIn>
             
 			
 			<NodeRef refid="18"/>
@@ -14,41 +14,56 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLogTypeError</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>PWLogTypeError</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PWLogLevelNone</TokenIdentifier>
+            <Abstract type="html">Specifies all logging as disabled. This is the default logging level.
+     </Abstract>
+            <Declaration>PWLogLevelNone</Declaration>
             
-            <DeclaredIn>PWLogMessage.h</DeclaredIn>
-            
-            <NodeRef refid="18"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLogTypeWarning</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>PWLogTypeWarning</Declaration>
-            
-            <DeclaredIn>PWLogMessage.h</DeclaredIn>
+            <DeclaredIn>PWLogger.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLogTypeInfo</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>PWLogTypeInfo</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PWLogLevelError</TokenIdentifier>
+            <Abstract type="html">Only log errors.
+     </Abstract>
+            <Declaration>PWLogLevelError</Declaration>
             
-            <DeclaredIn>PWLogMessage.h</DeclaredIn>
+            <DeclaredIn>PWLogger.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLogTypeDebug</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>PWLogTypeDebug</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PWLogLevelWarning</TokenIdentifier>
+            <Abstract type="html">Log warnings and errors.
+     </Abstract>
+            <Declaration>PWLogLevelWarning</Declaration>
             
-            <DeclaredIn>PWLogMessage.h</DeclaredIn>
+            <DeclaredIn>PWLogger.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWLogLevelInfo</TokenIdentifier>
+            <Abstract type="html">Log information, warnings and errors.
+     </Abstract>
+            <Declaration>PWLogLevelInfo</Declaration>
+            
+            <DeclaredIn>PWLogger.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWLogLevelDebug</TokenIdentifier>
+            <Abstract type="html">Logs all messages.
+     </Abstract>
+            <Declaration>PWLogLevelDebug</Declaration>
+            
+            <DeclaredIn>PWLogger.h</DeclaredIn>
             
             <NodeRef refid="18"/>
         </Token>

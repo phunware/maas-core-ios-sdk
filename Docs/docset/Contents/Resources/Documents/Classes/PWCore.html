@@ -43,8 +43,6 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
-	<option value="overview">Overview</option>
-	
 
 	
 	
@@ -58,21 +56,47 @@
 	
 	<optgroup label="Class Methods">
 		
+		<option value="//api/name/accessKey">+ accessKey</option>
+		
 		<option value="//api/name/applicationID">+ applicationID</option>
+		
+		<option value="//api/name/authorizationHeaderWithRequestBody:httpMethod:">+ authorizationHeaderWithRequestBody:httpMethod:</option>
+		
+		<option value="//api/name/buildRequestWithRequest:">+ buildRequestWithRequest:</option>
+		
+		<option value="//api/name/decryptData:withKey:">+ decryptData:withKey:</option>
 		
 		<option value="//api/name/deviceID">+ deviceID</option>
 		
+		<option value="//api/name/encryptData:withKey:">+ encryptData:withKey:</option>
+		
 		<option value="//api/name/getAllRegisteredModules">+ getAllRegisteredModules</option>
+		
+		<option value="//api/name/getEnvironment">+ getEnvironment</option>
 		
 		<option value="//api/name/getVersionForModule:">+ getVersionForModule:</option>
 		
 		<option value="//api/name/registerModule:version:withCompletion:">+ registerModule:version:withCompletion:</option>
 		
+		<option value="//api/name/registerPhunwareModule:version:withCompletion:">+ registerPhunwareModule:version:withCompletion:</option>
+		
+		<option value="//api/name/sendExtraAnalyticsPayload:completion:">+ sendExtraAnalyticsPayload:completion:</option>
+		
+		<option value="//api/name/sendInternalAnalyticsPayload:completion:">+ sendInternalAnalyticsPayload:completion:</option>
+		
+		<option value="//api/name/server">+ server</option>
+		
 		<option value="//api/name/serviceName">+ serviceName</option>
+		
+		<option value="//api/name/sessionID">+ sessionID</option>
 		
 		<option value="//api/name/setApplicationID:accessKey:signatureKey:">+ setApplicationID:accessKey:signatureKey:</option>
 		
 		<option value="//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:">+ setApplicationID:accessKey:signatureKey:encryptionKey:</option>
+		
+		<option value="//api/name/setEnvironment:">+ setEnvironment:</option>
+		
+		<option value="//api/name/standardAnalyticsPayload">+ standardAnalyticsPayload</option>
 		
 	</optgroup>
 	
@@ -106,14 +130,6 @@
 					
 
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p><code>PWCore</code> implements core functionality used in all MaaS modules. All MaaS modules have a <code>PWCore</code> dependency.</p>
-					</div>
-					
-					
 
 					
 					
@@ -536,6 +552,214 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionID" title="sessionID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionID">+&nbsp;sessionID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *__nonnull)sessionID</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getEnvironment" title="getEnvironment"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getEnvironment">+&nbsp;getEnvironment</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (PWEnvironment)getEnvironment</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEnvironment:" title="setEnvironment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEnvironment:">+&nbsp;setEnvironment:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)setEnvironment:(PWEnvironment)<em>environment</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/accessKey" title="accessKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/accessKey">+&nbsp;accessKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *__nullable)accessKey</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/server" title="server"></a>
+	<h3 class="method-title"><code><a href="#//api/name/server">+&nbsp;server</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *_Nullable)server</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authorizationHeaderWithRequestBody:httpMethod:" title="authorizationHeaderWithRequestBody:httpMethod:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authorizationHeaderWithRequestBody:httpMethod:">+&nbsp;authorizationHeaderWithRequestBody:httpMethod:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *__nonnull)authorizationHeaderWithRequestBody:(NSData *__nonnull)<em>requestBody</em> httpMethod:(NSString *__nonnull)<em>httpMethod</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/buildRequestWithRequest:" title="buildRequestWithRequest:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildRequestWithRequest:">+&nbsp;buildRequestWithRequest:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSMutableURLRequest *__nonnull)buildRequestWithRequest:(NSMutableURLRequest *__nonnull)<em>request</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/standardAnalyticsPayload" title="standardAnalyticsPayload"></a>
+	<h3 class="method-title"><code><a href="#//api/name/standardAnalyticsPayload">+&nbsp;standardAnalyticsPayload</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSMutableDictionary *__nonnull)standardAnalyticsPayload</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendInternalAnalyticsPayload:completion:" title="sendInternalAnalyticsPayload:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendInternalAnalyticsPayload:completion:">+&nbsp;sendInternalAnalyticsPayload:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendInternalAnalyticsPayload:(NSDictionary *__nonnull)<em>payload</em> completion:(void ( ^ __nullable ) ( NSError *__nullable error ))<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendExtraAnalyticsPayload:completion:" title="sendExtraAnalyticsPayload:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendExtraAnalyticsPayload:completion:">+&nbsp;sendExtraAnalyticsPayload:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendExtraAnalyticsPayload:(NSDictionary *__nonnull)<em>payload</em> completion:(void ( ^ __nullable ) ( NSError *__nullable error ))<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerPhunwareModule:version:withCompletion:" title="registerPhunwareModule:version:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerPhunwareModule:version:withCompletion:">+&nbsp;registerPhunwareModule:version:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerPhunwareModule:(NSString *__nonnull)<em>moduleName</em> version:(NSString *__nonnull)<em>version</em> withCompletion:(void ( ^ __nullable ) ( NSError *__nullable error ))<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/encryptData:withKey:" title="encryptData:withKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/encryptData:withKey:">+&nbsp;encryptData:withKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *_Nullable)encryptData:(NSData *__nonnull)<em>data</em> withKey:(NSString *__nonnull)<em>key</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/decryptData:withKey:" title="decryptData:withKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/decryptData:withKey:">+&nbsp;decryptData:withKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *_Nullable)decryptData:(NSData *__nonnull)<em>data</em> withKey:(NSString *__nonnull)<em>key</em></code></div>
+
+		    
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -551,7 +775,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Phunware, Inc. All rights reserved. Updated: 2018-05-31</p>
+						<p class="copyright">Copyright &copy; 2018 Phunware, Inc. All rights reserved. Updated: 2018-08-13</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -1,4 +1,16 @@
 # PWCore Migration Guide
+## Upgrade from 3.6.x to 3.7.x
+
+#### General
+
+The iOS deployment target of PWCore is now 10.0 instead of 9.0. To be compatible with PWCore, an application must have a minimum iOS deployment target of 10.0 as well.
+
+#### Upgrade Steps
+
+1. Update your applicable Xcode project settings to a minimum iOS deployment target of 10.0 or greater.
+
+2. Open the `Podfile` from your project and change PWCore to include `pod 'PWCore', '3.7.x'`, update your iOS platform to 10.0 or greater, then run `pod update` in the Terminal to update the framework.
+
 ## Upgrade from 3.5.x to 3.6.x
 
 #### General
