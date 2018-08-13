@@ -83,13 +83,13 @@ class RecordViewController : UITableViewController {
     
     func validateInput() -> NSError? {
         var error: NSError?
-        if firstNameTextField.text?.trimmingCharacters(in: .whitespaces).characters.count == 0 {
+        if firstNameTextField.text?.trimmingCharacters(in: .whitespaces).count == 0 {
             error = NSError(domain: "CoreSampleDomain", code: 400, userInfo: [NSLocalizedDescriptionKey : "First name can't be empty"])
-        } else if lastNameTextField.text?.trimmingCharacters(in: .whitespaces).characters.count == 0 {
+        } else if lastNameTextField.text?.trimmingCharacters(in: .whitespaces).count == 0 {
             error = NSError(domain: "CoreSampleDomain", code: 400, userInfo: [NSLocalizedDescriptionKey : "Last name can't be empty"])
-        } else if jobTitleTextField.text?.trimmingCharacters(in: .whitespaces).characters.count == 0 {
+        } else if jobTitleTextField.text?.trimmingCharacters(in: .whitespaces).count == 0 {
             error = NSError(domain: "CoreSampleDomain", code: 400, userInfo: [NSLocalizedDescriptionKey : "Job title can't be empty"])
-        } else if officeTextField.text?.trimmingCharacters(in: .whitespaces).characters.count == 0 {
+        } else if officeTextField.text?.trimmingCharacters(in: .whitespaces).count == 0 {
             error = NSError(domain: "CoreSampleDomain", code: 400, userInfo: [NSLocalizedDescriptionKey : "Office location can't be empty"])
         }
         

@@ -2,16 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Preferred for analytics purposes.</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Preferred for analytics purposes.</string>
-	<key>appId</key>
-	<string>&lt;Maas app id&gt;</string>
-	<key>accessKey</key>
-	<string>&lt;Maas access key&gt;</string>
-	<key>signatureKey</key>
-	<string>&lt;Maas signature key&gt;</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -25,11 +15,15 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.1.0</string>
+	<string>3.7.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Preferred for analytics purposes.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Preferred for analytics purposes.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -41,9 +35,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -52,5 +43,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>accessKey</key>
+	<string>&lt;Maas access key&gt;</string>
+	<key>appId</key>
+	<string>&lt;Maas app id&gt;</string>
+	<key>signatureKey</key>
+	<string>&lt;Maas signature key&gt;</string>
 </dict>
 </plist>

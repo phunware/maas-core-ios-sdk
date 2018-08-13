@@ -70,29 +70,29 @@ class AnalyticsViewController: UIViewController {
 
 extension AnalyticsViewController {
     
-    func redButtonPressed(_ sender: UIButton) {
+    @objc func redButtonPressed(_ sender: UIButton) {
         PWAnalytics.addEvent("Red Button Pressed")
     }
     
-    func greenButtonPressed(_ sender: UIButton) {
+    @objc func greenButtonPressed(_ sender: UIButton) {
         PWAnalytics.addEvent("Green Button Pressed")
     }
     
-    func blueButtonPressed(_ sender: UIButton) {
+    @objc func blueButtonPressed(_ sender: UIButton) {
         PWAnalytics.addEvent("Blue Button Pressed")
     }
     
-    func chooseFruitButtonPressed(_ sender: UIButton) {
+    @objc func chooseFruitButtonPressed(_ sender: UIButton) {
         let selectedSegmentTitle = segmentedControl.titleForSegment(at: segmentedControl.selectedSegmentIndex)!
         let parameters = ["fruit" : selectedSegmentTitle]
         PWAnalytics.addEvent("Fruit Button Pressed", withParameters: parameters)
     }
     
-    func startTimedButtonPressed(_ sender: UIButton) {
+    @objc func startTimedButtonPressed(_ sender: UIButton) {
         PWAnalytics.startTimedEvent("Test Timed Event")
     }
     
-    func stopTimedButtonPressed(_ sender: UIButton) {
+    @objc func stopTimedButtonPressed(_ sender: UIButton) {
         PWAnalytics.endTimedEvent("Test Timed Event")
     }
 }

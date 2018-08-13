@@ -42,4 +42,8 @@ class InfoViewController: UITableViewController {
         bundleIdLabel.text = Bundle.main.bundleIdentifier
         deviceIdLabel.text = PWCore.deviceID()
     }
+    
+    @IBAction func emailLogsTapped(_ sender: UIBarButtonItem) {
+        PWLogger.emailLogs()
+    }
 }
