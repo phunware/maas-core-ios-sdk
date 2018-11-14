@@ -1,4 +1,70 @@
 # PWCore Migration Guide
+## Upgrade from 3.7.x to 3.8.x
+
+#### General
+
+This release adds automatic screen view analytic events and simplifies the analytic custom event API. New `addCustomEvent` methods will appear in the new Maas Portal analytics dashboard. Existing deprecated `addEvent` methods will continue to appear in the old Maas Portal analytics dashboard.
+
+#### Upgrade Steps
+
+1. Open the `Podfile` from your project and change PWCore to include `pod 'PWCore', '3.8.x'`, then run `pod update` in the Terminal to update the framework. This is only necessary if using PWCore by itself. Otherwise the correct version will be installed with PWLocation/PWMapKit or PWEngagement if using it bundled.
+
+2. Replace occurrences of the following deprecated methods with their counter parts:
+
+`+ (void)addEvent:(NSString *__nonnull)eventName __deprecated`
+with
+`+ (void)addCustomEvent:(NSString *__nonnull)eventName`
+
+`+ (void)addEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters __deprecated`
+with
+`+ (void)addCustomEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters`
+
+#### Change Detail
+
+###### PWAnalytics
+
+*ADDED*
+
+* `+ (void)addCustomEvent:(NSString *__nonnull)eventName`
+
+* `+ (void)addCustomEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters`
+
+* `+ (void)setScreenName:(NSString *__nonnull)screenName`
+
+* `+ (void)setAppSection:(NSString *__nullable)appSection`
+
+* `+ (void)setGlobalParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters`
+
+* `+ (void)enableAutomaticScreenViewEvents:(BOOL)enable`
+
+*DEPRECATED*
+
+* `+ (void)addEvent:(NSString *__nonnull)eventName __deprecated`
+
+* `+ (void)addEvent:(NSString *__nonnull)eventName eventNamespace:(NSString *__nonnull)eventNamespace __deprecated`
+
+* `+ (void)addEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters __deprecated`
+
+* `+ (void)addEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters eventNamespace:(NSString *__nullable)eventNamespace __deprecated`
+
+* `+ (void)startTimedEvent:(NSString *__nonnull)eventName __deprecated`
+
+* `+ (void)startTimedEvent:(NSString *__nonnull)eventName eventNamespace:(NSString *__nullable)eventNamespace __deprecated`
+
+* `+ (void)startTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters __deprecated`
+
+* `+ (void)startTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters eventNamespace:(NSString *__nullable)eventNamespace __deprecated`
+
+* `+ (void)pauseTimedEvent:(NSString *__nonnull)eventName __deprecated`
+
+* `+ (void)resumeTimedEvent:(NSString *__nonnull)eventName __deprecated`
+
+* `+ (void)endTimedEvent:(NSString *__nonnull)eventName __deprecated`
+
+* `+ (void)endTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters __deprecated`
+
+* `+ (void)endTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters eventNamespace:(NSString *__nullable)eventNamespace __deprecated`
+
 ## Upgrade from 3.6.x to 3.7.x
 
 #### General

@@ -13,6 +13,114 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/addCustomEvent:</TokenIdentifier>
+			<Abstract type="html">Add an event to the analytics queue.</Abstract>
+			<DeclaredIn>PWAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (void)addCustomEvent:(NSString *__nonnull)eventName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>eventName</Name>
+					<Abstract type="html">Name of the event.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addCustomEvent:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/addCustomEvent:withParameters:</TokenIdentifier>
+			<Abstract type="html">Add an event to the analytics queue. Parameters must follow these rules:
+(1) Keys and values must be NSString objects.
+(2) There may be no more than 5 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 40 characters will be truncated on server.</Abstract>
+			<DeclaredIn>PWAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (void)addCustomEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)parameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>eventName</Name>
+					<Abstract type="html">Name of the event.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">NSString key / value parameters. For example, @{@&quot;key&quot; : @&quot;value&quot;}.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addCustomEvent:withParameters:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/setScreenName:</TokenIdentifier>
+			<Abstract type="html">Set a screen name for automatic screen view events.</Abstract>
+			<DeclaredIn>PWAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (void)setScreenName:(NSString *__nonnull)screenName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>screenName</Name>
+					<Abstract type="html">Screen name for the view event.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setScreenName:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/setAppSection:</TokenIdentifier>
+			<Abstract type="html">Set an app section for automatic screen view events.</Abstract>
+			<DeclaredIn>PWAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (void)setAppSection:(NSString *__nullable)appSection</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appSection</Name>
+					<Abstract type="html">App section for the view event.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setAppSection:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/setGlobalParameters:</TokenIdentifier>
+			<Abstract type="html">Set global parameters for all events.</Abstract>
+			<DeclaredIn>PWAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (void)setGlobalParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)parameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">Parameters included for all events until cleared.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setGlobalParameters:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/enableAutomaticScreenViewEvents:</TokenIdentifier>
+			<Abstract type="html">Determines whether automatic screen views are captured.</Abstract>
+			<DeclaredIn>PWAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (void)enableAutomaticScreenViewEvents:(BOOL)enable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enable</Name>
+					<Abstract type="html">Will automatically capture screen view events or not. Defaults to enabled.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enableAutomaticScreenViewEvents:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/addEvent:</TokenIdentifier>
 			<Abstract type="html">Add an event to the analytics queue.</Abstract>
 			<DeclaredIn>PWAnalytics.h</DeclaredIn>
@@ -52,12 +160,12 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/addEvent:withParameters:</TokenIdentifier>
 			<Abstract type="html">Add an event to the analytics queue. Parameters must follow these rules:
-  (1) Keys and values must be NSString objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
+(1) Keys and values must be NSString objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
 			<DeclaredIn>PWAnalytics.h</DeclaredIn>
 			
-			<Declaration>+ (void)addEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary *__nullable)parameters</Declaration>
+			<Declaration>+ (void)addEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)parameters</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>eventName</Name>
@@ -75,12 +183,12 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/addEvent:withParameters:eventNamespace:</TokenIdentifier>
 			<Abstract type="html">Add an event to the analytics queue. Parameters must follow these rules:
-  (1) Keys and values must be NSString objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
+(1) Keys and values must be NSString objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
 			<DeclaredIn>PWAnalytics.h</DeclaredIn>
 			
-			<Declaration>+ (void)addEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary *__nullable)parameters eventNamespace:(NSString *__nullable)eventNamespace</Declaration>
+			<Declaration>+ (void)addEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)parameters eventNamespace:(NSString *__nullable)eventNamespace</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>eventName</Name>
@@ -138,12 +246,12 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/startTimedEvent:withParameters:</TokenIdentifier>
 			<Abstract type="html">Start a timed event with the specified parameters. Calling startTimedEvent: with the same eventName prior to endTimedEvent: will overwrite the previous start time. Parameters must follow these rules:
-  (1) Keys and values must be NSString objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
+(1) Keys and values must be NSString objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
 			<DeclaredIn>PWAnalytics.h</DeclaredIn>
 			
-			<Declaration>+ (void)startTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary *__nullable)parameters</Declaration>
+			<Declaration>+ (void)startTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)parameters</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>eventName</Name>
@@ -161,12 +269,12 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/startTimedEvent:withParameters:eventNamespace:</TokenIdentifier>
 			<Abstract type="html">Start a timed event with the specified parameters. Calling startTimedEvent: with the same eventName prior to endTimedEvent: will overwrite the previous start time. Parameters must follow these rules:
-  (1) Keys and values must be NSString objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
+(1) Keys and values must be NSString objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
 			<DeclaredIn>PWAnalytics.h</DeclaredIn>
 			
-			<Declaration>+ (void)startTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary *__nullable)parameters eventNamespace:(NSString *__nullable)eventNamespace</Declaration>
+			<Declaration>+ (void)startTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)parameters eventNamespace:(NSString *__nullable)eventNamespace</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>eventName</Name>
@@ -238,12 +346,12 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/endTimedEvent:withParameters:</TokenIdentifier>
 			<Abstract type="html">End a timed event with the specified eventName. The event will be ignored if the event duration is less than one second. This method will do nothing if the event name cannot be found. Parameters must follow these rules:
-  (1) Keys and values must be NSString objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
+(1) Keys and values must be NSString objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
 			<DeclaredIn>PWAnalytics.h</DeclaredIn>
 			
-			<Declaration>+ (void)endTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary *__nullable)parameters</Declaration>
+			<Declaration>+ (void)endTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)parameters</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>eventName</Name>
@@ -261,12 +369,12 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/endTimedEvent:withParameters:eventNamespace:</TokenIdentifier>
 			<Abstract type="html">End a timed event with the specified eventName. The event will be ignored if the event duration is less than one second. This method will do nothing if the event name cannot be found. Parameters must follow these rules:
-  (1) Keys and values must be NSString objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
+(1) Keys and values must be NSString objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</Abstract>
 			<DeclaredIn>PWAnalytics.h</DeclaredIn>
 			
-			<Declaration>+ (void)endTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary *__nullable)parameters eventNamespace:(NSString *__nullable)eventNamespace</Declaration>
+			<Declaration>+ (void)endTimedEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)parameters eventNamespace:(NSString *__nullable)eventNamespace</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>eventName</Name>

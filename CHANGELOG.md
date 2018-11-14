@@ -1,4 +1,12 @@
 # PWCore Changelog
+## 3.8.0 (Wednesday, November 14th, 2018)
+#### Features
+* Added new automatic screen view analytic events
+* Simplified custom event analytics API
+
+#### Bug fixes / performance enhancements
+* Fixed session start when switching application ids
+
 ## 3.7.0 (Monday, August 13th, 2018)
 #### Bug fixes / performance enhancements
 * iOS deployment target increased from 9.0 to 10.0
