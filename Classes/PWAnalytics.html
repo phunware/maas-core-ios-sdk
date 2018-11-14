@@ -58,6 +58,10 @@
 	
 	<optgroup label="Class Methods">
 		
+		<option value="//api/name/addCustomEvent:">+ addCustomEvent:</option>
+		
+		<option value="//api/name/addCustomEvent:withParameters:">+ addCustomEvent:withParameters:</option>
+		
 		<option value="//api/name/addEvent:">+ addEvent:</option>
 		
 		<option value="//api/name/addEvent:eventNamespace:">+ addEvent:eventNamespace:</option>
@@ -65,6 +69,8 @@
 		<option value="//api/name/addEvent:withParameters:">+ addEvent:withParameters:</option>
 		
 		<option value="//api/name/addEvent:withParameters:eventNamespace:">+ addEvent:withParameters:eventNamespace:</option>
+		
+		<option value="//api/name/enableAutomaticScreenViewEvents:">+ enableAutomaticScreenViewEvents:</option>
 		
 		<option value="//api/name/endTimedEvent:">+ endTimedEvent:</option>
 		
@@ -75,6 +81,12 @@
 		<option value="//api/name/pauseTimedEvent:">+ pauseTimedEvent:</option>
 		
 		<option value="//api/name/resumeTimedEvent:">+ resumeTimedEvent:</option>
+		
+		<option value="//api/name/setAppSection:">+ setAppSection:</option>
+		
+		<option value="//api/name/setGlobalParameters:">+ setGlobalParameters:</option>
+		
+		<option value="//api/name/setScreenName:">+ setScreenName:</option>
 		
 		<option value="//api/name/startTimedEvent:">+ startTimedEvent:</option>
 		
@@ -136,6 +148,332 @@
 <h2 class="task-title">Event Methods</h2>
 						<div class="task-list">
 							<div class="section-method">
+	<a name="//api/name/addCustomEvent:" title="addCustomEvent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addCustomEvent:">+&nbsp;addCustomEvent:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add an event to the analytics queue.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addCustomEvent:(NSString *__nonnull)<em>eventName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>eventName</code></th>
+						<td><p>Name of the event.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addCustomEvent:withParameters:" title="addCustomEvent:withParameters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addCustomEvent:withParameters:">+&nbsp;addCustomEvent:withParameters:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add an event to the analytics queue. Parameters must follow these rules:
+(1) Keys and values must be NSString objects.
+(2) There may be no more than 5 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 40 characters will be truncated on server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addCustomEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)<em>parameters</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>eventName</code></th>
+						<td><p>Name of the event.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p><code>NSString</code> key / value parameters. For example, <code>@{@"key" : @"value"}</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setScreenName:" title="setScreenName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScreenName:">+&nbsp;setScreenName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set a screen name for automatic screen view events.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setScreenName:(NSString *__nonnull)<em>screenName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenName</code></th>
+						<td><p>Screen name for the view event.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAppSection:" title="setAppSection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAppSection:">+&nbsp;setAppSection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set an app section for automatic screen view events.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setAppSection:(NSString *__nullable)<em>appSection</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appSection</code></th>
+						<td><p>App section for the view event.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setGlobalParameters:" title="setGlobalParameters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setGlobalParameters:">+&nbsp;setGlobalParameters:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set global parameters for all events.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setGlobalParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)<em>parameters</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>Parameters included for all events until cleared.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableAutomaticScreenViewEvents:" title="enableAutomaticScreenViewEvents:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableAutomaticScreenViewEvents:">+&nbsp;enableAutomaticScreenViewEvents:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Determines whether automatic screen views are captured.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)enableAutomaticScreenViewEvents:(BOOL)<em>enable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>Will automatically capture screen view events or not. Defaults to enabled.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/addEvent:" title="addEvent:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/addEvent:">+&nbsp;addEvent:</a></code>
 </h3>
@@ -259,14 +597,14 @@
 			
 			<div class="method-subsection brief-description">
 				<p>Add an event to the analytics queue. Parameters must follow these rules:
-  (1) Keys and values must be <code>NSString</code> objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</p>
+(1) Keys and values must be <code>NSString</code> objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)addEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary *__nullable)<em>parameters</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)addEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)<em>parameters</em></code></div>
 
 		    
 			
@@ -320,14 +658,14 @@
 			
 			<div class="method-subsection brief-description">
 				<p>Add an event to the analytics queue. Parameters must follow these rules:
-  (1) Keys and values must be <code>NSString</code> objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</p>
+(1) Keys and values must be <code>NSString</code> objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)addEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary *__nullable)<em>parameters</em> eventNamespace:(NSString *__nullable)<em>eventNamespace</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)addEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)<em>parameters</em> eventNamespace:(NSString *__nullable)<em>eventNamespace</em></code></div>
 
 		    
 			
@@ -497,14 +835,14 @@
 			
 			<div class="method-subsection brief-description">
 				<p>Start a timed event with the specified parameters. Calling <a href="#//api/name/startTimedEvent:"><code>startTimedEvent:</code></a> with the same <code>eventName</code> prior to <a href="#//api/name/endTimedEvent:"><code>endTimedEvent:</code></a> will overwrite the previous start time. Parameters must follow these rules:
-  (1) Keys and values must be <code>NSString</code> objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</p>
+(1) Keys and values must be <code>NSString</code> objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)startTimedEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary *__nullable)<em>parameters</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)startTimedEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)<em>parameters</em></code></div>
 
 		    
 			
@@ -558,14 +896,14 @@
 			
 			<div class="method-subsection brief-description">
 				<p>Start a timed event with the specified parameters. Calling <a href="#//api/name/startTimedEvent:"><code>startTimedEvent:</code></a> with the same <code>eventName</code> prior to <a href="#//api/name/endTimedEvent:"><code>endTimedEvent:</code></a> will overwrite the previous start time. Parameters must follow these rules:
-  (1) Keys and values must be <code>NSString</code> objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</p>
+(1) Keys and values must be <code>NSString</code> objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)startTimedEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary *__nullable)<em>parameters</em> eventNamespace:(NSString *__nullable)<em>eventNamespace</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)startTimedEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)<em>parameters</em> eventNamespace:(NSString *__nullable)<em>eventNamespace</em></code></div>
 
 		    
 			
@@ -783,14 +1121,14 @@
 			
 			<div class="method-subsection brief-description">
 				<p>End a timed event with the specified <code>eventName</code>. The event will be ignored if the event duration is less than one second. This method will do nothing if the event name cannot be found. Parameters must follow these rules:
-  (1) Keys and values must be <code>NSString</code> objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</p>
+(1) Keys and values must be <code>NSString</code> objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)endTimedEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary *__nullable)<em>parameters</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)endTimedEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)<em>parameters</em></code></div>
 
 		    
 			
@@ -844,14 +1182,14 @@
 			
 			<div class="method-subsection brief-description">
 				<p>End a timed event with the specified <code>eventName</code>. The event will be ignored if the event duration is less than one second. This method will do nothing if the event name cannot be found. Parameters must follow these rules:
-  (1) Keys and values must be <code>NSString</code> objects.
-  (2) There may be no more than 10 parameters. Extra parameters will be ignored.
-  (3) Each key or value that is longer than 256 characters will be truncated.</p>
+(1) Keys and values must be <code>NSString</code> objects.
+(2) There may be no more than 10 parameters. Extra parameters will be ignored.
+(3) Each key or value that is longer than 256 characters will be truncated.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)endTimedEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary *__nullable)<em>parameters</em> eventNamespace:(NSString *__nullable)<em>eventNamespace</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)endTimedEvent:(NSString *__nonnull)<em>eventName</em> withParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)<em>parameters</em> eventNamespace:(NSString *__nullable)<em>eventNamespace</em></code></div>
 
 		    
 			
@@ -912,7 +1250,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Phunware, Inc. All rights reserved. Updated: 2018-04-16</p>
+						<p class="copyright">Copyright &copy; 2018 Phunware, Inc. All rights reserved. Updated: 2018-11-14</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

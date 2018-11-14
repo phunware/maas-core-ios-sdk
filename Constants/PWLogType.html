@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PWLogLevel Constants Reference</title>
+	<title>PWLogType Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">PWLogLevel Constants Reference</h1>
+					<h1 class="title">PWLogType Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>PWLogger.h</td>
+	<td>PWLogMessage.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,23 +75,21 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">PWLogLevel</h3>
+                    <h3 class="subsubtitle method-title">PWLogType</h3>
                     
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, PWLogLevel ) {<br>
+                        <code>typedef NS_ENUM(NSUInteger, PWLogType ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">PWLogLevelNone</a>,<br>
+                            &nbsp;&nbsp; <a href="">PWLogTypeError</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">PWLogLevelError</a>,<br>
+                            &nbsp;&nbsp; <a href="">PWLogTypeWarning</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">PWLogLevelWarning</a>,<br>
+                            &nbsp;&nbsp; <a href="">PWLogTypeInfo</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">PWLogLevelInfo</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">PWLogLevelDebug</a>,<br>
+                            &nbsp;&nbsp; <a href="">PWLogTypeDebug</a>,<br>
                             
                             };</code>
                     
@@ -101,87 +99,42 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="PWLogLevelNone"></a><code>PWLogLevelNone</code></dt>
+                            <dt><a name="" title="PWLogTypeError"></a><code>PWLogTypeError</code></dt>
 <dd>
-
-
-<p>Specifies all logging as disabled. This is the default logging level.</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">PWLogger.h</code>.
+		Declared In <code class="declared-in-ref">PWLogMessage.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="PWLogLevelError"></a><code>PWLogLevelError</code></dt>
+                            <dt><a name="" title="PWLogTypeWarning"></a><code>PWLogTypeWarning</code></dt>
 <dd>
-
-
-<p>Only log errors.</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">PWLogger.h</code>.
+		Declared In <code class="declared-in-ref">PWLogMessage.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="PWLogLevelWarning"></a><code>PWLogLevelWarning</code></dt>
+                            <dt><a name="" title="PWLogTypeInfo"></a><code>PWLogTypeInfo</code></dt>
 <dd>
-
-
-<p>Log warnings and errors.</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">PWLogger.h</code>.
+		Declared In <code class="declared-in-ref">PWLogMessage.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="PWLogLevelInfo"></a><code>PWLogLevelInfo</code></dt>
+                            <dt><a name="" title="PWLogTypeDebug"></a><code>PWLogTypeDebug</code></dt>
 <dd>
-
-
-<p>Log information, warnings and errors.</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">PWLogger.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLogLevelDebug"></a><code>PWLogLevelDebug</code></dt>
-<dd>
-
-
-<p>Logs all messages.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLogger.h</code>.
+		Declared In <code class="declared-in-ref">PWLogMessage.h</code>.
 	</p>
 	
 </dd>

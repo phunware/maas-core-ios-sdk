@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PWLogLevel Constants Reference</title>
+	<title>PWEnvironment Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">PWLogLevel Constants Reference</h1>
+					<h1 class="title">PWEnvironment Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>PWLogger.h</td>
+	<td>PWCore.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,23 +75,25 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">PWLogLevel</h3>
+                    <h3 class="subsubtitle method-title">PWEnvironment</h3>
                     
+					
+					<div class="section section-overview">
+                        <p><a href="../Classes/PWCore.html"><code>PWCore</code></a> implements core functionality used in all MaaS modules. All MaaS modules have a <a href="../Classes/PWCore.html"><code>PWCore</code></a> dependency.</p>
+					</div>
+					
+					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, PWLogLevel ) {<br>
+                        <code>typedef NS_ENUM(NSInteger, PWEnvironment ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">PWLogLevelNone</a>,<br>
+                            &nbsp;&nbsp; <a href="">PWEnvironmentProd</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">PWLogLevelError</a>,<br>
+                            &nbsp;&nbsp; <a href="">PWEnvironmentStage</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">PWLogLevelWarning</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">PWLogLevelInfo</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">PWLogLevelDebug</a>,<br>
+                            &nbsp;&nbsp; <a href="">PWEnvironmentDev</a>,<br>
                             
                             };</code>
                     
@@ -101,11 +103,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="PWLogLevelNone"></a><code>PWLogLevelNone</code></dt>
+                            <dt><a name="" title="PWEnvironmentProd"></a><code>PWEnvironmentProd</code></dt>
 <dd>
 
 
-<p>Specifies all logging as disabled. This is the default logging level.</p>
+<p><a href="../Classes/PWCore.html"><code>PWCore</code></a> implements core functionality used in all MaaS modules. All MaaS modules have a <a href="../Classes/PWCore.html"><code>PWCore</code></a> dependency.</p>
 
 
 
@@ -113,16 +115,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">PWLogger.h</code>.
+		Declared In <code class="declared-in-ref">PWCore.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="PWLogLevelError"></a><code>PWLogLevelError</code></dt>
+                            <dt><a name="" title="PWEnvironmentStage"></a><code>PWEnvironmentStage</code></dt>
 <dd>
 
 
-<p>Only log errors.</p>
+<p><a href="../Classes/PWCore.html"><code>PWCore</code></a> implements core functionality used in all MaaS modules. All MaaS modules have a <a href="../Classes/PWCore.html"><code>PWCore</code></a> dependency.</p>
 
 
 
@@ -130,16 +132,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">PWLogger.h</code>.
+		Declared In <code class="declared-in-ref">PWCore.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="PWLogLevelWarning"></a><code>PWLogLevelWarning</code></dt>
+                            <dt><a name="" title="PWEnvironmentDev"></a><code>PWEnvironmentDev</code></dt>
 <dd>
 
 
-<p>Log warnings and errors.</p>
+<p><a href="../Classes/PWCore.html"><code>PWCore</code></a> implements core functionality used in all MaaS modules. All MaaS modules have a <a href="../Classes/PWCore.html"><code>PWCore</code></a> dependency.</p>
 
 
 
@@ -147,41 +149,7 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">PWLogger.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLogLevelInfo"></a><code>PWLogLevelInfo</code></dt>
-<dd>
-
-
-<p>Log information, warnings and errors.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLogger.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLogLevelDebug"></a><code>PWLogLevelDebug</code></dt>
-<dd>
-
-
-<p>Logs all messages.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLogger.h</code>.
+		Declared In <code class="declared-in-ref">PWCore.h</code>.
 	</p>
 	
 </dd>
@@ -190,6 +158,17 @@
                     </div>
                     
 
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">PWCore.h</code></p>
+                    </div>
+                    
                     
                     
                     
