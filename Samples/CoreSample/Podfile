@@ -5,5 +5,5 @@ inhibit_all_warnings!
 use_frameworks!
 
 target :'CoreSample' do
-	pod 'PWCore', '~> 3.7.0'
+	pod 'PWCore', '~> 3.8.0'
 end
