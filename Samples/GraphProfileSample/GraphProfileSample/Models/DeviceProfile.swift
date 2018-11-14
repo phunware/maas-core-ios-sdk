@@ -127,7 +127,7 @@ struct DeviceProfileData: Decodable {
                             let latitude: Double?
                             let name: String?
                             let longitude: Double?
-                            let dates: [Int]?
+                            let dates: [Int]
                         }
                     }
                 }
