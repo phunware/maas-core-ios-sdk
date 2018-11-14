@@ -25,7 +25,7 @@ class Person {
     }
     
     init(dictionary: [String : AnyObject]) {
-        id = dictionary["id"]! as! String
+        id = dictionary["id"]! as? String
         if let firstName = dictionary["firstName"] as? String {
             self.firstName = firstName
         }
