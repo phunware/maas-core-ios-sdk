@@ -57,6 +57,7 @@ let SampleDeviceProfileData =
             }]
         },
         "model": "Android 7.0",
+        "language": "en",
         "operatingSystem": "android",
         "mobileApplication": [{
             "phunwareAppId": "154",
@@ -81,6 +82,7 @@ struct DeviceProfileData: Decodable {
         let segment: Segment
         let location: Location
         let model: String?
+        let language: String?
         let operatingSystem: String?
         let mobileApplication: [MobileApplication]
         let manufacturer: String?

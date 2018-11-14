@@ -218,7 +218,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/PWCore/PWCore.framework",
+				"${PODS_ROOT}/PWCore/Framework/PWCore.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/TMCache/TMCache.framework",
 			);
