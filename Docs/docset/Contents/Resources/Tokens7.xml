@@ -186,6 +186,30 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/setAnalyticsApplicationID:accessKey:signatureKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (void)setAnalyticsApplicationID:(NSString *)applicationID accessKey:(NSString *)accessKey signatureKey:(NSString *)signatureKey</Declaration>
+			
+			
+			<Anchor>//api/name/setAnalyticsApplicationID:accessKey:signatureKey:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/setAnalyticsEnvironment:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (void)setAnalyticsEnvironment:(PWEnvironment)environment</Declaration>
+			
+			
+			<Anchor>//api/name/setAnalyticsEnvironment:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWCore/accessKey</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>PWCore.h</DeclaredIn>

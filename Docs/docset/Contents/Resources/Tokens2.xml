@@ -54,7 +54,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/setScreenName:</TokenIdentifier>
-			<Abstract type="html">Set a screen name for automatic screen view events.</Abstract>
+			<Abstract type="html">Set a screen name for automatic screen view events. This should be set in the viewWillAppear callback of your view controller before calling super viewWillAppear.</Abstract>
 			<DeclaredIn>PWAnalytics.h</DeclaredIn>
 			
 			<Declaration>+ (void)setScreenName:(NSString *__nonnull)screenName</Declaration>
@@ -71,7 +71,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/setAppSection:</TokenIdentifier>
-			<Abstract type="html">Set an app section for automatic screen view events.</Abstract>
+			<Abstract type="html">Set an app section for automatic screen view events. This should be set in the viewWillAppear callback of your view controller before calling super viewWillAppear.</Abstract>
 			<DeclaredIn>PWAnalytics.h</DeclaredIn>
 			
 			<Declaration>+ (void)setAppSection:(NSString *__nullable)appSection</Declaration>
@@ -88,7 +88,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWAnalytics/setGlobalParameters:</TokenIdentifier>
-			<Abstract type="html">Set global parameters for all events.</Abstract>
+			<Abstract type="html">Set global parameters for all events. This should be set in the viewWillAppear callback of your view controller before calling super viewWillAppear.</Abstract>
 			<DeclaredIn>PWAnalytics.h</DeclaredIn>
 			
 			<Declaration>+ (void)setGlobalParameters:(NSDictionary&lt;NSString*,NSString*&gt; *__nullable)parameters</Declaration>

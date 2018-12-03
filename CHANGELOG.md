@@ -1,4 +1,8 @@
 # PWCore Changelog
+## 3.8.1 (Monday, December 3rd, 2018)
+#### Bug fixes / performance enhancements
+* Fix analytic screen view events for stacked views
+
 ## 3.8.0 (Wednesday, November 14th, 2018)
 #### Features
 * Added new automatic screen view analytic events

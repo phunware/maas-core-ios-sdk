@@ -34,19 +34,19 @@
 + (void)addCustomEvent:(NSString *__nonnull)eventName withParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters;
 
 /**
- Set a screen name for automatic screen view events.
+ Set a screen name for automatic screen view events. This should be set in the `viewWillAppear` callback of your view controller before calling `super viewWillAppear`.
  @param screenName Screen name for the view event.
  */
 + (void)setScreenName:(NSString *__nonnull)screenName;
 
 /**
- Set an app section for automatic screen view events.
+ Set an app section for automatic screen view events. This should be set in the `viewWillAppear` callback of your view controller before calling `super viewWillAppear`.
  @param appSection App section for the view event.
  */
 + (void)setAppSection:(NSString *__nullable)appSection;
 
 /**
- Set global parameters for all events.
+ Set global parameters for all events. This should be set in the `viewWillAppear` callback of your view controller before calling `super viewWillAppear`.
  @param parameters Parameters included for all events until cleared.
  */
 + (void)setGlobalParameters:(NSDictionary<NSString *, NSString *> *__nullable)parameters;

@@ -20,7 +20,7 @@
 #import <PWCore/PWCoreDevice.h>
 #import <PWCore/PWFeatureFlagger.h>
 
-static NSString * const PWCoreVersion = @"3.8.0";
+static NSString * const PWCoreVersion = @"3.8.1";
 
 /**
  `PWCore` implements core functionality used in all MaaS modules. All MaaS modules have a `PWCore` dependency.
@@ -105,6 +105,12 @@ typedef NS_ENUM(NSInteger, PWEnvironment) {
 + (PWEnvironment)getEnvironment;
 
 + (void)setEnvironment:(PWEnvironment)environment;
+
++ (void)setAnalyticsApplicationID:(NSString *)applicationID
+               accessKey:(NSString *)accessKey
+            signatureKey:(NSString *)signatureKey;
+
++ (void)setAnalyticsEnvironment:(PWEnvironment)environment;
 
 + (NSString *__nullable)accessKey;
 
