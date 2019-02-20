@@ -1,4 +1,8 @@
 # PWCore Changelog
+## 3.8.2 (Wednesday, February 20th, 2019)
+#### Bug fixes / performance enhancements
+* Use new v3.0 Map-API
+
 ## 3.8.1 (Monday, December 3rd, 2018)
 #### Bug fixes / performance enhancements
 * Fix analytic screen view events for stacked views
