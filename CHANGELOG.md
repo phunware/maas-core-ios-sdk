@@ -1,4 +1,8 @@
 # PWCore Changelog
+## 3.8.3 (Tuesday, April 2nd, 2019)
+#### Bug fixes / performance enhancements
+* Fix to analytics payload
+
 ## 3.8.2 (Wednesday, February 20th, 2019)
 #### Bug fixes / performance enhancements
 * Use new v3.0 Map-API
