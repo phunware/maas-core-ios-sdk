@@ -1,4 +1,8 @@
 # PWCore Changelog
+## 3.8.4 (Tuesday, August 13, 2019)
+#### Features
+* Added useIDFA flag
+
 ## 3.8.3 (Tuesday, April 2nd, 2019)
 #### Bug fixes / performance enhancements
 * Fix to analytics payload

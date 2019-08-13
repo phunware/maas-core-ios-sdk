@@ -28,6 +28,8 @@
 + (NSString *) uniqueGlobalDeviceIdentifier;
 + (NSDictionary*) uniqueGlobalDeviceIdentifierInfo;
 
+@property (class, atomic) BOOL useIDFA;
+
 // Convenience
 + (NSDateFormatter *)standardDateFormatter;
 
