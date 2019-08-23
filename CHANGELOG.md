@@ -1,4 +1,8 @@
 # PWCore Changelog
+## 3.8.5 (Friday, August 23, 2019)
+#### Features
+* Removed useIDFA flag and replaced with compiler flag, FORCE_IDFV. Based on how the build is performed, this flag is on or off and controls whether the AdSupport framework and IDFA is used.
+
 ## 3.8.4 (Tuesday, August 13, 2019)
 #### Features
 * Added useIDFA flag
