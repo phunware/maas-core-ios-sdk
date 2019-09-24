@@ -426,10 +426,10 @@
 				INFOPLIST_FILE = CoreSample/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.coresample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.CoreSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "e0bf3026-4b6b-4aef-ab9c-5fb2cc3b04e9";
-				PROVISIONING_PROFILE_SPECIFIER = Phunware_Wild2;
+				PROVISIONING_PROFILE_SPECIFIER = CoreSampleDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -451,10 +451,10 @@
 				INFOPLIST_FILE = CoreSample/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.coresample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.CoreSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "44de7b93-753f-4547-ad21-bf235551dffd";
-				PROVISIONING_PROFILE_SPECIFIER = Phunware_Wild2;
+				PROVISIONING_PROFILE_SPECIFIER = CoreSample;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
