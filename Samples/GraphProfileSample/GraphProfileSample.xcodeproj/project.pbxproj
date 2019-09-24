@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14F1161E2339BD4900758CAB /* GraphProfileSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GraphProfileSample.entitlements; sourceTree = "<group>"; };
 		380E02161528CACC3007188E /* Pods_GraphProfileSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphProfileSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6712005BD3F3D3A638725B8D /* Pods-GraphProfileSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphProfileSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample.debug.xcconfig"; sourceTree = "<group>"; };
 		A319207ED06EBDABC2A6463A /* Pods-GraphProfileSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphProfileSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		FB09AC8A219499E60099646D /* GraphProfileSample */ = {
 			isa = PBXGroup;
 			children = (
+				14F1161E2339BD4900758CAB /* GraphProfileSample.entitlements */,
 				FB09ACA321949B8B0099646D /* Controllers */,
 				FB09ACAA2194B1650099646D /* Models */,
 				FB09AC9D21949B8B0099646D /* Resources */,
@@ -371,11 +373,15 @@
 			baseConfigurationReference = 6712005BD3F3D3A638725B8D /* Pods-GraphProfileSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GraphProfileSample/GraphProfileSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84CK77G588;
 				INFOPLIST_FILE = "$(SRCROOT)/GraphProfileSample/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.GraphProfileSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -388,11 +394,15 @@
 			baseConfigurationReference = A319207ED06EBDABC2A6463A /* Pods-GraphProfileSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GraphProfileSample/GraphProfileSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84CK77G588;
 				INFOPLIST_FILE = "$(SRCROOT)/GraphProfileSample/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.GraphProfileSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
