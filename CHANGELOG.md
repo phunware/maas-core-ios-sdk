@@ -1,4 +1,9 @@
 # PWCore Changelog
+## 3.8.6 (Wednesday, September 25, 2019)
+#### Features
+* Removed AFNetworking's UIKit subspec in order to not have any Webview code coming from AFNetworking dependency. Core now uses the following AFNetworking subspecs: NSURLSession, Security, Serialization, and Reachability.
+* Removed deprecated UIWebview code from within Core. Replaced with WKWebview.
+
 ## 3.8.5 (Friday, August 23, 2019)
 #### Features
 * Removed useIDFA flag and replaced with compiler flag, FORCE_IDFV. Based on how the build is performed, this flag is on or off and controls whether the AdSupport framework and IDFA is used.
