@@ -20,7 +20,7 @@
 #import <PWCore/PWCoreDevice.h>
 #import <PWCore/PWFeatureFlagger.h>
 
-static NSString * const PWCoreVersion = @"3.8.6";
+static NSString * const PWCoreVersion = @"3.8.7";
 
 /**
  `PWCore` implements core functionality used in all MaaS modules. All MaaS modules have a `PWCore` dependency.

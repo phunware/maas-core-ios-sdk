@@ -1,4 +1,8 @@
 # PWCore Changelog
+## 3.8.7 (Wednesday, December 18, 2019)
+#### Features
+* Removed the bluetoothEnabled check from standard analytics payload. Now the value in the payload with key "bluetoothEnabled" will always return false.
+
 ## 3.8.6 (Wednesday, September 25, 2019)
 #### Features
 * Removed AFNetworking's UIKit subspec in order to not have any Webview code coming from AFNetworking dependency. Core now uses the following AFNetworking subspecs: NSURLSession, Security, Serialization, and Reachability.
