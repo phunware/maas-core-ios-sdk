@@ -9,7 +9,7 @@ Requirements
 ------------
 
 - iOS 10.0 or greater
-- XCode 10.2 or greater
+- XCode 11 or greater
 
 Documentation
 ------------
