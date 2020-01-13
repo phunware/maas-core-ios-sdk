@@ -1,4 +1,8 @@
 # PWCore Changelog
+## 3.8.8 (Monday, January 13, 2020)
+#### Bug fixes
+* Ensure the 'bluetoothEnabled' value in the analytics payload is a boolean in order to pass server validation.
+
 ## 3.8.7 (Wednesday, December 18, 2019)
 #### Features
 * Removed the bluetoothEnabled check from standard analytics payload. Now the value in the payload with key "bluetoothEnabled" will always return false.
