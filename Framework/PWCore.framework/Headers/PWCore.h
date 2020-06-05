@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import <PWCore/PWAnalytics.h>
+#import <PWCore/UIViewController+PWAnalytics.h>
 #import <PWCore/PWCME.h>
 #import <PWCore/PWLogger.h>
 #import <PWCore/PWConsoleLogger.h>
@@ -20,7 +21,7 @@
 #import <PWCore/PWCoreDevice.h>
 #import <PWCore/PWFeatureFlagger.h>
 
-static NSString * const PWCoreVersion = @"3.8.8";
+static NSString * const PWCoreVersion = @"3.8.9";
 
 /**
  `PWCore` implements core functionality used in all MaaS modules. All MaaS modules have a `PWCore` dependency.

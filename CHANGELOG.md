@@ -1,4 +1,9 @@
 # PWCore Changelog
+## 3.8.9 (Friday, June 5, 2020)
+#### Features
+* Remove some location information from events.
+* Expose manual screen view event tracking API.
+
 ## 3.8.8 (Monday, January 13, 2020)
 #### Bug fixes
 * Ensure the 'bluetoothEnabled' value in the analytics payload is a boolean in order to pass server validation.

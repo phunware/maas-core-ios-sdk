@@ -22,8 +22,6 @@
 + (BOOL)bluetoothEnabled;
 
 + (NSDictionary *)locationInfo;
-+ (NSDictionary *)addressInfo;
-
 + (NSString *) uniqueDeviceIdentifier;
 + (NSString *) uniqueGlobalDeviceIdentifier;
 + (NSDictionary*) uniqueGlobalDeviceIdentifierInfo;
