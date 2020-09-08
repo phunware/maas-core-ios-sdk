@@ -1,4 +1,9 @@
 # PWCore Changelog
+## 3.9.0 (Thursday, September 3rd, 2020)
+#### Features
+* Exposed API to control whether or not the SDK can request location updates
+* Migrated to use XCFrameworks
+
 ## 3.8.9 (Friday, June 5, 2020)
 #### Features
 * Remove some location information from events.

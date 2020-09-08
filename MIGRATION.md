@@ -1,4 +1,24 @@
 # PWCore Migration Guide
+## Upgrade from 3.8.x to 3.9.x
+
+#### General
+
+This release adds API to control whether or not location updates can be requested. Finally, the distribution packaging format has been updated to use the new XCFramework binary format.
+
+#### Upgrade Steps
+
+1. Open the `Podfile` from your project and change PWCore to include `pod 'PWCore', '3.9.x'`, then run `pod update` in the Terminal to update the framework. NOTE: Including PWCore in the `Podfile` is only required when used as a standalone Phunware SDK.
+
+#### Change Detail
+
+###### PWCore
+
+*ADDED*
+
+* `+ (void)enableLocationAccess:(BOOL)enable`
+
+* `+ (BOOL)isLocationAccessEnabled`
+
 ## Upgrade from 3.7.x to 3.8.x
 
 #### General

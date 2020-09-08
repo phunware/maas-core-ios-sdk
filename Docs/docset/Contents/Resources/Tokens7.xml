@@ -150,6 +150,35 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/enableLocationAccess:</TokenIdentifier>
+			<Abstract type="html">Determines whether location updates are permitted.</Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (void)enableLocationAccess:(BOOL)enable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enable</Name>
+					<Abstract type="html">Will permit location updates and include location information in analytic events.  Default is enabled.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enableLocationAccess:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCore/isLocationAccessEnabled</TokenIdentifier>
+			<Abstract type="html">Returns whether location updates are permitted.</Abstract>
+			<DeclaredIn>PWCore.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)isLocationAccessEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/isLocationAccessEnabled</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PWCore/sessionID</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>PWCore.h</DeclaredIn>

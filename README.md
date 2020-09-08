@@ -1,26 +1,23 @@
 PWCore SDK for iOS
 ================
 
-Version 3.8.9
+>Version 3.9.0
 
 This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ for more details and to sign up.
 
 Requirements
 ------------
-
 - iOS 10.0 or greater
 - XCode 11 or greater
 
-Documentation
-------------
-PWCore documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
-
 Installation
 ------------
+Phunware recommends using [CocoaPods](http://www.cocoapods.org) 1.10 or greater to integrate the framework. Simply add
 
-PWCore is a required dependency for all MaaS modules.
+`pod 'PWCore'`
 
-It's recommended that you add PWCore.framework to the 'Vendor/Phunware' directory, then add it to your Xcode project.
+to your podfile.
+**NOTE**: PWCore is a required dependency for all MaaS modules.
 
 The following frameworks are required:
 
@@ -40,26 +37,12 @@ UIKit.framework
 ````
 **NOTE**: CoreLocation is used for comprehensive analytics. Apple mandates that your app have a good reason for enabling location services. Apple will deny your app if location is not a core feature for your app.
 
-After specifying the frameworks, you will need to add a linker flag to your build target.
+Documentation
+------------
+PWCore documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
 
-Alternatively, you can install PWCore using CocoaPods:
-
-````
-// Add this to your Podfile:
-pod PWCore
-````
-
-To do this:
-1. Navigate to your build target.
-2. Navigate to the Build Settings tab.
-3. Find the Linking Section -> Other Linker Flags.
-4. Add "-ObjC" to Other Linker Flags.
-
-You can now install additional MaaS modules.
-
-
-Application Setup
------------------
+Integration
+-----------
 At the top of your application delegate implementation (.m) file, add the following:
 
 ````objective-c
@@ -81,7 +64,6 @@ Inside your application delegate, you will need to initialize MaaS Core in the a
 
 Location Permissions
 --------------------
-
 Location authorization of "When In Use" or "Always" is encouraged when starting PWCore for analytics purposes. Please follow [Apple's Best Practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services) for requesting location permissions.
 
 Attribution
