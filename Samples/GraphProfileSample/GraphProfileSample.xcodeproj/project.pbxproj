@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		913A28D5410EEF39D7CD2741 /* Pods_GraphProfileSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380E02161528CACC3007188E /* Pods_GraphProfileSample.framework */; };
 		FB09AC8C219499E60099646D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09AC8B219499E60099646D /* AppDelegate.swift */; };
 		FB09ACA521949B8C0099646D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB09AC9E21949B8B0099646D /* Assets.xcassets */; };
 		FB09ACA721949B8C0099646D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB09ACA121949B8B0099646D /* LaunchScreen.storyboard */; };
@@ -17,9 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		380E02161528CACC3007188E /* Pods_GraphProfileSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphProfileSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6712005BD3F3D3A638725B8D /* Pods-GraphProfileSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphProfileSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample.debug.xcconfig"; sourceTree = "<group>"; };
-		A319207ED06EBDABC2A6463A /* Pods-GraphProfileSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphProfileSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample.release.xcconfig"; sourceTree = "<group>"; };
 		FB09AC88219499E60099646D /* GraphProfileSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphProfileSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB09AC8B219499E60099646D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB09AC9E21949B8B0099646D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,37 +31,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				913A28D5410EEF39D7CD2741 /* Pods_GraphProfileSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C7671799F85E573E668342FC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6712005BD3F3D3A638725B8D /* Pods-GraphProfileSample.debug.xcconfig */,
-				A319207ED06EBDABC2A6463A /* Pods-GraphProfileSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D869294151EB5557BA92AC82 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				380E02161528CACC3007188E /* Pods_GraphProfileSample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		FB09AC7F219499E60099646D = {
 			isa = PBXGroup;
 			children = (
 				FB09AC8A219499E60099646D /* GraphProfileSample */,
 				FB09AC89219499E60099646D /* Products */,
-				C7671799F85E573E668342FC /* Pods */,
-				D869294151EB5557BA92AC82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,11 +106,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB09AC9A219499E70099646D /* Build configuration list for PBXNativeTarget "GraphProfileSample" */;
 			buildPhases = (
-				D0DA691D63F26FFDC183B179 /* [CP] Check Pods Manifest.lock */,
 				FB09AC84219499E60099646D /* Sources */,
 				FB09AC85219499E60099646D /* Frameworks */,
 				FB09AC86219499E60099646D /* Resources */,
-				F9F2289BFE8DF82FE690A57A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +131,7 @@
 				TargetAttributes = {
 					FB09AC87219499E60099646D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -190,51 +165,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D0DA691D63F26FFDC183B179 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GraphProfileSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F9F2289BFE8DF82FE690A57A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${PODS_ROOT}/PWCore/Framework/PWCore.framework",
-				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
-				"${BUILT_PRODUCTS_DIR}/TMCache/TMCache.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PWCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TMCache.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB09AC84219499E60099646D /* Sources */ = {
@@ -368,34 +298,42 @@
 		};
 		FB09AC9B219499E70099646D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6712005BD3F3D3A638725B8D /* Pods-GraphProfileSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 84CK77G588;
 				INFOPLIST_FILE = "$(SRCROOT)/GraphProfileSample/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.GraphProfileSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "Phunware Product SDK Wild (Debug)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		FB09AC9C219499E70099646D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A319207ED06EBDABC2A6463A /* Pods-GraphProfileSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 84CK77G588;
 				INFOPLIST_FILE = "$(SRCROOT)/GraphProfileSample/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.GraphProfileSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "Phunware Product SDK Wild (Debug)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
