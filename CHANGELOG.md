@@ -1,4 +1,9 @@
 # PWCore Changelog
+## 3.9.1 (Thursday, November 5th, 2020)
+#### Features
+* Updated IDFA handling for iOS 14+.
+* Built and archived SDK with Xcode 12.
+
 ## 3.9.0 (Thursday, September 3rd, 2020)
 #### Features
 * Exposed API to control whether or not the SDK can request location updates

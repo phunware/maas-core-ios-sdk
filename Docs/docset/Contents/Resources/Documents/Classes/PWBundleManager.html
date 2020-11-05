@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<title></title>
+	<title>PWBundleManager Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -43,9 +43,59 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
-
+	<option value="overview">Overview</option>
 	
 
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/cacheFallbackTimeoutOverride">cacheFallbackTimeoutOverride</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedInstance">+ sharedInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/fetchBuildingBundleById:draft:completion:">- fetchBuildingBundleById:draft:completion:</option>
+		
+		<option value="//api/name/fetchBuildingBundleById:draft:withCompletion:">- fetchBuildingBundleById:draft:withCompletion:</option>
+		
+		<option value="//api/name/fetchBundleWithURL:completion:">- fetchBundleWithURL:completion:</option>
+		
+		<option value="//api/name/fetchBundleWithURL:decryptionKey:completion:">- fetchBundleWithURL:decryptionKey:completion:</option>
+		
+		<option value="//api/name/fetchBundleWithURL:decryptionKey:withCompletion:">- fetchBundleWithURL:decryptionKey:withCompletion:</option>
+		
+		<option value="//api/name/fetchBundleWithURL:retryInterval:maxRetry:completion:">- fetchBundleWithURL:retryInterval:maxRetry:completion:</option>
+		
+		<option value="//api/name/fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:completion:">- fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:completion:</option>
+		
+		<option value="//api/name/fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:withCompletion:">- fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:withCompletion:</option>
+		
+		<option value="//api/name/fetchBundleWithURL:retryInterval:maxRetry:withCompletion:">- fetchBundleWithURL:retryInterval:maxRetry:withCompletion:</option>
+		
+		<option value="//api/name/fetchBundleWithURL:withCompletion:">- fetchBundleWithURL:withCompletion:</option>
+		
+		<option value="//api/name/removeBundleForURL:">- removeBundleForURL:</option>
+		
+	</optgroup>
+	
 	
 </select>
 						</label>
@@ -59,22 +109,844 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title"></h1>
+					<h1 class="title">PWBundleManager Class Reference</h1>
 
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PWBundleManager.h</td>
+</tr>
+						</tbody></table></div>
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A generic class for download/decrypt/unzip a bundle for specific URL.</p>
+					</div>
+					
+					
 
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/cacheFallbackTimeoutOverride" title="cacheFallbackTimeoutOverride"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheFallbackTimeoutOverride">&nbsp;&nbsp;cacheFallbackTimeoutOverride</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The timeout for network request to get the bundle before falling back to the cached version. This is only used if a cached bundle exists, for non-cached bundles the default of 60 seconds is used. If this is not set at all, the default of 10 seconds is used.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval cacheFallbackTimeoutOverride</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Shared <code>PWBundleManager</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (PWBundleManager *)sharedInstance</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeBundleForURL:" title="removeBundleForURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeBundleForURL:">&ndash;&nbsp;removeBundleForURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remove the bundle for a specific url.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeBundleForURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The specific url for which you want to remove.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBundleWithURL:withCompletion:" title="fetchBundleWithURL:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBundleWithURL:withCompletion:">&ndash;&nbsp;fetchBundleWithURL:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch an unencrypted bundle from the url, unpack it, and save the necessary JSON files</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBundleWithURL:(NSURL *)<em>url</em> withCompletion:(PWBundleFetchCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The url that the manager should load.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that returns the unzipped bundle directory or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBundleWithURL:decryptionKey:withCompletion:" title="fetchBundleWithURL:decryptionKey:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBundleWithURL:decryptionKey:withCompletion:">&ndash;&nbsp;fetchBundleWithURL:decryptionKey:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch an encrypted bundle from the url, decprypt then unpack it, and save the necessary JSON files</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBundleWithURL:(NSURL *)<em>url</em> decryptionKey:(NSString *)<em>decryptionKey</em> withCompletion:(PWBundleFetchCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The url that the manager should load.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>decryptionKey</code></th>
+						<td><p>The key used to deprypt the bundle.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that returns information about the bundle fetch and the unzipped bundle directory or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBundleWithURL:retryInterval:maxRetry:withCompletion:" title="fetchBundleWithURL:retryInterval:maxRetry:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBundleWithURL:retryInterval:maxRetry:withCompletion:">&ndash;&nbsp;fetchBundleWithURL:retryInterval:maxRetry:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch an unencrypted bundle from the url, unpack it, and save the necessary JSON files</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBundleWithURL:(NSURL *)<em>url</em> retryInterval:(NSInteger)<em>retryInterval</em> maxRetry:(NSInteger)<em>maxRetry</em> withCompletion:(PWBundleFetchCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The url that the manager should load.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>retryInterval</code></th>
+						<td><p>The interval to attempt retry.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxRetry</code></th>
+						<td><p>The maximum no of times to retry.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that returns information about the bundle fetch and the unzipped bundle directory or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:withCompletion:" title="fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:withCompletion:">&ndash;&nbsp;fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch an encrypted bundle from the url, decprypt then unpack it, and save the necessary JSON files</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBundleWithURL:(NSURL *)<em>url</em> retryInterval:(NSInteger)<em>retryInterval</em> maxRetry:(NSInteger)<em>maxRetry</em> decryptionKey:(NSString *)<em>decryptionKey</em> withCompletion:(PWBundleFetchCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The url that the manager should load.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>retryInterval</code></th>
+						<td><p>The interval to attempt retry.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxRetry</code></th>
+						<td><p>The maximum no of times to retry.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>decryptionKey</code></th>
+						<td><p>The key used to deprypt the bundle.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that returns information about the bundle fetch and the unzipped bundle directory or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBuildingBundleById:draft:withCompletion:" title="fetchBuildingBundleById:draft:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBuildingBundleById:draft:withCompletion:">&ndash;&nbsp;fetchBuildingBundleById:draft:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch building bundle for the specified building identifier, decprypt then unpack it, and save the necessary JSON files</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBuildingBundleById:(NSInteger)<em>buildingId</em> draft:(BOOL)<em>isDraft</em> withCompletion:(PWBundleFetchCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>buildingId</code></th>
+						<td><p>The building identifier.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isDraft</code></th>
+						<td><p>Tell it&rsquo;s a draft or live bundle.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that returns information about the bundle fetch and the unzipped bundle directory or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBundleWithURL:completion:" title="fetchBundleWithURL:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBundleWithURL:completion:">&ndash;&nbsp;fetchBundleWithURL:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch an unencrypted bundle from the url, unpack it, and save the necessary JSON files</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBundleWithURL:(NSURL *)<em>url</em> completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The url that the manager should load.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that returns the unzipped bundle directory or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBundleWithURL:decryptionKey:completion:" title="fetchBundleWithURL:decryptionKey:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBundleWithURL:decryptionKey:completion:">&ndash;&nbsp;fetchBundleWithURL:decryptionKey:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch an encrypted bundle from the url, decprypt then unpack it, and save the necessary JSON files</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBundleWithURL:(NSURL *)<em>url</em> decryptionKey:(NSString *)<em>decryptionKey</em> completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The url that the manager should load.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>decryptionKey</code></th>
+						<td><p>The key used to deprypt the bundle.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that returns the unzipped bundle directory or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBundleWithURL:retryInterval:maxRetry:completion:" title="fetchBundleWithURL:retryInterval:maxRetry:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBundleWithURL:retryInterval:maxRetry:completion:">&ndash;&nbsp;fetchBundleWithURL:retryInterval:maxRetry:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch an unencrypted bundle from the url, unpack it, and save the necessary JSON files</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBundleWithURL:(NSURL *)<em>url</em> retryInterval:(NSInteger)<em>retryInterval</em> maxRetry:(NSInteger)<em>maxRetry</em> completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The url that the manager should load.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>retryInterval</code></th>
+						<td><p>The interval to attempt retry.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxRetry</code></th>
+						<td><p>The maximum no of times to retry.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that returns the unzipped bundle directory or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:completion:" title="fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:completion:">&ndash;&nbsp;fetchBundleWithURL:retryInterval:maxRetry:decryptionKey:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch an encrypted bundle from the url, decprypt then unpack it, and save the necessary JSON files</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBundleWithURL:(NSURL *)<em>url</em> retryInterval:(NSInteger)<em>retryInterval</em> maxRetry:(NSInteger)<em>maxRetry</em> decryptionKey:(NSString *)<em>decryptionKey</em> completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The url that the manager should load.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>retryInterval</code></th>
+						<td><p>The interval to attempt retry.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxRetry</code></th>
+						<td><p>The maximum no of times to retry.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>decryptionKey</code></th>
+						<td><p>The key used to deprypt the bundle.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that returns the unzipped bundle directory or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBuildingBundleById:draft:completion:" title="fetchBuildingBundleById:draft:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBuildingBundleById:draft:completion:">&ndash;&nbsp;fetchBuildingBundleById:draft:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch building bundle for the specified building identifier, decprypt then unpack it, and save the necessary JSON files</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBuildingBundleById:(NSInteger)<em>buildingId</em> draft:(BOOL)<em>isDraft</em> completion:(void ( ^ ) ( NSString *bundleDirectory , BOOL bundleChanged , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>buildingId</code></th>
+						<td><p>The building identifier.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isDraft</code></th>
+						<td><p>Tell it&rsquo;s a draft or live bundle.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that returns the unzipped bundle directory or error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWBundleManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
 					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2020 Phunware, Inc. All rights reserved. Updated: 2020-09-07</p>
+						<p class="copyright">Copyright &copy; 2020 Phunware, Inc. All rights reserved. Updated: 2020-11-05</p>
 						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>
