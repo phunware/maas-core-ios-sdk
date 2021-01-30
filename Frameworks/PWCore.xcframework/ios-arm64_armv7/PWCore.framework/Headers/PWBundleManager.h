@@ -85,6 +85,14 @@ extern NSString * const PWBundleChangedKey;
  */
 - (void)fetchBuildingBundleById:(NSInteger)buildingId draft:(BOOL)isDraft withCompletion:(PWBundleFetchCompletion)completion;
 
+/**
+ Fetch campus bundle for the specified campus identifier, unzip campus bundle, decprypt building bundles then unpack them, and save the necessary JSON files
+ @param campusId The campus identifier.
+ @param isDraft Tell it's a draft or live bundle.
+ @param completion A block that returns information about the bundle fetch and the unzipped bundle directory or error.
+ */
+- (void)fetchCampusBundleById:(NSInteger)campusId draft:(BOOL)isDraft withCompletion:(PWBundleFetchCompletion)completion;
+
 #pragma mark - Deprecated
 
 /**

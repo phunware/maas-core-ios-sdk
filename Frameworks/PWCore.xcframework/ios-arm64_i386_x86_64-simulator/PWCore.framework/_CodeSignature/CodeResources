@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/PWBundleManager.h</key>
 		<data>
-		NMbPV8ig/A5SE2zk4pJ3cU+OaLo=
+		Cs5iwjdVy3IqdK0UeFmnII+pE4Y=
 		</data>
 		<key>Headers/PWCME.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/PWCore.h</key>
 		<data>
-		6JGCoZ802qn5ydiHAdM85awU9ag=
+		tELXb1gkgQZt9XS1rUxXbIV1irs=
 		</data>
 		<key>Headers/PWCoreDevice.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vDn8FB9higl2Wh/gKjbNe7qZEQE=
+		JvtO5yAeaj95yTjYMRmgm8/zamg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -143,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NMbPV8ig/A5SE2zk4pJ3cU+OaLo=
+			Cs5iwjdVy3IqdK0UeFmnII+pE4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			yMwr1OJmVePPxQAgFnCKnG6Hp0miI5amS+p4iZ5gIbE=
+			a1qvSwgpXO9Va2uJF8DVIWze9NL898G2k5j1Yq+N6Vo=
 			</data>
 		</dict>
 		<key>Headers/PWCME.h</key>
@@ -187,11 +187,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6JGCoZ802qn5ydiHAdM85awU9ag=
+			tELXb1gkgQZt9XS1rUxXbIV1irs=
 			</data>
 			<key>hash2</key>
 			<data>
-			DfrOb0twXAyG7Wf3jlcaDlOs8qPNsPxuPG1At5UsFZs=
+			GSNup5pAhn11pwpJ+QVd+Erm3srfRmzO8IpREhpsvrc=
 			</data>
 		</dict>
 		<key>Headers/PWCoreDevice.h</key>

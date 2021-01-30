@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PWCore"
-  s.version      = "3.9.1"
+  s.version      = "3.10.0"
   s.summary      = "Phunware's Core SDK for use with its Multiscreen-as-a-Service platform. This is a required dependency for all Phunware SDKs."
   s.homepage     = "http://phunware.github.io/maas-core-ios-sdk/"
   s.author       = { 'Phunware, Inc.' => 'http://www.phunware.com' }

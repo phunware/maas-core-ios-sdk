@@ -199,6 +199,29 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchCampusBundleById:draft:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Fetch campus bundle for the specified campus identifier, unzip campus bundle, decprypt building bundles then unpack them, and save the necessary JSON files</Abstract>
+			<DeclaredIn>PWBundleManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchCampusBundleById:(NSInteger)campusId draft:(BOOL)isDraft withCompletion:(PWBundleFetchCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>campusId</Name>
+					<Abstract type="html">The campus identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>isDraft</Name>
+					<Abstract type="html">Tell it&apos;s a draft or live bundle.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that returns information about the bundle fetch and the unzipped bundle directory or error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchCampusBundleById:draft:withCompletion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWBundleManager/fetchBundleWithURL:completion:</TokenIdentifier>
 			<Abstract type="html">Fetch an unencrypted bundle from the url, unpack it, and save the necessary JSON files</Abstract>
 			<DeclaredIn>PWBundleManager.h</DeclaredIn>
