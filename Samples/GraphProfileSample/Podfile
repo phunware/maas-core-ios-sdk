@@ -1,9 +1,9 @@
-source 'ssh://git@github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org'
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 inhibit_all_warnings!
 use_frameworks!
 
 target :'GraphProfileSample' do
-    pod 'PWCore', '~> 3.9.0'
+    pod 'PWCore', '~> 3.10.0'
 end

@@ -1,4 +1,28 @@
 # PWCore Migration Guide
+## Updgrade from 3.9.x to 3.10.x
+
+#### General 
+
+This release adds APIs to support campus routing and to request IDFA authorization.
+
+#### Change Detail
+
+#### PWCore
+
+*ADDED*
+
+*`- (void)fetchCampusBundleById:(NSInteger)campusId draft:(BOOL)isDraft withCompletion:(PWBundleFetchCompletion)completion`
+
+* `public static var isAdvertisingIdentifierPermissionRequestable: PWCore.PermissionRequestable { get }`
+
+* `@objc public static func requestAdvertisingIdentifierPermission(success: @escaping (String) -> Void, failure: @escaping (Error) -> Void)`
+
+#### Upgrade Steps
+
+1. Open the `Podfile` from your project and change PWCore to include `pod 'PWCore', '3.10.x'`, then run `pod update` in the Terminal to update the framework. NOTE: Including PWCore in the `Podfile` is only required when used as a standalone Phunware SDK.
+
+#### Change Detail
+
 ## Upgrade from 3.8.x to 3.9.x
 
 #### General
