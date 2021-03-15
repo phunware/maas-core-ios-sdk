@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<title></title>
+	<title>PWCore Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -45,7 +45,71 @@
 	
 
 	
+	
+	<option value="tasks">Tasks</option>
+	
+	
 
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/accessKey">+ accessKey</option>
+		
+		<option value="//api/name/applicationID">+ applicationID</option>
+		
+		<option value="//api/name/authorizationHeaderWithRequestBody:httpMethod:">+ authorizationHeaderWithRequestBody:httpMethod:</option>
+		
+		<option value="//api/name/buildRequestWithRequest:">+ buildRequestWithRequest:</option>
+		
+		<option value="//api/name/decryptData:withKey:">+ decryptData:withKey:</option>
+		
+		<option value="//api/name/deviceID">+ deviceID</option>
+		
+		<option value="//api/name/enableLocationAccess:">+ enableLocationAccess:</option>
+		
+		<option value="//api/name/encryptData:withKey:">+ encryptData:withKey:</option>
+		
+		<option value="//api/name/getAllRegisteredModules">+ getAllRegisteredModules</option>
+		
+		<option value="//api/name/getEnvironment">+ getEnvironment</option>
+		
+		<option value="//api/name/getVersionForModule:">+ getVersionForModule:</option>
+		
+		<option value="//api/name/isLocationAccessEnabled">+ isLocationAccessEnabled</option>
+		
+		<option value="//api/name/registerModule:version:withCompletion:">+ registerModule:version:withCompletion:</option>
+		
+		<option value="//api/name/registerPhunwareModule:version:withCompletion:">+ registerPhunwareModule:version:withCompletion:</option>
+		
+		<option value="//api/name/sendExtraAnalyticsPayload:completion:">+ sendExtraAnalyticsPayload:completion:</option>
+		
+		<option value="//api/name/sendInternalAnalyticsPayload:completion:">+ sendInternalAnalyticsPayload:completion:</option>
+		
+		<option value="//api/name/server">+ server</option>
+		
+		<option value="//api/name/serviceName">+ serviceName</option>
+		
+		<option value="//api/name/sessionID">+ sessionID</option>
+		
+		<option value="//api/name/setAnalyticsApplicationID:accessKey:signatureKey:">+ setAnalyticsApplicationID:accessKey:signatureKey:</option>
+		
+		<option value="//api/name/setAnalyticsEnvironment:">+ setAnalyticsEnvironment:</option>
+		
+		<option value="//api/name/setApplicationID:accessKey:signatureKey:">+ setApplicationID:accessKey:signatureKey:</option>
+		
+		<option value="//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:">+ setApplicationID:accessKey:signatureKey:encryptionKey:</option>
+		
+		<option value="//api/name/setEnvironment:">+ setEnvironment:</option>
+		
+		<option value="//api/name/standardAnalyticsPayload">+ standardAnalyticsPayload</option>
+		
+	</optgroup>
+	
+
+	
 	
 </select>
 						</label>
@@ -59,22 +123,796 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title"></h1>
+					<h1 class="title">PWCore Class Reference</h1>
 
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PWCore.h</td>
+</tr>
+						</tbody></table></div>
 					
 
                     
 
 					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Required Methods" name="task_Required Methods"></a>
+						
+<h2 class="task-title">Required Methods</h2>
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setApplicationID:accessKey:signatureKey:" title="setApplicationID:accessKey:signatureKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setApplicationID:accessKey:signatureKey:">+&nbsp;setApplicationID:accessKey:signatureKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes PWCore and all associated MaaS modules. This method should be called inside <code>application:didFinishLaunchingWithOptions:</code> before you do anything else.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setApplicationID:(NSString *)<em>applicationID</em> accessKey:(NSString *)<em>accessKey</em> signatureKey:(NSString *)<em>signatureKey</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>applicationID</code></th>
+						<td><p>You can find your Application ID in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessKey</code></th>
+						<td><p>A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>signatureKey</code></th>
+						<td><p>A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:" title="setApplicationID:accessKey:signatureKey:encryptionKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setApplicationID:accessKey:signatureKey:encryptionKey:">+&nbsp;setApplicationID:accessKey:signatureKey:encryptionKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  This method has been deprecated. Use <a href="#//api/name/setApplicationID:accessKey:signatureKey:">setApplicationID:accessKey:signatureKey:</a> instead.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setApplicationID:(NSString *)<em>applicationID</em> accessKey:(NSString *)<em>accessKey</em> signatureKey:(NSString *)<em>signatureKey</em> encryptionKey:(NSString *)<em>encryptionKey</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>applicationID</code></th>
+						<td><p>You can find your Application ID in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessKey</code></th>
+						<td><p>A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>signatureKey</code></th>
+						<td><p>A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>encryptionKey</code></th>
+						<td><p>A unique encryption key this is no longer required. set empty string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/applicationID" title="applicationID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/applicationID">+&nbsp;applicationID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the MaaS Application ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)applicationID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceID" title="deviceID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceID">+&nbsp;deviceID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the Device ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)deviceID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/serviceName" title="serviceName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serviceName">+&nbsp;serviceName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns &lsquo;PWCore&rsquo;.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)serviceName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerModule:version:withCompletion:" title="registerModule:version:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerModule:version:withCompletion:">+&nbsp;registerModule:version:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method registers the module and its version.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerModule:(NSString *)<em>moduleName</em> version:(NSString *)<em>version</em> withCompletion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>moduleName</code></th>
+						<td><p>The name of the dependent module to be registered.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>version</code></th>
+						<td><p>version number for the module</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The completion block to be called.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllRegisteredModules" title="getAllRegisteredModules"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllRegisteredModules">+&nbsp;getAllRegisteredModules</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a dictionary of registered modules.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDictionary *)getAllRegisteredModules</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getVersionForModule:" title="getVersionForModule:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getVersionForModule:">+&nbsp;getVersionForModule:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns version number for a registered module.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getVersionForModule:(NSString *)<em>moduleName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>moduleName</code></th>
+						<td><p>The name of the dependent module to be registered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableLocationAccess:" title="enableLocationAccess:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableLocationAccess:">+&nbsp;enableLocationAccess:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Determines whether location updates are permitted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)enableLocationAccess:(BOOL)<em>enable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>Will permit location updates and include location information in analytic events.  Default is enabled.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLocationAccessEnabled" title="isLocationAccessEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLocationAccessEnabled">+&nbsp;isLocationAccessEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns whether location updates are permitted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isLocationAccessEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionID" title="sessionID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionID">+&nbsp;sessionID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *__nonnull)sessionID</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getEnvironment" title="getEnvironment"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getEnvironment">+&nbsp;getEnvironment</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (PWEnvironment)getEnvironment</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEnvironment:" title="setEnvironment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEnvironment:">+&nbsp;setEnvironment:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)setEnvironment:(PWEnvironment)<em>environment</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAnalyticsApplicationID:accessKey:signatureKey:" title="setAnalyticsApplicationID:accessKey:signatureKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAnalyticsApplicationID:accessKey:signatureKey:">+&nbsp;setAnalyticsApplicationID:accessKey:signatureKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)setAnalyticsApplicationID:(NSString *)<em>applicationID</em> accessKey:(NSString *)<em>accessKey</em> signatureKey:(NSString *)<em>signatureKey</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAnalyticsEnvironment:" title="setAnalyticsEnvironment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAnalyticsEnvironment:">+&nbsp;setAnalyticsEnvironment:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)setAnalyticsEnvironment:(PWEnvironment)<em>environment</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/accessKey" title="accessKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/accessKey">+&nbsp;accessKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *__nullable)accessKey</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/server" title="server"></a>
+	<h3 class="method-title"><code><a href="#//api/name/server">+&nbsp;server</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *_Nullable)server</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authorizationHeaderWithRequestBody:httpMethod:" title="authorizationHeaderWithRequestBody:httpMethod:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authorizationHeaderWithRequestBody:httpMethod:">+&nbsp;authorizationHeaderWithRequestBody:httpMethod:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *__nonnull)authorizationHeaderWithRequestBody:(NSData *__nonnull)<em>requestBody</em> httpMethod:(NSString *__nonnull)<em>httpMethod</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/buildRequestWithRequest:" title="buildRequestWithRequest:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildRequestWithRequest:">+&nbsp;buildRequestWithRequest:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSMutableURLRequest *__nonnull)buildRequestWithRequest:(NSMutableURLRequest *__nonnull)<em>request</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/standardAnalyticsPayload" title="standardAnalyticsPayload"></a>
+	<h3 class="method-title"><code><a href="#//api/name/standardAnalyticsPayload">+&nbsp;standardAnalyticsPayload</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSMutableDictionary *__nonnull)standardAnalyticsPayload</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendInternalAnalyticsPayload:completion:" title="sendInternalAnalyticsPayload:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendInternalAnalyticsPayload:completion:">+&nbsp;sendInternalAnalyticsPayload:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendInternalAnalyticsPayload:(NSDictionary *__nonnull)<em>payload</em> completion:(void ( ^ __nullable ) ( NSError *__nullable error ))<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendExtraAnalyticsPayload:completion:" title="sendExtraAnalyticsPayload:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendExtraAnalyticsPayload:completion:">+&nbsp;sendExtraAnalyticsPayload:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendExtraAnalyticsPayload:(NSDictionary *__nonnull)<em>payload</em> completion:(void ( ^ __nullable ) ( NSError *__nullable error ))<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerPhunwareModule:version:withCompletion:" title="registerPhunwareModule:version:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerPhunwareModule:version:withCompletion:">+&nbsp;registerPhunwareModule:version:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerPhunwareModule:(NSString *__nonnull)<em>moduleName</em> version:(NSString *__nonnull)<em>version</em> withCompletion:(void ( ^ __nullable ) ( NSError *__nullable error ))<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/encryptData:withKey:" title="encryptData:withKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/encryptData:withKey:">+&nbsp;encryptData:withKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *_Nullable)encryptData:(NSData *__nonnull)<em>data</em> withKey:(NSString *__nonnull)<em>key</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/decryptData:withKey:" title="decryptData:withKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/decryptData:withKey:">+&nbsp;decryptData:withKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *_Nullable)decryptData:(NSData *__nonnull)<em>data</em> withKey:(NSString *__nonnull)<em>key</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2020 Phunware, Inc. All rights reserved. Updated: 2020-09-07</p>
+						<p class="copyright">Copyright &copy; 2021 Phunware, Inc. All rights reserved. Updated: 2021-03-15</p>
 						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>
