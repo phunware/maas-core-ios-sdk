@@ -29,7 +29,7 @@ static NSString * const PWCoreVersion = @"3.10.0";
  `PWCore` implements core functionality used in all MaaS modules. All MaaS modules have a `PWCore` dependency.
  */
 
-typedef NS_ENUM(NSInteger, PWEnvironment) {
+typedef NS_CLOSED_ENUM(NSInteger, PWEnvironment) {
     PWEnvironmentProd,
     PWEnvironmentStage,
     PWEnvironmentDev
