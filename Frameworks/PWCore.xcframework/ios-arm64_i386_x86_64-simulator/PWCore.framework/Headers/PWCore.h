@@ -86,7 +86,7 @@ typedef NS_CLOSED_ENUM(NSInteger, PWEnvironment) {
  @param version version number for the module
  @param completion The completion block to be called.
  */
-+ (void)registerModule:(NSString *)moduleName version:(NSString *)version withCompletion:(void(^)(NSError *error))completion;
++ (void)registerModule:(NSString *)moduleName version:(NSString *)version withCompletion:(void(^ _Nullable)(NSError * _Nullable error))completion;
 
 /**
  Returns a dictionary of registered modules.
