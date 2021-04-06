@@ -38,15 +38,15 @@
 		</data>
 		<key>Headers/PWCore-Swift.h</key>
 		<data>
-		QFBI2Pfibkpw+Hp6BllxOUNDSgg=
+		5+ALzvA6rILDCehyLo1Eyr3J0Ek=
 		</data>
 		<key>Headers/PWCore.h</key>
 		<data>
-		tELXb1gkgQZt9XS1rUxXbIV1irs=
+		D3FC9WVyOHaqjrclYBViWQr3dyA=
 		</data>
 		<key>Headers/PWCoreDevice.h</key>
 		<data>
-		TcDjUiDF07ubFq8QAdIssCvMcIw=
+		C8RpUMD5+JAR0+lPESS6vEs6Y/M=
 		</data>
 		<key>Headers/PWFeatureFlagger.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4VDQlpdZOe5fTmp+W9HhNnpvOTc=
+		58JoXkjJFDpF9LYZz+thoOL0/YA=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		opBQs8o8dMS4u8zPA2TKvnj3TYs=
+		IUsyjDmKjT6dETOYFRcxODzMIR8=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		opmw56c+eDwttWoPL31k6N3Cm2M=
+		Udh2cqZyH2xSpMWTn4GJJ/0u2ao=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		opBQs8o8dMS4u8zPA2TKvnj3TYs=
+		IUsyjDmKjT6dETOYFRcxODzMIR8=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		opmw56c+eDwttWoPL31k6N3Cm2M=
+		Udh2cqZyH2xSpMWTn4GJJ/0u2ao=
 		</data>
 		<key>Modules/PWCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -122,11 +122,11 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZnQT4U+AQYzAPq0CFyf+PUOS0Qk=
+		00s3xvFU21ZBVkyShRVlwtwKIXI=
 		</data>
 		<key>Modules/PWCore.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rCKkE6JI8FrB1p0WOH4ZmKhGZvo=
+		8FZuuJtoTbVeFcnx32Lj5uZoHu0=
 		</data>
 		<key>Modules/PWCore.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -134,11 +134,11 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/i386.swiftinterface</key>
 		<data>
-		ZnQT4U+AQYzAPq0CFyf+PUOS0Qk=
+		00s3xvFU21ZBVkyShRVlwtwKIXI=
 		</data>
 		<key>Modules/PWCore.swiftmodule/i386.swiftmodule</key>
 		<data>
-		rCKkE6JI8FrB1p0WOH4ZmKhGZvo=
+		8FZuuJtoTbVeFcnx32Lj5uZoHu0=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -146,11 +146,11 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zB+O8lFJ2tEMvTH9YgQGNm4bwVA=
+		qtfkTrY08wnetOY56IFu41KvQ60=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VoeSbgMRlAUUHYvPCCkFiQCjaVk=
+		Euf+3KigwY9ecxNxTcrHc0D11Kw=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -158,11 +158,11 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		zB+O8lFJ2tEMvTH9YgQGNm4bwVA=
+		qtfkTrY08wnetOY56IFu41KvQ60=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		VoeSbgMRlAUUHYvPCCkFiQCjaVk=
+		Euf+3KigwY9ecxNxTcrHc0D11Kw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -263,33 +263,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QFBI2Pfibkpw+Hp6BllxOUNDSgg=
+			5+ALzvA6rILDCehyLo1Eyr3J0Ek=
 			</data>
 			<key>hash2</key>
 			<data>
-			p8BrXhUwlD8GBjoX93iyxPGSXzlHsg8ZuAY4q2FPjY4=
+			/7yWSpKZDEJZU3ZbQ9ovTiFsrHmbcb3HndkLVU0Weu4=
 			</data>
 		</dict>
 		<key>Headers/PWCore.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tELXb1gkgQZt9XS1rUxXbIV1irs=
+			D3FC9WVyOHaqjrclYBViWQr3dyA=
 			</data>
 			<key>hash2</key>
 			<data>
-			GSNup5pAhn11pwpJ+QVd+Erm3srfRmzO8IpREhpsvrc=
+			e8SJna+k2W57l1XdPOZuc+7Mhg4lvMjwiUzvBrE4Qi8=
 			</data>
 		</dict>
 		<key>Headers/PWCoreDevice.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TcDjUiDF07ubFq8QAdIssCvMcIw=
+			C8RpUMD5+JAR0+lPESS6vEs6Y/M=
 			</data>
 			<key>hash2</key>
 			<data>
-			cp+IrrJ3sU2kLXHG2sxCpWeUQKU7VBQH85k3H8TIU8Y=
+			npe8xaJ5rYd+j58MUYiCVf41MZ2Hb7ZsUOsQvewZu9M=
 			</data>
 		</dict>
 		<key>Headers/PWFeatureFlagger.h</key>
@@ -417,22 +417,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			opBQs8o8dMS4u8zPA2TKvnj3TYs=
+			IUsyjDmKjT6dETOYFRcxODzMIR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			mr62rNUEhu2B1qiXbHvW+yz9R82D2YT7SSsKXtN2euE=
+			qt+cAZ1J9fCb8l37JrRndJJ+qvUb45Fk6aRJmKvYf94=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			opmw56c+eDwttWoPL31k6N3Cm2M=
+			Udh2cqZyH2xSpMWTn4GJJ/0u2ao=
 			</data>
 			<key>hash2</key>
 			<data>
-			C296QDdSVji44T2FgZwmuDGdfX1T+YpnlGfXnXBbRfU=
+			LfMBYwyqy8tvWfrN3Xm+h8QRrhw5OECtpwr4c+nN9W8=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/arm64.swiftdoc</key>
@@ -450,22 +450,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			opBQs8o8dMS4u8zPA2TKvnj3TYs=
+			IUsyjDmKjT6dETOYFRcxODzMIR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			mr62rNUEhu2B1qiXbHvW+yz9R82D2YT7SSsKXtN2euE=
+			qt+cAZ1J9fCb8l37JrRndJJ+qvUb45Fk6aRJmKvYf94=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			opmw56c+eDwttWoPL31k6N3Cm2M=
+			Udh2cqZyH2xSpMWTn4GJJ/0u2ao=
 			</data>
 			<key>hash2</key>
 			<data>
-			C296QDdSVji44T2FgZwmuDGdfX1T+YpnlGfXnXBbRfU=
+			LfMBYwyqy8tvWfrN3Xm+h8QRrhw5OECtpwr4c+nN9W8=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -483,22 +483,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZnQT4U+AQYzAPq0CFyf+PUOS0Qk=
+			00s3xvFU21ZBVkyShRVlwtwKIXI=
 			</data>
 			<key>hash2</key>
 			<data>
-			DzvA4Xe9C2HkNMgboO/Bnq66v1Sr+4mA+ZzmQBkMWeQ=
+			lBU4C6OUZs6QUl8cl0giwXJsCNfDFFIpByG/zuzboe0=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rCKkE6JI8FrB1p0WOH4ZmKhGZvo=
+			8FZuuJtoTbVeFcnx32Lj5uZoHu0=
 			</data>
 			<key>hash2</key>
 			<data>
-			zLkPaIgWfLawlHfhub7BBLoSmVyP9v7KZ5FuRYaG7AE=
+			fip4wSuNRx7Fucdp1pcNMCw+Oes1uZhGeU52HhxtfB0=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/i386.swiftdoc</key>
@@ -516,22 +516,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZnQT4U+AQYzAPq0CFyf+PUOS0Qk=
+			00s3xvFU21ZBVkyShRVlwtwKIXI=
 			</data>
 			<key>hash2</key>
 			<data>
-			DzvA4Xe9C2HkNMgboO/Bnq66v1Sr+4mA+ZzmQBkMWeQ=
+			lBU4C6OUZs6QUl8cl0giwXJsCNfDFFIpByG/zuzboe0=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rCKkE6JI8FrB1p0WOH4ZmKhGZvo=
+			8FZuuJtoTbVeFcnx32Lj5uZoHu0=
 			</data>
 			<key>hash2</key>
 			<data>
-			zLkPaIgWfLawlHfhub7BBLoSmVyP9v7KZ5FuRYaG7AE=
+			fip4wSuNRx7Fucdp1pcNMCw+Oes1uZhGeU52HhxtfB0=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -549,22 +549,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zB+O8lFJ2tEMvTH9YgQGNm4bwVA=
+			qtfkTrY08wnetOY56IFu41KvQ60=
 			</data>
 			<key>hash2</key>
 			<data>
-			BWkSc0s1/dXqL3Vr5qszQLYf+2B9KqtGpuBodsrxoG4=
+			9lhaCQx6VJgGlIJ+RdHTfF7Ia4VHeHyT6DPCKdzloXo=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VoeSbgMRlAUUHYvPCCkFiQCjaVk=
+			Euf+3KigwY9ecxNxTcrHc0D11Kw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xu3lwQVA9HbiWPcWPnvfbFArOooDdklaBtuodC5ge54=
+			JDuwsNkHfdWnX0s+wUwwKcdPv5Ldamd7B+79k3Ts7BA=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64.swiftdoc</key>
@@ -582,22 +582,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zB+O8lFJ2tEMvTH9YgQGNm4bwVA=
+			qtfkTrY08wnetOY56IFu41KvQ60=
 			</data>
 			<key>hash2</key>
 			<data>
-			BWkSc0s1/dXqL3Vr5qszQLYf+2B9KqtGpuBodsrxoG4=
+			9lhaCQx6VJgGlIJ+RdHTfF7Ia4VHeHyT6DPCKdzloXo=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VoeSbgMRlAUUHYvPCCkFiQCjaVk=
+			Euf+3KigwY9ecxNxTcrHc0D11Kw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xu3lwQVA9HbiWPcWPnvfbFArOooDdklaBtuodC5ge54=
+			JDuwsNkHfdWnX0s+wUwwKcdPv5Ldamd7B+79k3Ts7BA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

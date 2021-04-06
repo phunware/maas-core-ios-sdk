@@ -210,6 +210,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+
 @interface PWCore (SWIFT_EXTENSION(PWCore))
 + (void)requestAdvertisingIdentifierPermissionWithSuccess:(void (^ _Nonnull)(NSString * _Nonnull))success failure:(void (^ _Nonnull)(NSError * _Nonnull))failure;
 @end
@@ -429,6 +430,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="PWCore",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
 
 
 @interface PWCore (SWIFT_EXTENSION(PWCore))

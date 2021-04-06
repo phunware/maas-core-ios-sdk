@@ -21,6 +21,8 @@
 #import <PWCore/PWCoreDevice.h>
 #import <PWCore/PWFeatureFlagger.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 static NSString * const PWCoreVersion = @"3.10.0";
 
 /**
@@ -89,13 +91,13 @@ typedef NS_ENUM(NSInteger, PWEnvironment) {
 /**
  Returns a dictionary of registered modules.
  */
-+ (NSDictionary *)getAllRegisteredModules;
++ (NSDictionary * _Nullable)getAllRegisteredModules;
 
 /**
  Returns version number for a registered module.
  @param moduleName The name of the dependent module to be registered.
  */
-+ (NSString *)getVersionForModule:(NSString *)moduleName;
++ (NSString * _Nullable)getVersionForModule:(NSString *)moduleName;
 
 #pragma mark - Configuration Options
 
@@ -112,7 +114,7 @@ typedef NS_ENUM(NSInteger, PWEnvironment) {
 
 #pragma mark - Internal Use Only
 
-+ (NSString *__nonnull)sessionID;
++ (NSString *)sessionID;
 
 #pragma mark Environment
 
@@ -126,31 +128,33 @@ typedef NS_ENUM(NSInteger, PWEnvironment) {
 
 + (void)setAnalyticsEnvironment:(PWEnvironment)environment;
 
-+ (NSString *__nullable)accessKey;
++ (NSString * _Nullable)accessKey;
 
-+ (NSString *_Nullable)server;
++ (NSString * _Nullable)server;
 
-+ (NSString *__nonnull)authorizationHeaderWithRequestBody:(NSData *__nonnull)requestBody httpMethod:(NSString *__nonnull)httpMethod;
++ (NSString *)authorizationHeaderWithRequestBody:(NSData *)requestBody httpMethod:(NSString *)httpMethod;
 
-+ (NSMutableURLRequest *__nonnull)buildRequestWithRequest:(NSMutableURLRequest *__nonnull)request;
++ (NSMutableURLRequest *)buildRequestWithRequest:(NSMutableURLRequest *)request;
 
-+ (NSMutableDictionary *__nonnull)standardAnalyticsPayload;
++ (NSMutableDictionary *)standardAnalyticsPayload;
 
 #pragma mark Analytics
 
-+ (void)sendInternalAnalyticsPayload:(NSDictionary *__nonnull)payload completion:(void (^__nullable)(NSError *__nullable error))completion;
++ (void)sendInternalAnalyticsPayload:(NSDictionary *)payload completion:(void (^ _Nullable)(NSError * _Nullable error))completion;
 
 // Send analytics with Extra payload
-+ (void)sendExtraAnalyticsPayload:(NSDictionary *__nonnull)payload completion:(void (^__nullable)(NSError *__nullable error))completion;
++ (void)sendExtraAnalyticsPayload:(NSDictionary *)payload completion:(void (^ _Nullable)(NSError * _Nullable error))completion;
 
 #pragma mark Modules
 
-+ (void)registerPhunwareModule:(NSString *__nonnull)moduleName version:(NSString *__nonnull)version withCompletion:(void (^__nullable)(NSError *__nullable error))completion;
++ (void)registerPhunwareModule:(NSString *)moduleName version:(NSString *)version withCompletion:(void (^ _Nullable)(NSError * _Nullable error))completion;
 
 #pragma mark Encryption
 
-+ (NSData *_Nullable)encryptData:(NSData *__nonnull)data withKey:(NSString *__nonnull)key;
++ (NSData * _Nullable)encryptData:(NSData *)data withKey:(NSString *)key;
 
-+ (NSData *_Nullable)decryptData:(NSData *__nonnull)data withKey:(NSString *__nonnull)key;
++ (NSData * _Nullable)decryptData:(NSData *)data withKey:(NSString *)key;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -6,6 +6,12 @@
 //
 #import <Foundation/Foundation.h>
 
+extern NSString * const PWCoreDeviceGlobalDeviceIdentifierInfoTypeKey;
+extern NSString * const PWCoreDeviceGlobalDeviceIdentifierInfoValueKey;
+extern NSString * const PWCoreDeviceGlobalDeviceIdentifierInfoTypeIDFA;
+extern NSString * const PWCoreDeviceGlobalDeviceIdentifierInfoTypeIDFV;
+extern NSString * const PWCoreDeviceGlobalDeviceIdentifierInfoTypeMAC;
+
 @interface PWCoreDevice : NSObject
 
 + (NSString *)macaddress;
@@ -22,12 +28,11 @@
 + (BOOL)bluetoothEnabled;
 
 + (NSDictionary *)locationInfo;
-+ (NSString *) uniqueDeviceIdentifier;
-+ (NSString *) uniqueGlobalDeviceIdentifier;
-+ (NSDictionary*) uniqueGlobalDeviceIdentifierInfo;
++ (NSString *)uniqueDeviceIdentifier;
++ (NSString *)uniqueGlobalDeviceIdentifier;
++ (NSDictionary<NSString *, NSString *> *)uniqueGlobalDeviceIdentifierInfo;
 
 // Convenience
 + (NSDateFormatter *)standardDateFormatter;
-
 
 @end
