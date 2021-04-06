@@ -1,4 +1,9 @@
 # PWCore Changelog
+## 3.10.0 (Monday, March 15, 2021)
+### Features
+* Added support for campus routing
+* Added IDFA authorization request for iOS 14.5+
+
 ## 3.9.1 (Thursday, November 5th, 2020)
 #### Features
 * Updated IDFA handling for iOS 14+.
