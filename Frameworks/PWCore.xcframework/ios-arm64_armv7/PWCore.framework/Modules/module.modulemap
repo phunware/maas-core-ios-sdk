@@ -4,8 +4,3 @@ framework module PWCore {
   export *
   module * { export * }
 }
-
-module PWCore.Swift {
-    header "PWCore-Swift.h"
-    requires objc
-}
