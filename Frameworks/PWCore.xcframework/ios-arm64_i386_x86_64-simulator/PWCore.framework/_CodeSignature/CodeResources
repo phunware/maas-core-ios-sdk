@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/PWCore.h</key>
 		<data>
-		5jVRVAErHBwqzL2kuaGvh+u0zHE=
+		4bt8ZAWJWoyaJpwZzQGAi0zQ2G0=
 		</data>
 		<key>Headers/PWCoreDevice.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fEj/8nqL70rJQyTskBUuNg/yaSY=
+		T7IqmuLSGPLvy5w1eOXvTilq/+A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -187,11 +187,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5jVRVAErHBwqzL2kuaGvh+u0zHE=
+			4bt8ZAWJWoyaJpwZzQGAi0zQ2G0=
 			</data>
 			<key>hash2</key>
 			<data>
-			XkQAReF6/vz4IXd9/jtkk//ddLPDN83fZvFqq2/+0ys=
+			X7dW/gzooo1+U6GqjakWubzm3XGGZJZGpaHy0rN3YC0=
 			</data>
 		</dict>
 		<key>Headers/PWCoreDevice.h</key>
