@@ -7,8 +7,8 @@ This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ 
 
 Requirements
 ------------
-- iOS 10.0 or greater
-- XCode 11 or greater
+- iOS 12.0 or greater
+- XCode 12 or greater
 
 Installation
 ------------
@@ -54,9 +54,9 @@ Inside your application delegate, you will need to initialize MaaS Core in the a
 ````objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
+    // These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
     [PWCore setApplicationID:@"APPLICATION_ID"
-    		    setAccessKey:@"ACCESS_KEY"
+                setAccessKey:@"ACCESS_KEY"
                 signatureKey:@"SIGNATURE_KEY"];
     ...
 }
@@ -65,6 +65,30 @@ Inside your application delegate, you will need to initialize MaaS Core in the a
 Location Permissions
 --------------------
 Location authorization of "When In Use" or "Always" is encouraged when starting PWCore for analytics purposes. Please follow [Apple's Best Practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services) for requesting location permissions.
+
+Identifier for Advertisers (IDFA) Permission 
+--------------------------------------------
+
+Starting with iOS 14.5, accessing the identifier for advertisers (IDFA) requires authorization through Apple's [AppTrackingTransparency framework](https://developer.apple.com/documentation/apptrackingtransparency). Authorization is encouraged when starting PWCore, and can be requested directly through the SDK: 
+
+````swift
+switch PWCore.isAdvertisingIdentifierPermissionRequestable {
+case .allowed:
+    PWCore.requestAdvertisingIdentifierPermission { (advertisingIdentifier) in
+        // Advertising identifier available
+        print("Advertising Identifier: \(advertisingIdentifier)")
+    } failure: { (error) in
+        // Advertising identifier not available
+        print(error)
+    }
+case .notAllowed:
+    // Authorization is either restricted or has been previously denied
+    print("Advertising identifier cannot be requested.")
+case .alreadyAuthorized:
+    // Advertising identifier is already available
+    print("Advertising Identifier: \(PWCore.deviceID())")
+}
+````
 
 Attribution
 -----------

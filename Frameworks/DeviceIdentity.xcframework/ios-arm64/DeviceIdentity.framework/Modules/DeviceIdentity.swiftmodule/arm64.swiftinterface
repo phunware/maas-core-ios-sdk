@@ -1,0 +1,37 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DeviceIdentity
+import AppTrackingTransparency
+@_exported import DeviceIdentity
+import PWCore
+import Swift
+public enum AdvertisingIdentificationPermisionError : Swift.Error {
+  case denied
+  case restricted
+  public static func == (a: AdvertisingIdentificationPermisionError, b: AdvertisingIdentificationPermisionError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension AdvertisingIdentificationPermisionError {
+  public var localizedErrorDescription: Swift.String? {
+    get
+  }
+}
+public enum PermissionRequestable {
+  case allowed
+  case notAllowed
+  case alreadyAuthorized
+  public static func == (a: PermissionRequestable, b: PermissionRequestable) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension PWCore {
+  public static var isAdvertisingIdentifierPermissionRequestable: PermissionRequestable {
+    get
+  }
+  @objc public static func requestAdvertisingIdentifierPermission(success: @escaping (Swift.String) -> Swift.Void, failure: @escaping (Swift.Error) -> Swift.Void)
+}
