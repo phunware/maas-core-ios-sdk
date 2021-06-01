@@ -35,3 +35,7 @@ extension PWCore {
   }
   @objc public static func requestAdvertisingIdentifierPermission(success: @escaping (Swift.String) -> Swift.Void, failure: @escaping (Swift.Error) -> Swift.Void)
 }
+extension AdvertisingIdentificationPermisionError : Swift.Equatable {}
+extension AdvertisingIdentificationPermisionError : Swift.Hashable {}
+extension PermissionRequestable : Swift.Equatable {}
+extension PermissionRequestable : Swift.Hashable {}

@@ -51,20 +51,6 @@ typedef NS_CLOSED_ENUM(NSInteger, PWEnvironment) {
                accessKey:(NSString *)accessKey
             signatureKey:(NSString *)signatureKey;
 
-
-
-/**
-  This method has been deprecated. Use setApplicationID:accessKey:signatureKey: instead.
- @param applicationID You can find your Application ID in the MaaS portal.
- @param accessKey A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.
- @param signatureKey A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.
- @param encryptionKey A unique encryption key this is no longer required. set empty string.
- */
-+ (void)setApplicationID:(NSString *)applicationID
-			   accessKey:(NSString *)accessKey
-			signatureKey:(NSString *)signatureKey
-		   encryptionKey:(NSString *)encryptionKey __deprecated;
-
 /**
  Returns the MaaS Application ID.
  */
@@ -122,19 +108,9 @@ typedef NS_CLOSED_ENUM(NSInteger, PWEnvironment) {
 
 + (void)setEnvironment:(PWEnvironment)environment;
 
-+ (void)setAnalyticsApplicationID:(NSString *)applicationID
-               accessKey:(NSString *)accessKey
-            signatureKey:(NSString *)signatureKey;
-
-+ (void)setAnalyticsEnvironment:(PWEnvironment)environment;
-
 + (NSString * _Nullable)accessKey;
 
 + (NSString * _Nullable)server;
-
-+ (NSString *)authorizationHeaderWithRequestBody:(NSData *)requestBody httpMethod:(NSString *)httpMethod;
-
-+ (NSMutableURLRequest *)buildRequestWithRequest:(NSMutableURLRequest *)request;
 
 + (NSMutableDictionary *)standardAnalyticsPayload;
 

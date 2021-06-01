@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		H3I7Vn+BhGdLyI0jDCwoI+tn5gM=
+		L3NfS0TkQVjLTkZQ1lRx4USKM5A=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		H3I7Vn+BhGdLyI0jDCwoI+tn5gM=
+		L3NfS0TkQVjLTkZQ1lRx4USKM5A=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64.swiftmodule</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		I+0tRp3+prJg1OTLt5mzHV8X0dY=
+		3OP6DbSaIsvOt3A3jcVzts1T4qs=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		I+0tRp3+prJg1OTLt5mzHV8X0dY=
+		3OP6DbSaIsvOt3A3jcVzts1T4qs=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64.swiftmodule</key>
 		<data>
@@ -96,7 +96,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zs1P3QuKA3nOYGi2sxstLlwxv1wk15qVqb9+xKtNf8o=
+			s600nnH0DpdA/6TsTGpdedT4eoUbYK5rtSScRuKYlFs=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
@@ -117,7 +117,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zs1P3QuKA3nOYGi2sxstLlwxv1wk15qVqb9+xKtNf8o=
+			s600nnH0DpdA/6TsTGpdedT4eoUbYK5rtSScRuKYlFs=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64.swiftmodule</key>
@@ -138,7 +138,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WXwmnQ9oKaTjrscjSZCA21GHrq8wcgrY7StdUvtvGmY=
+			oBwwWdxvix/wn5fOdZCV9LFCjnKWKuxAiITS1PlHNAk=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WXwmnQ9oKaTjrscjSZCA21GHrq8wcgrY7StdUvtvGmY=
+			oBwwWdxvix/wn5fOdZCV9LFCjnKWKuxAiITS1PlHNAk=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64.swiftmodule</key>

@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.ios.dependency 'TMCache', '~> 2.0'
                                                                               
   s.ios.vendored_frameworks = 'Frameworks/PWCore.xcframework'
-  s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony'
+  s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'CoreServices', 'CoreTelephony'
   s.requires_arc = true
 
   s.default_subspec = 'LimitedDeviceIdentity' 
