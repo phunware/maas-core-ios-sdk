@@ -11,12 +11,6 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Copyright', :text => 'Copyright 2009-present Phunware Inc. All rights reserved.' }
 
   s.libraries 	 = 'z', 'xml2.2'
-  s.ios.dependency 'AFNetworking/NSURLSession','~> 4.0'
-  s.ios.dependency 'AFNetworking/Security', '~> 4.0'
-  s.ios.dependency 'AFNetworking/Serialization', '~> 4.0'
-  s.ios.dependency 'AFNetworking/Reachability', '~> 4.0'
-  s.ios.dependency 'SSZipArchive', '~> 2.0'
-  s.ios.dependency 'TMCache', '~> 2.0'
                                                                               
   s.ios.vendored_frameworks = 'Frameworks/PWCore.xcframework'
   s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'CoreServices', 'CoreTelephony'
