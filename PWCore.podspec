@@ -16,10 +16,7 @@ Pod::Spec.new do |s|
   s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'CoreServices', 'CoreTelephony'
   s.requires_arc = true
 
-  s.default_subspec = 'LimitedDeviceIdentity' 
- 
-  s.subspec 'LimitedDeviceIdentity' do |sub|
-  end
+  s.default_subspec = :none
 
   s.subspec 'DeviceIdentity' do |sub|
     sub.ios.vendored_frameworks = 'Frameworks/DeviceIdentity.xcframework'
