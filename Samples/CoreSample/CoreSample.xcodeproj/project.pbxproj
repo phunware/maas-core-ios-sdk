@@ -364,7 +364,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = CoreSample/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.10.0;
+				MARKETING_VERSION = 3.11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.coresample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "e0bf3026-4b6b-4aef-ab9c-5fb2cc3b04e9";
@@ -387,7 +387,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = CoreSample/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.10.0;
+				MARKETING_VERSION = 3.11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.coresample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "44de7b93-753f-4547-ad21-bf235551dffd";

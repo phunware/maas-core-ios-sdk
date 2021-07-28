@@ -1,63 +1,52 @@
 PWCore SDK for iOS
 ================
+[![Version](https://img.shields.io/cocoapods/v/PWCore.svg?style=flat-square)](https://cocoapods.org/pods/PWCore) [![License](https://img.shields.io/cocoapods/l/PWCore.svg?style=flat-square)](https://cocoapods.org/pods/PWCore) [![Platforms](https://img.shields.io/cocoapods/p/PWCore?style=flat-square)](https://cocoapods.org/pods/PWCore) [![Twitter](https://img.shields.io/badge/twitter-@phunware-blue.svg?style=flat-square)](https://twitter.com/phunware)
 
->Version 3.10.0
+This is Phunware's Core SDK for use with its Multiscreen-as-a-Service platform. Visit http://maas.phunware.com for more details and to sign up.
 
-This is Phunware's iOS SDK for the Core module. Visit http://maas.phunware.com/ for more details and to sign up.
+**NOTE**: This is a required dependency for all Phunware SDKs.
 
 Requirements
 ------------
-- iOS 10.0 or greater
-- XCode 11 or greater
+- iOS 13.0 or greater
+- Xcode 12 or greater
 
 Installation
 ------------
-Phunware recommends using [CocoaPods](http://www.cocoapods.org) 1.10 or greater to integrate the framework. Simply add
+### CocoaPods
+It is required to use [CocoaPods](http://www.cocoapods.org) 1.10 or greater to integrate the framework. Simply add the following to your Podfile:
 
-`pod 'PWCore'`
-
-to your podfile.
-**NOTE**: PWCore is a required dependency for all MaaS modules.
-
-The following frameworks are required:
-
-````
-SystemConfiguration.framework
-MobileCoreServices.framework
-QuartzCore.framework
-CoreTelephony.framework
-Security.framework
+````ruby
+pod 'PWCore'
 ````
 
-The following frameworks are optional:
+To enable support for requesting authorization to access the identifier for advertisers (IDFA), add the `DeviceIdentity` subspec:
 
+````ruby
+pod 'PWCore/DeviceIdentity'
 ````
-CoreLocation.framework
-UIKit.framework
-````
-**NOTE**: CoreLocation is used for comprehensive analytics. Apple mandates that your app have a good reason for enabling location services. Apple will deny your app if location is not a core feature for your app.
 
 Documentation
 ------------
-PWCore documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk/
+Documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-core-ios-sdk
 
 Integration
 -----------
-At the top of your application delegate implementation (.m) file, add the following:
+Import PWCore at the top of your application's delegate:
 
-````objective-c
-#import <PWCore/PWCore.h>
+````swift
+import PWCore
 ````
 
-Inside your application delegate, you will need to initialize MaaS Core in the application:didFinishLaunchingWithOptions: method:
+Initialize PWCore in your application delegate's [application(_:didFinishLaunchingWithOptions:)](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622921-application) method:
 
-````objective-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
-    [PWCore setApplicationID:@"APPLICATION_ID"
-    		    setAccessKey:@"ACCESS_KEY"
-                signatureKey:@"SIGNATURE_KEY"];
+````swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    // These values can be found for your application in the MaaS portal at http://maas.phunware.com/clients.    
+    PWCore.setApplicationID("APPLICATION_ID",
+                            accessKey: "ACCESS_KEY",
+                            signatureKey: "SIGNATURE_KEY")
+
     ...
 }
 ````
@@ -66,9 +55,32 @@ Location Permissions
 --------------------
 Location authorization of "When In Use" or "Always" is encouraged when starting PWCore for analytics purposes. Please follow [Apple's Best Practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services) for requesting location permissions.
 
+Identifier for Advertisers (IDFA) Permission 
+--------------------------------------------
+Starting with iOS 14.5, accessing the identifier for advertisers (IDFA) requires authorization through Apple's [AppTrackingTransparency framework](https://developer.apple.com/documentation/apptrackingtransparency). Authorization is encouraged when starting PWCore, and can be requested directly through the SDK: 
+
+````swift
+switch PWCore.isAdvertisingIdentifierPermissionRequestable {
+case .allowed:
+    PWCore.requestAdvertisingIdentifierPermission { (advertisingIdentifier) in
+        // Advertising identifier available
+        print("Advertising Identifier: \(advertisingIdentifier)")
+    } failure: { (error) in
+        // Advertising identifier not available
+        print(error)
+    }
+case .notAllowed:
+    // Authorization is either restricted or has been previously denied
+    print("Advertising identifier cannot be requested.")
+case .alreadyAuthorized:
+    // Advertising identifier is already available
+    print("Advertising Identifier: \(PWCore.deviceID())")
+}
+````
+
 Attribution
 -----------
-PWCore uses the following third-party components. All components are prefixed so you won't have to worry about namespace collisions.
+PWCore uses the following third-party dependencies:
 
 <table>
   <tr>
@@ -108,4 +120,5 @@ You understand and consent to Phunware’s Privacy Policy located at www.phunwar
 
 Terms
 -----------
-Use of this software requires review and acceptance of our terms and conditions for developer use located at http://www.phunware.com/terms/
+Use of this software requires review and acceptance of our terms and conditions for developer use located at http://www.phunware.com/terms
+
