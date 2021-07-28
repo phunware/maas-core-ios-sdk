@@ -1,5 +1,5 @@
 # PWCore Changelog
-## 3.11.0 (TBD)
+## 3.11.0 (Tuesday, July 27, 2021)
 ### Features
 * Updated IDFA handling for iOS 14+.
 * iOS deployment target increased from 10.0 to 12.0
