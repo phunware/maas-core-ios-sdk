@@ -6,6 +6,8 @@
 //
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 extern NSString * const PWCoreDeviceGlobalDeviceIdentifierInfoTypeKey;
 extern NSString * const PWCoreDeviceGlobalDeviceIdentifierInfoValueKey;
 extern NSString * const PWCoreDeviceGlobalDeviceIdentifierInfoTypeIDFA;
@@ -14,10 +16,9 @@ extern NSString * const PWCoreDeviceGlobalDeviceIdentifierInfoTypeMAC;
 
 @interface PWCoreDevice : NSObject
 
-+ (NSString *)macaddress;
 + (NSString *)hardwareModel;
 + (NSString *)IPAddress;
-+ (NSString *)carrierName;
++ (NSString *)carrierNames;
 + (NSString *)timestamp;
 + (NSString *)systemVersion;
 + (NSDictionary *)currentWifi;
@@ -28,11 +29,12 @@ extern NSString * const PWCoreDeviceGlobalDeviceIdentifierInfoTypeMAC;
 + (BOOL)bluetoothEnabled;
 
 + (NSDictionary *)locationInfo;
-+ (NSString *)uniqueDeviceIdentifier;
-+ (NSString *)uniqueGlobalDeviceIdentifier;
++ (nullable NSString *)uniqueGlobalDeviceIdentifier;
 + (NSDictionary<NSString *, NSString *> *)uniqueGlobalDeviceIdentifierInfo;
 
 // Convenience
 + (NSDateFormatter *)standardDateFormatter;
 
 @end
+
+NS_ASSUME_NONNULL_END

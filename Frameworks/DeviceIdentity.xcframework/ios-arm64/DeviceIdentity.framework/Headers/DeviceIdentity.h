@@ -11,6 +11,6 @@
 #ifndef DeviceIdentity_h
 #define DeviceIdentity_h
 
-static NSString * const DeviceIdentityVersion = @"3.11.0";
+static NSString * const DeviceIdentityVersion = @"3.12.0";
 
 #endif /* DeviceIdentity_h */

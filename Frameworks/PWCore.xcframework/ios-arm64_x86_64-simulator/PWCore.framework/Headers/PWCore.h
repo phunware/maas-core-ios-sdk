@@ -23,7 +23,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-static NSString * const PWCoreVersion = @"3.11.0";
+static NSString * const PWCoreVersion = @"3.12.0";
 
 /**
  `PWCore` implements core functionality used in all MaaS modules. All MaaS modules have a `PWCore` dependency.

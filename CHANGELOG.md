@@ -1,4 +1,6 @@
 # PWCore Changelog
+## 3.12.0 (TBD)
+
 ## 3.11.0 (Wednesday, July 28, 2021)
 ### Features
 * Updated IDFA handling for iOS 14+.

@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'PWCore'
-  spec.version = '3.11.0'
+  spec.version = '3.12.0'
   spec.license = { :type => 'Copyright', :text => 'Copyright 2009-present Phunware Inc. All rights reserved.' }
   spec.summary = "Phunware's Core SDK for use with its Multiscreen-as-a-Service platform"
   spec.homepage = 'https://github.com/phunware/maas-core-ios-sdk'
