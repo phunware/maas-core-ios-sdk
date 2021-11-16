@@ -27,6 +27,15 @@
 - (void)get:(NSString *)endpoint withParameters:(NSDictionary *)parameters withCompletion:(void(^)(id response, NSError *error))completion;
 
 /**
+ Send a `GET` request for specific endpoint and parameters.
+ @param endpoint The endpoint for the request.
+ @param parameters The parameters for the request.
+ @param shouldFallBackToCache If true and the request fails, the cached response (if any) is returned instead. Also if true and the request succeeds, the response is cached.
+ @param completion A block that returns the HTTP response or error.
+ */
+- (void)get:(NSString *)endpoint withParameters:(NSDictionary *)parameters fallingBackToCache:(BOOL)shouldFallBackToCache  withCompletion:(void(^)(id response, NSError *error))completion;
+
+/**
  Send a `GET` request for specific endpoint and parameters, and the response may be fetched from the cache.
  @param endpoint The endpoint for the request.
  @param parameters The parameters for the request.
@@ -48,8 +57,9 @@
  @param httpMethod The http request for the request.
  @param endpoint The endpoint for the request.
  @param parameters The parameters for the request.
+ @param shouldCacheResponse If true and the request fails, the cached response (if any) is returned instead. Also if true and the request succeeds, the response is cached.
  @param completion A block that returns the HTTP response or error.
  */
-- (void)request:(NSString *)endpoint withHTTPMethod:(NSString *)httpMethod withParameters:(NSDictionary *)parameters withCompletion:(void(^)(id response, NSError *error))completion;
+- (void)request:(NSString *)endpoint withHTTPMethod:(NSString *)httpMethod withParameters:(NSDictionary *)parameters cacheResponse:(BOOL)shouldCacheResponse withCompletion:(void(^)(id response, NSError *error))completion;
 
 @end
