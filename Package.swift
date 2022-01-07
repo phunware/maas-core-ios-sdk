@@ -19,7 +19,7 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         .binaryTarget(
             name: "PWCore",
-            path: "Frameworks/PWCore.xcframework"
+            path: "FrameworksStaticLinks/PWCore.xcframework"
         )
     ]
 )
