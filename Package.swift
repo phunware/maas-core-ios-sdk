@@ -10,7 +10,10 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "PWCore",
-            targets: ["PWCore"])
+            targets: ["PWCore"]),
+        .library(
+            name: "DeviceIdentity",
+            targets: ["DeviceIdentity"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,6 +23,10 @@ let package = Package(
         .binaryTarget(
             name: "PWCore",
             path: "FrameworksStaticLinks/PWCore.xcframework"
+        ),
+        .binaryTarget(
+            name: "DeviceIdentity",
+            path: "FrameworksStaticLinks/DeviceIdentity.xcframework"
         )
     ]
 )
