@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * The type of response code from fetchBundle.
+ */
+typedef NS_ENUM(NSInteger, PWMEFetchBundleResponseCode) {
+    // Response code for when file is missing or access is denied.
+    PWMEFetchBundleResponseCodeFileMissing = 403
+};
+
 /*
  Completion block for a bundle fetch.
  */
@@ -92,6 +100,7 @@ extern NSString * const PWBundleChangedKey;
  @param completion A block that returns information about the bundle fetch and the unzipped bundle directory or error.
  */
 - (void)fetchCampusBundleById:(NSInteger)campusId draft:(BOOL)isDraft withCompletion:(PWBundleFetchCompletion)completion;
+
 
 #pragma mark - Deprecated
 
