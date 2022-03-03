@@ -1,5 +1,12 @@
 # PWCore Changelog
-## 3.12.0 (TBD)
+## 3.12.0 (Thursday, March 3, 2022)  
+### Bug fixes / Performance enhancements  
+* Allowed bundle fetch caller to handle missing file.
+* Processed bundle files in background thread.
+### Features
+* Removed the dependency on MaaS App's signature key.
+* Removed all deprecated API.
+* Added Swift Package Manager support.
 
 ## 3.11.0 (Wednesday, July 28, 2021)
 ### Features
