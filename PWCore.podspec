@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'PWCore'
-  spec.version = '3.11.0'
+  spec.version = '3.12.0'
   spec.license = { :type => 'Copyright', :text => 'Copyright 2009-present Phunware Inc. All rights reserved.' }
   spec.summary = "Phunware's Core SDK for use with its Multiscreen-as-a-Service platform"
   spec.homepage = 'https://github.com/phunware/maas-core-ios-sdk'
@@ -47,4 +47,19 @@ Pod::Spec.new do |spec|
 
     subspec.weak_frameworks = 'AppTrackingTransparency'
   end
+
+  spec.subspec 'CoreStaticLinks' do |subspec|
+    subspec.vendored_frameworks = 'FrameworksStaticLinks/PWCore.xcframework'
+  end
+
+  spec.subspec 'DeviceIdentityStaticLinks' do |subspec|
+    subspec.dependency 'PWCore/CoreStaticLinks'
+
+    subspec.vendored_frameworks = 'FrameworksStaticLinks/DeviceIdentity.xcframework'
+
+    subspec.frameworks = 'AdSupport'
+
+    subspec.weak_frameworks = 'AppTrackingTransparency'
+  end
+
 end

@@ -1,4 +1,16 @@
 # PWCore Migration Guide
+## Upgrade from 3.11.x to 3.12.x
+
+#### General
+
+This release removes the dependency on MaaS App's signature key and all deprecated API.
+
+#### Upgrade Steps
+
+1. Open the `Podfile` from your project and change PWCore to include `pod 'PWCore', '3.12.x'`, then run `pod update` in the Terminal to update the framework. This is only necessary if using PWCore by itself. Otherwise the correct version will be installed with PWLocation/PWMapKit or PWEngagement if using it bundled.
+
+2. Remove `signatureKey:` from `[PWCore setApplicationID:accessKey:signatureKey:]`. 
+
 ## Upgrade from 3.10.x to 3.11.x
 
 #### General

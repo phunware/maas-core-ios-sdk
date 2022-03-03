@@ -1,0 +1,11 @@
+framework module DeviceIdentity {
+  umbrella header "DeviceIdentity.h"
+
+  export *
+  module * { export * }
+}
+
+module DeviceIdentity.Swift {
+    header "DeviceIdentity-Swift.h"
+    requires objc
+}
