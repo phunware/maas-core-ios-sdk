@@ -17,12 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         guard let dictionary = Bundle.main.infoDictionary,
               let appID = dictionary["appId"] as? String,
-              let accessKey = dictionary["accessKey"] as? String,
-              let signatureKey = dictionary ["signatureKey"] as? String else {
+              let accessKey = dictionary["accessKey"] as? String else {
             fatalError("MaaS App registration keys are required but missing.")
         }
 		
-        PWCore.setApplicationID(appID, accessKey: accessKey, signatureKey: signatureKey)
+        PWCore.setApplicationID(appID, accessKey: accessKey)
         
         return true
     }
