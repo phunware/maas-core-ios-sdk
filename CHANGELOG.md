@@ -3,6 +3,7 @@
 ### Bug fixes / Performance enhancements  
 * Allowed bundle fetch caller to handle missing file.
 * Processed bundle files in background thread.
+
 ### Features
 * Removed the dependency on MaaS App's signature key.
 * Removed all deprecated API.
