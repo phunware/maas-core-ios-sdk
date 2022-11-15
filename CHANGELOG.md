@@ -1,4 +1,8 @@
 # PWCore Changelog
+## 3.12.1 (Tuesday, May 24, 2022)  
+### Bug fixes   
+* Fixed authentication header for the ME event retry. 
+
 ## 3.12.0 (Thursday, March 3, 2022)  
 ### Bug fixes / Performance enhancements  
 * Allowed bundle fetch caller to handle missing file.
