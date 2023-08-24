@@ -6,6 +6,6 @@ framework module DeviceIdentity {
 }
 
 module DeviceIdentity.Swift {
-    header "DeviceIdentity-Swift.h"
-    requires objc
+  header "DeviceIdentity-Swift.h"
+  requires objc
 }
