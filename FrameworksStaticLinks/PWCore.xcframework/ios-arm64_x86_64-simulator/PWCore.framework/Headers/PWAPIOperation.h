@@ -33,6 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *HTTPMethod;
 @property (nonatomic, copy) id parameters;
 @property (nonatomic, copy) NSDictionary *allHTTPHeaderFields;
+@property (nonatomic) BOOL shouldRetryFromAccessTokenError;
 
 @property (nonatomic, copy, nullable) PWAPIOperationSuccess successBlock;
 @property (nonatomic, copy, nullable) PWAPIOperationFailure failureBlock;

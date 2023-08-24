@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/PWAPIOperation.h</key>
 		<data>
-		HOPrkGgUxvDaIz3M7LgcQy3MHDE=
+		RDgI15pAik/kc0HwI6yr9eZ5Prs=
 		</data>
 		<key>Headers/PWAPIRequestOperation.h</key>
 		<data>
@@ -24,21 +24,13 @@
 		<data>
 		+bxhEP0Oh8sebnzGRfgbekPbcWg=
 		</data>
-		<key>Headers/PWCME.h</key>
-		<data>
-		W78SjImCXGnAQBDVUR+ReoeWc1A=
-		</data>
 		<key>Headers/PWConsoleLogger.h</key>
 		<data>
 		pxJVugSF60B7OH9UcblAo3PHlfU=
 		</data>
-		<key>Headers/PWContainer.h</key>
-		<data>
-		a6rHW9QmCW3dYfCJipqjpiOm7vE=
-		</data>
 		<key>Headers/PWCore.h</key>
 		<data>
-		vyseEZYi4C7Jaw5Zhq4St6BohOI=
+		TzRWNy5rFtiWYPPiuMh/I3oVYDI=
 		</data>
 		<key>Headers/PWCoreDevice.h</key>
 		<data>
@@ -64,29 +56,13 @@
 		<data>
 		Ptegd6NSr1V3NYkKeU7NFAQHbDg=
 		</data>
-		<key>Headers/PWPagination.h</key>
-		<data>
-		Lf90zkZb3AeNkGjiw8In/QPHQ6s=
-		</data>
-		<key>Headers/PWSchema.h</key>
-		<data>
-		AmeEuSOqIt0FIRMKBXFZFvDTL5E=
-		</data>
-		<key>Headers/PWSchemaField.h</key>
-		<data>
-		Yf1o5GASWaYRzxdnVMOkGosAlb0=
-		</data>
-		<key>Headers/PWStructure.h</key>
-		<data>
-		a7V+EFO1k1YCl1/Jvr6R+gXxrBw=
-		</data>
 		<key>Headers/UIViewController+PWAnalytics.h</key>
 		<data>
 		7E8O7Bfad9MFinmJA6HzXHWoCQc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KkVyzCjk8dj8gCpJSB0VlAxCsYQ=
+		8T49+/jioLQzhRBwkC4Yd0NaHDo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OphdHBGEEBaq41qqcOFhomcM+Ie02t6ctNnKOCBC8Z8=
+			AGLXq3h9S0OQC9YXNRFnG3uq14k6FwS7Eh0cAe7oIlQ=
 			</data>
 		</dict>
 		<key>Headers/PWAPIRequestOperation.h</key>
@@ -130,13 +106,6 @@
 			XRUywmn+ANDcT88OdGSJ1Z2tgFrP9Bk3Jcgb5oPCRTU=
 			</data>
 		</dict>
-		<key>Headers/PWCME.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Eym9saerOVlOaufWFN3LthP/OxNUkbgYI2qxzh6P7x4=
-			</data>
-		</dict>
 		<key>Headers/PWConsoleLogger.h</key>
 		<dict>
 			<key>hash2</key>
@@ -144,18 +113,11 @@
 			d9GQ8Rx3IV0alHHSvwoStlTpHqJesak40TSdbO/GJYA=
 			</data>
 		</dict>
-		<key>Headers/PWContainer.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			P1mJ0ZSFI7K7MP474SkQw1S1+qwNSyd3Bzx3nV9Yh8E=
-			</data>
-		</dict>
 		<key>Headers/PWCore.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vi2mEdrEt3CeESbhKBw5DaUPEqR3ZepsQa9u6LMMYbc=
+			iMwJO2iWwbF7gKyMe12zOKCn98AR5ywl6N1liz38sMo=
 			</data>
 		</dict>
 		<key>Headers/PWCoreDevice.h</key>
@@ -198,34 +160,6 @@
 			<key>hash2</key>
 			<data>
 			RglRYqvY/Um8IDjd6cPa0Mwk24NSt5j5dNdA6bspnhY=
-			</data>
-		</dict>
-		<key>Headers/PWPagination.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QchrkJDMOQrkugE18VJ6w4yF8piGu6zV02lsGrhjzFE=
-			</data>
-		</dict>
-		<key>Headers/PWSchema.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9La8vr4RDnVNQqRPudsXDvyGuGVJtQ8WV4Zph4jnVBY=
-			</data>
-		</dict>
-		<key>Headers/PWSchemaField.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wInoKN2HML2Jatrdp0O8fkPVi1UE1KjaReL0w7O1iHc=
-			</data>
-		</dict>
-		<key>Headers/PWStructure.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			t5xSQAqnDy9o9x3Wv++1pyr31ODX/ToAwE124k5RvLA=
 			</data>
 		</dict>
 		<key>Headers/UIViewController+PWAnalytics.h</key>
