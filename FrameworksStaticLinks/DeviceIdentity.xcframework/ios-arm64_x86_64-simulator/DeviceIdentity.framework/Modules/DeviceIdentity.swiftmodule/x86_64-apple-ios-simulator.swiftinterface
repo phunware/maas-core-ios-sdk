@@ -1,21 +1,24 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DeviceIdentity
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AppTrackingTransparency
 @_exported import DeviceIdentity
 import PWCore
 import Swift
-public enum AdvertisingIdentificationPermisionError : Swift.Error {
+import _Concurrency
+import _StringProcessing
+public enum AdvertisingIdentificationPermisionError : Error {
   case denied
   case restricted
-  public static func == (a: AdvertisingIdentificationPermisionError, b: AdvertisingIdentificationPermisionError) -> Swift.Bool
+  public static func == (a: DeviceIdentity.AdvertisingIdentificationPermisionError, b: DeviceIdentity.AdvertisingIdentificationPermisionError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 extension AdvertisingIdentificationPermisionError {
-  public var localizedErrorDescription: Swift.String? {
+  public var localizedErrorDescription: String? {
     get
   }
 }
@@ -23,19 +26,19 @@ public enum PermissionRequestable {
   case allowed
   case notAllowed
   case alreadyAuthorized
-  public static func == (a: PermissionRequestable, b: PermissionRequestable) -> Swift.Bool
+  public static func == (a: DeviceIdentity.PermissionRequestable, b: DeviceIdentity.PermissionRequestable) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 extension PWCore {
   public static var isAdvertisingIdentifierPermissionRequestable: PermissionRequestable {
     get
   }
-  @objc public static func requestAdvertisingIdentifierPermission(success: @escaping (Swift.String) -> Swift.Void, failure: @escaping (Swift.Error) -> Swift.Void)
+  @objc public static func requestAdvertisingIdentifierPermission(success: @escaping (_ advertisingIdentifier: String) -> Void, failure: @escaping (_ error: Error) -> Void)
 }
-extension AdvertisingIdentificationPermisionError : Swift.Equatable {}
-extension AdvertisingIdentificationPermisionError : Swift.Hashable {}
-extension PermissionRequestable : Swift.Equatable {}
-extension PermissionRequestable : Swift.Hashable {}
+extension DeviceIdentity.AdvertisingIdentificationPermisionError : Swift.Equatable {}
+extension DeviceIdentity.AdvertisingIdentificationPermisionError : Swift.Hashable {}
+extension DeviceIdentity.PermissionRequestable : Swift.Equatable {}
+extension DeviceIdentity.PermissionRequestable : Swift.Hashable {}

@@ -1,4 +1,9 @@
 # PWCore Changelog
+## 3.12.2 (Wednesday, Aug 30, 2023)  
+### Bug fixes
+* Fixed an issue where an API request would fail after successfully refreshing an expired authorization header.
+* Fixed an issue where an API request made through `PWAPIManager` would sometimes fail to return execution back to the caller.
+
 ## 3.12.1 (Tuesday, May 24, 2022)  
 ### Bug fixes   
 * Fixed authentication header for the ME event retry. 

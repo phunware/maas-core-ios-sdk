@@ -9,21 +9,19 @@
 
 #import <PWCore/PWAnalytics.h>
 #import <PWCore/UIViewController+PWAnalytics.h>
-#import <PWCore/PWCME.h>
 #import <PWCore/PWLogger.h>
 #import <PWCore/PWConsoleLogger.h>
 #import <PWCore/PWFileLogger.h>
 #import <PWCore/PWLoggableObject.h>
 #import <PWCore/PWBundleManager.h>
 #import <PWCore/PWAPIManager.h>
-#import <PWCore/PWAPIRequestOperation.h>
 #import <PWCore/PWAPIOperation.h>
 #import <PWCore/PWCoreDevice.h>
 #import <PWCore/PWFeatureFlagger.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-static NSString * const PWCoreVersion = @"3.12.1";
+static NSString * const PWCoreVersion = @"3.12.2";
 
 /**
  `PWCore` implements core functionality used in all MaaS modules. All MaaS modules have a `PWCore` dependency.

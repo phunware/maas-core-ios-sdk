@@ -14,15 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    // TODO: Fill out appId, accessKey and signatureKey. These can be found on the Maas Portal.
+    // TODO: Fill out appId and accessKey. These can be found on the Maas Portal.
     let applicationId = "<Maas application key>"
     let accessKey = "<Maas access key>"
-    let signatureKey = "<Maas signature key>"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        PWCore.setApplicationID(applicationId, accessKey: accessKey, signatureKey: signatureKey)
+        PWCore.setApplicationID(applicationId, accessKey: accessKey)
         
         return true
     }

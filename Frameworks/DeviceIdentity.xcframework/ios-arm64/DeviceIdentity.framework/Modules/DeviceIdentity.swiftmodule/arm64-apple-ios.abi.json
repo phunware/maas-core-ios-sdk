@@ -1,0 +1,714 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "PWCore",
+        "printedName": "PWCore",
+        "declKind": "Import",
+        "moduleName": "DeviceIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "DeviceIdentity"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdvertisingIdentificationPermisionError",
+        "printedName": "AdvertisingIdentificationPermisionError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "denied",
+            "printedName": "denied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeviceIdentity.AdvertisingIdentificationPermisionError.Type) -> DeviceIdentity.AdvertisingIdentificationPermisionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdvertisingIdentificationPermisionError",
+                    "printedName": "DeviceIdentity.AdvertisingIdentificationPermisionError",
+                    "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeviceIdentity.AdvertisingIdentificationPermisionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdvertisingIdentificationPermisionError",
+                        "printedName": "DeviceIdentity.AdvertisingIdentificationPermisionError",
+                        "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO6deniedyA2CmF",
+            "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO6deniedyA2CmF",
+            "moduleName": "DeviceIdentity"
+          },
+          {
+            "kind": "Var",
+            "name": "restricted",
+            "printedName": "restricted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeviceIdentity.AdvertisingIdentificationPermisionError.Type) -> DeviceIdentity.AdvertisingIdentificationPermisionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdvertisingIdentificationPermisionError",
+                    "printedName": "DeviceIdentity.AdvertisingIdentificationPermisionError",
+                    "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeviceIdentity.AdvertisingIdentificationPermisionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdvertisingIdentificationPermisionError",
+                        "printedName": "DeviceIdentity.AdvertisingIdentificationPermisionError",
+                        "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO10restrictedyA2CmF",
+            "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO10restrictedyA2CmF",
+            "moduleName": "DeviceIdentity"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdvertisingIdentificationPermisionError",
+                "printedName": "DeviceIdentity.AdvertisingIdentificationPermisionError",
+                "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdvertisingIdentificationPermisionError",
+                "printedName": "DeviceIdentity.AdvertisingIdentificationPermisionError",
+                "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "DeviceIdentity",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO9hashValueSivp",
+            "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO9hashValueSivp",
+            "moduleName": "DeviceIdentity",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO9hashValueSivg",
+                "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO9hashValueSivg",
+                "moduleName": "DeviceIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "DeviceIdentity",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "localizedErrorDescription",
+            "printedName": "localizedErrorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSSgvp",
+            "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSSgvp",
+            "moduleName": "DeviceIdentity",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSSgvg",
+                "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSSgvg",
+                "moduleName": "DeviceIdentity",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO",
+        "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO",
+        "moduleName": "DeviceIdentity",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PermissionRequestable",
+        "printedName": "PermissionRequestable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "allowed",
+            "printedName": "allowed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeviceIdentity.PermissionRequestable.Type) -> DeviceIdentity.PermissionRequestable",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionRequestable",
+                    "printedName": "DeviceIdentity.PermissionRequestable",
+                    "usr": "s:14DeviceIdentity21PermissionRequestableO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeviceIdentity.PermissionRequestable.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PermissionRequestable",
+                        "printedName": "DeviceIdentity.PermissionRequestable",
+                        "usr": "s:14DeviceIdentity21PermissionRequestableO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14DeviceIdentity21PermissionRequestableO7allowedyA2CmF",
+            "mangledName": "$s14DeviceIdentity21PermissionRequestableO7allowedyA2CmF",
+            "moduleName": "DeviceIdentity"
+          },
+          {
+            "kind": "Var",
+            "name": "notAllowed",
+            "printedName": "notAllowed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeviceIdentity.PermissionRequestable.Type) -> DeviceIdentity.PermissionRequestable",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionRequestable",
+                    "printedName": "DeviceIdentity.PermissionRequestable",
+                    "usr": "s:14DeviceIdentity21PermissionRequestableO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeviceIdentity.PermissionRequestable.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PermissionRequestable",
+                        "printedName": "DeviceIdentity.PermissionRequestable",
+                        "usr": "s:14DeviceIdentity21PermissionRequestableO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14DeviceIdentity21PermissionRequestableO10notAllowedyA2CmF",
+            "mangledName": "$s14DeviceIdentity21PermissionRequestableO10notAllowedyA2CmF",
+            "moduleName": "DeviceIdentity"
+          },
+          {
+            "kind": "Var",
+            "name": "alreadyAuthorized",
+            "printedName": "alreadyAuthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DeviceIdentity.PermissionRequestable.Type) -> DeviceIdentity.PermissionRequestable",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionRequestable",
+                    "printedName": "DeviceIdentity.PermissionRequestable",
+                    "usr": "s:14DeviceIdentity21PermissionRequestableO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DeviceIdentity.PermissionRequestable.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PermissionRequestable",
+                        "printedName": "DeviceIdentity.PermissionRequestable",
+                        "usr": "s:14DeviceIdentity21PermissionRequestableO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14DeviceIdentity21PermissionRequestableO17alreadyAuthorizedyA2CmF",
+            "mangledName": "$s14DeviceIdentity21PermissionRequestableO17alreadyAuthorizedyA2CmF",
+            "moduleName": "DeviceIdentity"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PermissionRequestable",
+                "printedName": "DeviceIdentity.PermissionRequestable",
+                "usr": "s:14DeviceIdentity21PermissionRequestableO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PermissionRequestable",
+                "printedName": "DeviceIdentity.PermissionRequestable",
+                "usr": "s:14DeviceIdentity21PermissionRequestableO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14DeviceIdentity21PermissionRequestableO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14DeviceIdentity21PermissionRequestableO2eeoiySbAC_ACtFZ",
+            "moduleName": "DeviceIdentity",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14DeviceIdentity21PermissionRequestableO9hashValueSivp",
+            "mangledName": "$s14DeviceIdentity21PermissionRequestableO9hashValueSivp",
+            "moduleName": "DeviceIdentity",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14DeviceIdentity21PermissionRequestableO9hashValueSivg",
+                "mangledName": "$s14DeviceIdentity21PermissionRequestableO9hashValueSivg",
+                "moduleName": "DeviceIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14DeviceIdentity21PermissionRequestableO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14DeviceIdentity21PermissionRequestableO4hash4intoys6HasherVz_tF",
+            "moduleName": "DeviceIdentity",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14DeviceIdentity21PermissionRequestableO",
+        "mangledName": "$s14DeviceIdentity21PermissionRequestableO",
+        "moduleName": "DeviceIdentity",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PWCore",
+        "printedName": "PWCore",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isAdvertisingIdentifierPermissionRequestable",
+            "printedName": "isAdvertisingIdentifierPermissionRequestable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PermissionRequestable",
+                "printedName": "DeviceIdentity.PermissionRequestable",
+                "usr": "s:14DeviceIdentity21PermissionRequestableO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6PWCoreC14DeviceIdentityE44isAdvertisingIdentifierPermissionRequestableAC0gH0OvpZ",
+            "mangledName": "$sSo6PWCoreC14DeviceIdentityE44isAdvertisingIdentifierPermissionRequestableAC0gH0OvpZ",
+            "moduleName": "DeviceIdentity",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionRequestable",
+                    "printedName": "DeviceIdentity.PermissionRequestable",
+                    "usr": "s:14DeviceIdentity21PermissionRequestableO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6PWCoreC14DeviceIdentityE44isAdvertisingIdentifierPermissionRequestableAC0gH0OvgZ",
+                "mangledName": "$sSo6PWCoreC14DeviceIdentityE44isAdvertisingIdentifierPermissionRequestableAC0gH0OvgZ",
+                "moduleName": "DeviceIdentity",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "requestAdvertisingIdentifierPermission",
+            "printedName": "requestAdvertisingIdentifierPermission(success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DeviceIdentity@@objc(cs)PWCore(cm)requestAdvertisingIdentifierPermissionWithSuccess:failure:",
+            "mangledName": "$sSo6PWCoreC14DeviceIdentityE38requestAdvertisingIdentifierPermission7success7failureyySSc_ys5Error_pctFZ",
+            "moduleName": "DeviceIdentity",
+            "static": true,
+            "objc_name": "requestAdvertisingIdentifierPermissionWithSuccess:failure:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)PWCore",
+        "moduleName": "PWCore",
+        "isOpen": true,
+        "objc_name": "PWCore",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
