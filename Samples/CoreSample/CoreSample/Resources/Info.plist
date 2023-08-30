@@ -49,7 +49,5 @@
 	<string>&lt;Maas access key&gt;</string>
 	<key>appId</key>
 	<string>&lt;Maas app id&gt;</string>
-	<key>signatureKey</key>
-	<string>&lt;Maas signature key&gt;</string>
 </dict>
 </plist>

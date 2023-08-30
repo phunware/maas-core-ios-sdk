@@ -16,10 +16,6 @@
 		FBD76D701EAE669800D56E6C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD76D6F1EAE669800D56E6C /* InfoViewController.swift */; };
 		FBD76D721EAE66C500D56E6C /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD76D711EAE66C500D56E6C /* AnalyticsViewController.swift */; };
 		FBD76D741EAE66CF00D56E6C /* PayloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD76D731EAE66CF00D56E6C /* PayloadViewController.swift */; };
-		FBD76D761EAE66DE00D56E6C /* CMERecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD76D751EAE66DE00D56E6C /* CMERecordsViewController.swift */; };
-		FBD76D781EAE66E900D56E6C /* CMERecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD76D771EAE66E900D56E6C /* CMERecordViewController.swift */; };
-		FBD76D8C1EAFA0FE00D56E6C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD76D8B1EAFA0FE00D56E6C /* Person.swift */; };
-		FBD76D8F1EAFA7D800D56E6C /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD76D8E1EAFA7D800D56E6C /* RecordCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +32,6 @@
 		FBD76D6F1EAE669800D56E6C /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		FBD76D711EAE66C500D56E6C /* AnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		FBD76D731EAE66CF00D56E6C /* PayloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadViewController.swift; sourceTree = "<group>"; };
-		FBD76D751EAE66DE00D56E6C /* CMERecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMERecordsViewController.swift; sourceTree = "<group>"; };
-		FBD76D771EAE66E900D56E6C /* CMERecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMERecordViewController.swift; sourceTree = "<group>"; };
-		FBD76D8B1EAFA0FE00D56E6C /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		FBD76D8E1EAFA7D800D56E6C /* RecordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				FBD76D6E1EAE667B00D56E6C /* Controllers */,
-				FBD76D8A1EAFA0E800D56E6C /* Models */,
 				FBD76D3F1EAE654100D56E6C /* Resources */,
 				FBD76D441EAE654100D56E6C /* Storyboards */,
-				FBD76D8D1EAFA7B200D56E6C /* Views */,
 				FBD76D2D1EAE648200D56E6C /* AppDelegate.swift */,
 			);
 			path = CoreSample;
@@ -124,29 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				FBD76D711EAE66C500D56E6C /* AnalyticsViewController.swift */,
-				FBD76D751EAE66DE00D56E6C /* CMERecordsViewController.swift */,
-				FBD76D771EAE66E900D56E6C /* CMERecordViewController.swift */,
 				FBD76D6F1EAE669800D56E6C /* InfoViewController.swift */,
 				8B33D2171EDF82E30081EFE2 /* RegisterVersionViewController.swift */,
 				FBD76D731EAE66CF00D56E6C /* PayloadViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		FBD76D8A1EAFA0E800D56E6C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FBD76D8B1EAFA0FE00D56E6C /* Person.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FBD76D8D1EAFA7B200D56E6C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FBD76D8E1EAFA7D800D56E6C /* RecordCell.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,13 +262,9 @@
 			files = (
 				FBD76D741EAE66CF00D56E6C /* PayloadViewController.swift in Sources */,
 				FBD76D701EAE669800D56E6C /* InfoViewController.swift in Sources */,
-				FBD76D8C1EAFA0FE00D56E6C /* Person.swift in Sources */,
-				FBD76D8F1EAFA7D800D56E6C /* RecordCell.swift in Sources */,
 				FBD76D2E1EAE648200D56E6C /* AppDelegate.swift in Sources */,
 				FBD76D721EAE66C500D56E6C /* AnalyticsViewController.swift in Sources */,
-				FBD76D761EAE66DE00D56E6C /* CMERecordsViewController.swift in Sources */,
 				8B33D2181EDF82E30081EFE2 /* RegisterVersionViewController.swift in Sources */,
-				FBD76D781EAE66E900D56E6C /* CMERecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +397,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = CoreSample/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.11.0;
+				MARKETING_VERSION = 3.12.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.coresample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "e0bf3026-4b6b-4aef-ab9c-5fb2cc3b04e9";
@@ -453,7 +421,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = CoreSample/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.11.0;
+				MARKETING_VERSION = 3.12.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.coresample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "44de7b93-753f-4547-ad21-bf235551dffd";
