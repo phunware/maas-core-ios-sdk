@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <PWCore/PWAPIOperation.h>
 
 /**
  A generic class for making HTTP/HTTPS calls, and the authentication header will be automatically added.
@@ -60,6 +61,6 @@
  @param shouldCacheResponse If true and the request fails, the cached response (if any) is returned instead. Also if true and the request succeeds, the response is cached.
  @param completion A block that returns the HTTP response or error.
  */
-- (void)request:(NSString *)endpoint withHTTPMethod:(NSString *)httpMethod withParameters:(NSDictionary *)parameters cacheResponse:(BOOL)shouldCacheResponse withCompletion:(void(^)(id response, NSError *error))completion;
+- (void)request:(NSString *)endpoint withHTTPMethod:(PWHTTPMethod)httpMethod withParameters:(NSDictionary *)parameters cacheResponse:(BOOL)shouldCacheResponse withCompletion:(void(^)(id response, NSError *error))completion;
 
 @end

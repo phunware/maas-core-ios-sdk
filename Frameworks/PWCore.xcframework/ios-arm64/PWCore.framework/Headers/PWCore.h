@@ -15,7 +15,6 @@
 #import <PWCore/PWLoggableObject.h>
 #import <PWCore/PWBundleManager.h>
 #import <PWCore/PWAPIManager.h>
-#import <PWCore/PWAPIRequestOperation.h>
 #import <PWCore/PWAPIOperation.h>
 #import <PWCore/PWCoreDevice.h>
 #import <PWCore/PWFeatureFlagger.h>
