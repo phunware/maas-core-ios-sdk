@@ -5,11 +5,10 @@ Core Samples for iOS
 
 ### Overview
 - Demonstrates integration of Analytics
-- Display, add, update, and remove from CME
 
 ##### Usage:
 - Run a `pod update` command from the terminal in the sample file directory
-- Fill out `applicationId`, `accessKey`, and `signatureKey` in the `Info.plist`
+- Fill out `applicationId` and `accessKey` in the `Info.plist`
 
 ## Graph Profile Sample
 
