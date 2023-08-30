@@ -6,15 +6,11 @@
 	<dict>
 		<key>Headers/PWAPIManager.h</key>
 		<data>
-		J1pXMRyTluP+mal7bKR1gjRjfVU=
+		OjjQiNgnRBGfkjEDlw8ybI1vsbY=
 		</data>
 		<key>Headers/PWAPIOperation.h</key>
 		<data>
-		RDgI15pAik/kc0HwI6yr9eZ5Prs=
-		</data>
-		<key>Headers/PWAPIRequestOperation.h</key>
-		<data>
-		AXSVjlwT08eQaMmaQ2TsWSA4rG4=
+		8AuB+U62gy9PP7B3RMzMa1+l+Vk=
 		</data>
 		<key>Headers/PWAnalytics.h</key>
 		<data>
@@ -30,7 +26,7 @@
 		</data>
 		<key>Headers/PWCore.h</key>
 		<data>
-		TzRWNy5rFtiWYPPiuMh/I3oVYDI=
+		CVTPo4gFk4+3X74RHPJp8MUxgjQ=
 		</data>
 		<key>Headers/PWCoreDevice.h</key>
 		<data>
@@ -75,21 +71,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4L58tEy3CJZ4RHb6q+YQa++3XuduZfFTRjXT7brr3gA=
+			Juql95t3TgEhUHNBKNqmynRoh1Di3nFlnqd/CI/3W5M=
 			</data>
 		</dict>
 		<key>Headers/PWAPIOperation.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AGLXq3h9S0OQC9YXNRFnG3uq14k6FwS7Eh0cAe7oIlQ=
-			</data>
-		</dict>
-		<key>Headers/PWAPIRequestOperation.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6BDdYU7MSJK5Jp44FYpwzqeVbNFzJ5m6q9zADqbdDqA=
+			BjzHZ83YvUD2QrEInHNIeoBxUNWdRW8yO1E2xyb06SQ=
 			</data>
 		</dict>
 		<key>Headers/PWAnalytics.h</key>
@@ -117,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iMwJO2iWwbF7gKyMe12zOKCn98AR5ywl6N1liz38sMo=
+			r3iPninrriQl6o19hXiofVUSXbG/6EIrrBccsoHL/Qw=
 			</data>
 		</dict>
 		<key>Headers/PWCoreDevice.h</key>
