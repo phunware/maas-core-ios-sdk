@@ -420,6 +420,32 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PWNetworkMonitor",
+                "printedName": "PWCore.PWNetworkMonitor",
+                "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(im)init",
+            "mangledName": "$s6PWCore16PWNetworkMonitorCACycfc",
+            "moduleName": "PWCore",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "isConnected",
             "printedName": "isConnected",
@@ -604,7 +630,6 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"

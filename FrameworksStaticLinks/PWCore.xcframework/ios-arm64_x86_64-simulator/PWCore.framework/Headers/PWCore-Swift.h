@@ -319,8 +319,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 + (NSNotificationName _Nonnull)networkMonitorStatusDidChange SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PWNetworkMonitor * _Nonnull shared;)
 + (PWNetworkMonitor * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) BOOL isConnected;
 @property (nonatomic, readonly) BOOL isConnectedViaWifi;
 @property (nonatomic, readonly) BOOL isConnectedViaCellular;
@@ -657,8 +656,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 + (NSNotificationName _Nonnull)networkMonitorStatusDidChange SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PWNetworkMonitor * _Nonnull shared;)
 + (PWNetworkMonitor * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) BOOL isConnected;
 @property (nonatomic, readonly) BOOL isConnectedViaWifi;
 @property (nonatomic, readonly) BOOL isConnectedViaCellular;
