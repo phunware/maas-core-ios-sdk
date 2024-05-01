@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PWLoggableObject.h"
+#import <PWCore/PWLoggableObject.h>
 
 typedef NS_ENUM(NSUInteger, PWLogType) {
     PWLogTypeError,
