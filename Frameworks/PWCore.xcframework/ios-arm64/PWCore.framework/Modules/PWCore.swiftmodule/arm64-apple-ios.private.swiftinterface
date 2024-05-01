@@ -13,9 +13,10 @@ import _SwiftConcurrencyShims
   @objc public func dataTask(method: String, urlString: String, parameters: [AnyHashable : Any]? = nil, headers: [String : String]? = nil, success: ((Any) -> Void)? = nil, failure: ((NSError) -> Void)? = nil) -> URLSessionDataTask?
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class PWNetworkMonitor : NSObject {
+@objc @_inheritsConvenienceInitializers @objcMembers public class PWNetworkMonitor : NSObject {
   @objc public static let networkMonitorStatusDidChange: Foundation.Notification.Name
   @objc public static let shared: PWCore.PWNetworkMonitor
+  @objc override dynamic public init()
   @objc public var isConnected: Bool {
     @objc get
   }
