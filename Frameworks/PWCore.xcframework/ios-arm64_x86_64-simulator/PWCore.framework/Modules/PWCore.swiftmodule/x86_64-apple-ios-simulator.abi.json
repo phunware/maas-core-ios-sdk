@@ -15,6 +15,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PWCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "PWHTTPSessionManager",
         "printedName": "PWHTTPSessionManager",
@@ -310,8 +320,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PWNetworkMonitor",
-        "printedName": "PWNetworkMonitor",
+        "name": "PWCore",
+        "printedName": "PWCore",
         "children": [
           {
             "kind": "Var",
@@ -326,17 +336,17 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(cpy)networkMonitorStatusDidChange",
-            "mangledName": "$s6PWCore16PWNetworkMonitorC07networkC15StatusDidChangeSo18NSNotificationNameavpZ",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cpy)networkMonitorStatusDidChange",
+            "mangledName": "$sSo6PWCoreCAAE29networkMonitorStatusDidChangeSo18NSNotificationNameavpZ",
             "moduleName": "PWCore",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
               "ObjC"
             ],
+            "isFromExtension": true,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -353,45 +363,42 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(cm)networkMonitorStatusDidChange",
-                "mangledName": "$s6PWCore16PWNetworkMonitorC07networkC15StatusDidChangeSo18NSNotificationNameavgZ",
+                "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)networkMonitorStatusDidChange",
+                "mangledName": "$sSo6PWCoreCAAE29networkMonitorStatusDidChangeSo18NSNotificationNameavgZ",
                 "moduleName": "PWCore",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "ObjC",
+                  "Final"
                 ],
+                "isFromExtension": true,
                 "accessorKind": "get"
               }
             ]
           },
           {
             "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
+            "name": "hasNetworkConnectivity",
+            "printedName": "hasNetworkConnectivity",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PWNetworkMonitor",
-                "printedName": "PWCore.PWNetworkMonitor",
-                "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(cpy)shared",
-            "mangledName": "$s6PWCore16PWNetworkMonitorC6sharedACvpZ",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cpy)hasNetworkConnectivity",
+            "mangledName": "$sSo6PWCoreCAAE22hasNetworkConnectivitySbvpZ",
             "moduleName": "PWCore",
             "static": true,
             "declAttributes": [
-              "HasInitialValue",
               "Final",
-              "HasStorage",
-              "AccessControl",
               "ObjC"
             ],
-            "isLet": true,
-            "hasStorage": true,
+            "isFromExtension": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -400,55 +407,29 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "PWNetworkMonitor",
-                    "printedName": "PWCore.PWNetworkMonitor",
-                    "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(cm)shared",
-                "mangledName": "$s6PWCore16PWNetworkMonitorC6sharedACvgZ",
+                "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)hasNetworkConnectivity",
+                "mangledName": "$sSo6PWCoreCAAE22hasNetworkConnectivitySbvgZ",
                 "moduleName": "PWCore",
                 "static": true,
-                "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "ObjC",
+                  "Final"
                 ],
+                "isFromExtension": true,
                 "accessorKind": "get"
               }
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PWNetworkMonitor",
-                "printedName": "PWCore.PWNetworkMonitor",
-                "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(im)init",
-            "mangledName": "$s6PWCore16PWNetworkMonitorCACycfc",
-            "moduleName": "PWCore",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Var",
-            "name": "isConnected",
-            "printedName": "isConnected",
+            "name": "isNetworkConnectedViaWifi",
+            "printedName": "isNetworkConnectedViaWifi",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -458,13 +439,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(py)isConnected",
-            "mangledName": "$s6PWCore16PWNetworkMonitorC11isConnectedSbvp",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cpy)isNetworkConnectedViaWifi",
+            "mangledName": "$sSo6PWCoreCAAE25isNetworkConnectedViaWifiSbvpZ",
             "moduleName": "PWCore",
+            "static": true,
             "declAttributes": [
-              "AccessControl",
+              "Final",
               "ObjC"
             ],
+            "isFromExtension": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -479,20 +462,23 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(im)isConnected",
-                "mangledName": "$s6PWCore16PWNetworkMonitorC11isConnectedSbvg",
+                "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)isNetworkConnectedViaWifi",
+                "mangledName": "$sSo6PWCoreCAAE25isNetworkConnectedViaWifiSbvgZ",
                 "moduleName": "PWCore",
+                "static": true,
                 "declAttributes": [
-                  "ObjC"
+                  "ObjC",
+                  "Final"
                 ],
+                "isFromExtension": true,
                 "accessorKind": "get"
               }
             ]
           },
           {
             "kind": "Var",
-            "name": "isConnectedViaWifi",
-            "printedName": "isConnectedViaWifi",
+            "name": "isNetworkConnectedViaCellular",
+            "printedName": "isNetworkConnectedViaCellular",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -502,13 +488,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(py)isConnectedViaWifi",
-            "mangledName": "$s6PWCore16PWNetworkMonitorC18isConnectedViaWifiSbvp",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cpy)isNetworkConnectedViaCellular",
+            "mangledName": "$sSo6PWCoreCAAE29isNetworkConnectedViaCellularSbvpZ",
             "moduleName": "PWCore",
+            "static": true,
             "declAttributes": [
-              "AccessControl",
+              "Final",
               "ObjC"
             ],
+            "isFromExtension": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -523,64 +511,23 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(im)isConnectedViaWifi",
-                "mangledName": "$s6PWCore16PWNetworkMonitorC18isConnectedViaWifiSbvg",
+                "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)isNetworkConnectedViaCellular",
+                "mangledName": "$sSo6PWCoreCAAE29isNetworkConnectedViaCellularSbvgZ",
                 "moduleName": "PWCore",
+                "static": true,
                 "declAttributes": [
-                  "ObjC"
+                  "ObjC",
+                  "Final"
                 ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isConnectedViaCellular",
-            "printedName": "isConnectedViaCellular",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(py)isConnectedViaCellular",
-            "mangledName": "$s6PWCore16PWNetworkMonitorC22isConnectedViaCellularSbvp",
-            "moduleName": "PWCore",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(im)isConnectedViaCellular",
-                "mangledName": "$s6PWCore16PWNetworkMonitorC22isConnectedViaCellularSbvg",
-                "moduleName": "PWCore",
-                "declAttributes": [
-                  "ObjC"
-                ],
+                "isFromExtension": true,
                 "accessorKind": "get"
               }
             ]
           },
           {
             "kind": "Function",
-            "name": "start",
-            "printedName": "start()",
+            "name": "startNetworkMonitor",
+            "printedName": "startNetworkMonitor()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -589,19 +536,21 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(im)start",
-            "mangledName": "$s6PWCore16PWNetworkMonitorC5startyyF",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)startNetworkMonitor",
+            "mangledName": "$sSo6PWCoreCAAE19startNetworkMonitoryyFZ",
             "moduleName": "PWCore",
+            "static": true,
             "declAttributes": [
-              "AccessControl",
+              "Final",
               "ObjC"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "stop",
-            "printedName": "stop()",
+            "name": "stopNetworkMonitor",
+            "printedName": "stopNetworkMonitor()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -610,26 +559,29 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor(im)stop",
-            "mangledName": "$s6PWCore16PWNetworkMonitorC4stopyyF",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)stopNetworkMonitor",
+            "mangledName": "$sSo6PWCoreCAAE18stopNetworkMonitoryyFZ",
             "moduleName": "PWCore",
+            "static": true,
             "declAttributes": [
-              "AccessControl",
+              "Final",
               "ObjC"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@PWCore@objc(cs)PWNetworkMonitor",
-        "mangledName": "$s6PWCore16PWNetworkMonitorC",
+        "usr": "c:objc(cs)PWCore",
         "moduleName": "PWCore",
+        "isOpen": true,
+        "objc_name": "PWCore",
         "declAttributes": [
-          "AccessControl",
-          "ObjCMembers",
-          "ObjC"
+          "ObjC",
+          "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -691,6 +643,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/PWCore+NetworkMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 259,
+      "length": 48,
+      "value": "\"PWNetworkMonitor.networkMonitorStatusDidChange\""
+    },
+    {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/PWHTTPSessionManager.swift",
       "kind": "Array",
       "offset": 298,
@@ -717,13 +676,6 @@
       "offset": 4349,
       "length": 37,
       "value": "\"com.phunware.network.response.error\""
-    },
-    {
-      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/PWNetworkMonitor.swift",
-      "kind": "StringLiteral",
-      "offset": 304,
-      "length": 48,
-      "value": "\"PWNetworkMonitor.networkMonitorStatusDidChange\""
     }
   ]
 }
