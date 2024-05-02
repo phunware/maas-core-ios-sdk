@@ -278,7 +278,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import ObjectiveC;
 #endif
 
 #import <PWCore/PWCore.h>
@@ -315,17 +314,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isNetworkConnec
 + (void)stopNetworkMonitor;
 @end
 
-@class NSURLSessionConfiguration;
 @class NSString;
+@class NSObject;
 @class NSError;
 @class NSURLSessionDataTask;
 
-SWIFT_CLASS("_TtC6PWCore20PWHTTPSessionManager")
-@interface PWHTTPSessionManager : NSObject
-- (nonnull instancetype)initWithConfiguration:(NSURLSessionConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
-- (NSURLSessionDataTask * _Nullable)dataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nonnull))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@interface NSURLSession (SWIFT_EXTENSION(PWCore))
++ (NSURLSessionDataTask * _Nullable)apiDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nonnull))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
++ (NSURLSessionDataTask * _Nullable)jwtDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nonnull))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif
