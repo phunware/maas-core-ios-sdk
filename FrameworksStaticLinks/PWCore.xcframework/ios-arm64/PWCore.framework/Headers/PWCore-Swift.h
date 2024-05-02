@@ -281,6 +281,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 #endif
 
+#import <PWCore/PWCore.h>
+
 #endif
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
@@ -299,6 +301,20 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+@interface PWCore (SWIFT_EXTENSION(PWCore))
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull networkMonitorStatusDidChange;)
++ (NSNotificationName _Nonnull)networkMonitorStatusDidChange SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL hasNetworkConnectivity;)
++ (BOOL)hasNetworkConnectivity SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isNetworkConnectedViaWifi;)
++ (BOOL)isNetworkConnectedViaWifi SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isNetworkConnectedViaCellular;)
++ (BOOL)isNetworkConnectedViaCellular SWIFT_WARN_UNUSED_RESULT;
++ (void)startNetworkMonitor;
++ (void)stopNetworkMonitor;
+@end
+
 @class NSURLSessionConfiguration;
 @class NSString;
 @class NSError;
@@ -310,21 +326,6 @@ SWIFT_CLASS("_TtC6PWCore20PWHTTPSessionManager")
 - (NSURLSessionDataTask * _Nullable)dataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nonnull))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC6PWCore16PWNetworkMonitor")
-@interface PWNetworkMonitor : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull networkMonitorStatusDidChange;)
-+ (NSNotificationName _Nonnull)networkMonitorStatusDidChange SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PWNetworkMonitor * _Nonnull shared;)
-+ (PWNetworkMonitor * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic, readonly) BOOL isConnected;
-@property (nonatomic, readonly) BOOL isConnectedViaWifi;
-@property (nonatomic, readonly) BOOL isConnectedViaCellular;
-- (void)start;
-- (void)stop;
 @end
 
 #endif
