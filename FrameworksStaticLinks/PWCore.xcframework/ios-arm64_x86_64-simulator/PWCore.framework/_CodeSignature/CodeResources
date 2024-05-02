@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/PWCore-Swift.h</key>
 		<data>
-		K5JTrO4ZL72JnLgChWoPoTypf0c=
+		oVQY/0luFnfOb54/Vgi4Ma8rkcs=
 		</data>
 		<key>Headers/PWCore.h</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		0RmI079l9bds+21vOByNEerxaZs=
+		tHAzd7liG0VNDVU4BAZwF2bt8BQ=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		IizWe6EAXAzdy/T1iwWVCrQCioY=
+		9vKM6yBBeI2Xt5C4bdU5FFPYd7U=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -78,19 +78,19 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IizWe6EAXAzdy/T1iwWVCrQCioY=
+		9vKM6yBBeI2Xt5C4bdU5FFPYd7U=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fczLN29+xLf+FRs9ASToxPiGhDo=
+		cnlaQTsuWv8+VBkSbZsBIMH1gOE=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0RmI079l9bds+21vOByNEerxaZs=
+		tHAzd7liG0VNDVU4BAZwF2bt8BQ=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aZaeFWD42pBNaSa3JF4wIIhgrhw=
+		hF/xjue3xTtrqfRYPxKQ3DMpXRg=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aZaeFWD42pBNaSa3JF4wIIhgrhw=
+		hF/xjue3xTtrqfRYPxKQ3DMpXRg=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lKu0hh5jJzxRP0GQcOJMezodkIQ=
+		1YtZ0aw4LCsSP1r0KSxZQ0jBOHE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -150,7 +150,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iAJx3asqpSWH3MONneXXW7GvvKWUlmmepVP2goGHly0=
+			TACnavBKHcvgGpyIHdCPJTbHdh7GgRZz4pRNKfUEiT0=
 			</data>
 		</dict>
 		<key>Headers/PWCore.h</key>
@@ -213,14 +213,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SpfwOow4bOuvbsvOKjuBFmctlmlLDi9LUU2498YLNH0=
+			S/JeEXU7XmUHC12/uD+F3LDt/CkquBZoVV0dgRcy6mo=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GJ+HRMjE3HJa3D3Iy5oOWxYN5dSeMbplWnx14UonrFA=
+			AsXSbSWVRAQbKS/a9EQMR92Od1UQVElVffpUD1UAjbQ=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -234,28 +234,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GJ+HRMjE3HJa3D3Iy5oOWxYN5dSeMbplWnx14UonrFA=
+			AsXSbSWVRAQbKS/a9EQMR92Od1UQVElVffpUD1UAjbQ=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PvmFvbO06fwBgI0NKrXSUPPfAwnj+/URQGbLXZqqXdo=
+			/koMWlrBnLiefgnNxM/hZGd9XzTYIZF+HMxrNyie3Po=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SpfwOow4bOuvbsvOKjuBFmctlmlLDi9LUU2498YLNH0=
+			S/JeEXU7XmUHC12/uD+F3LDt/CkquBZoVV0dgRcy6mo=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fjgT8UdlZb3zRDBO2V2KSjniVHhNECA2ry8LyMhpUHE=
+			UeLLd06MDkm72oOsUXwHrrKsoyCBuxK09pD+69wKy2M=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -269,14 +269,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fjgT8UdlZb3zRDBO2V2KSjniVHhNECA2ry8LyMhpUHE=
+			UeLLd06MDkm72oOsUXwHrrKsoyCBuxK09pD+69wKy2M=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NqKPDCzxAG+7XczPi/MxhbA7wgLN5EH+0PeiUyHAm3w=
+			ksAaBddQoS1zpMA6uBxCCczX0Kh91A/Wc9wBJ0mLxjg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

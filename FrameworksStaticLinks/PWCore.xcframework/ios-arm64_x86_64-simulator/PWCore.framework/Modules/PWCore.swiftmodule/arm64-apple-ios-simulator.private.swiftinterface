@@ -22,8 +22,7 @@ extension PWCore {
   @objc public static func startNetworkMonitor()
   @objc public static func stopNetworkMonitor()
 }
-@objc @objcMembers public class PWHTTPSessionManager : NSObject {
-  @objc public init(configuration: URLSessionConfiguration)
-  @objc public func dataTask(method: String, urlString: String, parameters: [AnyHashable : Any]? = nil, headers: [String : String]? = nil, success: ((Any) -> Void)? = nil, failure: ((NSError) -> Void)? = nil) -> URLSessionDataTask?
-  @objc deinit
+extension URLSession {
+  @objc public static func apiDataTask(method: String, urlString: String, parameters: [AnyHashable : Any]? = nil, headers: [String : String]? = nil, success: ((Any) -> Void)? = nil, failure: ((NSError) -> Void)? = nil) -> URLSessionDataTask?
+  @objc public static func jwtDataTask(method: String, urlString: String, parameters: [AnyHashable : Any]? = nil, headers: [String : String]? = nil, success: ((Any) -> Void)? = nil, failure: ((NSError) -> Void)? = nil) -> URLSessionDataTask?
 }
