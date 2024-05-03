@@ -467,12 +467,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Any) -> ())?",
+                "printedName": "((Any?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Any) -> ()",
+                    "printedName": "(Any?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -481,8 +481,16 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
                       }
                     ]
                   }
@@ -520,7 +528,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@PWCore@@objc(cs)NSURLSession(cm)apiDataTaskWithMethod:urlString:parameters:headers:success:failure:",
-            "mangledName": "$sSo12NSURLSessionC6PWCoreE11apiDataTask6method9urlString10parameters7headers7success7failureSo0adE0CSgSS_SSSDys11AnyHashableVypGSgSDyS2SGSgyypcSgySo7NSErrorCcSgtFZ",
+            "mangledName": "$sSo12NSURLSessionC6PWCoreE11apiDataTask6method9urlString10parameters7headers7success7failureSo0adE0CSgSS_SSSDys11AnyHashableVypGSgSDyS2SGSgyypSgcSgySo7NSErrorCcSgtFZ",
             "moduleName": "PWCore",
             "static": true,
             "objc_name": "apiDataTaskWithMethod:urlString:parameters:headers:success:failure:",
@@ -622,12 +630,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Any) -> ())?",
+                "printedName": "((Any?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Any) -> ()",
+                    "printedName": "(Any?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -636,8 +644,16 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
                       }
                     ]
                   }
@@ -675,7 +691,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@PWCore@@objc(cs)NSURLSession(cm)jwtDataTaskWithMethod:urlString:parameters:headers:success:failure:",
-            "mangledName": "$sSo12NSURLSessionC6PWCoreE11jwtDataTask6method9urlString10parameters7headers7success7failureSo0adE0CSgSS_SSSDys11AnyHashableVypGSgSDyS2SGSgyypcSgySo7NSErrorCcSgtFZ",
+            "mangledName": "$sSo12NSURLSessionC6PWCoreE11jwtDataTask6method9urlString10parameters7headers7success7failureSo0adE0CSgSS_SSSDys11AnyHashableVypGSgSDyS2SGSgyypSgcSgySo7NSErrorCcSgtFZ",
             "moduleName": "PWCore",
             "static": true,
             "objc_name": "jwtDataTaskWithMethod:urlString:parameters:headers:success:failure:",
@@ -920,7 +936,7 @@
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4331,
+      "offset": 4523,
       "length": 37,
       "value": "\"com.phunware.network.response.error\""
     }
