@@ -23,6 +23,6 @@ extension PWCore {
   @objc public static func stopNetworkMonitor()
 }
 extension URLSession {
-  @objc public static func apiDataTask(method: String, urlString: String, parameters: [AnyHashable : Any]? = nil, headers: [String : String]? = nil, success: ((Any) -> Void)? = nil, failure: ((NSError) -> Void)? = nil) -> URLSessionDataTask?
-  @objc public static func jwtDataTask(method: String, urlString: String, parameters: [AnyHashable : Any]? = nil, headers: [String : String]? = nil, success: ((Any) -> Void)? = nil, failure: ((NSError) -> Void)? = nil) -> URLSessionDataTask?
+  @objc public static func apiDataTask(method: String, urlString: String, parameters: [AnyHashable : Any]? = nil, headers: [String : String]? = nil, success: ((Any?) -> Void)? = nil, failure: ((NSError) -> Void)? = nil) -> URLSessionDataTask?
+  @objc public static func jwtDataTask(method: String, urlString: String, parameters: [AnyHashable : Any]? = nil, headers: [String : String]? = nil, success: ((Any?) -> Void)? = nil, failure: ((NSError) -> Void)? = nil) -> URLSessionDataTask?
 }

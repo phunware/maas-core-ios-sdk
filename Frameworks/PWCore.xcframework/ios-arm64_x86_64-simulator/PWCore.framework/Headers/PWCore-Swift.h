@@ -320,8 +320,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isNetworkConnec
 @class NSURLSessionDataTask;
 
 @interface NSURLSession (SWIFT_EXTENSION(PWCore))
-+ (NSURLSessionDataTask * _Nullable)apiDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nonnull))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
-+ (NSURLSessionDataTask * _Nullable)jwtDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nonnull))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
++ (NSURLSessionDataTask * _Nullable)apiDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nullable))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
++ (NSURLSessionDataTask * _Nullable)jwtDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nullable))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif
@@ -654,8 +654,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isNetworkConnec
 @class NSURLSessionDataTask;
 
 @interface NSURLSession (SWIFT_EXTENSION(PWCore))
-+ (NSURLSessionDataTask * _Nullable)apiDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nonnull))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
-+ (NSURLSessionDataTask * _Nullable)jwtDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nonnull))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
++ (NSURLSessionDataTask * _Nullable)apiDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nullable))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
++ (NSURLSessionDataTask * _Nullable)jwtDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nullable))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif
