@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.author = { 'Phunware, Inc.' => 'https://www.phunware.com' }
   spec.social_media_url = 'https://twitter.com/phunware'
 
-  spec.platform = :ios, '15.1'
+  spec.platform = :ios, '15.5'
   spec.source = { :git => "https://github.com/phunware/maas-core-ios-sdk.git", :tag => "#{spec.version}" }
   spec.documentation_url = 'https://phunware.github.io/maas-core-ios-sdk/'
 
@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
    'Core'
 
   spec.subspec 'Core' do |subspec|
-    subspec.dependency 'SSZipArchive', '~> 2.4.0'
+    subspec.dependency 'SSZipArchive', '~> 2.5.5'
     subspec.dependency 'TMCache', '~> 2.1.0'
 
     subspec.vendored_frameworks = 'Frameworks/PWCore.xcframework'
