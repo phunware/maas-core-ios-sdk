@@ -35,10 +35,7 @@ typedef void (^PWAPIOperationFailure)(PWAPIOperation *operation, NSError *error)
 @property (nonatomic, copy, nullable) PWAPIOperationFailure failureBlock;
 
 - (instancetype)init NS_UNAVAILABLE;
-- (instancetype)initWithHTTPMethod:(PWHTTPMethod)HTTPMethod
-                         URLString:(NSString *)URLString
-                        parameters:(id _Nullable)parameters
-                           headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithHTTPMethod:(PWHTTPMethod)HTTPMethod URLString:(NSString *)URLString parameters:(id _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers NS_DESIGNATED_INITIALIZER;
 
 @end
 

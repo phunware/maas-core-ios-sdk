@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PWLoggableObject.h"
+#import <PWCore/PWLoggableObject.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, PWLogType) {
     PWLogTypeError,
@@ -26,7 +28,7 @@ typedef NS_ENUM(NSUInteger, PWLogType) {
 /**
  * A dictionary with the log message details.
  */
-@property (nonatomic, readonly) NSDictionary* details;
+@property (nonatomic, readonly, nullable) NSDictionary *details;
 
 /**
  * The name of the service that corresponds to the message.
@@ -69,13 +71,7 @@ typedef NS_ENUM(NSUInteger, PWLogType) {
  * @param line The line number inside the file where the message was logged.
  * @return An instance of a log message object.
  */
-- (instancetype)initWithMessage:(NSString *)message
-                        details:(NSDictionary *)details
-                    serviceName:(NSString *)serviceName
-                           type:(PWLogType)type
-                           file:(NSString *)file
-                       function:(NSString *)function
-                           line:(NSUInteger)line;
+- (instancetype)initWithMessage:(NSString *)message details:(NSDictionary * _Nullable)details serviceName:(NSString *)serviceName type:(PWLogType)type file:(NSString * _Nullable)file function:(NSString * _Nullable)function line:(NSUInteger)line;
 /**
  * The JSON representation of the log message.
  * @returns A string containing the JSON representation of the log message.
@@ -83,3 +79,5 @@ typedef NS_ENUM(NSUInteger, PWLogType) {
 - (NSString *)jsonRepresentation;
 
 @end
+
+NS_ASSUME_NONNULL_END

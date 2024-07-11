@@ -1,0 +1,937 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PWCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PWCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PWCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PWCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "PWCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PWCore",
+        "printedName": "PWCore",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "networkMonitorStatusDidChange",
+            "printedName": "networkMonitorStatusDidChange",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cpy)networkMonitorStatusDidChange",
+            "mangledName": "$sSo6PWCoreCAAE29networkMonitorStatusDidChangeSo18NSNotificationNameavpZ",
+            "moduleName": "PWCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)networkMonitorStatusDidChange",
+                "mangledName": "$sSo6PWCoreCAAE29networkMonitorStatusDidChangeSo18NSNotificationNameavgZ",
+                "moduleName": "PWCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasNetworkConnectivity",
+            "printedName": "hasNetworkConnectivity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cpy)hasNetworkConnectivity",
+            "mangledName": "$sSo6PWCoreCAAE22hasNetworkConnectivitySbvpZ",
+            "moduleName": "PWCore",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)hasNetworkConnectivity",
+                "mangledName": "$sSo6PWCoreCAAE22hasNetworkConnectivitySbvgZ",
+                "moduleName": "PWCore",
+                "static": true,
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isNetworkConnectedViaWifi",
+            "printedName": "isNetworkConnectedViaWifi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cpy)isNetworkConnectedViaWifi",
+            "mangledName": "$sSo6PWCoreCAAE25isNetworkConnectedViaWifiSbvpZ",
+            "moduleName": "PWCore",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)isNetworkConnectedViaWifi",
+                "mangledName": "$sSo6PWCoreCAAE25isNetworkConnectedViaWifiSbvgZ",
+                "moduleName": "PWCore",
+                "static": true,
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isNetworkConnectedViaCellular",
+            "printedName": "isNetworkConnectedViaCellular",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cpy)isNetworkConnectedViaCellular",
+            "mangledName": "$sSo6PWCoreCAAE29isNetworkConnectedViaCellularSbvpZ",
+            "moduleName": "PWCore",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)isNetworkConnectedViaCellular",
+                "mangledName": "$sSo6PWCoreCAAE29isNetworkConnectedViaCellularSbvgZ",
+                "moduleName": "PWCore",
+                "static": true,
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startNetworkMonitor",
+            "printedName": "startNetworkMonitor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)startNetworkMonitor",
+            "mangledName": "$sSo6PWCoreCAAE19startNetworkMonitoryyFZ",
+            "moduleName": "PWCore",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopNetworkMonitor",
+            "printedName": "stopNetworkMonitor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PWCore@@objc(cs)PWCore(cm)stopNetworkMonitor",
+            "mangledName": "$sSo6PWCoreCAAE18stopNetworkMonitoryyFZ",
+            "moduleName": "PWCore",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)PWCore",
+        "moduleName": "PWCore",
+        "isOpen": true,
+        "objc_name": "PWCore",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "apiDataTask",
+            "printedName": "apiDataTask(method:urlString:parameters:headers:success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLSessionDataTask?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionDataTask",
+                    "printedName": "Foundation.URLSessionDataTask",
+                    "usr": "c:objc(cs)NSURLSessionDataTask"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Any?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Any?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PWCore@@objc(cs)NSURLSession(cm)apiDataTaskWithMethod:urlString:parameters:headers:success:failure:",
+            "mangledName": "$sSo12NSURLSessionC6PWCoreE11apiDataTask6method9urlString10parameters7headers7success7failureSo0adE0CSgSS_SSSDys11AnyHashableVypGSgSDyS2SGSgyypSgcSgySo7NSErrorCcSgtFZ",
+            "moduleName": "PWCore",
+            "static": true,
+            "objc_name": "apiDataTaskWithMethod:urlString:parameters:headers:success:failure:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "jwtDataTask",
+            "printedName": "jwtDataTask(method:urlString:parameters:headers:success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLSessionDataTask?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionDataTask",
+                    "printedName": "Foundation.URLSessionDataTask",
+                    "usr": "c:objc(cs)NSURLSessionDataTask"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Any?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Any?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PWCore@@objc(cs)NSURLSession(cm)jwtDataTaskWithMethod:urlString:parameters:headers:success:failure:",
+            "mangledName": "$sSo12NSURLSessionC6PWCoreE11jwtDataTask6method9urlString10parameters7headers7success7failureSo0adE0CSgSS_SSSDys11AnyHashableVypGSgSDyS2SGSgyypSgcSgySo7NSErrorCcSgtFZ",
+            "moduleName": "PWCore",
+            "static": true,
+            "objc_name": "jwtDataTaskWithMethod:urlString:parameters:headers:success:failure:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/PWCore+NetworkMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 259,
+      "length": 48,
+      "value": "\"PWNetworkMonitor.networkMonitorStatusDidChange\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 379,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 429,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 479,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
+      "length": 17,
+      "value": "\"Accept-Encoding\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 601,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 617,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 634,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 666,
+      "length": 8,
+      "value": "\"Accept\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 677,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 955,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1005,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1107,
+      "length": 17,
+      "value": "\"Accept-Encoding\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1127,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1143,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1160,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1192,
+      "length": 8,
+      "value": "\"Accept\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1203,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/PWHTTPSessionManager.swift",
+      "kind": "Array",
+      "offset": 282,
+      "length": 25,
+      "value": "[\"GET\", \"HEAD\", \"DELETE\"]"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/PWHTTPSessionManager.swift",
+      "kind": "Array",
+      "offset": 373,
+      "length": 52,
+      "value": "[\"text\/json\", \"application\/json\", \"text\/javascript\"]"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/PWHTTPSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4519,
+      "length": 37,
+      "value": "\"com.phunware.network.response.error\""
+    }
+  ]
+}
