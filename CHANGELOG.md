@@ -1,4 +1,11 @@
 # PWCore Changelog
+
+## 3.13.0 (TBD)  
+### Features
+* Added privacy manifests
+* Bumped minimum iOS deployment target to 15.5
+* Improved nullability annotations
+
 ## 3.12.2 (Wednesday, Aug 30, 2023)  
 ### Bug fixes
 * Fixed an issue where an API request would fail after successfully refreshing an expired authorization header.

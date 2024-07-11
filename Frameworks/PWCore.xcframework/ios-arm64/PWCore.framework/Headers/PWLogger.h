@@ -10,9 +10,23 @@
 
 #import <PWCore/PWLogMessage.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 extern NSString * const kPWLogCategoryKey;
 extern NSString * const kPWLogCategoryNetworking;
 extern NSString * const kPWLogCategoryGeneral;
+
+extern void __attribute__((overloadable)) PWLogError(NSString *service, NSString *message);
+extern void __attribute__((overloadable)) PWLogError(NSString *service, NSString *message, NSDictionary * _Nullable details);
+
+extern void __attribute__((overloadable)) PWLogWarning(NSString *service, NSString *message);
+extern void __attribute__((overloadable)) PWLogWarning(NSString *service, NSString *message, NSDictionary * _Nullable details);
+
+extern void __attribute__((overloadable)) PWLogInfo(NSString *service, NSString *message);
+extern void __attribute__((overloadable)) PWLogInfo(NSString *service, NSString *message, NSDictionary * _Nullable details);
+
+extern void __attribute__((overloadable)) PWLogDebug(NSString *service, NSString *message);
+extern void __attribute__((overloadable)) PWLogDebug(NSString *service, NSString *message, NSDictionary * _Nullable details);
 
 typedef NS_ENUM(NSUInteger, PWLogLevel) {
     /** Specifies all logging as disabled. This is the default logging level.
@@ -37,11 +51,11 @@ typedef NS_ENUM(NSUInteger, PWLogLevel) {
 };
 
 
-@protocol PWLogger <NSObject>
+@protocol PWLogging <NSObject>
 
 /**
  * The name of the service that corresponds to the logger. 
- * @discussion Each logger will only log messages tagged with the same service name as teh logger.
+ * @discussion Each logger will only log messages tagged with the same service name as the logger.
  */
 @property (nonatomic, readonly) NSString *serviceName;
 /** 
@@ -109,19 +123,19 @@ typedef NS_ENUM(NSUInteger, PWLogLevel) {
  * @param dictionary A dictionary of values to store in the log.
  */
 
-+ (void)logForService:(NSString*)serviceName message:(NSString*)message type:(PWLogType)type file:(const char *)file function:(const char *)function line:(NSUInteger)line dictionary:(NSDictionary*)dictionary;
++ (void)logForService:(NSString *)serviceName message:(NSString *)message type:(PWLogType)type file:(const char *)file function:(const char *)function line:(NSUInteger)line dictionary:(NSDictionary * _Nullable)dictionary;
 
 /**
  * Adds a logger to the logging module.
- * @param logger The logger to add. It must implement the PWLogger.
+ * @param logger The logger to add. It must conform to PWLogging.
  */
-+ (void)addLogger:(id<PWLogger>)logger;
++ (void)addLogger:(id<PWLogging>)logger;
 
 /**
  * Removes a logger from the logging module
  * @param logger The logger to remove.
  */
-+ (void)removeLogger:(id<PWLogger>)logger;
++ (void)removeLogger:(id<PWLogging>)logger;
 
 /**
  * Sets all the loggers log level.
@@ -153,28 +167,6 @@ typedef NS_ENUM(NSUInteger, PWLogLevel) {
  */
 + (void)emailLogsForService:(NSString *)serviceName;
 
-
-#ifdef PWLOGGER_LOG_INTERNAL_INFORMATION
-#define TOP_LEVEL_ERROR_LOG NSLog(@"Exception while logging at file:'%@', function:'%@' line:'%d' exception:'%@'.",[NSString stringWithFormat:@"%s", __FILE__],[NSString stringWithFormat:@"%s", __PRETTY_FUNCTION__],__LINE__,[exception description]);
-#else
-#define TOP_LEVEL_ERROR_LOG NSLog(@"Logging exception: '%@'.",[exception description]);
-#endif
-
-
-#define PWLogInt(logtyp,svc,msg,...)    @try {              \
-[PWLogger logForService:svc                      \
-message:msg                      \
-type:logtyp                   \
-file : __FILE__                \
-function : __PRETTY_FUNCTION__     \
-line : __LINE__                \
-dictionary : (@[__VA_ARGS__].firstObject?__VA_ARGS__:nil)]; } \
-@catch (NSException *exception) { TOP_LEVEL_ERROR_LOG }
-
-
-#define PWLogError(svc,message, ...)   PWLogInt(PWLogTypeError,svc,message, __VA_ARGS__)
-#define PWLogWarning(svc,message, ...)   PWLogInt(PWLogTypeWarning,svc,message, __VA_ARGS__)
-#define PWLogInfo(svc,message, ...)   PWLogInt(PWLogTypeInfo,svc,message, __VA_ARGS__)
-#define PWLogDebug(svc,message, ...)   PWLogInt(PWLogTypeDebug,svc,message, __VA_ARGS__)
-
 @end
+
+NS_ASSUME_NONNULL_END

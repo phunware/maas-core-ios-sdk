@@ -12,16 +12,16 @@
 #import <PWCore/PWLogger.h>
 #import <PWCore/PWConsoleLogger.h>
 #import <PWCore/PWFileLogger.h>
+#import <PWCore/PWLogMessage.h>
 #import <PWCore/PWLoggableObject.h>
 #import <PWCore/PWBundleManager.h>
 #import <PWCore/PWAPIManager.h>
 #import <PWCore/PWAPIOperation.h>
 #import <PWCore/PWCoreDevice.h>
-#import <PWCore/PWFeatureFlagger.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-static NSString * const PWCoreVersion = @"3.12.2";
+static NSString * const PWCoreVersion = @"3.13.0";
 
 /**
  `PWCore` implements core functionality used in all MaaS modules. All MaaS modules have a `PWCore` dependency.
@@ -44,8 +44,7 @@ typedef NS_CLOSED_ENUM(NSInteger, PWEnvironment) {
  @param applicationID You can find your Application ID in the MaaS portal.
  @param accessKey A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.
  */
-+ (void)setApplicationID:(NSString *)applicationID
-               accessKey:(NSString *)accessKey;
++ (void)setApplicationID:(NSString *)applicationID accessKey:(NSString *)accessKey;
 
 /**
  Returns the MaaS Application ID.
@@ -112,10 +111,10 @@ typedef NS_CLOSED_ENUM(NSInteger, PWEnvironment) {
 
 #pragma mark Analytics
 
-+ (void)sendInternalAnalyticsPayload:(NSDictionary *)payload completion:(void (^ _Nullable)(NSError * _Nullable error))completion;
++ (void)sendInternalAnalyticsPayload:(NSDictionary<NSString *, id> *)payload completion:(void (^ _Nullable)(NSError * _Nullable error))completion;
 
 // Send analytics with Extra payload
-+ (void)sendExtraAnalyticsPayload:(NSDictionary *)payload completion:(void (^ _Nullable)(NSError * _Nullable error))completion;
++ (void)sendExtraAnalyticsPayload:(NSDictionary<NSString *, id> *)payload completion:(void (^ _Nullable)(NSError * _Nullable error))completion;
 
 #pragma mark Modules
 
