@@ -1,7 +1,7 @@
 Core Samples for iOS
 ====================
 
-## Core Sample
+## CoreSample
 
 ### Overview
 - Demonstrates integration of Analytics
@@ -9,15 +9,6 @@ Core Samples for iOS
 ##### Usage:
 - Run a `pod update` command from the terminal in the sample file directory
 - Fill out `applicationId` and `accessKey` in the `Info.plist`
-
-## Graph Profile Sample
-
-### Overview
-- Demonstrates fetching and displaying a device profile
-
-##### Usage:
-- Run a `pod update` command from the terminal in the sample file directory
-- Fill out `applicationId`, `accessKey`, and `signatureKey` in the `AppDelegate.swift` file
 
 Privacy
 -----------
