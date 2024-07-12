@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		226DC4E015CCD1288CCA16BB /* Pods_GraphProfileSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1702BAAA60817528681C64AD /* Pods_GraphProfileSample.framework */; };
 		FB09AC8C219499E60099646D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09AC8B219499E60099646D /* AppDelegate.swift */; };
 		FB09ACA521949B8C0099646D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB09AC9E21949B8B0099646D /* Assets.xcassets */; };
 		FB09ACA721949B8C0099646D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB09ACA121949B8B0099646D /* LaunchScreen.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1702BAAA60817528681C64AD /* Pods_GraphProfileSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphProfileSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2764E686F699770485A1D4DD /* Pods-GraphProfileSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphProfileSample.debug.xcconfig"; path = "Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample.debug.xcconfig"; sourceTree = "<group>"; };
+		97B8B5C9F5757E4992C56155 /* Pods-GraphProfileSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphProfileSample.release.xcconfig"; path = "Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample.release.xcconfig"; sourceTree = "<group>"; };
 		FB09AC88219499E60099646D /* GraphProfileSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphProfileSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB09AC8B219499E60099646D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB09AC9E21949B8B0099646D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226DC4E015CCD1288CCA16BB /* Pods_GraphProfileSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +45,18 @@
 		93926C5E2A545DF96A337974 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				2764E686F699770485A1D4DD /* Pods-GraphProfileSample.debug.xcconfig */,
+				97B8B5C9F5757E4992C56155 /* Pods-GraphProfileSample.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B2A90ADEE72BF5D048702D91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1702BAAA60817528681C64AD /* Pods_GraphProfileSample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FB09AC7F219499E60099646D = {
@@ -50,6 +65,7 @@
 				FB09AC8A219499E60099646D /* GraphProfileSample */,
 				FB09AC89219499E60099646D /* Products */,
 				93926C5E2A545DF96A337974 /* Pods */,
+				B2A90ADEE72BF5D048702D91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB09AC9A219499E70099646D /* Build configuration list for PBXNativeTarget "GraphProfileSample" */;
 			buildPhases = (
+				FFD790366AE697D57CB9802B /* [CP] Check Pods Manifest.lock */,
 				FB09AC84219499E60099646D /* Sources */,
 				FB09AC85219499E60099646D /* Frameworks */,
 				FB09AC86219499E60099646D /* Resources */,
+				F16E25E6D7E358C548E83E86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,8 +151,9 @@
 		FB09AC80219499E60099646D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1540;
 				ORGANIZATIONNAME = Phunware;
 				TargetAttributes = {
 					FB09AC87219499E60099646D = {
@@ -144,7 +163,7 @@
 				};
 			};
 			buildConfigurationList = FB09AC83219499E60099646D /* Build configuration list for PBXProject "GraphProfileSample" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -173,6 +192,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F16E25E6D7E358C548E83E86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GraphProfileSample/Pods-GraphProfileSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD790366AE697D57CB9802B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraphProfileSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB09AC84219499E60099646D /* Sources */ = {
@@ -240,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -296,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -308,6 +369,7 @@
 		};
 		FB09AC9B219499E70099646D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2764E686F699770485A1D4DD /* Pods-GraphProfileSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -317,7 +379,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.11.0;
+				MARKETING_VERSION = 3.13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.GraphProfileSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Phunware Product SDK Wild (Debug)";
@@ -328,6 +390,7 @@
 		};
 		FB09AC9C219499E70099646D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B8B5C9F5757E4992C56155 /* Pods-GraphProfileSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -337,7 +400,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.11.0;
+				MARKETING_VERSION = 3.13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.GraphProfileSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Phunware Product SDK Wild (Debug)";

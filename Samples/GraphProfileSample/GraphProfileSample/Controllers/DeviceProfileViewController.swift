@@ -30,7 +30,7 @@ class DeviceProfileViewController: UIViewController {
         
         if let deviceId = deviceId, deviceProfileItemArray == nil {
             loadingView.isHidden = false
-            PWAPIManager.sharedInstance()?.get("https://graph-api.phunware.com/v1.0/devices/\(deviceId)", withParameters: nil, withCompletion: { [weak self] response, error in
+            PWAPIManager.sharedInstance().get("https://graph-api.phunware.com/v1.0/devices/\(deviceId)", withParameters: nil, withCompletion: { [weak self] response, error in
                 DispatchQueue.main.async {
                     self?.loadingView.isHidden = true
                     if let response = response as? [String: Any] {
