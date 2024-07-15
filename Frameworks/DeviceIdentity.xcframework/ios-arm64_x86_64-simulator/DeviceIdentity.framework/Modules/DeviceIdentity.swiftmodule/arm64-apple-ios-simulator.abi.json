@@ -203,22 +203,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSSgvp",
-            "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSSgvp",
+            "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSvp",
+            "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSvp",
             "moduleName": "DeviceIdentity",
             "isFromExtension": true,
             "accessors": [
@@ -229,22 +221,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSSgvg",
-                "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSSgvg",
+                "usr": "s:14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSvg",
+                "mangledName": "$s14DeviceIdentity39AdvertisingIdentificationPermisionErrorO09localizedF11DescriptionSSvg",
                 "moduleName": "DeviceIdentity",
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -610,7 +594,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Error) -> ()",
+                "printedName": "(any Swift.Error) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -620,7 +604,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ]

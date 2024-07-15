@@ -1,211 +1,418 @@
-# PWCore Changelog
-## 3.12.2 (Wednesday, Aug 30, 2023)  
-### Bug fixes
-* Fixed an issue where an API request would fail after successfully refreshing an expired authorization header.
-* Fixed an issue where an API request made through `PWAPIManager` would sometimes fail to return execution back to the caller.
+# Changelog
 
-## 3.12.1 (Tuesday, May 24, 2022)  
-### Bug fixes   
-* Fixed authentication header for the ME event retry. 
+All notable changes to this project will be documented in this file.
 
-## 3.12.0 (Thursday, March 3, 2022)  
-### Bug fixes / Performance enhancements  
-* Allowed bundle fetch caller to handle missing file.
-* Processed bundle files in background thread.
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-### Features
-* Removed the dependency on MaaS App's signature key.
-* Removed all deprecated API.
-* Added Swift Package Manager support.
+## [3.13.0][] - 2024-07-12
 
-## 3.11.0 (Wednesday, July 28, 2021)
-### Features
-* Updated IDFA handling for iOS 14+.
-* iOS deployment target increased from 10.0 to 13.0
+### Added
 
-## 3.10.0 (Monday, March 15, 2021)
-### Features
+- Added privacy manifests
+
+### Changed
+
+- Bumped minimum iOS deployment target to 15.5
+- Improved nullability annotations
+
+## [3.12.2][] - 2023-08-30
+
+### Fixed
+
+- Fixed an issue where an API request would fail after successfully refreshing an expired authorization header.
+- Fixed an issue where an API request made through `PWAPIManager` would sometimes fail to return execution back to the caller.
+
+## [3.12.1][] - 2022-05-24
+
+### Fixed
+  
+- Fixed authentication header for the ME event retry. 
+
+## [3.12.0][] - 2022-03-03
+
+### Added
+
+- Added Swift Package Manager support.
+
+### Changed
+
+- Allowed bundle fetch caller to handle missing file.
+- Processed bundle files in background thread.
+
+### Removed
+
+- Removed the dependency on MaaS App's signature key.
+- Removed all deprecated API.
+
+## [3.11.0][] - 2021-07-28
+
+### Changed
+
+- Changed IDFA handling for iOS 14+.
+- Bumped minimum iOS deployment target to 13.0
+
+## [3.10.0][] - 2021-03-15
+
+### Added
+
 * Added support for campus routing
 * Added IDFA authorization request for iOS 14.5+
 
-## 3.9.1 (Thursday, November 5th, 2020)
-#### Features
-* Updated IDFA handling for iOS 14+.
-* Built and archived SDK with Xcode 12.
+## [3.9.1][] - 2020-11-05
 
-## 3.9.0 (Thursday, September 3rd, 2020)
-#### Features
-* Exposed API to control whether or not the SDK can request location updates
-* Migrated to use XCFrameworks
+### Changed
 
-## 3.8.9 (Friday, June 5, 2020)
-#### Features
-* Remove some location information from events.
-* Expose manual screen view event tracking API.
+- Updated IDFA handling for iOS 14+.
+- Built and archived SDK with Xcode 12.
 
-## 3.8.8 (Monday, January 13, 2020)
-#### Bug fixes
-* Ensure the 'bluetoothEnabled' value in the analytics payload is a boolean in order to pass server validation.
+## [3.9.0][] - 2020-09-03
 
-## 3.8.7 (Wednesday, December 18, 2019)
-#### Features
-* Removed the bluetoothEnabled check from standard analytics payload. Now the value in the payload with key "bluetoothEnabled" will always return false.
+### Added
 
-## 3.8.6 (Wednesday, September 25, 2019)
-#### Features
-* Removed AFNetworking's UIKit subspec in order to not have any Webview code coming from AFNetworking dependency. Core now uses the following AFNetworking subspecs: NSURLSession, Security, Serialization, and Reachability.
-* Removed deprecated UIWebview code from within Core. Replaced with WKWebview.
+- Exposed API to control whether or not the SDK can request location updates
+- Migrated to use XCFrameworks
 
-## 3.8.5 (Friday, August 23, 2019)
-#### Features
-* Removed useIDFA flag and replaced with compiler flag, FORCE_IDFV. Based on how the build is performed, this flag is on or off and controls whether the AdSupport framework and IDFA is used.
+## [3.8.9][] - 2020-06-05
 
-## 3.8.4 (Tuesday, August 13, 2019)
-#### Features
-* Added useIDFA flag
+### Added
 
-## 3.8.3 (Tuesday, April 2nd, 2019)
-#### Bug fixes / performance enhancements
-* Fix to analytics payload
+- Exposed manual screen view event tracking API.
 
-## 3.8.2 (Wednesday, February 20th, 2019)
-#### Bug fixes / performance enhancements
-* Use new v3.0 Map-API
+### Removed
 
-## 3.8.1 (Monday, December 3rd, 2018)
-#### Bug fixes / performance enhancements
-* Fix analytic screen view events for stacked views
+- Removed some location information from events.
 
-## 3.8.0 (Wednesday, November 14th, 2018)
-#### Features
-* Added new automatic screen view analytic events
-* Simplified custom event analytics API
+## [3.8.8][] - 2020-01-03
 
-#### Bug fixes / performance enhancements
-* Fixed session start when switching application ids
+### Fixed
 
-## 3.7.0 (Monday, August 13th, 2018)
-#### Bug fixes / performance enhancements
-* iOS deployment target increased from 9.0 to 10.0
-* Removed old module registration code and move new registration to after new session generation
+- Fixed the 'bluetoothEnabled' value in the analytics payload to always be a boolean in order to pass server validation.
 
-## 3.6.0 (Monday, May 31st, 2018)
-#### Bug fixes / performance enhancements
-* Fixes made to CME content completion block types
-* Fix for missing session id during SDK registration
+## [3.8.7][] - 2019-12-18
 
-## 3.5.0 (Monday, May 7th, 2018)
-#### Features
-* Remove location permission prompting
+### Removed
 
-#### Bug fixes / performance enhancements
-* Fix for SESSION analytics
+- Removed the bluetoothEnabled check from standard analytics payload. Now the value in the payload with key "bluetoothEnabled" will always return false.
 
-## 3.4.1 (Wednesday, Apr 25th, 2018)
-#### Features
-* Added configurable bundle cache timeout
+## [3.8.6] - 2019-09-25
 
-#### Bug fixes / performance enhancements
-* Fixed crash on bundle network request failure
+### Removed
 
-## 3.4.0 (Monday, Apr 16th, 2018)
-#### Features
-* Added userInfo object to completion block of fetchBundleWithURL: and fetchBuildingBundleById: to provide additional information when using cached bundle
+- Removed AFNetworking's UIKit subspec in order to not have any Webview code coming from AFNetworking dependency. Core now uses the following AFNetworking subspecs: NSURLSession, Security, Serialization, and Reachability.
+- Removed deprecated UIWebview code from within Core. Replaced with WKWebview.
 
-#### Bug fixes / performance enhancements
-* Moved location analytic payload to device level
-* Fixed issue where log level not honored when set before creation of PWLogger
+## [3.8.5][] - 2019-08-23
 
-## 3.3.1 (Thursday, Feb 22nd, 2018)
-#### Bug fixes / performance enhancements
-* Fixed issue with initial network requests using JWT
+### Removed
 
-## 3.3.0 (Thursday, Feb 22nd, 2018)
-#### Features
-* Mapping API calls now use JWT
+- Removed useIDFA flag and replaced with compiler flag, FORCE_IDFV. Based on how the build is performed, this flag is on or off and controls whether the AdSupport framework and IDFA is used.
 
-#### Bug fixes / performance enhancements
-* Reduced bundle cache timeout to fall back to cached bundles faster
+## [3.8.4][] - 2019-08-13
 
-## 3.1.3 (Thursday, Oct 19th, 2017)
-* Fix thread deadlocking issue
+### Added
 
-## 3.1.2 (Monday, Sep 25th, 2017)
-* Changed location permissions to requestAlwaysAuthorization
-* Fixed analytics call made on wrong thread
-* Added PWLogger
+- Added useIDFA flag
 
-## 3.1.1 (Friday, Aug 4th, 2017)
-* Changed build process to reduce the final size of integrated framework.
-* Changed info.plist to allow iPhoneOS archiving with bitcode.
+## [3.8.3][] - 2019-04-02
 
-## 3.1.0 (Friday, Jun 30th, 2017)
-* PWCore now includes CME and Analytics components without the need for seperate PWCME and PWAnalytics SDK's
- - **NOTE**: This version of PWCore cannot work with PWCME and PWAnalytics. Instead import `#import <PWCore/PWCore.h>`.
+### Fixed
 
-* Added AFNetworking and TMCache as external dependencies.
+- Fixed analytics payload
 
-## 3.0.4 (Tuesday, Mar 28th, 2017)
-* Bug fix: the cached bundle will be used when network is unavailable.
-* Support bitcode
+## [3.8.2][] - 2019-02-20
 
-## 3.0.3 (Friday, Jan 27th, 2017)
-* Add PWAPIManager.h and PWBundleManager.h
-* PWAPIManager.h - Providing convenient methods make it easier to make MaaS API calls.
-* PWBundleManager.h - It's using for handling bundle downloading, supports decryption, unzip, manifest validation and Etag check, etc.
+### Changed
 
+- Switched to new v3.0 Map-API
 
-## 3.0.2 (Tuesday, Oct 18th, 2016)
-* Internal SDK Enhancements.
+## [3.8.1][] - 2018-12-03
 
-## 3.0.1 (Tuesday, Sep 6th, 2016)
-* Updated analytics payloads.
+### Fixed
 
-## 3.0.0 (Monday, Jul 25th, 2016)
-* Add current location of end user in anlytics request payload.
-* Bug fixes for make app crashes sometimes
+- Fixed analytic screen view events for stacked views
 
-## 2.0.0 (Friday, Sep 25th, 2015)
-* Renamed SDK to `PWCore`. Old `MaaSCore` interfaces are preserved but deprecated.
-* Enabled the ability to dynamically re-register with `PWCore` instead of having to restart the application.
-* Fixed potential crash issue with the standard analytics payload.
-* Updated standard analytics payload to include additional information.
-* Updated internal networking interfaces, optimizing for performance and battery life.
+## [3.8.0][] - 2018-12-14
 
-## 1.3.2 (Wednesday, Jan 7th, 2015)
- * Fixed a bug where fetching the users location
- * Fixing issue where internal location fetch callback wasn't being trigger when location services were enabled. Currently the only applications which would be affected are those using the `PWAlerts` SDK *AND* have location services enabled.
- * MaaSCore no longer requests permission for location services and will now only fetch the device location if it's readily available.
- * Deprecating `disableLocationServices` method since it's no longer relevant.
+### Added
 
-## 1.3.1 (Monday, Oct 17th, 2014)
- * Fixed issue with encryption not working for PWAlerts SDK
+- Added new automatic screen view analytic events
 
-## 1.3.0 (Monday, Oct 6th, 2014)
- * Added support for API encryption
- * Bug fixes and optimizations
+### Changed
 
-## 1.2.7 (Monday, Apr 21st, 2014)
- * Removed dependency on AdSupport.framework
+- Simplified custom event analytics API
 
-## 1.2.6 (Wednesday, Mar 26th, 2014)
- * Adding arm64 support
+### Fixed
 
-## 1.2.4 (Tuesday, Jan 27th, 2014)
- * Improved location based services integration
+- Fixed session start when switching application ids
 
-## 1.2.2 (Tuesday, Jan 7th, 2014)
- * Fixed issue where the session timestamp was being improperly recorded
+## [3.7.0][] - 2018-08-13
 
-## 1.2.1 (Tuesday, Nov 12th, 2013)
- * Fixed potential threading issue with accessing standard date formatter
+### Changed
 
-## 1.2.0 (Friday, Oct 18th, 2013)
- * Added support for location based services
- * Added check for AdSupport.framework
+- Bumped minimum iOS deployment target to 10.0
 
-## 1.0.1 (Thursday, Aug 8th, 2013)
- * Fixed issue where internal aggregate analytic events were not being cached properly
+### Removed
 
-## 1.0.0 (Friday, Jun 30th, 2013)
- * Initial release
+- Removed old module registration code and move new registration to after new session generation
+
+## [3.6.0][] - 2018-05-31
+
+### Fixed
+
+- Fixed CME content completion block types
+- Fixed missing session id during SDK registration
+
+## [3.5.0][] - 2018-05-07
+
+### Removed
+
+- Removed location permission prompting
+
+### Fixed
+
+- Fixed SESSION analytics
+
+## [3.4.1][] - 2018-04-25
+
+### Added
+
+- Added configurable bundle cache timeout
+
+### Fixed
+
+- Fixed crash on bundle network request failure
+
+## [3.4.0][] - 2018-04-16
+
+### Added
+
+- Added userInfo object to completion block of fetchBundleWithURL: and fetchBuildingBundleById: to provide additional information when using cached bundle
+
+### Changed
+
+- Moved location analytic payload to device level
+
+### Fixed
+
+- Fixed issue where log level not honored when set before creation of PWLogger
+
+## [3.3.1][] - 2018-02-22
+
+### Fixed
+
+- Fixed issue with initial network requests using JWT
+
+## [3.3.0][] - 2018-02-22
+
+### Changed
+
+- Updated Mapping API calls to use JWT
+- Reduced bundle cache timeout to fall back to cached bundles faster
+
+## [3.1.3][] - 2017-10-19
+
+### Fixed
+
+- Fixed thread deadlocking issue
+
+## [3.1.2][] - 2017-10-25
+
+### Added
+
+- Added PWLogger
+
+### Changed
+
+- Changed location permissions to requestAlwaysAuthorization
+
+### Fixed
+
+- Fixed analytics call made on wrong thread
+
+## [3.1.1][] - 2017-08-04
+
+### Changed
+
+- Changed build process to reduce the final size of integrated framework.
+- Changed info.plist to allow iPhoneOS archiving with bitcode.
+
+## [3.1.0][] - 2017-06-30
+
+### Added
+
+- Added AFNetworking and TMCache as external dependencies.
+
+### Changed
+
+- PWCore now includes CME and Analytics components without the need for seperate PWCME and PWAnalytics SDK's. **NOTE**: This version of PWCore cannot work with PWCME and PWAnalytics. Instead import `#import <PWCore/PWCore.h>`.
+
+## [3.0.4][] - 2017-03-28
+
+### Added
+
+- Added support for bitcode
+
+### Fixed
+
+- Fixed an issue where the cached bundle was not used when network is unavailable.
+
+## [3.0.3][] - 2017-01-27
+
+### Added
+
+- Added PWAPIManager to provide convenient methods make it easier to make MaaS API calls.
+- Added PWBundleManager to manage bundle downloading, decryption, unzipping, manifest validation, Etag validation, etc.
+
+## [3.0.2][] - 2016-10-18
+
+### Changed
+
+- Changed internal components.
+
+## [3.0.1][] - 2016-09-06
+
+### Changed
+
+- Updated analytics payloads.
+
+## [3.0.0][] - 2016-07-25
+
+### Added
+
+- Added current location of end user in anlytics request payload.
+
+### Fixed
+
+- Fixed crashes.
+
+## 2.0.0 - 2015-09-25
+
+### Added
+
+- Added the ability to dynamically re-register with `PWCore` instead of having to restart the application.
+
+### Changed
+
+- Renamed SDK to `PWCore`. Old `MaaSCore` interfaces are preserved but deprecated.
+- Updated standard analytics payload to include additional information.
+- Updated internal networking interfaces, optimizing for performance and battery life.
+
+### Fixed
+
+- Fixed potential crash issue with the standard analytics payload.
+
+## 1.3.2 - 2015-01-07
+
+### Fixed
+
+- Fixed a bug where fetching the users location
+- Fixed issue where internal location fetch callback wasn't being trigger when location services were enabled. Currently the only applications which would be affected are those using the `PWAlerts` SDK *AND* have location services enabled.
+
+### Changed
+
+- MaaSCore no longer requests permission for location services and will now only fetch the device location if it's readily available.
+
+### Deprecated
+
+- Deprecated `disableLocationServices` method since it's no longer relevant.
+
+## 1.3.1 - 2014-10-17
+
+### Fixed
+
+- Fixed issue with encryption not working for PWAlerts SDK
+
+## 1.3.0 - 2014-10-06
+
+### Added
+
+- Added support for API encryption
+
+### Fixed
+
+- Fixed several bugs
+
+## 1.2.7 - 2014-04-21
+
+### Removed
+
+- Removed dependency on AdSupport.framework
+
+## 1.2.6 - 2014-03-26
+
+### Added
+
+- Added arm64 support
+
+## 1.2.4 - 2014-01-27
+
+### Changed
+
+- Improved location based services integration
+
+## 1.2.2 - 2014-01-07
+
+### Fixed
+
+- Fixed issue where the session timestamp was being improperly recorded
+
+## 1.2.1 - 2014-11-12
+
+### Fixed
+
+- Fixed potential threading issue with accessing standard date formatter
+
+## 1.2.0 - 2013-10-18
+
+### Added
+
+- Added support for location based services
+- Added check for AdSupport.framework
+
+## 1.0.1 - 2014-08-08
+
+### Fixed
+
+- Fixed issue where internal aggregate analytic events were not being cached properly
+
+## 1.0.0 - 2013-06-30
+
+### Added
+
+- Initial release
+
+[3.13.0]: https://github.com/phunware/maas-core-ios-sdk/compare/3.12.2...3.13.0
+[3.12.2]: https://github.com/phunware/maas-core-ios-sdk/compare/3.12.1...3.12.2
+[3.12.1]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.12.0...3.12.1
+[3.12.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.11.0...v3.12.0
+[3.11.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.10.0...v3.11.0
+[3.10.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.9.1...v3.10.0
+[3.9.1]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.9.0...v3.9.1
+[3.9.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.8.9...v3.9.0
+[3.8.9]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.8.8...v3.8.9
+[3.8.8]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.8.7...v3.8.8
+[3.8.7]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.8.6...v3.8.7
+[3.8.6]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.8.5...v3.8.6
+[3.8.5]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.8.4...v3.8.5
+[3.8.4]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.8.3...v3.8.4
+[3.8.3]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.8.2...v3.8.3
+[3.8.2]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.8.1...v3.8.2
+[3.8.1]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.8.0...v3.8.1
+[3.8.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.7.0...v3.8.0
+[3.7.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.6.0...v3.7.0
+[3.6.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.5.0...v3.6.0
+[3.5.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.4.1...v3.5.0
+[3.4.1]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.4.0...v3.4.1
+[3.4.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.3.1...v3.4.0
+[3.3.1]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.3.0...v3.3.1
+[3.3.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.1.3...v3.3.0
+[3.1.3]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.1.2...v3.1.3
+[3.1.2]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.1.1...v3.1.2
+[3.1.1]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.1.0...v3.1.1
+[3.1.0]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.0.4...v3.1.0
+[3.0.4]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.0.3...v3.0.4
+[3.0.3]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.0.2...v3.0.3
+[3.0.2]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.0.1...v3.0.2
+[3.0.1]: https://github.com/phunware/maas-core-ios-sdk/compare/v3.0.0...v3.0.1
+[3.0.0]: https://github.com/phunware/maas-core-ios-sdk/tree/v3.0.0

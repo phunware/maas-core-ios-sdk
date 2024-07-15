@@ -10,11 +10,13 @@
 
 #import <PWCore/PWLogger.h>
 
-@interface PWFileLogger : NSObject <PWLogger>
+NS_ASSUME_NONNULL_BEGIN
+
+@interface PWFileLogger : NSObject <PWLogging>
 
 /**
  * The name of the service that corresponds to the logger.
- * @discussion Each logger will only log messages tagged with the same service name as teh logger.
+ * @discussion Each logger will only log messages tagged with the same service name as the logger.
  */
 @property (nonatomic, readonly) NSString *serviceName;
 /**
@@ -60,7 +62,8 @@
  * @param error On input, a pointer to an error object. If an error occurs, this pointer is set to an actual error object containing the error information. You may specify nil for this parameter if you do not want the error information.
  * @return A string containing the path to the merged log file.
  */
-+ (NSString *)mergeLogFilesIntoSingleFileForService:(NSString *)serviceName error:(NSError **)error;
-
++ (NSString * _Nullable)mergeLogFilesIntoSingleFileForService:(NSString *)serviceName error:(NSError ** _Nullable)error;
 
 @end
+
+NS_ASSUME_NONNULL_END

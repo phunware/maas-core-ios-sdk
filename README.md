@@ -8,13 +8,13 @@ This is Phunware's Core SDK for use with its Multiscreen-as-a-Service platform. 
 
 Requirements
 ------------
-- iOS 13.0 or greater
-- Xcode 12 or greater
+- iOS 15.5 or greater
+- Xcode 15 or greater
 
 Installation
 ------------
 ### CocoaPods
-It is required to use [CocoaPods](http://www.cocoapods.org) 1.10 or greater to integrate the framework. Simply add the following to your Podfile:
+It is required to use [CocoaPods](http://www.cocoapods.org) 1.12 or greater to integrate the framework. Simply add the following to your Podfile:
 
 ````ruby
 pod 'PWCore'
@@ -44,8 +44,7 @@ Initialize PWCore in your application delegate's [application(_:didFinishLaunchi
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     // These values can be found for your application in the MaaS portal at http://maas.phunware.com/clients.    
     PWCore.setApplicationID("APPLICATION_ID",
-                            accessKey: "ACCESS_KEY",
-                            signatureKey: "SIGNATURE_KEY")
+                            accessKey: "ACCESS_KEY")
 
     ...
 }
@@ -60,6 +59,11 @@ Identifier for Advertisers (IDFA) Permission
 Starting with iOS 14.5, accessing the identifier for advertisers (IDFA) requires authorization through Apple's [AppTrackingTransparency framework](https://developer.apple.com/documentation/apptrackingtransparency). Authorization is encouraged when starting PWCore, and can be requested directly through the SDK: 
 
 ````swift
+import PWCore
+import DeviceIdentity
+
+...
+
 switch PWCore.isAdvertisingIdentifierPermissionRequestable {
 case .allowed:
     PWCore.requestAdvertisingIdentifierPermission { (advertisingIdentifier) in
@@ -89,19 +93,11 @@ PWCore uses the following third-party dependencies:
   <th style="text-align:center;">License</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a></td>
+    <td><a href="https://github.com/pinterest/PINCache">PINCache</a></td>
     <td>
-     A delightful iOS and OS X networking framework.
+     Fast, non-deadlocking parallel object cache for iOS, tvOS and OS X.
     </td>
-    <td style="text-align:center;""><a href="https://github.com/AFNetworking/AFNetworking/blob/master/LICENSE">MIT</a>
-    </td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/tumblr/TMCache">TMCache</a></td>
-    <td>
-     Fast parallel object cache for iOS and OS X.
-    </td>
-    <td style="text-align:center;""><a href="https://github.com/tumblr/TMCache/blob/master/LICENSE.txt">Apache 2.0</a>
+    <td style="text-align:center;""><a href="https://github.com/pinterest/PINCache/blob/master/LICENSE.txt">Apache 2.0</a>
     </td>
   </tr>
   <tr>
@@ -121,4 +117,3 @@ You understand and consent to Phunware’s Privacy Policy located at www.phunwar
 Terms
 -----------
 Use of this software requires review and acceptance of our terms and conditions for developer use located at http://www.phunware.com/terms
-

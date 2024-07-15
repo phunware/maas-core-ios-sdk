@@ -10,13 +10,15 @@
 
 #import <PWCore/PWLogger.h>
 
-@interface PWConsoleLogger : NSObject <PWLogger>
+NS_ASSUME_NONNULL_BEGIN
+
+@interface PWConsoleLogger : NSObject <PWLogging>
 
 /**
  * The name of the service that corresponds to the logger.
  * @discussion Each logger will only log messages tagged with the same service name as teh logger.
  */
-@property (nonatomic,readonly) NSString * serviceName;
+@property (nonatomic, readonly) NSString *serviceName;
 /**
  * The base level of the logger.
  * @discussion This property can be set to filter out log messages depending on their type. See the 'PWLogLevel' enum for more details.
@@ -33,7 +35,7 @@
  * Convenience constructor to create logger
  * @param serviceName The service name that corresponds to the logger.
  */
-+ (instancetype)loggerWithServiceName:(NSString*)serviceName;
++ (instancetype)loggerWithServiceName:(NSString *)serviceName;
 
 /**
  * Logs a message using the logger.
@@ -42,3 +44,5 @@
 - (void)logMessage:(PWLogMessage *)logMessage;
 
 @end
+
+NS_ASSUME_NONNULL_END

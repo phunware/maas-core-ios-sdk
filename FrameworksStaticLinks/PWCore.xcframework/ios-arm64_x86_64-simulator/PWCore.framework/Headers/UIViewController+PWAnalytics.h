@@ -22,9 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param parameters Additional information that describes the screen view event.
  @return YES if the screen view event started, otherwise NO.
 */
-- (BOOL)pw_startScreenViewEventForScreenWithName:(NSString * _Nonnull)screenName
-                                    inAppSection:(NSString * _Nullable)appSection
-                                  withParameters:(NSDictionary * _Nullable)parameters;
+- (BOOL)pw_startScreenViewEventForScreenWithName:(NSString *)screenName inAppSection:(NSString * _Nullable)appSection withParameters:(NSDictionary<NSString *, NSString *> * _Nullable)parameters;
 
 /**
  End a screen view event.
