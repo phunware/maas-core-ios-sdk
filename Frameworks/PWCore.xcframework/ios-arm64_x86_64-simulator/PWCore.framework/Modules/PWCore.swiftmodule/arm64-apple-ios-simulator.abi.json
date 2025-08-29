@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "PWCore",
+    "printedName": "PWCore",
     "children": [
       {
         "kind": "Import",
@@ -320,6 +320,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -733,6 +747,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -797,118 +825,118 @@
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 379,
-      "length": 1,
-      "value": "8"
+      "length": 2,
+      "value": "30"
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 429,
+      "offset": 430,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 479,
+      "offset": 480,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 581,
+      "offset": 582,
       "length": 17,
       "value": "\"Accept-Encoding\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 601,
+      "offset": 602,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 617,
+      "offset": 618,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 634,
+      "offset": 635,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 666,
+      "offset": 667,
       "length": 8,
       "value": "\"Accept\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 677,
+      "offset": 678,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 955,
+      "offset": 956,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1005,
+      "offset": 1006,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1107,
+      "offset": 1108,
       "length": 17,
       "value": "\"Accept-Encoding\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1127,
+      "offset": 1128,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1143,
+      "offset": 1144,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 1161,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1192,
+      "offset": 1193,
       "length": 8,
       "value": "\"Accept\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/core-sdk-ios\/PWCore\/Core\/Networking\/URLSession+PWHTTPSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1203,
+      "offset": 1204,
       "length": 18,
       "value": "\"application\/json\""
     },
