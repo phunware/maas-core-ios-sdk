@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PWAPIManager.h</key>
 		<data>
-		l6gA2mfpxjHIkiekpA2DMguJWIo=
+		jsqiPUbPRTNSJjzrGAwj0lcS7NI=
 		</data>
 		<key>Headers/PWAPIOperation.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/PWCore.h</key>
 		<data>
-		6OhWQAopNghCOoUPjzY/qq7OxU8=
+		vrRpxaV6ayJotKsKg3lVymNaq+o=
 		</data>
 		<key>Headers/PWCoreDevice.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wIQPi6j6sHMbsu2BgfdFEomqdHc=
+		e6CaHvzdvoDXwbZr2B3UiligbSg=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -115,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+7x4puW5+bMqvMYRg3iZ52F8oUp+i3QXfdM5EAzdMec=
+			N5ErGkCrPaA9SHSKhpknL35pKUBgI0EAxFCH0ylWleI=
 			</data>
 		</dict>
 		<key>Headers/PWAPIOperation.h</key>
@@ -157,7 +157,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Od86KNDbee7eUW2lb5pTdEvTfMIy3Ohqsvez9FK6YeU=
+			Fwp6ruGNK7Fjddvr3gDOOtfDgXF1lKU6O1nRzaKChOs=
 			</data>
 		</dict>
 		<key>Headers/PWCoreDevice.h</key>

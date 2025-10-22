@@ -65,6 +65,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)request:(NSString *)endpoint withHTTPMethod:(PWHTTPMethod)httpMethod withParameters:(NSDictionary * _Nullable)parameters cacheResponse:(BOOL)shouldCacheResponse withCompletion:(void(^)(id _Nullable response, NSError * _Nullable error))completion;
 
+/**
+ Send a request for specific endpoint, headers, parameters and HTTP method.
+ @param httpMethod The http request for the request.
+ @param endpoint The endpoint for the request.
+ @param headers The headers for the request.
+ @param parameters The parameters for the request.
+ @param shouldCacheResponse If true and the request fails, the cached response (if any) is returned instead. Also if true and the request succeeds, the response is cached.
+ @param completion A block that returns the HTTP response or error.
+ */
+- (void)request:(NSString *)endpoint withHTTPMethod:(PWHTTPMethod)httpMethod withHeaders:(NSDictionary * _Nullable)headers withParameters:(NSDictionary * _Nullable)parameters cacheResponse:(BOOL)shouldCacheResponse withCompletion:(void(^)(id _Nullable response, NSError * _Nullable error))completion;
+
 @end
 
 NS_ASSUME_NONNULL_END
