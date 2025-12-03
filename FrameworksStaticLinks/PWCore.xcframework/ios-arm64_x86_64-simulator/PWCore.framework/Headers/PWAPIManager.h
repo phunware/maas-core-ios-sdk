@@ -56,6 +56,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)post:(NSString *)endpoint withParameters:(NSDictionary * _Nullable)parameters withCompletion:(void(^)(id _Nullable response, NSError * _Nullable error))completion;
 
 /**
+ Sends a `POST` request to the specified endpoint using a raw HTTP body. This is intended for multipart/form-data requests where the caller constructs the http body and provides the  Content-Type.
+ @param endpoint    The endpoint for the request.
+ @param body        The HTTP body to send with the request.
+ @param contentType The value for the `Content-Type` header.
+ @param completion  A block that returns the HTTP response object or an error.
+ */
+- (void)post:(NSString *)endpoint multipartBody:(NSData *)body contentType:(NSString *)contentType withCompletion:(void(^)(id _Nullable response, NSError * _Nullable error))completion;
+
+/**
  Send a request for specific endpoint, parameters and HTTP method.
  @param httpMethod The http request for the request.
  @param endpoint The endpoint for the request.

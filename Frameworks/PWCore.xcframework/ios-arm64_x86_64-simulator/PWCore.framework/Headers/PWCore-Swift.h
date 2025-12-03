@@ -322,9 +322,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isNetworkConnec
 @class NSObject;
 @class NSError;
 @class NSURLSessionDataTask;
+@class NSData;
 
 @interface NSURLSession (SWIFT_EXTENSION(PWCore))
+/// Uses query/body parameters, no raw body.
 + (NSURLSessionDataTask * _Nullable)apiDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nullable))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
+/// Uses raw HTTP body (e.g., JSON or multipart), no parameters.
++ (NSURLSessionDataTask * _Nullable)apiDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString body:(NSData * _Nullable)body headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nullable))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
 + (NSURLSessionDataTask * _Nullable)jwtDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nullable))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -660,9 +664,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isNetworkConnec
 @class NSObject;
 @class NSError;
 @class NSURLSessionDataTask;
+@class NSData;
 
 @interface NSURLSession (SWIFT_EXTENSION(PWCore))
+/// Uses query/body parameters, no raw body.
 + (NSURLSessionDataTask * _Nullable)apiDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nullable))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
+/// Uses raw HTTP body (e.g., JSON or multipart), no parameters.
++ (NSURLSessionDataTask * _Nullable)apiDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString body:(NSData * _Nullable)body headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nullable))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
 + (NSURLSessionDataTask * _Nullable)jwtDataTaskWithMethod:(NSString * _Nonnull)method urlString:(NSString * _Nonnull)urlString parameters:(NSDictionary * _Nullable)parameters headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers success:(void (^ _Nullable)(id _Nullable))success failure:(void (^ _Nullable)(NSError * _Nonnull))failure SWIFT_WARN_UNUSED_RESULT;
 @end
 
