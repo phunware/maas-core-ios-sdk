@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DeviceIdentity-Swift.h</key>
 		<data>
-		7z8ReurV6Gud+UhYaOjewRhRsU0=
+		YYhy861Vy5AXGErdpbwQjAlDj0Y=
 		</data>
 		<key>Headers/DeviceIdentity.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HMRy719v5X95YRXbQ3uYUz4eHb8=
+		l8OiSMHVo1OdellhUQFpQFVB284=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yC/i/xqnY4c0pecgC+tXn3CokVQ=
+		biOr1nRnWGusI7McUuZiNe5O1Kw=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		u9jkpL4J3VjdZHElt1Q2jo2mTGo=
+		4LoI31xiww693OdeOTNdXgAQqpY=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yC/i/xqnY4c0pecgC+tXn3CokVQ=
+		biOr1nRnWGusI7McUuZiNe5O1Kw=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		S3Fo7R38uSk7qb5OEX0binS/W3s=
+		/PBS0AhOMqRF+qDq2jr6ZKB8sBU=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8EJ5lt/7IUDXfWXttXprIkOkFdw=
+		gxwBQAgbRMnvRk+B200GClUxrv4=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9WCKsPAP6epqnn05J1u74P6kolY=
+		H0282HSTQkwRPSUON4l/b6PON4E=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8EJ5lt/7IUDXfWXttXprIkOkFdw=
+		gxwBQAgbRMnvRk+B200GClUxrv4=
 		</data>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AjO/gazjrkTLmeOJDHQz4jnqVNU=
+		6DAOBlg2abHKeMx6Cm0/jgP1UL8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JLyFbY5C6cvcEf3RKC1Aopz8ioYr/eb8wfWr1uIxN6U=
+			NW2utNH8Oz3JVcvAXYJItoo+m3a2/5egF8LhYnvWkyI=
 			</data>
 		</dict>
 		<key>Headers/DeviceIdentity.h</key>
@@ -92,28 +92,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q1Zvv73x/98J1JbVg5MCKQ26xWbZWETiz742UcKch2c=
+			Mo0CL6XER31UMhwbOkGlKCOYSsu//ViiuW1EQTiZ5XY=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q9nipMiC0+O+tRBBpxhzXUWMIX/VIqQk2deXlznhW2w=
+			FmhUyr3uRG6uWapbisYbT+Vzzk5oy9wMMKcnK6tgUwA=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q1Zvv73x/98J1JbVg5MCKQ26xWbZWETiz742UcKch2c=
+			Mo0CL6XER31UMhwbOkGlKCOYSsu//ViiuW1EQTiZ5XY=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OBArAgaeull8gd7bvPStRcBBhZZa63CpK7pNIDUncmo=
+			z4VW77KejLFccFnTfqgp2+9O4fHmnrYlkVOIxJUweZ0=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -127,28 +127,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IGrXkNvgsmvmzqq5Y8Z1MGDieK/shPqHgGRfeMiDMmo=
+			eark4coSGbuwzRi+a+oh8CHYuEDu8TX3p9DKSVvvhLo=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ETMz/Epatbirb33Ev+vJGTBmnCXCg65rKBoLys1D/oQ=
+			LB5Winj+1DZYHRSK0z9ar1fuEvdb7QWVKamNebXk7d4=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IGrXkNvgsmvmzqq5Y8Z1MGDieK/shPqHgGRfeMiDMmo=
+			eark4coSGbuwzRi+a+oh8CHYuEDu8TX3p9DKSVvvhLo=
 			</data>
 		</dict>
 		<key>Modules/DeviceIdentity.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9T/QwXn22QiPuFa1o4hR8AK/6FJSDVeZpFAd8IM1c8Q=
+			ElUCnu3J+MyLrNVamffvm/xe+puz2mxA8LXlLOdcKa0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

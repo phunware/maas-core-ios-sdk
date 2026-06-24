@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/PWCore-Swift.h</key>
 		<data>
-		rXSrVEUUfsVfseoos6+dICWhQIs=
+		Rv3gNrlsIpCWAbnUGPjWVI2jlkk=
 		</data>
 		<key>Headers/PWCore.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cpNia7ML06PYrrOiQqpw1be+eME=
+		BVgyMuV4Ayu3PgatjRAdEpvOog8=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -66,19 +66,19 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5jOSHp5NTPLb9JiYW14TaZ9Fkik=
+		4j2WThzibB/CjwQFnjpKGRFIVjY=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8J0VBYIOHDkonj+gANx0wHrOkBU=
+		X8inQKXvFj0i2YqCZm8ZwIn3Sak=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5jOSHp5NTPLb9JiYW14TaZ9Fkik=
+		4j2WThzibB/CjwQFnjpKGRFIVjY=
 		</data>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fnp6+NRwcPl17rNv3aRm46GlpIQ=
+		YSsVVny9n0rmBL/ojfl+5EugYGo=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -86,19 +86,19 @@
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TazfNaBy96Zl+C44N8x1N/0yl9M=
+		NF7jlZdkCvLpwSw6t/qVkFB7aPo=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		r8YbgDcR/5abK/VCCoTlADtsijo=
+		BGOK+uFvic2+eNzjz+Jj3qd2udk=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TazfNaBy96Zl+C44N8x1N/0yl9M=
+		NF7jlZdkCvLpwSw6t/qVkFB7aPo=
 		</data>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bCu2cqsU8Ttjgrnd2UXq3zwb0qk=
+		HXl56vBfq1U4XxIMq92YWvKCRo8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -150,7 +150,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ig+x4bL6Gx+4BuKDsYO2ah4egNwl+Ps5jyeewW9VVI=
+			EHSVbAEJqs6g26LfpmZDdIU/JStg61EKnmjlPJ+5Unk=
 			</data>
 		</dict>
 		<key>Headers/PWCore.h</key>
@@ -213,28 +213,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AhwFrWTyvGNgazip/PDXSutaL3VOp+nHA90eLoHSmjw=
+			d3EP9jzNZIfeDajHsJmea8zgk7+nIKCaps1L/P5BpUI=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C+VWvlBWwgULNLekBbS4ukQc49cYJOv17ZrCQuVMAbI=
+			cXbWYEadkqJ4ETGpdt975cLoKI8uAA0KHXb1vijwN+0=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AhwFrWTyvGNgazip/PDXSutaL3VOp+nHA90eLoHSmjw=
+			d3EP9jzNZIfeDajHsJmea8zgk7+nIKCaps1L/P5BpUI=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GeUe85W2InvFGenrkn5ZUAZ1Q/Rh91AHkfhh262bI2I=
+			toyUYlKr/vb01C03LUjYu/q+zkK5Xaon4OAwvTjN4kI=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -248,28 +248,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i2Ce2L7Fnwttg7nj8OLQLUyxHDVpIV4r736vsqC4yao=
+			ekMElPl20R2/S/X/kfhBgrOWihIx4PbNW9uqO0d7Jh0=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MPHOimaW4UnDuqRYRuyHM5p19J8rZ2w694Ned9Os6Pk=
+			QLitPxTCND1eRHO8Y/DGIgEx7LP3RD7W49lWy4Q+mao=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i2Ce2L7Fnwttg7nj8OLQLUyxHDVpIV4r736vsqC4yao=
+			ekMElPl20R2/S/X/kfhBgrOWihIx4PbNW9uqO0d7Jh0=
 			</data>
 		</dict>
 		<key>Modules/PWCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LJeLKBrlC2IY+k2culrbVGlQ3WdeTXTYgrOB2qqrgk8=
+			N850Ujqwlh7Jv/9sCqfUc2iiRhy8oeJ864Yv5zkUer8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
