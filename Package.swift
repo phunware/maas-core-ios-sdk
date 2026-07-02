@@ -1,29 +1,13 @@
 // swift-tools-version:5.9
 import PackageDescription
 
-// Uses the dynamic xcframework variant with the third-party runtime dependencies
-// vendored as their own dynamic xcframeworks (NOT baked into PWCore):
-//   Core            -> Frameworks/PWCore.xcframework  (dynamic)
-//                      links @rpath/PINCache.framework, @rpath/PINOperation.framework,
-//                      @rpath/SSZipArchive.framework
-//   DeviceIdentity  -> Frameworks/DeviceIdentity.xcframework (dynamic, depends on PWCore)
-//   PINCache / PINOperation / SSZipArchive -> Frameworks/*.xcframework (dynamic)
-//
-// Those three dynamic xcframeworks are produced by build-thirdparty-xcframeworks.sh in the
-// build repo, from the same PWCore.xcworkspace + Pods (use_frameworks!) that build PWCore.
-// They MUST be present so dyld can satisfy PWCore's @rpath loads at runtime — a plain
-// SPM source dependency on PINCache/ZipArchive would compile *statically* and the app
-// would crash at launch with: dyld: Library not loaded: @rpath/PINCache.framework/PINCache.
-//
-// Binary targets can't declare dependencies, so the xcframeworks are wrapped in a
-// `*Targets` source target that attaches the third-party binaries; the library products
-// vend the wrapper targets. Dynamic binary targets are auto-embedded & signed into the app.
 let package = Package(
     name: "PWCore",
     platforms: [
         .iOS("15.5")
     ],
     products: [
+	// Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "PWCore",
             targets: ["PWCoreTargets"]),
@@ -32,7 +16,7 @@ let package = Package(
             targets: ["DeviceIdentityTargets"])
     ],
     targets: [
-        // Vendored binary frameworks (dynamic variant)
+        // PWCore binary frameworks
         .binaryTarget(
             name: "PWCore",
             path: "Frameworks/PWCore.xcframework"
@@ -42,7 +26,7 @@ let package = Package(
             path: "Frameworks/DeviceIdentity.xcframework"
         ),
 
-        // Third-party runtime dependencies as dynamic xcframeworks (satisfy PWCore's @rpath loads)
+        // Third-party runtime dependencies as dynamic xcframeworks 
         .binaryTarget(
             name: "PINCache",
             path: "Frameworks/PINCache.xcframework"
@@ -56,7 +40,7 @@ let package = Package(
             path: "Frameworks/SSZipArchive.xcframework"
         ),
 
-        // Wrapper targets that attach the vendored binaries to the products
+        // Wrapper targets that attach the PWCore binaries to the products
         .target(
             name: "PWCoreTargets",
             dependencies: [
@@ -71,7 +55,7 @@ let package = Package(
             name: "DeviceIdentityTargets",
             dependencies: [
                 .target(name: "DeviceIdentity"),
-                .target(name: "PWCoreTargets") // DeviceIdentity subspec depends on PWCore/Core
+                .target(name: "PWCoreTargets")
             ],
             path: "DeviceIdentityTargets"
         )
